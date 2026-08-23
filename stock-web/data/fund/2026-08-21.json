@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-21",
+  "unit": "yuan",
+  "note": "板块主力净流入（单位换算为元，前端显示亿）。来源：通达信 zjlx 代表个股口径近似（复盘生成）。",
+  "rows": [
+    {"name": "AI算力/CPO", "main": 3895000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "有色金属", "main": 935000000, "pct": 2.90, "ratio": null, "superBig": null, "big": null},
+    {"name": "券商", "main": 121000000, "pct": 0.00, "ratio": null, "superBig": null, "big": null},
+    {"name": "消费电子", "main": 111000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "电力", "main": 43000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "新能源车", "main": 43000000, "pct": 1.59, "ratio": null, "superBig": null, "big": null},
+    {"name": "军工", "main": 30000000, "pct": 0.77, "ratio": null, "superBig": null, "big": null},
+    {"name": "光伏", "main": 18000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "银行", "main": 12000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "传媒", "main": -12000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "房地产", "main": -32000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "半导体", "main": -213000000, "pct": null, "ratio": null, "superBig": null, "big": null},
+    {"name": "白酒", "main": -536000000, "pct": -1.56, "ratio": null, "superBig": null, "big": null},
+    {"name": "医药", "main": -635000000, "pct": -3.36, "ratio": null, "superBig": null, "big": null}
+  ]
+}
