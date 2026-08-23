@@ -1,0 +1,80 @@
+name: Bing Auto · 每日双定时更新
+
+# 每天跑两次（北京时间）：
+#   12:00 → 盘中快照存档（reviews/<date>_am.json，供追溯对比）
+#   16:00 → 收盘正式版（reviews/<date>.json + 全套数据）
+# 每次均追溯最近 1 个交易日（--lookback=1）：即使某天漏跑，第二天自动补上
+on:
+  schedule:
+    - cron: '0 4 * * 1-5'    # UTC 04:00 = 北京时间 12:00（盘中快照）
+    - cron: '0 8 * * 1-5'    # UTC 08:00 = 北京时间 16:00（收盘正式）
+  # 手动触发（补跑/测试）
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'am=盘中快照 / pm=收盘正式（默认 pm）'
+        required: false
+        default: 'pm'
+      lookback:
+        description: '追溯最近 N+1 个交易日（默认 1 = 昨天+今天）'
+        required: false
+        default: '1'
+      date:
+        description: '指定交易日（YYYY-MM-DD，留空自动取最近交易日）'
+        required: false
+        default: ''
+
+concurrency:
+  group: bing-auto-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # 允许提交并推送到 main 分支
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 运行数据脚本（auto/scripts/fetch_data.js）
+        working-directory: auto
+        run: |
+          SLOT="${{ github.event.inputs.slot || 'pm' }}"
+          LOOKBACK="${{ github.event.inputs.lookback || '1' }}"
+          DATE="${{ github.event.inputs.date || '' }}"
+          CMD="node scripts/fetch_data.js --slot=$SLOT --lookback=$LOOKBACK"
+          if [ -n "$DATE" ]; then CMD="$CMD --date=$DATE"; fi
+          echo "▶ 执行: $CMD"
+          eval "$CMD"
+
+      - name: 检查变更
+        id: diff
+        run: |
+          if git diff --quiet auto/data/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "无数据变化（可能非交易日或接口异常）"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "数据已更新:"
+            git diff --stat auto/data/
+          fi
+
+      - name: 提交并推送到 main
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add auto/data/
+          DATE=$(date -u +%Y-%m-%d)
+          git commit -m "Bing Auto · 更新 ${DATE}（$(TZ=Asia/Shanghai date +%H:%M 北京时间)）"
+          git push
+          echo "✅ 推送完成，GitHub Pages 将在 1-2 分钟内更新"
