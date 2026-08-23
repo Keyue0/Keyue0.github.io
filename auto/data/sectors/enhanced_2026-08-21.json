@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-21",
+  "source": "tdx-kline (WorkBuddy 通达信口径)",
+  "hs300pct20": -0.65,
+  "note": "通达信板块指数 K 线计算（120日回撤/20日涨幅/超额）。有色金属数据来自 tdx_kline(000819, setcode=1, wantNum=130) 真实K线；沪深300基准来自 tdx_kline(000300, setcode=1)。资金与涨停条件由 fetch_data.js 自动版补充。更多板块可在 WorkBuddy 里拉取后 build_enhanced.js 批量生成。",
+  "rows": [
+    {
+      "sector": "有色金属",
+      "code": "000819",
+      "drawdown": -22.94,
+      "pct20": 11.73,
+      "excess20": 12.38,
+      "zt5": 5,
+      "fund5": 33.34,
+      "fund20": null,
+      "fundTrend": "持续流入",
+      "pass": ["低位", "资金"],
+      "level": 2,
+      "_klineDate": "20260821"
+    }
+  ]
+}

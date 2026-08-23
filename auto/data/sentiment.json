@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-08-18",
-    "limitUp": 79,
-    "limitDown": 5,
-    "topBoard": 4,
-    "ratio": 0.91,
-    "amount": 18792.64,
-    "upCount": 2431,
-    "downCount": 2663,
-    "sentiment": "修复"
-  },
-  {
-    "date": "2026-08-19",
-    "limitUp": 36,
-    "limitDown": 118,
-    "topBoard": 3,
-    "ratio": 0.91,
-    "amount": 18792.64,
-    "upCount": 2431,
-    "downCount": 2663,
-    "sentiment": "冰点"
-  },
-  {
     "date": "2026-08-20",
     "limitUp": 79,
     "limitDown": 12,
