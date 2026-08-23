@@ -35,7 +35,9 @@ const CapitalView = {
   mode: 'ref',
 
   async render(el, params) {
-    const initMode = params && params[0] === 'self' ? 'self' : 'ref';
+    // 默认自建看板（腾讯数据源，稳定可靠）；参考看板可选
+    // 兼容旧链接 #/capital-flow/ref 仍可进入参考看板
+    const initMode = params && params[0] === 'ref' ? 'ref' : 'self';
     el.innerHTML = `
       <div class="section-title"><span class="num">💰</span><h2>板块资金流向</h2></div>
       <div class="controls">

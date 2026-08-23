@@ -64,8 +64,9 @@ const LhbView = {
         </div>
       </div>` : '';
 
-    // 盘面资金小结
-    const summary = (data && data.summary) || [];
+    // 盘面资金小结（兼容字符串/数组两种格式）
+    let summary = (data && data.summary) || [];
+    if (typeof summary === 'string') summary = summary.split('\n').map(s => s.trim()).filter(Boolean);
     const summaryHtml = summary.length ? `
       <div class="card">
         <h2>盘面资金小结 <span class="tag">核心观察</span></h2>
