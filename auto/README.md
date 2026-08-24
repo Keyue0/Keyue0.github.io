@@ -56,21 +56,36 @@ node scripts/fetch_data.js --date=2026-08-20 --slot=am  # 指定某天盘中快�
 | 涨跌家数 | 东财 `push2delay ulist f104/105/106` |
 | 板块资金流 | 东财 `push2delay clist f62`（60 行业板块） |
 | 龙虎榜 | 东财 `datacenter RPT_DAILYBILLBOARD_DETAILSNEW` |
+| **龙虎榜席位明细**（买卖营业部/游资识别/拉萨） | 东财 `datacenter RPT_BILLBOARD_DAILYDETAILSBUY/SELL` |
 | **板块历史K线**（120日回撤/20日涨幅/超额） | 东财 `push2his fflow/daykline`（f62 收盘点位，多域名重试） |
 | **近5日板块涨停家数** | 东财涨停池回溯聚合（复用交易日回溯） |
 | **昨日涨停表现** | 昨日涨停池 + 腾讯批量行情（平均涨跌/红盘率/大面率） |
 
 ## 🧠 大模型深度分析（LLM 可选）
 
-默认规则化模板生成九段。**配置 LLM 后升级为 AI 深度分析**（板块主线判断/资金意图/共振背离/明日计划由大模型基于真实数据撰写）：
+## 🧠 大模型深度分析（LLM 可选，推荐开启）
 
-1. 仓库 **Settings → Secrets and variables → Actions → New repository secret** 添加：
-   - `LLM_API_KEY`：你的 API Key（DeepSeek / OpenAI 兼容均可）
-   - `LLM_BASE_URL`：可选，默认 `https://api.deepseek.com/chat/completions`
-   - `LLM_MODEL`：可选，默认 `deepseek-chat`
-2. 配置后每次 pm 运行自动调用；**未配置或调用失败自动回退规则模板**，不影响任何功能
+默认规则化模板生成九段。**配置 LLM 后升级为 AI 深度分析**（九段全部由大模型思考：局势判断/为什么/明确方向/精准止损价/丰富板块/龙虎榜解读）：
 
-> DeepSeek 申请：https://platform.deepseek.com（充 10 元够用很久）；也兼容 OpenAI / 通义 / Kimi 等 OpenAI 协议接口
+### 配置（GitHub Secrets）
+
+仓库 **Settings → Secrets and variables → Actions → New repository secret** 添加：
+
+| Name | Value | 说明 |
+|---|---|---|
+| `DEEPSEEK_API_KEY` | `sk-...` | **DeepSeek API Key**（两者填一个即可，脚本兼容） |
+| `LLM_API_KEY` | `sk-...` | 备选命名（与 DEEPSEEK_API_KEY 二选一） |
+| `LLM_MODEL` | `deepseek-v4-flash` | 可选，默认就是它（深度思考模式） |
+| `LLM_BASE_URL` | `https://api.deepseek.com/chat/completions` | 可选，默认就是这个 |
+
+> DeepSeek 申请：https://platform.deepseek.com（充 10 元够用很久）。模型 `deepseek-v4-flash` 自动启用 thinking 深度思考。
+
+### 开启后每天自动产出
+
+- **九段全部 AI 分析**（每段数据下方追加 `✨ AI 深度分析`）：局势判断、为什么走成这样、明日推演
+- **候选池 3-6 只**：每只精准买点/止损/目标价（止损-3%~-5%、目标+8%~+15%，基于收盘价推算）+ 推荐逻辑 + 触发条件 + 风险提示
+- **龙虎榜盘面解读**：LLM 生成的 3 条核心观察
+- 未配置 key 或调用失败 → 自动回退规则模板，不影响任何功能
 
 ## 🔄 跨日积累机制（对齐冰川框架）
 

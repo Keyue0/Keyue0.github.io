@@ -161,6 +161,77 @@ async function fetchLHB(dateStr) {
   return (j.result && j.result.data) || [];
 }
 
+/* ---------- 5b. 龙虎榜席位明细（买入/卖出营业部） ----------
+   识别知名游资（章盟主/方新侠/小鳄鱼/作手新一/成都系等）+ 机构专用席位 + 拉萨天团 */
+const LHB_BROKER_KNOWN = [
+  { match: '章盟主', seat: ['银河证券绍兴', '海通证券上海建国西路'] },
+  { match: '方新侠', seat: ['国泰君安南京太平南路', '华泰证券南京太平南路'] },
+  { match: '小鳄鱼', seat: ['东方财富拉萨团结路', '兴业证券福州湖东路'] },
+  { match: '作手新一', seat: ['国泰君安南京太平南路'] },
+  { match: '成都系', seat: ['成都', '天府'] },
+  { match: '量化打板', seat: ['中国中投深圳益田路', '国金证券', '上海分公司'] },
+  { match: '江苏帮', seat: ['南京', '苏州', '无锡'] },
+  { match: '浙江帮', seat: ['宁波', '杭州', '绍兴', '温州', '台州'] },
+  { match: '拉萨天团', seat: ['拉萨'] }
+];
+const LHB_BROKER_FOCUS = ['机构专用', '章盟主', '方新侠', '小鳄鱼', '作手新一', '成都系', '量化打板', '拉萨'];
+
+async function fetchLHBBrokerages(dateStr) {
+  const base = 'https://datacenter-web.eastmoney.com/api/data/v1/get?columns=ALL&filter=(TRADE_DATE%3D%27' + dateStr + '%27)&pageNumber=1&pageSize=50&source=WEB&client=WEB';
+  let buy = [], sell = [];
+  try {
+    const jb = await jget(base + '&reportName=RPT_BILLBOARD_DAILYDETAILSBUY', 'https://data.eastmoney.com/');
+    buy = (jb.result && jb.result.data) || [];
+  } catch (e) { /* 忽略 */ }
+  try {
+    const js = await jget(base + '&reportName=RPT_BILLBOARD_DAILYDETAILSSELL', 'https://data.eastmoney.com/');
+    sell = (js.result && js.result.data) || [];
+  } catch (e) { /* 忽略 */ }
+  if (!buy.length && !sell.length) return [];
+
+  // 按营业部聚合：合并买/卖
+  const seats = {};
+  buy.forEach(x => {
+    const k = x.OPERATEDEPT_NAME || '';
+    if (!k) return;
+    seats[k] = seats[k] || { name: k, buy: 0, sell: 0, stocks: [] };
+    seats[k].buy += (x.BUY || 0) / 1e8;
+    seats[k].stocks.push({ stock: (x.SECURITY_NAME_ABBR || x.SECURITY_CODE || ''), type: 'buy', amount: (x.BUY || 0) / 1e8, code: x.SECURITY_CODE || '' });
+  });
+  sell.forEach(x => {
+    const k = x.OPERATEDEPT_NAME || '';
+    if (!k) return;
+    seats[k] = seats[k] || { name: k, buy: 0, sell: 0, stocks: [] };
+    seats[k].sell += (x.SELL || 0) / 1e8;
+    seats[k].stocks.push({ stock: (x.SECURITY_NAME_ABBR || x.SECURITY_CODE || ''), type: 'sell', amount: (x.SELL || 0) / 1e8, code: x.SECURITY_CODE || '' });
+  });
+
+  // 识别知名游资名号
+  const brokerages = Object.values(seats)
+    .map(s => {
+      let alias = null;
+      LHB_BROKER_KNOWN.forEach(k => {
+        if (!alias && k.seat.some(seat => s.name.includes(seat))) alias = k.match;
+      });
+      const today = '买' + s.buy.toFixed(2) + '亿/卖' + s.sell.toFixed(2) + '亿';
+      return {
+        name: s.name, today, seat: s.name, alias,
+        trades: s.stocks.slice(0, 6),
+        focus: alias ? ('疑似 ' + alias + ' 席位') : (LHB_BROKER_FOCUS.some(f => s.name.includes(f)) ? '活跃席位' : '')
+      };
+    })
+    .sort((a, b) => (b.buy + b.sell) - (a.buy + a.sell))
+    .slice(0, 12);
+
+  // 拉萨天团（散户聚集席位）
+  const lasa = Object.values(seats)
+    .filter(s => s.name.includes('拉萨'))
+    .slice(0, 6)
+    .map(s => s.name.replace(/证券营业部|股份有限公司|证券/g, '').replace(/东方财富/g, ''));
+
+  return { brokerages, lasa };
+}
+
 /* ---------- 6. 板块历史（资金流日线接口，含收盘点位） ----------
    一个接口同时返回：120日回撤 / 20日涨幅 / 5日·20日主力净额（亿）：
    f51=日期 f52=主力净额(元) f62=收盘点位 f63=涨跌幅
@@ -376,42 +447,59 @@ function appendCapitalHistory(date, fundList) {
 
 /* ---------- 12. 大模型深度分析（LLM 调用） ----------
    把当日真实数据拼成结构化 prompt → 调 LLM（OpenAI 兼容 /chat/completions）→
-   返回需要判断力的段落（板块效应/资金解读/共振背离/明日计划）。
-   用 GitHub Actions secret：LLM_API_KEY / LLM_BASE_URL / LLM_MODEL。
+   完成九段完整思考后输出：局势分析/为什么/明确方向/精准个股止损与买点/丰富板块。
+   兼容环境变量：DEEPSEEK_API_KEY（DeepSeek 官方命名）或 LLM_API_KEY。
+   默认模型 deepseek-v4-flash（用户指定），支持 thinking/reasoning 深度思考。
    未配置 key 或调用失败 → 自动回退规则化模板（不中断）。 */
-const LLM_API_KEY = process.env.LLM_API_KEY || '';
+const LLM_API_KEY = process.env.LLM_API_KEY || process.env.DEEPSEEK_API_KEY || '';
 const LLM_BASE_URL = process.env.LLM_BASE_URL || 'https://api.deepseek.com/chat/completions';
-const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-chat';
+const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-v4-flash';
 
 async function llmAnalyze(payload) {
   if (!LLM_API_KEY) return null;
-  const prompt = `你是一位资深 A 股短线情绪周期分析师，同时精通两套方法论：
-【爱在冰川框架】短线情绪周期（冰点/修复/中枢/亢奋/退潮）九段复盘、板块效应门槛（涨停≥3家才算有效板块）、资金三分类（首次流入/连续流入/前期流出后回补）、半仓上限纪律（仓位建议最多半仓，永不建议梭哈/满仓）、不预测（用历史对照表述，不给确定性预测）、明日计划必须含具体放弃条件。
-【金融风控红线】所有推荐必须给"条件→操作→风险提示"；止损位必须明确；数据说话不编造；免责声明固定文末。
+  const prompt = `你是资深 A 股短线情绪周期分析师，精通两套方法论：
+【爱在冰川框架】短线情绪周期（冰点/修复/中枢/亢奋/退潮）九段复盘：①大盘情绪 ②次日回头看 ③板块效应 ④龙头梯队 ⑤主力资金三分类（首次流入/连续流入/前期流出后回补） ⑥板块低位右侧 ⑦共振/背离 ⑧明日计划 ⑨收尾。板块效应门槛=涨停≥3家；半仓上限纪律（最多半仓，永不梭哈）；不预测（历史对照表述）；明日计划必须含系统性+结构性放弃条件。
+【金融风控红线】推荐必须给"条件→操作→风险提示"；止损位必须明确低于买点；数据说话不编造；免责声明固定文末。
+【分析要求】你拿到的全是真实行情数据。请像人类资深交易员那样思考：先整体局势判断（为什么今天这样），再逐段推演，最后给出可执行结论。个股推荐必须给精准买点/止损/目标价（基于当日收盘价推算，止损-3%~-5%，目标+8%~+15%）。
 
-以下是 ${payload.date} 的**全部真实行情数据**（来自东财/腾讯/通达信公开接口，可放心引用）：
+以下是 ${payload.date} 的**全部真实行情数据**：
 - 指数：上证 ${payload.idx.sh ? payload.idx.sh.price + ' (' + payload.idx.sh.pct + '%)' : '--'} / 深成指 ${payload.idx.sz ? payload.idx.sz.price + ' (' + payload.idx.sz.pct + '%)' : '--'} / 创业板 ${payload.idx.cyb ? payload.idx.cyb.price + ' (' + payload.idx.cyb.pct + '%)' : '--'}，两市成交 ${payload.totalAmount} 亿
 - 涨跌家数：${payload.ud.up}涨/${payload.ud.down}跌/${payload.ud.flat}平（涨跌比 ${payload.ratio}），情绪档位 ${payload.sentiment}
 - 涨停 ${payload.limitUp} 家 / 跌停 ${payload.limitDown} 家，最高 ${payload.maxBoard} 板，连板 ${payload.chainCount} 家
 - 昨日涨停今日表现：${payload.yztPerf ? payload.yztPerf.avgPct + '%（红盘率' + payload.yztPerf.redRate + '%，大面' + payload.yztPerf.bigLossRate + '%）' : '无'}
-- 板块资金流入Top5：${payload.inTop.map(x => x.name + '+' + x.mainNet + '亿').join('、')}
+- 板块资金流入Top10：${payload.inTop.map(x => x.name + '+' + x.mainNet + '亿').join('、')}
 - 板块资金流出Top5：${payload.outTop.map(x => x.name + x.mainNet + '亿').join('、')}
 - 板块效应（涨停≥3家）：${payload.sectorEffects.map(s => s.sector + '(' + s.count + '家,最高' + s.maxBoard + '板,龙头' + (s.leaders[0] || '') + ')').join('、') || '无'}
-- 低位右侧扫描（120日回撤/20日涨幅/资金趋势）：${payload.lowRight.map(s => s.sector + '(回撤' + s.drawdown + '%,20日' + s.pct20 + '%,' + s.fundTrend + ',近5日涨停' + s.zt5 + '家)').join('、') || '无'}
+- 低位右侧扫描（120日回撤/20日涨幅/资金趋势/近5日涨停）：${payload.lowRight.map(s => s.sector + '(回撤' + s.drawdown + '%,20日' + s.pct20 + '%,' + s.fundTrend + ',涨停' + s.zt5 + '家)').join('、') || '无'}
 - 候选板块资金历史（跨日库）：${payload.history ? Object.entries(payload.history).slice(-5).map(([d, arr]) => d + ':' + arr.slice(0, 3).map(x => x.sector + x.main).join(',')).join(' | ') : '无'}
 - 龙虎榜：${payload.lhbCount} 只上榜，机构净买 ${payload.lhbInst ? payload.lhbInst.map(x => x.name + '+' + x.net + '亿').join('、') : '无'}
+- 龙虎榜游资席位：${payload.lhbBroker ? payload.lhbBroker.slice(0, 5).map(b => b.name + '(' + b.today + ')').join('、') : '无'}
 
-请先完成 9 段完整思考（大盘情绪→板块效应→龙头梯队→资金→低位右侧→共振背离），**再基于全部思考输出推荐**。以 JSON 返回（不要 markdown 代码块）：
-{"sec3":"板块效应分析：今日主线、持续性、明日预期（80-120字，口语化）","sec5":"资金解读：主力真实意图、异常信号、三分类判断（80-120字）","sec7":"共振/背离判定及依据，明确结论（60-100字）","sec8":"明日计划：仓位建议(最多半仓)+目标板块+系统性/结构性放弃条件（100-150字，含具体数字）","sec9":"一句话收尾（20-40字，带冰川标志性表达）","pools":[{"sector":"板块名","name":"个股名","code":"6位代码","buy":买点参考价,"stop":止损价,"target":目标价,"status":"观察中","note":"推荐逻辑：为什么选它+什么条件触发+风险提示（40-70字）"}],"lhb_summary":["龙虎榜盘面观察1","龙虎榜盘面观察2"]}
+请完成全部九段思考，以 JSON 返回（不要 markdown 代码块）：
+{"sec1":"大盘情绪局势分析：为什么今天走成这样+明日情绪推演（80-150字）","sec2":"次日回头看+今日信号验证（若前日有计划则验证，否则写今日关键信号）（60-120字）","sec3":"板块效应深度分析：主线是什么、为什么是它、持续性、明日预期（100-160字）","sec4":"龙头梯队研判：高度板/连板梯队结构、明日晋级预期（60-120字）","sec5":"主力资金解读：真实意图、异常信号、三分类判断、资金主线（80-140字）","sec6":"低位右侧机会：哪个板块值得低吸、为什么、风险点（80-140字）","sec7":"共振/背离判定及依据（60-100字）","sec8":"明日计划：仓位建议(最多半仓)+目标板块+系统性/结构性放弃条件（100-180字，含具体数字）","sec9":"一句话收尾（20-40字，带冰川标志性表达）","pools":[{"sector":"板块","name":"个股","code":"6位","buy":买点,"stop":止损,"target":目标,"status":"观察中/可低吸/放弃","note":"推荐逻辑(为什么+触发条件+风险)"}],"lhb_summary":["龙虎榜盘面观察1","龙虎榜盘面观察2","龙虎榜盘面观察3"]}
 
-pools 要求：最多3只，只选有数据支撑的（低位右侧扫描或板块效应中的强势方向），必须真实个股代码（从低位右侧扫描的板块中选代表，若板块无具体个股则给板块内最可能受益的方向并注明需核对），止损必须低于买点且明确，全部给触发条件+放弃条件。`;
+pools 要求：3-6只，必须从上述数据中选真实方向（低位右侧扫描优先+板块效应强势板块），每只必须给精准买点/止损/目标价（止损必须<买点，目标>买点，数字基于当日收盘价推算），note 必须含"为什么选它+什么条件触发买入+风险提示"。`;
 
   try {
+    const body = {
+      model: LLM_MODEL,
+      messages: [
+        { role: 'system', content: '你是资深A股短线情绪周期分析师（爱在冰川框架+金融风控红线）。输出必须严格基于给定数据，不编造；所有推荐给条件→操作→风险提示；仓位最多半仓；止损必须低于买点；结尾注明"框架化复盘/推演，不构成投资建议"。' },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.5,
+      max_tokens: 2500
+    };
+    // deepseek-v4-flash 深度思考模式（thinking 参数）
+    if (/deepseek/.test(LLM_MODEL)) {
+      body.reasoning_effort = 'high';
+      body.thinking = { type: 'enabled' };
+    }
     const r = await fetch(LLM_BASE_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + LLM_API_KEY },
-      body: JSON.stringify({ model: LLM_MODEL, messages: [{ role: 'user', content: prompt }], temperature: 0.5, max_tokens: 2000 }),
-      signal: AbortSignal.timeout(90000)
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(120000)
     });
     if (!r.ok) throw new Error('LLM HTTP ' + r.status);
     const j = await r.json();
@@ -419,7 +507,7 @@ pools 要求：最多3只，只选有数据支撑的（低位右侧扫描或板�
     const m = txt.match(/\{[\s\S]*\}/);
     if (!m) throw new Error('LLM 返回非 JSON');
     const parsed = JSON.parse(m[0]);
-    console.log('  ✨ LLM 深度分析已生成（' + LLM_MODEL + '）');
+    console.log('  ✨ LLM 深度分析已生成（' + LLM_MODEL + '，思考模式）');
     return parsed;
   } catch (e) {
     console.log('  ⚠️ LLM 调用失败，回退规则模板: ' + e.message);
@@ -458,15 +546,18 @@ function upsertIndex(rel, entry) {
    ============================================================ */
 async function runDay(td, isAm) {
   /* --- 拉取全部数据 --- */
-  const [ztList, dtList, idx, ud, fundList, lhbList, yztPerf] = await Promise.all([
+  const [ztList, dtList, idx, ud, fundList, lhbList, yztPerf, lhbSeats] = await Promise.all([
     fetchZT(td.compact),
     fetchDT(td.compact),
     fetchIndex(),
     fetchUpDown(),
     fetchSectorFund(),
     fetchLHB(td.date).catch(() => []),
-    isAm ? Promise.resolve(null) : fetchYesterdayZTPerf(td.date).catch(() => null)
+    isAm ? Promise.resolve(null) : fetchYesterdayZTPerf(td.date).catch(() => null),
+    isAm ? Promise.resolve({ brokerages: [], lasa: [] }) : fetchLHBBrokerages(td.date).catch(() => ({ brokerages: [], lasa: [] }))
   ]);
+  const lhbBrokerages = (lhbSeats && lhbSeats.brokerages) || [];
+  const lhbLasa = (lhbSeats && lhbSeats.lasa) || [];
 
   const limitUp = ztList.length;
   const limitDown = dtList.length;
@@ -738,8 +829,8 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
       sector: (x.EXPLAIN || '').split('，')[0] || '', note: x.EXPLAIN || ''
     }));
 
-  /* --- LLM 深度分析（配置 LLM_API_KEY 时启用；失败自动回退规则模板） ---
-     LLM 完成九段思考后，额外生成候选池（含买点/止损/目标）与龙虎榜解读 */
+  /* --- LLM 深度分析（配置 LLM_API_KEY / DEEPSEEK_API_KEY 时启用；失败自动回退规则模板） ---
+     LLM 完成九段思考后，覆盖全部九段 + 生成候选池（含买点/止损/目标）与龙虎榜解读 */
   let llmPools = null;
   let llmLhbSummary = null;
   if (!isAm && LLM_API_KEY) {
@@ -748,13 +839,15 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
       limitUp, limitDown, maxBoard, chainCount, yztPerf,
       inTop, outTop, sectorEffects, lowRight, lhbCount: lhbList.length,
       history: loadCapitalHistory(),
-      lhbInst: institutions
+      lhbInst: institutions,
+      lhbBroker: lhbBrokerages
     });
     if (llm) {
-      const idxMap = { sec3: 2, sec5: 4, sec7: 6, sec8: 7, sec9: 8 };
-      Object.entries(idxMap).forEach(([k, i]) => {
+      // 覆盖全部九段（LLM 深度思考替代规则模板；保留数据段规则模板，LLM 段追加在其后）
+      const secMap = { sec1: 0, sec2: 1, sec3: 2, sec4: 3, sec5: 4, sec6: 5, sec7: 6, sec8: 7, sec9: 8 };
+      Object.entries(secMap).forEach(([k, i]) => {
         if (llm[k] && typeof llm[k] === 'string' && llm[k].trim()) {
-          sections[i] = { title: sections[i].title, content: llm[k].trim() };
+          sections[i] = { title: sections[i].title, content: sections[i].content + '\n\n### ✨ AI 深度分析\n' + llm[k].trim() };
         }
       });
       if (Array.isArray(llm.pools) && llm.pools.length) llmPools = llm.pools;
@@ -882,24 +975,27 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
   });
   upsertIndex('pools/index.json', { date: td.date });
 
-  // 7. lhb 龙虎榜（summary 改为数组格式，兼容前端渲染；LLM 有解读则优先）
-  // 龙虎榜盘面小结（数组格式）：LLM 深度解读优先，否则机构数据规则生成
+  // 7. lhb 龙虎榜（席位明细 + 机构 + 拉萨 + LLM 解读）
   let lhbSummary = llmLhbSummary || [];
   if (!lhbSummary.length) {
     if (institutions.length) {
       lhbSummary.push(`机构净买入居前 **${institutions[0].name}**（+${institutions[0].net.toFixed(2)}亿）、**${institutions[1] ? institutions[1].name + '（+' + institutions[1].net.toFixed(2) + '亿）' : ''}**——机构龙虎榜合计净买 ${institutions.reduce((s, x) => s + x.net, 0).toFixed(2)} 亿（东财口径）`);
       lhbSummary.push(`上榜${lhbList.length}只，机构方向与当日强势板块${institutions[0] ? '（' + institutions[0].sector + '）' : ''}是否同源，需结合板块资金交叉验证`);
     }
+    if (lhbBrokerages.length) {
+      const known = lhbBrokerages.filter(b => b.alias);
+      if (known.length) lhbSummary.push(`游资席位：${known.map(b => b.alias + '（' + b.today + '）').join('、')}——关注其买入方向是否与主线板块同源`);
+    }
     if (!lhbSummary.length) lhbSummary.push('龙虎榜暂无机构净买入数据（东财接口当日无机构上榜或数据未更新）');
   }
   writeJson(`lhb/${td.date}.json`, {
     date: td.date,
     institutions,
-    brokerages: [],
+    brokerages: lhbBrokerages,
     hotspots: [],
     summary: lhbSummary,
-    lasa: [],
-    note: '来源：东财 datacenter RPT_DAILYBILLBOARD_DETAILSNEW（云端自动）。游资名号/席位映射需本地精修或 LLM 深度解读补充。'
+    lasa: lhbLasa,
+    note: '来源：东财 datacenter RPT_DAILYBILLBOARD_DETAILSNEW + RPT_BILLBOARD_DAILYDETAILSBUY/SELL（云端自动）。游资名号为席位相似度推断（标注参考），精修以人工核实为准。'
   });
   upsertIndex('lhb/index.json', { date: td.date });
 
