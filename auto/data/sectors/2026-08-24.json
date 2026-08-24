@@ -3,5 +3,122 @@
   "source": "eastmoney-fflow-daykline",
   "hs300pct20": -2.9622982160287377,
   "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
-  "rows": []
+  "rows": [
+    {
+      "sector": "工业金属",
+      "code": "BK1287",
+      "drawdown": -22.079022894273898,
+      "pct20": 9.637639428979284,
+      "excess20": 12.6,
+      "zt5": 4,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位",
+        "情绪"
+      ],
+      "level": 2
+    },
+    {
+      "sector": "贵金属",
+      "code": "BK0732",
+      "drawdown": -14.419143477858928,
+      "pct20": 39.83280465239228,
+      "excess20": 42.8,
+      "zt5": 3,
+      "fund5": 72.66,
+      "fund20": 56.18,
+      "fundTrend": "连续流入",
+      "pass": [
+        "资金",
+        "情绪"
+      ],
+      "level": 2
+    },
+    {
+      "sector": "有色金属",
+      "code": "BK0478",
+      "drawdown": -22.079022894273898,
+      "pct20": 9.637639428979284,
+      "excess20": 12.6,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "煤炭开采",
+      "code": "BK1250",
+      "drawdown": -9.294831444957339,
+      "pct20": 8.61261449882229,
+      "excess20": 11.57,
+      "zt5": 3,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "情绪"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "钼",
+      "code": "BK1623",
+      "drawdown": -22.079022894273898,
+      "pct20": 9.637639428979284,
+      "excess20": 12.6,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "煤炭",
+      "code": "BK0437",
+      "drawdown": -9.294831444957339,
+      "pct20": 8.61261449882229,
+      "excess20": 11.57,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "蓄电池及其他电池",
+      "code": "BK1306",
+      "drawdown": -8.12447185314371,
+      "pct20": -0.6930078308330331,
+      "excess20": 2.27,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "无机盐",
+      "code": "BK1422",
+      "drawdown": -2.1313422276127,
+      "pct20": 4.549861324491681,
+      "excess20": 7.51,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
 }
