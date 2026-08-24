@@ -235,9 +235,57 @@ async function fetchLHBBrokerages(dateStr) {
 /* ---------- 6. 板块历史（资金流日线接口，含收盘点位） ----------
    一个接口同时返回：120日回撤 / 20日涨幅 / 5日·20日主力净额（亿）：
    f51=日期 f52=主力净额(元) f62=收盘点位 f63=涨跌幅
-   多域名轮换 + 重试（本地网络对 push2his CDN 偶发不稳定，Actions 环境通常正常） */
-const HIST_HOSTS = ['push2his.eastmoney.com', '1.push2his.eastmoney.com', '63.push2his.eastmoney.com'];
-async function fetchSectorHist(secid, tries = 3) {
+   多域名轮换 + 重试（本地网络对 push2his CDN 偶发不稳定，Actions 环境通常正常）
+   备用通道：腾讯 web.ifzq.gtimg.cn 板块K线（Actions 环境可达，push2his 000 时自动切换） */
+const HIST_HOSTS = [
+  'push2his.eastmoney.com',
+  '1.push2his.eastmoney.com',
+  '63.push2his.eastmoney.com',
+  'push2his.eastmoney.com'
+];
+
+/* 腾讯备用通道：板块名 → 通达信 sh 板块指数代码（Actions 环境 push2his 不可达时使用） */
+const TX_BOARD_CODE = {
+  '有色金属': 'sh000819', '食品饮料': 'sh000807', '煤炭': 'sh000820', '电子': 'sh000851',
+  '医药生物': 'sh000808', '计算机': 'sh000827', '汽车': 'sh000806', '机械': 'sh000814',
+  '电力设备': 'sh000812', '建筑材料': 'sh000813', '石油石化': 'sh000821', '公用事业': 'sh000825',
+  '基础化工': 'sh000826', '钢铁': 'sh000828', '交通运输': 'sh000829', '纺织服饰': 'sh000831',
+  '房地产': 'sh000833', '军工': 'sh000839', '环保': 'sh000840', '机械设备': 'sh000841',
+  '通信': 'sh000843', '银行': 'sh000846', '通信设备': 'sh000850', '半导体': 'sh000852',
+  '证券': 'sh000853', '保险': 'sh000854', '光伏': 'sh000856', '电池': 'sh000857',
+  '风电': 'sh000859', '工程机械': 'sh000860', '有色金属/贵金属': 'sh000819', '工业金属': 'sh000819',
+  '贵金属': 'sh000819', '白酒': 'sh000858', '白酒Ⅱ': 'sh000858', '蓄电池及其他电池': 'sh000857',
+  '无机盐': 'sh000826', '钼': 'sh000819', '煤炭开采': 'sh000820', '化学制药': 'sh000808',
+  '中药': 'sh000808', '创新药': 'sh000808', '机器人': 'sh000814', '人工智能': 'sh000827',
+  '算力': 'sh000851', 'CPO': 'sh000851', '光模块': 'sh000851'
+};
+
+/* 腾讯板块K线备用通道：计算回撤/涨幅（无资金流数据，仅 K 线指标） */
+async function fetchTxSectorHist(sectorName) {
+  const code = TX_BOARD_CODE[sectorName];
+  if (!code) return null;
+  try {
+    const j = await jget(`https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=${code},day,,,130,qfq`, 'https://gu.qq.com/');
+    const k = Object.keys(j.data || {})[0];
+    const day = (j.data && j.data[k] && j.data[k].day) || [];
+    if (day.length < 25) return null;
+    // day 格式: [日期, 开盘, 收盘, 最高, 最低, 成交量]
+    const closes = day.map(x => parseFloat(x[2]));
+    const highs = day.map(x => parseFloat(x[3]));
+    const last = closes[closes.length - 1];
+    const hi120 = Math.max(...highs.slice(-120));
+    const close20ago = closes[closes.length - 21];
+    return {
+      drawdown: last > 0 && hi120 > 0 ? +(last - hi120) / hi120 * 100 : null,
+      pct20: close20ago > 0 ? +(last - close20ago) / close20ago * 100 : null,
+      fund5: null, fund20: null, fund5Daily: null,
+      source: 'tencent'
+    };
+  } catch (e) { return null; }
+}
+
+async function fetchSectorHist(secid, tries = 4, sectorName) {
+  let lastErr = null;
   for (let t = 0; t < tries; t++) {
     for (const host of HIST_HOSTS) {
       try {
@@ -257,19 +305,37 @@ async function fetchSectorHist(secid, tries = 3) {
             fund5Daily: mains.slice(-5).map(v => +(v / 1e8).toFixed(2))                // 最近5日每日主力净额(亿)
           };
         }
-      } catch (e) { /* 换域名 */ }
+      } catch (e) { lastErr = e; /* 换域名 */ }
       await sleep(400);
     }
     await sleep(800);
   }
+  // 东财失败 → 腾讯备用通道
+  if (sectorName) {
+    const tx = await fetchTxSectorHist(sectorName);
+    if (tx) { console.log('  ℹ️ ' + sectorName + ' 用腾讯备用K线'); return tx; }
+  }
+  console.log('  ⚠️ fetchSectorHist 失败 ' + secid + ': ' + (lastErr ? lastErr.message : '无数据'));
   return null;
 }
 
-/* 沪深300 近20日涨幅（超额收益基准，只拉一次） */
+/* 沪深300 近20日涨幅（超额收益基准，只拉一次；东财失败用腾讯 sh000300） */
 let _hs300 = null;
 async function fetchHS300() {
   if (_hs300 !== null) return _hs300;
-  const h = await fetchSectorHist('1.000300');
+  let h = await fetchSectorHist('1.000300');
+  if (!h) {
+    try {
+      const j = await jget('https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000300,day,,,130,qfq', 'https://gu.qq.com/');
+      const day = (j.data && j.data.sh000300 && j.data.sh000300.day) || [];
+      if (day.length >= 25) {
+        const closes = day.map(x => parseFloat(x[2]));
+        const last = closes[closes.length - 1];
+        const ago = closes[closes.length - 21];
+        h = { pct20: ago > 0 ? +(last - ago) / ago * 100 : null };
+      }
+    } catch (e) { /* 忽略 */ }
+  }
   _hs300 = h ? h.pct20 : null;
   return _hs300;
 }
@@ -634,7 +700,7 @@ async function runDay(td, isAm) {
   const lowRight = [];
   if (!isAm) {   // 盘中快照不做历史扫描（快速存档）
     for (const s of scanSectors.slice(0, 12)) {
-      const hist = await fetchSectorHist('90.' + s.code);
+      const hist = await fetchSectorHist('90.' + s.code, 4, s.name);
       if (!hist) continue;
       const zt5 = ztCount5[s.name] || 0;
       const pass = [];
@@ -753,7 +819,7 @@ ${outTop.map((x, i) => `| ${i + 1} | ${x.name} | **${x.mainNet.toFixed(2)}** | $
 
 | 板块 | 5日资金(亿) | 20日资金(亿) | 趋势 |
 |---|---|---|---|
-${(lowRight.length ? lowRight.slice(0, 8) : fundList.sort((a, b) => b.mainNet - a.mainNet).slice(0, 8)).map(s => `| ${s.sector} | ${s.fund5 >= 0 ? '+' : ''}${s.fund5} | ${s.fund20 >= 0 ? '+' : ''}${s.fund20} | ${s.fundTrend || '—'} |`).join('\n')}
+${(lowRight.length ? lowRight.slice(0, 8) : fundList.sort((a, b) => b.mainNet - a.mainNet).slice(0, 8)).map(s => `| ${s.sector} | ${s.fund5 != null ? (s.fund5 >= 0 ? '+' : '') + s.fund5 : '--'} | ${s.fund20 != null ? (s.fund20 >= 0 ? '+' : '') + s.fund20 : '--'} | ${s.fundTrend || '—'} |`).join('\n')}
 
 > 资金判断：${inTop[0] ? '**' + inTop[0].name + '** 净流入 ' + inTop[0].mainNet.toFixed(2) + ' 亿居首' : '资金面整体偏弱'}；${outTop[0] ? '**' + outTop[0].name + '** 净流出 ' + Math.abs(outTop[0].mainNet).toFixed(2) + ' 亿居前' : ''}。
 > 口径标注：板块主力净流入来自东财 push2delay 板块资金流接口，与通达信 zjlx 个股口径近似，数值略有差异。`;
@@ -765,7 +831,7 @@ ${(lowRight.length ? lowRight.slice(0, 8) : fundList.sort((a, b) => b.mainNet - 
 
 | 板块 | 120日回撤 | 20日涨幅 | 超额(vs沪深300) | 近5日涨停 | 5日资金(亿) | 20日资金(亿) | 资金趋势 | 通过条件 |
 |---|---|---|---|---|---|---|---|---|
-${lowRight.map(s => `| ${s.sector} | **${s.drawdown != null ? s.drawdown.toFixed(1) + '%' : '--'}** | ${s.pct20 != null ? (s.pct20 >= 0 ? '+' : '') + s.pct20.toFixed(1) + '%' : '--'} | ${s.excess20 != null ? (s.excess20 >= 0 ? '+' : '') + s.excess20.toFixed(1) + '%' : '--'} | ${s.zt5} | ${s.fund5 >= 0 ? '+' : ''}${s.fund5} | ${s.fund20 >= 0 ? '+' : ''}${s.fund20} | ${s.fundTrend || '—'} | ${s.pass.length ? s.pass.join('+') : '—'} |`).join('\n')}
+${lowRight.map(s => `| ${s.sector} | **${s.drawdown != null ? s.drawdown.toFixed(1) + '%' : '--'}** | ${s.pct20 != null ? (s.pct20 >= 0 ? '+' : '') + s.pct20.toFixed(1) + '%' : '--'} | ${s.excess20 != null ? (s.excess20 >= 0 ? '+' : '') + s.excess20.toFixed(1) + '%' : '--'} | ${s.zt5} | ${s.fund5 != null ? (s.fund5 >= 0 ? '+' : '') + s.fund5 : '--'} | ${s.fund20 != null ? (s.fund20 >= 0 ? '+' : '') + s.fund20 : '--'} | ${s.fundTrend || '—'} | ${s.pass.length ? s.pass.join('+') : '—'} |`).join('\n')}
 
 > 机会判断：${(() => { const lv3 = lowRight.filter(s => s.level === 3); const lv2 = lowRight.filter(s => s.level === 2); if (lv3.length) return `**${lv3.map(s => s.sector).join('、')}** 三重共振（低位+资金+情绪），是唯一值得加入明日低吸候选池的方向`; if (lv2.length) return `**${lv2.map(s => s.sector).join('、')}** 通过两重条件（${lv2[0].pass.join('+')}），次选关注，等第三重确认`; return '**无板块通过三重条件**，市场暂无低位右侧共振方向，不参与'; })()}
 > 口径标注：板块历史来自东财资金流日线接口（f62 收盘点位计算回撤/涨幅），与通达信 880/881 板块指数口径略有差异；近5日涨停为东财涨停池回溯口径。` 
