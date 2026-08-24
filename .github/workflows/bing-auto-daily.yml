@@ -45,8 +45,22 @@ jobs:
         with:
           node-version: '22'
 
+      - name: 诊断 LLM 配置与接口连通性（不泄露 key）
+        run: |
+          echo "LLM_API_KEY: ${{ secrets.LLM_API_KEY != '' && '已配置' || '未配置' }}"
+          echo "DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY != '' && '已配置' || '未配置' }}"
+          echo "LLM_MODEL: ${{ secrets.LLM_MODEL || '默认 deepseek-v4-flash' }}"
+          echo "LLM_BASE_URL: ${{ secrets.LLM_BASE_URL || '默认 api.deepseek.com' }}"
+          echo "--- push2his 连通性探测 ---"
+          curl -s --connect-timeout 6 --max-time 10 -o /dev/null -w "push2his HTTP %{http_code}\n" "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?lmt=2&klt=101&secid=90.BK0478&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65" || echo "push2his 不可达（第6段将降级，改用 WorkBuddy enhanced 数据）"
+
       - name: 运行数据脚本（auto/scripts/fetch_data.js）
         working-directory: auto
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
         run: |
           SLOT="${{ github.event.inputs.slot || 'pm' }}"
           LOOKBACK="${{ github.event.inputs.lookback || '1' }}"
