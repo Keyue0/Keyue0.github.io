@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-26",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": 0.011086329903097178,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "工业金属",
+      "code": "BK1287",
+      "drawdown": -18.740018695005823,
+      "pct20": 10.482615342768959,
+      "excess20": 10.47,
+      "zt5": 7,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位",
+        "情绪"
+      ],
+      "level": 2
+    },
+    {
+      "sector": "有色金属",
+      "code": "BK0478",
+      "drawdown": -18.740018695005823,
+      "pct20": 10.482615342768959,
+      "excess20": 10.47,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "电力设备",
+      "code": "BK1200",
+      "drawdown": -21.784240367184797,
+      "pct20": 0.19909433874520893,
+      "excess20": 0.19,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "计算机",
+      "code": "BK1207",
+      "drawdown": -20.64807348293154,
+      "pct20": 2.1629007332979313,
+      "excess20": 2.15,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    }
+  ]
+}
