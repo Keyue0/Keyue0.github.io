@@ -1087,726 +1087,726 @@
   ],
   "2026-08-25": [
     {
-      "sector": "有色金属",
-      "code": "BK0478",
-      "main": 71.52,
-      "pct": 1.93
-    },
-    {
       "sector": "工业金属",
       "code": "BK1287",
-      "main": 69.02,
-      "pct": 3.3
+      "main": 71.15,
+      "pct": 2.92
     },
     {
       "sector": "铜",
       "code": "BK1615",
-      "main": 57.37,
-      "pct": 5.89
+      "main": 59.81,
+      "pct": 5.16
     },
     {
       "sector": "非银金融",
       "code": "BK1203",
-      "main": 48.08,
-      "pct": 2.57
+      "main": 57.85,
+      "pct": 2.6
+    },
+    {
+      "sector": "有色金属",
+      "code": "BK0478",
+      "main": 54.42,
+      "pct": 1.17
     },
     {
       "sector": "证券Ⅲ",
       "code": "BK1366",
-      "main": 42.71,
-      "pct": 2.92
+      "main": 49.24,
+      "pct": 3.01
     },
     {
       "sector": "证券Ⅱ",
       "code": "BK0473",
-      "main": 42.71,
-      "pct": 2.92
+      "main": 49.24,
+      "pct": 3.01
     },
     {
       "sector": "电力设备",
       "code": "BK1200",
-      "main": 32.81,
-      "pct": 1.13
+      "main": 23.77,
+      "pct": 0.42
+    },
+    {
+      "sector": "消费电子",
+      "code": "BK1037",
+      "main": 19.3,
+      "pct": -0.17
+    },
+    {
+      "sector": "消费电子零部件及组装",
+      "code": "BK1338",
+      "main": 19.16,
+      "pct": -0.17
     },
     {
       "sector": "印制电路板",
       "code": "BK1340",
-      "main": 15.18,
-      "pct": 0.25
-    },
-    {
-      "sector": "计算机",
-      "code": "BK1207",
-      "main": 14.08,
-      "pct": 0.39
-    },
-    {
-      "sector": "电网设备",
-      "code": "BK0457",
-      "main": 13.88,
-      "pct": 0.88
-    },
-    {
-      "sector": "通信终端及配件",
-      "code": "BK1593",
-      "main": 13.07,
-      "pct": 1.45
-    },
-    {
-      "sector": "垂直应用软件",
-      "code": "BK1447",
-      "main": 12.13,
-      "pct": 0.57
-    },
-    {
-      "sector": "元件",
-      "code": "BK0459",
-      "main": 11.62,
-      "pct": 0.25
-    },
-    {
-      "sector": "软件开发",
-      "code": "BK0737",
-      "main": 11.48,
-      "pct": 0.31
-    },
-    {
-      "sector": "电池",
-      "code": "BK1033",
-      "main": 11.21,
-      "pct": 1.82
-    },
-    {
-      "sector": "集成电路制造",
-      "code": "BK1329",
-      "main": 9.39,
-      "pct": 2.57
-    },
-    {
-      "sector": "线缆部件及其他",
-      "code": "BK1312",
-      "main": 9.33,
-      "pct": 1.5
-    },
-    {
-      "sector": "半导体设备",
-      "code": "BK1326",
-      "main": 8.49,
-      "pct": 2.43
+      "main": 18.65,
+      "pct": -0.32
     },
     {
       "sector": "电子",
       "code": "BK1201",
-      "main": 8.05,
-      "pct": 0.41
+      "main": 17.1,
+      "pct": -0.21
     },
     {
-      "sector": "基础化工",
-      "code": "BK1206",
-      "main": 7.85,
-      "pct": 0.66
+      "sector": "通信终端及配件",
+      "code": "BK1593",
+      "main": 14.8,
+      "pct": 0.78
     },
     {
-      "sector": "铝",
-      "code": "BK1613",
-      "main": 6.1,
-      "pct": 1.69
+      "sector": "电网设备",
+      "code": "BK0457",
+      "main": 14.53,
+      "pct": 0.35
     },
     {
-      "sector": "铅锌",
-      "code": "BK1614",
-      "main": 5.56,
-      "pct": 3.69
+      "sector": "垂直应用软件",
+      "code": "BK1447",
+      "main": 14.1,
+      "pct": 0.08
     },
     {
-      "sector": "计算机设备",
-      "code": "BK0735",
-      "main": 5.32,
-      "pct": 0.31
-    },
-    {
-      "sector": "电池化学品",
-      "code": "BK1302",
-      "main": 5.3,
-      "pct": 1.91
-    },
-    {
-      "sector": "锂电池",
-      "code": "BK1303",
-      "main": 5.29,
-      "pct": 1.71
-    },
-    {
-      "sector": "保险Ⅲ",
-      "code": "BK1358",
-      "main": 5,
-      "pct": 1.28
-    },
-    {
-      "sector": "保险Ⅱ",
-      "code": "BK0474",
-      "main": 5,
-      "pct": 1.28
-    },
-    {
-      "sector": "疫苗",
-      "code": "BK1598",
-      "main": 4.89,
-      "pct": 4.2
-    },
-    {
-      "sector": "农化制品",
-      "code": "BK0731",
-      "main": 4.83,
-      "pct": 1.63
-    },
-    {
-      "sector": "环保",
-      "code": "BK0728",
-      "main": 4.66,
-      "pct": 1.17
-    },
-    {
-      "sector": "航空装备Ⅲ",
-      "code": "BK1384",
-      "main": 4.6,
-      "pct": 1.66
-    },
-    {
-      "sector": "航空装备Ⅱ",
-      "code": "BK1231",
-      "main": 4.6,
-      "pct": 1.66
-    },
-    {
-      "sector": "其他自动化设备",
-      "code": "BK1410",
-      "main": 4.38,
-      "pct": 0.05
-    },
-    {
-      "sector": "轻工制造",
-      "code": "BK1212",
-      "main": 4.29,
-      "pct": 1.02
-    },
-    {
-      "sector": "其他计算机设备",
-      "code": "BK1446",
-      "main": 4.25,
-      "pct": 0.51
-    },
-    {
-      "sector": "仪器仪表",
-      "code": "BK0458",
-      "main": 4.23,
-      "pct": 0.45
-    },
-    {
-      "sector": "其他电源设备Ⅱ",
-      "code": "BK1034",
-      "main": 4.22,
-      "pct": 0.82
-    },
-    {
-      "sector": "能源金属",
-      "code": "BK1015",
-      "main": 4.22,
-      "pct": 2.53
-    },
-    {
-      "sector": "光伏设备",
-      "code": "BK1031",
-      "main": 3.97,
-      "pct": 1.39
-    },
-    {
-      "sector": "输变电设备",
-      "code": "BK1311",
-      "main": 3.87,
-      "pct": 1.01
-    },
-    {
-      "sector": "逆变器",
-      "code": "BK1320",
-      "main": 3.82,
-      "pct": 3.05
-    },
-    {
-      "sector": "其他电源设备Ⅲ",
-      "code": "BK1322",
-      "main": 3.66,
-      "pct": 0.64
-    },
-    {
-      "sector": "环境治理",
-      "code": "BK1235",
-      "main": 3.47,
-      "pct": 1.03
-    },
-    {
-      "sector": "光学元件",
-      "code": "BK1334",
-      "main": 3.46,
-      "pct": 0.29
-    },
-    {
-      "sector": "氮肥",
-      "code": "BK1432",
-      "main": 3.45,
-      "pct": 2.39
-    },
-    {
-      "sector": "公用事业",
-      "code": "BK0427",
-      "main": 3.44,
-      "pct": 0.99
+      "sector": "元件",
+      "code": "BK0459",
+      "main": 14.07,
+      "pct": -0.33
     },
     {
       "sector": "电力",
       "code": "BK0428",
-      "main": 3.41,
-      "pct": 1.12
+      "main": 13.39,
+      "pct": 1.51
     },
     {
-      "sector": "生物制品",
-      "code": "BK1044",
-      "main": 3.33,
-      "pct": 0.72
+      "sector": "公用事业",
+      "code": "BK0427",
+      "main": 13.15,
+      "pct": 1.23
     },
     {
-      "sector": "底盘与发动机系统",
-      "code": "BK1526",
-      "main": 3.22,
-      "pct": 0.44
+      "sector": "半导体设备",
+      "code": "BK1326",
+      "main": 12.79,
+      "pct": 1.71
     },
     {
-      "sector": "汽车零部件",
-      "code": "BK0481",
-      "main": 2.92,
-      "pct": 0.33
+      "sector": "软件开发",
+      "code": "BK0737",
+      "main": 12.1,
+      "pct": -0.22
     },
     {
-      "sector": "化学制剂",
-      "code": "BK1594",
-      "main": 2.79,
-      "pct": 0.13
+      "sector": "集成电路制造",
+      "code": "BK1329",
+      "main": 11.53,
+      "pct": 1.51
     },
     {
-      "sector": "锂",
-      "code": "BK1621",
-      "main": 2.61,
-      "pct": 2.4
+      "sector": "计算机",
+      "code": "BK1207",
+      "main": 11.5,
+      "pct": -0.15
     },
     {
-      "sector": "汽车",
-      "code": "BK1211",
-      "main": 2.49,
-      "pct": 0.38
+      "sector": "基础化工",
+      "code": "BK1206",
+      "main": 11.18,
+      "pct": 0.4
     },
     {
-      "sector": "非金属材料Ⅲ",
-      "code": "BK1411",
-      "main": 2.43,
-      "pct": 1.36
+      "sector": "保险Ⅲ",
+      "code": "BK1358",
+      "main": 9.81,
+      "pct": 2.19
     },
     {
-      "sector": "非金属材料Ⅱ",
-      "code": "BK1020",
-      "main": 2.43,
-      "pct": 1.36
+      "sector": "保险Ⅱ",
+      "code": "BK0474",
+      "main": 9.81,
+      "pct": 2.19
+    },
+    {
+      "sector": "线缆部件及其他",
+      "code": "BK1312",
+      "main": 9.34,
+      "pct": 0.93
+    },
+    {
+      "sector": "铝",
+      "code": "BK1613",
+      "main": 6.41,
+      "pct": 1.55
+    },
+    {
+      "sector": "疫苗",
+      "code": "BK1598",
+      "main": 5.67,
+      "pct": 4.12
+    },
+    {
+      "sector": "农化制品",
+      "code": "BK0731",
+      "main": 5.64,
+      "pct": 1.68
+    },
+    {
+      "sector": "计算机设备",
+      "code": "BK0735",
+      "main": 5.55,
+      "pct": -0.12
+    },
+    {
+      "sector": "仪器仪表",
+      "code": "BK0458",
+      "main": 5.47,
+      "pct": -0.22
+    },
+    {
+      "sector": "光学元件",
+      "code": "BK1334",
+      "main": 5.15,
+      "pct": -0.44
+    },
+    {
+      "sector": "风力发电",
+      "code": "BK1374",
+      "main": 5.08,
+      "pct": 1.79
+    },
+    {
+      "sector": "其他电源设备Ⅱ",
+      "code": "BK1034",
+      "main": 4.99,
+      "pct": 0.16
+    },
+    {
+      "sector": "铅锌",
+      "code": "BK1614",
+      "main": 4.94,
+      "pct": 3.17
+    },
+    {
+      "sector": "航空装备Ⅲ",
+      "code": "BK1384",
+      "main": 4.87,
+      "pct": 0.78
+    },
+    {
+      "sector": "航空装备Ⅱ",
+      "code": "BK1231",
+      "main": 4.87,
+      "pct": 0.78
+    },
+    {
+      "sector": "环保",
+      "code": "BK0728",
+      "main": 4.86,
+      "pct": 0.83
+    },
+    {
+      "sector": "其他电源设备Ⅲ",
+      "code": "BK1322",
+      "main": 4.68,
+      "pct": -0.06
     },
     {
       "sector": "模拟芯片设计",
       "code": "BK1330",
-      "main": 2.43,
-      "pct": 0.3
+      "main": 4.61,
+      "pct": -0.14
+    },
+    {
+      "sector": "其他自动化设备",
+      "code": "BK1410",
+      "main": 4.58,
+      "pct": -0.49
+    },
+    {
+      "sector": "输变电设备",
+      "code": "BK1311",
+      "main": 4.57,
+      "pct": 0.44
+    },
+    {
+      "sector": "电池",
+      "code": "BK1033",
+      "main": 4.54,
+      "pct": 1.02
+    },
+    {
+      "sector": "其他专用设备",
+      "code": "BK1405",
+      "main": 4.53,
+      "pct": -0.13
+    },
+    {
+      "sector": "电池化学品",
+      "code": "BK1302",
+      "main": 4.16,
+      "pct": 1.05
+    },
+    {
+      "sector": "轻工制造",
+      "code": "BK1212",
+      "main": 4.15,
+      "pct": 0.54
+    },
+    {
+      "sector": "逆变器",
+      "code": "BK1320",
+      "main": 3.84,
+      "pct": 1.87
+    },
+    {
+      "sector": "氮肥",
+      "code": "BK1432",
+      "main": 3.83,
+      "pct": 2.65
+    },
+    {
+      "sector": "其他计算机设备",
+      "code": "BK1446",
+      "main": 3.81,
+      "pct": 0.12
+    },
+    {
+      "sector": "生物制品",
+      "code": "BK1044",
+      "main": 3.8,
+      "pct": 0.9
+    },
+    {
+      "sector": "火力发电",
+      "code": "BK1377",
+      "main": 3.72,
+      "pct": 1.38
     },
     {
       "sector": "热力服务",
       "code": "BK1379",
-      "main": 2.15,
-      "pct": 1.63
+      "main": 3.68,
+      "pct": 1.84
     },
     {
-      "sector": "小金属",
-      "code": "BK1027",
-      "main": 2,
-      "pct": 1.38
+      "sector": "化学制剂",
+      "code": "BK1594",
+      "main": 3.59,
+      "pct": 0.32
     },
     {
-      "sector": "造纸",
-      "code": "BK1267",
-      "main": 1.83,
-      "pct": 2.56
+      "sector": "化学制品",
+      "code": "BK0538",
+      "main": 3.3,
+      "pct": -0.01
     },
     {
-      "sector": "固废治理",
-      "code": "BK1389",
-      "main": 1.71,
-      "pct": 1.35
+      "sector": "环境治理",
+      "code": "BK1235",
+      "main": 3.27,
+      "pct": 0.7
+    },
+    {
+      "sector": "医疗器械",
+      "code": "BK1041",
+      "main": 3.02,
+      "pct": 0.46
+    },
+    {
+      "sector": "能源金属",
+      "code": "BK1015",
+      "main": 2.99,
+      "pct": 1.67
+    },
+    {
+      "sector": "汽车零部件",
+      "code": "BK0481",
+      "main": 2.95,
+      "pct": -0.01
+    },
+    {
+      "sector": "底盘与发动机系统",
+      "code": "BK1526",
+      "main": 2.87,
+      "pct": 0
+    },
+    {
+      "sector": "非金属材料Ⅲ",
+      "code": "BK1411",
+      "main": 2.75,
+      "pct": 0.97
+    },
+    {
+      "sector": "非金属材料Ⅱ",
+      "code": "BK1020",
+      "main": 2.75,
+      "pct": 0.97
     }
   ],
   "2026-08-26": [
     {
-      "sector": "有色金属",
-      "code": "BK0478",
-      "main": 71.52,
-      "pct": 1.93
-    },
-    {
       "sector": "工业金属",
       "code": "BK1287",
-      "main": 69.02,
-      "pct": 3.3
+      "main": 71.15,
+      "pct": 2.92
     },
     {
       "sector": "铜",
       "code": "BK1615",
-      "main": 57.37,
-      "pct": 5.89
+      "main": 59.81,
+      "pct": 5.16
     },
     {
       "sector": "非银金融",
       "code": "BK1203",
-      "main": 48.08,
-      "pct": 2.57
+      "main": 57.85,
+      "pct": 2.6
+    },
+    {
+      "sector": "有色金属",
+      "code": "BK0478",
+      "main": 54.42,
+      "pct": 1.17
     },
     {
       "sector": "证券Ⅲ",
       "code": "BK1366",
-      "main": 42.71,
-      "pct": 2.92
+      "main": 49.24,
+      "pct": 3.01
     },
     {
       "sector": "证券Ⅱ",
       "code": "BK0473",
-      "main": 42.71,
-      "pct": 2.92
+      "main": 49.24,
+      "pct": 3.01
     },
     {
       "sector": "电力设备",
       "code": "BK1200",
-      "main": 32.81,
-      "pct": 1.13
+      "main": 23.77,
+      "pct": 0.42
+    },
+    {
+      "sector": "消费电子",
+      "code": "BK1037",
+      "main": 19.3,
+      "pct": -0.17
+    },
+    {
+      "sector": "消费电子零部件及组装",
+      "code": "BK1338",
+      "main": 19.16,
+      "pct": -0.17
     },
     {
       "sector": "印制电路板",
       "code": "BK1340",
-      "main": 15.18,
-      "pct": 0.25
-    },
-    {
-      "sector": "计算机",
-      "code": "BK1207",
-      "main": 14.08,
-      "pct": 0.39
-    },
-    {
-      "sector": "电网设备",
-      "code": "BK0457",
-      "main": 13.88,
-      "pct": 0.88
-    },
-    {
-      "sector": "通信终端及配件",
-      "code": "BK1593",
-      "main": 13.07,
-      "pct": 1.45
-    },
-    {
-      "sector": "垂直应用软件",
-      "code": "BK1447",
-      "main": 12.13,
-      "pct": 0.57
-    },
-    {
-      "sector": "元件",
-      "code": "BK0459",
-      "main": 11.62,
-      "pct": 0.25
-    },
-    {
-      "sector": "软件开发",
-      "code": "BK0737",
-      "main": 11.48,
-      "pct": 0.31
-    },
-    {
-      "sector": "电池",
-      "code": "BK1033",
-      "main": 11.21,
-      "pct": 1.82
-    },
-    {
-      "sector": "集成电路制造",
-      "code": "BK1329",
-      "main": 9.39,
-      "pct": 2.57
-    },
-    {
-      "sector": "线缆部件及其他",
-      "code": "BK1312",
-      "main": 9.33,
-      "pct": 1.5
-    },
-    {
-      "sector": "半导体设备",
-      "code": "BK1326",
-      "main": 8.49,
-      "pct": 2.43
+      "main": 18.65,
+      "pct": -0.32
     },
     {
       "sector": "电子",
       "code": "BK1201",
-      "main": 8.05,
-      "pct": 0.41
+      "main": 17.1,
+      "pct": -0.21
     },
     {
-      "sector": "基础化工",
-      "code": "BK1206",
-      "main": 7.85,
-      "pct": 0.66
+      "sector": "通信终端及配件",
+      "code": "BK1593",
+      "main": 14.8,
+      "pct": 0.78
     },
     {
-      "sector": "铝",
-      "code": "BK1613",
-      "main": 6.1,
-      "pct": 1.69
+      "sector": "电网设备",
+      "code": "BK0457",
+      "main": 14.53,
+      "pct": 0.35
     },
     {
-      "sector": "铅锌",
-      "code": "BK1614",
-      "main": 5.56,
-      "pct": 3.69
+      "sector": "垂直应用软件",
+      "code": "BK1447",
+      "main": 14.1,
+      "pct": 0.08
     },
     {
-      "sector": "计算机设备",
-      "code": "BK0735",
-      "main": 5.32,
-      "pct": 0.31
-    },
-    {
-      "sector": "电池化学品",
-      "code": "BK1302",
-      "main": 5.3,
-      "pct": 1.91
-    },
-    {
-      "sector": "锂电池",
-      "code": "BK1303",
-      "main": 5.29,
-      "pct": 1.71
-    },
-    {
-      "sector": "保险Ⅲ",
-      "code": "BK1358",
-      "main": 5,
-      "pct": 1.28
-    },
-    {
-      "sector": "保险Ⅱ",
-      "code": "BK0474",
-      "main": 5,
-      "pct": 1.28
-    },
-    {
-      "sector": "疫苗",
-      "code": "BK1598",
-      "main": 4.89,
-      "pct": 4.2
-    },
-    {
-      "sector": "农化制品",
-      "code": "BK0731",
-      "main": 4.83,
-      "pct": 1.63
-    },
-    {
-      "sector": "环保",
-      "code": "BK0728",
-      "main": 4.66,
-      "pct": 1.17
-    },
-    {
-      "sector": "航空装备Ⅲ",
-      "code": "BK1384",
-      "main": 4.6,
-      "pct": 1.66
-    },
-    {
-      "sector": "航空装备Ⅱ",
-      "code": "BK1231",
-      "main": 4.6,
-      "pct": 1.66
-    },
-    {
-      "sector": "其他自动化设备",
-      "code": "BK1410",
-      "main": 4.38,
-      "pct": 0.05
-    },
-    {
-      "sector": "轻工制造",
-      "code": "BK1212",
-      "main": 4.29,
-      "pct": 1.02
-    },
-    {
-      "sector": "其他计算机设备",
-      "code": "BK1446",
-      "main": 4.25,
-      "pct": 0.51
-    },
-    {
-      "sector": "仪器仪表",
-      "code": "BK0458",
-      "main": 4.23,
-      "pct": 0.45
-    },
-    {
-      "sector": "其他电源设备Ⅱ",
-      "code": "BK1034",
-      "main": 4.22,
-      "pct": 0.82
-    },
-    {
-      "sector": "能源金属",
-      "code": "BK1015",
-      "main": 4.22,
-      "pct": 2.53
-    },
-    {
-      "sector": "光伏设备",
-      "code": "BK1031",
-      "main": 3.97,
-      "pct": 1.39
-    },
-    {
-      "sector": "输变电设备",
-      "code": "BK1311",
-      "main": 3.87,
-      "pct": 1.01
-    },
-    {
-      "sector": "逆变器",
-      "code": "BK1320",
-      "main": 3.82,
-      "pct": 3.05
-    },
-    {
-      "sector": "其他电源设备Ⅲ",
-      "code": "BK1322",
-      "main": 3.66,
-      "pct": 0.64
-    },
-    {
-      "sector": "环境治理",
-      "code": "BK1235",
-      "main": 3.47,
-      "pct": 1.03
-    },
-    {
-      "sector": "光学元件",
-      "code": "BK1334",
-      "main": 3.46,
-      "pct": 0.29
-    },
-    {
-      "sector": "氮肥",
-      "code": "BK1432",
-      "main": 3.45,
-      "pct": 2.39
-    },
-    {
-      "sector": "公用事业",
-      "code": "BK0427",
-      "main": 3.44,
-      "pct": 0.99
+      "sector": "元件",
+      "code": "BK0459",
+      "main": 14.07,
+      "pct": -0.33
     },
     {
       "sector": "电力",
       "code": "BK0428",
-      "main": 3.41,
-      "pct": 1.12
+      "main": 13.39,
+      "pct": 1.51
     },
     {
-      "sector": "生物制品",
-      "code": "BK1044",
-      "main": 3.33,
-      "pct": 0.72
+      "sector": "公用事业",
+      "code": "BK0427",
+      "main": 13.15,
+      "pct": 1.23
     },
     {
-      "sector": "底盘与发动机系统",
-      "code": "BK1526",
-      "main": 3.22,
-      "pct": 0.44
+      "sector": "半导体设备",
+      "code": "BK1326",
+      "main": 12.79,
+      "pct": 1.71
     },
     {
-      "sector": "汽车零部件",
-      "code": "BK0481",
-      "main": 2.92,
-      "pct": 0.33
+      "sector": "软件开发",
+      "code": "BK0737",
+      "main": 12.1,
+      "pct": -0.22
     },
     {
-      "sector": "化学制剂",
-      "code": "BK1594",
-      "main": 2.79,
-      "pct": 0.13
+      "sector": "集成电路制造",
+      "code": "BK1329",
+      "main": 11.53,
+      "pct": 1.51
     },
     {
-      "sector": "锂",
-      "code": "BK1621",
-      "main": 2.61,
-      "pct": 2.4
+      "sector": "计算机",
+      "code": "BK1207",
+      "main": 11.5,
+      "pct": -0.15
     },
     {
-      "sector": "汽车",
-      "code": "BK1211",
-      "main": 2.49,
-      "pct": 0.38
+      "sector": "基础化工",
+      "code": "BK1206",
+      "main": 11.18,
+      "pct": 0.4
     },
     {
-      "sector": "非金属材料Ⅲ",
-      "code": "BK1411",
-      "main": 2.43,
-      "pct": 1.36
+      "sector": "保险Ⅲ",
+      "code": "BK1358",
+      "main": 9.81,
+      "pct": 2.19
     },
     {
-      "sector": "非金属材料Ⅱ",
-      "code": "BK1020",
-      "main": 2.43,
-      "pct": 1.36
+      "sector": "保险Ⅱ",
+      "code": "BK0474",
+      "main": 9.81,
+      "pct": 2.19
+    },
+    {
+      "sector": "线缆部件及其他",
+      "code": "BK1312",
+      "main": 9.34,
+      "pct": 0.93
+    },
+    {
+      "sector": "铝",
+      "code": "BK1613",
+      "main": 6.41,
+      "pct": 1.55
+    },
+    {
+      "sector": "疫苗",
+      "code": "BK1598",
+      "main": 5.67,
+      "pct": 4.12
+    },
+    {
+      "sector": "农化制品",
+      "code": "BK0731",
+      "main": 5.64,
+      "pct": 1.68
+    },
+    {
+      "sector": "计算机设备",
+      "code": "BK0735",
+      "main": 5.55,
+      "pct": -0.12
+    },
+    {
+      "sector": "仪器仪表",
+      "code": "BK0458",
+      "main": 5.47,
+      "pct": -0.22
+    },
+    {
+      "sector": "光学元件",
+      "code": "BK1334",
+      "main": 5.15,
+      "pct": -0.44
+    },
+    {
+      "sector": "风力发电",
+      "code": "BK1374",
+      "main": 5.08,
+      "pct": 1.79
+    },
+    {
+      "sector": "其他电源设备Ⅱ",
+      "code": "BK1034",
+      "main": 4.99,
+      "pct": 0.16
+    },
+    {
+      "sector": "铅锌",
+      "code": "BK1614",
+      "main": 4.94,
+      "pct": 3.17
+    },
+    {
+      "sector": "航空装备Ⅲ",
+      "code": "BK1384",
+      "main": 4.87,
+      "pct": 0.78
+    },
+    {
+      "sector": "航空装备Ⅱ",
+      "code": "BK1231",
+      "main": 4.87,
+      "pct": 0.78
+    },
+    {
+      "sector": "环保",
+      "code": "BK0728",
+      "main": 4.86,
+      "pct": 0.83
+    },
+    {
+      "sector": "其他电源设备Ⅲ",
+      "code": "BK1322",
+      "main": 4.68,
+      "pct": -0.06
     },
     {
       "sector": "模拟芯片设计",
       "code": "BK1330",
-      "main": 2.43,
-      "pct": 0.3
+      "main": 4.61,
+      "pct": -0.14
+    },
+    {
+      "sector": "其他自动化设备",
+      "code": "BK1410",
+      "main": 4.58,
+      "pct": -0.49
+    },
+    {
+      "sector": "输变电设备",
+      "code": "BK1311",
+      "main": 4.57,
+      "pct": 0.44
+    },
+    {
+      "sector": "电池",
+      "code": "BK1033",
+      "main": 4.54,
+      "pct": 1.02
+    },
+    {
+      "sector": "其他专用设备",
+      "code": "BK1405",
+      "main": 4.53,
+      "pct": -0.13
+    },
+    {
+      "sector": "电池化学品",
+      "code": "BK1302",
+      "main": 4.16,
+      "pct": 1.05
+    },
+    {
+      "sector": "轻工制造",
+      "code": "BK1212",
+      "main": 4.15,
+      "pct": 0.54
+    },
+    {
+      "sector": "逆变器",
+      "code": "BK1320",
+      "main": 3.84,
+      "pct": 1.87
+    },
+    {
+      "sector": "氮肥",
+      "code": "BK1432",
+      "main": 3.83,
+      "pct": 2.65
+    },
+    {
+      "sector": "其他计算机设备",
+      "code": "BK1446",
+      "main": 3.81,
+      "pct": 0.12
+    },
+    {
+      "sector": "生物制品",
+      "code": "BK1044",
+      "main": 3.8,
+      "pct": 0.9
+    },
+    {
+      "sector": "火力发电",
+      "code": "BK1377",
+      "main": 3.72,
+      "pct": 1.38
     },
     {
       "sector": "热力服务",
       "code": "BK1379",
-      "main": 2.15,
-      "pct": 1.63
+      "main": 3.68,
+      "pct": 1.84
     },
     {
-      "sector": "小金属",
-      "code": "BK1027",
-      "main": 2,
-      "pct": 1.38
+      "sector": "化学制剂",
+      "code": "BK1594",
+      "main": 3.59,
+      "pct": 0.32
     },
     {
-      "sector": "造纸",
-      "code": "BK1267",
-      "main": 1.83,
-      "pct": 2.56
+      "sector": "化学制品",
+      "code": "BK0538",
+      "main": 3.3,
+      "pct": -0.01
     },
     {
-      "sector": "固废治理",
-      "code": "BK1389",
-      "main": 1.71,
-      "pct": 1.35
+      "sector": "环境治理",
+      "code": "BK1235",
+      "main": 3.27,
+      "pct": 0.7
+    },
+    {
+      "sector": "医疗器械",
+      "code": "BK1041",
+      "main": 3.02,
+      "pct": 0.46
+    },
+    {
+      "sector": "能源金属",
+      "code": "BK1015",
+      "main": 2.99,
+      "pct": 1.67
+    },
+    {
+      "sector": "汽车零部件",
+      "code": "BK0481",
+      "main": 2.95,
+      "pct": -0.01
+    },
+    {
+      "sector": "底盘与发动机系统",
+      "code": "BK1526",
+      "main": 2.87,
+      "pct": 0
+    },
+    {
+      "sector": "非金属材料Ⅲ",
+      "code": "BK1411",
+      "main": 2.75,
+      "pct": 0.97
+    },
+    {
+      "sector": "非金属材料Ⅱ",
+      "code": "BK1020",
+      "main": 2.75,
+      "pct": 0.97
     }
   ]
 }

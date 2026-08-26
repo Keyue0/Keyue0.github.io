@@ -37,21 +37,21 @@
     "limitUp": 65,
     "limitDown": 2,
     "topBoard": 5,
-    "ratio": 1.89,
-    "amount": 12309.04,
-    "upCount": 3346,
-    "downCount": 1775,
+    "ratio": 1.19,
+    "amount": 18087.23,
+    "upCount": 2788,
+    "downCount": 2343,
     "sentiment": "亢奋"
   },
   {
     "date": "2026-08-26",
-    "limitUp": 51,
+    "limitUp": 52,
     "limitDown": 0,
     "topBoard": 5,
-    "ratio": 1.89,
-    "amount": 12309.04,
-    "upCount": 3346,
-    "downCount": 1775,
+    "ratio": 1.19,
+    "amount": 18087.23,
+    "upCount": 2788,
+    "downCount": 2343,
     "sentiment": "修复"
   }
 ]
