@@ -1,16 +1,16 @@
 {
   "date": "2026-08-25",
   "source": "eastmoney-fflow-daykline",
-  "hs300pct20": -0.2058579297691925,
+  "hs300pct20": 1.7706584141441557,
   "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
   "rows": [
     {
-      "sector": "工业金属",
-      "code": "BK1287",
-      "drawdown": -19.538781789270725,
-      "pct20": 9.396601855238837,
-      "excess20": 9.6,
-      "zt5": 3,
+      "sector": "通信设备",
+      "code": "BK0448",
+      "drawdown": -24.68797234063736,
+      "pct20": -1.5192460184392427,
+      "excess20": -3.29,
+      "zt5": 13,
       "fund5": null,
       "fund20": null,
       "fundTrend": "—",
@@ -21,11 +21,11 @@
       "level": 2
     },
     {
-      "sector": "有色金属",
-      "code": "BK0478",
-      "drawdown": -19.538781789270725,
-      "pct20": 9.396601855238837,
-      "excess20": 9.6,
+      "sector": "计算机",
+      "code": "BK1207",
+      "drawdown": -21.647712000296604,
+      "pct20": 1.2801773198346684,
+      "excess20": -0.49,
       "zt5": 0,
       "fund5": null,
       "fund20": null,
@@ -36,19 +36,43 @@
       "level": 1
     },
     {
-      "sector": "电力设备",
-      "code": "BK1200",
-      "drawdown": -22.257287996388055,
-      "pct20": -0.40690813758145433,
-      "excess20": -0.2,
+      "sector": "电子",
+      "code": "BK1201",
+      "drawdown": -9.26842401690559,
+      "pct20": 12.962744444873728,
+      "excess20": 11.19,
       "zt5": 0,
       "fund5": null,
       "fund20": null,
       "fundTrend": "—",
-      "pass": [
-        "低位"
-      ],
-      "level": 1
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "半导体",
+      "code": "BK1036",
+      "drawdown": -14.000455968460335,
+      "pct20": 12.061020250236934,
+      "excess20": 10.29,
+      "zt5": 2,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "通信",
+      "code": "BK1215",
+      "drawdown": -13.576149658872405,
+      "pct20": -1.8473419986183996,
+      "excess20": -3.62,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
     }
   ]
 }
