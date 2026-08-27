@@ -57,10 +57,48 @@ const PoolView = {
 
     const poolMeta = data && data.note ? `<div class="card" style="font-size:13px;color:var(--muted)">${App.esc(data.note)}</div>` : '';
 
+    // 候选池次日跟踪（真实行情）
+    let trackHtml = '';
+    try {
+      const track = await App.fetchJSON(`data/pools/track/${date}.json`);
+      if (track && track.rows && track.rows.length) {
+        const trackRows = track.rows.map(r => {
+          const stopHit = r.touched_stop === '是';
+          const targetHit = r.touched_target === '是';
+          const buyHit = r.touched_buy === '是';
+          return `<tr>
+            <td class="name">${App.esc(r.name)}<br><span style="font-size:11px;color:var(--muted)">${App.esc(r.code || '')}</span></td>
+            <td>${App.esc(r.sector || '')}</td>
+            <td>${r.buy != null ? r.buy : '--'}</td>
+            <td class="down">${r.stop != null ? r.stop : '--'}</td>
+            <td class="up">${r.target != null ? r.target : '--'}</td>
+            <td>${r.close != null ? r.close.toFixed(2) : '--'}</td>
+            <td class="${App.colorClass(r.pct)}" style="font-weight:800">${r.pct != null ? App.fmtPct(r.pct) : '--'}</td>
+            <td>
+              ${stopHit ? '<span class="chip down"><b>破位止损</b></span>' : (targetHit ? '<span class="chip up"><b>达标</b></span>' : (buyHit ? '<span class="chip flat"><b>触买点</b></span>' : '<span class="chip flat">未触发</span>'))}
+            </td>
+            <td style="text-align:left;font-size:12px;color:var(--muted)">${r.verdict ? App.esc(r.verdict) : '--'}${r.tracked_at ? '<br><span style="font-size:11px">跟踪日 ' + App.esc(r.tracked_at) + '</span>' : ''}</td>
+          </tr>`;
+        }).join('');
+        trackHtml = `
+          <div class="card" style="border:1px solid var(--accent-teal)">
+            <h2>📈 次日跟踪（真实行情） <span class="tag">推荐日 ${date} → 实际表现</span></h2>
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>个股</th><th>板块</th><th>买点</th><th>止损</th><th>目标</th><th>实际收</th><th>涨跌幅</th><th>触发</th><th>结论</th></tr></thead>
+                <tbody>${trackRows}</tbody>
+              </table>
+            </div>
+            <p style="font-size:12px;color:var(--muted);margin-top:8px">跟踪数据来自腾讯真实行情接口（T+1 收盘价 vs 推荐日收盘价），自动判断是否触及买点/止损/目标，留档 7 天。</p>
+          </div>`;
+      }
+    } catch (e) { /* 无跟踪数据 */ }
+
     el.innerHTML = `
       <div class="section-title"><span class="num">🎯</span><h2>候选池跟踪</h2></div>
       ${dateBar}
       ${table}
+      ${trackHtml}
       ${poolMeta}
       <div class="card" style="font-size:13px;color:var(--muted)">
         仓位纪律：单股 ≤10%，板块 ≤15%，总仓位 ≤50%（半仓上限，永不梭哈）。候选池跟踪的是"低吸"思路，追高打板不在本表范围。
