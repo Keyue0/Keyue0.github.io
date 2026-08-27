@@ -1,0 +1,73 @@
+[
+  {
+    "code": "002716",
+    "name": "湖南白银",
+    "sector": "贵金属",
+    "rec_date": "2026-08-24",
+    "buy_price": 11.6,
+    "stop": 11.02,
+    "target": 12.76,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 4,
+    "history": [
+      {
+        "date": "2026-08-24",
+        "close": 11.6,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-25",
+        "close": 11.6,
+        "pct": 2.47
+      },
+      {
+        "date": "2026-08-26",
+        "close": 11.6,
+        "pct": 2.47
+      },
+      {
+        "date": "2026-08-27",
+        "close": 11.6,
+        "pct": 2.47
+      }
+    ],
+    "cur_price": 11.6,
+    "cur_pct": 0
+  },
+  {
+    "code": "003040",
+    "name": "楚天龙",
+    "sector": "通信设备",
+    "rec_date": "2026-08-25",
+    "buy_price": 18.73,
+    "stop": 17.79,
+    "target": 20.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 3,
+    "history": [
+      {
+        "date": "2026-08-25",
+        "close": 18.73,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 18.73,
+        "pct": 9.98
+      },
+      {
+        "date": "2026-08-27",
+        "close": 18.73,
+        "pct": 9.98
+      }
+    ],
+    "cur_price": 18.73,
+    "cur_pct": 0
+  }
+]
