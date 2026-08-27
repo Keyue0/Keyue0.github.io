@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-26",
+  "tracked_at": "2026-08-27",
+  "note": "候选池次日跟踪（真实行情，留档7天）",
+  "rows": [
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "sector": "通信设备",
+      "buy": null,
+      "stop": null,
+      "target": null,
+      "close": 18.73,
+      "pct": 9.98,
+      "verdict": "上涨"
+    }
+  ]
+}

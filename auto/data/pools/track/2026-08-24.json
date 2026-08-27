@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-24",
+  "tracked_at": "2026-08-27",
+  "note": "候选池次日跟踪（真实行情，留档7天）",
+  "rows": [
+    {
+      "code": "002716",
+      "name": "湖南白银",
+      "sector": "贵金属",
+      "buy": null,
+      "stop": null,
+      "target": null,
+      "close": 11.6,
+      "pct": 2.47,
+      "verdict": "上涨"
+    }
+  ]
+}
