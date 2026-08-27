@@ -548,11 +548,13 @@ async function llmAnalyze(payload) {
 - 候选板块资金历史（跨日库）：${payload.history ? Object.entries(payload.history).slice(-5).map(([d, arr]) => d + ':' + arr.slice(0, 3).map(x => x.sector + x.main).join(',')).join(' | ') : '无'}
 - 龙虎榜：${payload.lhbCount} 只上榜，机构净买 ${payload.lhbInst ? payload.lhbInst.map(x => x.name + '+' + x.net + '亿').join('、') : '无'}
 - 龙虎榜游资席位：${payload.lhbBroker ? payload.lhbBroker.slice(0, 5).map(b => b.name + '(' + b.today + ')').join('、') : '无'}
+- **真实候选股池**（只能从这里选股，禁止选池外股票，禁止编造代码）：
+${payload.realCands && payload.realCands.length ? payload.realCands.map(c => `  - ${c.name}(${c.code}) ${c.sector} ${c.source} ${c.lbc > 1 ? c.lbc + '板' : ''} 收盘¥${c.close} 当日${c.pct >= 0 ? '+' : ''}${c.pct}%`).join('\n') : '  - 无（本日候选池为空）'}
 
 请完成全部九段思考，以 JSON 返回（不要 markdown 代码块）：
 {"sec1":"大盘情绪局势分析：为什么今天走成这样+明日情绪推演（80-150字）","sec2":"次日回头看+今日信号验证（若前日有计划则验证，否则写今日关键信号）（60-120字）","sec3":"板块效应深度分析：主线是什么、为什么是它、持续性、明日预期（100-160字）","sec4":"龙头梯队研判：高度板/连板梯队结构、明日晋级预期（60-120字）","sec5":"主力资金解读：真实意图、异常信号、三分类判断、资金主线（80-140字）","sec6":"低位右侧机会：哪个板块值得低吸、为什么、风险点（80-140字）","sec7":"共振/背离判定及依据（60-100字）","sec8":"明日计划：仓位建议(最多半仓)+目标板块+系统性/结构性放弃条件（100-180字，含具体数字）","sec9":"一句话收尾（20-40字，带冰川标志性表达）","pools":[{"sector":"板块","name":"个股","code":"6位","buy":买点,"stop":止损,"target":目标,"status":"观察中/可低吸/放弃","note":"推荐逻辑(为什么+触发条件+风险)"}],"lhb_summary":["龙虎榜盘面观察1","龙虎榜盘面观察2","龙虎榜盘面观察3"]}
 
-pools 要求：3-6只，必须从上述数据中选真实方向（低位右侧扫描优先+板块效应强势板块），每只必须给精准买点/止损/目标价（止损必须<买点，目标>买点，数字基于当日收盘价推算），note 必须含"为什么选它+什么条件触发买入+风险提示"。`;
+pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须与池内完全一致），每只必须给精准买点/止损/目标价（止损必须<买点，目标>买点，基于当日收盘价推算：止损-3%~-5%，目标+8%~+15%），note 必须含"为什么选它+什么条件触发买入+风险提示"。若真实候选池为空，pools 返回空数组。`;
 
   try {
     const body = {
@@ -903,18 +905,62 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
       sector: (x.EXPLAIN || '').split('，')[0] || '', note: x.EXPLAIN || ''
     }));
 
+  /* --- 真实候选股池构建（LLM 只能从真实个股中选股定价，杜绝编造代码） ---
+     来源：① 低位右侧板块的涨停股 ② 板块效应（涨停≥3家）的涨停股 ③ 资金Top板块代表
+     用腾讯批量行情拉真实收盘价 → 传给 LLM 做选股+定价 */
+  async function buildRealCandidates() {
+    const seen = new Set();
+    const cands = [];
+    // ① 低位右侧板块涨停股（level>=1）
+    lowRight.forEach(s => {
+      const secName = s.sector || s.name;
+      ztList.filter(x => x.hybk === secName).slice(0, 3).forEach(x => {
+        if (!seen.has(x.code)) { seen.add(x.code); cands.push({ code: x.code, name: x.name, sector: secName, source: '低位右侧', lbc: x.lbc }); }
+      });
+    });
+    // ② 板块效应（涨停≥3家）的涨停股
+    sectorEffects.forEach(se => {
+      ztList.filter(x => x.hybk === se.sector).slice(0, 3).forEach(x => {
+        if (!seen.has(x.code)) { seen.add(x.code); cands.push({ code: x.code, name: x.name, sector: se.sector, source: '板块效应', lbc: x.lbc }); }
+      });
+    });
+    // ③ 资金Top板块代表（若还没有）
+    inTop.slice(0, 5).forEach(s => {
+      const hit = ztList.find(x => x.hybk === s.name);
+      if (hit && !seen.has(hit.code)) { seen.add(hit.code); cands.push({ code: hit.code, name: hit.name, sector: s.name, source: '资金Top', lbc: hit.lbc }); }
+    });
+    if (!cands.length) return [];
+    // 腾讯批量拉真实收盘价
+    const qs = cands.map(c => /^(6|68|9)/.test(c.code) ? 'sh' + c.code : (/^(0|3)/.test(c.code) ? 'sz' + c.code : c.code)).join(',');
+    try {
+      const t = await gbk('https://qt.gtimg.cn/q=' + qs);
+      const priceMap = {};
+      t.split(';').forEach(line => {
+        const m = line.match(/v_(\w+)="([^"]*)"/);
+        if (!m) return;
+        const f = m[2].split('~');
+        priceMap[f[2]] = { close: parseFloat(f[3]), pct: parseFloat(f[32]) || 0 };
+      });
+      cands.forEach(c => { if (priceMap[c.code]) { c.close = priceMap[c.code].close; c.pct = priceMap[c.code].pct; } });
+    } catch (e) { /* 行情拉取失败则无 close，LLM 定价受限 */ }
+    return cands.filter(c => c.close > 0).slice(0, 15);
+  }
+
   /* --- LLM 深度分析（配置 LLM_API_KEY / DEEPSEEK_API_KEY 时启用；失败自动回退规则模板） ---
-     LLM 完成九段思考后，覆盖全部九段 + 生成候选池（含买点/止损/目标）与龙虎榜解读 */
+     LLM 完成九段思考后，覆盖全部九段 + 从真实候选池选股定价（含买点/止损/目标）与龙虎榜解读 */
   let llmPools = null;
   let llmLhbSummary = null;
   if (!isAm && LLM_API_KEY) {
+    const realCands = await buildRealCandidates();
+    if (realCands.length) console.log('  ℹ️ 真实候选股池：' + realCands.length + ' 只（' + realCands.slice(0, 5).map(c => c.name).join('、') + '...）');
     const llm = await llmAnalyze({
       date: td.date, idx, totalAmount, ud, ratio, sentiment,
       limitUp, limitDown, maxBoard, chainCount, yztPerf,
       inTop, outTop, sectorEffects, lowRight, lhbCount: lhbList.length,
       history: loadCapitalHistory(),
       lhbInst: institutions,
-      lhbBroker: lhbBrokerages
+      lhbBroker: lhbBrokerages,
+      realCands
     });
     if (llm) {
       // 覆盖全部九段（LLM 深度思考替代规则模板；保留数据段规则模板，LLM 段追加在其后）
@@ -924,7 +970,12 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
           sections[i] = { title: sections[i].title, content: sections[i].content + '\n\n### ✨ AI 深度分析\n' + llm[k].trim() };
         }
       });
-      if (Array.isArray(llm.pools) && llm.pools.length) llmPools = llm.pools;
+      if (Array.isArray(llm.pools) && llm.pools.length) {
+        // 校验：LLM 只能从真实候选池中选股（防编造代码）
+        const realCodes = new Set(realCands.map(c => c.code));
+        llmPools = llm.pools.filter(p => p.code && realCodes.has(String(p.code))).slice(0, 6);
+        if (llmPools.length < llm.pools.length) console.log('  ⚠️ LLM 返回 ' + llm.pools.length + ' 只，剔除 ' + (llm.pools.length - llmPools.length) + ' 只非真实候选池股票');
+      }
       if (Array.isArray(llm.lhb_summary) && llm.lhb_summary.length) llmLhbSummary = llm.lhb_summary;
     }
   }
@@ -1048,6 +1099,72 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
     pools: poolRows
   });
   upsertIndex('pools/index.json', { date: td.date });
+
+  /* --- 6.5 候选池次日跟踪（T 日推荐 → T+1 记录真实涨跌幅，留档 7 天） ---
+     读取历史 pools/<过去日期>.json 的候选股，拉取今日（td.date）真实行情，
+     计算相对推荐日收盘价的涨跌幅 + 是否触及买点/止损/目标，写入 pools/track/<推荐日>.json */
+  async function trackPrevPools() {
+    const dir = path.join(DATA, 'pools');
+    if (!fs.existsSync(dir)) return;
+    const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
+    const prevDates = files.map(f => f.slice(0, 10)).filter(d => d < td.date).sort().slice(-7);  // 留档 7 天
+    for (const prevDate of prevDates) {
+      let prev;
+      try { prev = JSON.parse(fs.readFileSync(path.join(dir, prevDate + '.json'), 'utf8')); } catch (e) { continue; }
+      const prevPools = (prev.pools || []).filter(p => p.code && /^\d{6}$/.test(String(p.code)));
+      if (!prevPools.length) continue;
+      // 腾讯批量拉今日行情
+      const qs = prevPools.map(p => /^(6|68|9)/.test(p.code) ? 'sh' + p.code : (/^(0|3)/.test(p.code) ? 'sz' + p.code : p.code)).join(',');
+      let today = {};
+      try {
+        const t = await gbk('https://qt.gtimg.cn/q=' + qs);
+        t.split(';').forEach(line => {
+          const m = line.match(/v_(\w+)="([^"]*)"/);
+          if (!m) return;
+          const f = m[2].split('~');
+          today[f[2]] = { close: parseFloat(f[3]), pct: parseFloat(f[32]) || 0 };
+        });
+      } catch (e) { continue; }
+      // 生成跟踪记录
+      const trackRows = prevPools.map(p => {
+        const q = today[p.code];
+        const rec = {
+          code: p.code, name: p.name, sector: p.sector || '',
+          buy: p.buy != null ? p.buy : null, stop: p.stop != null ? p.stop : null,
+          target: p.target != null ? p.target : null
+        };
+        if (q && q.close > 0) {
+          rec.close = q.close;
+          rec.pct = q.pct;   // 当日涨跌幅（相对 T 日收盘）
+          // 是否触发买点/止损/目标
+          if (p.buy != null) rec.touched_buy = q.close <= p.buy ? '是' : '否';
+          if (p.stop != null) rec.touched_stop = q.close <= p.stop ? '是' : '否';
+          if (p.target != null) rec.touched_target = q.close >= p.target ? '是' : '否';
+          rec.verdict = rec.touched_stop === '是' ? '破位止损' : (rec.touched_target === '是' ? '达标' : (q.pct > 0 ? '上涨' : (q.pct < 0 ? '下跌' : '平盘')));
+        } else {
+          rec.close = null; rec.pct = null; rec.verdict = '无行情';
+        }
+        return rec;
+      });
+      // 写跟踪文件（覆盖式更新：同日多次运行以最新为准）
+      const trackPath = path.join(dir, 'track', prevDate + '.json');
+      fs.mkdirSync(path.dirname(trackPath), { recursive: true });
+      const old = fs.existsSync(trackPath) ? JSON.parse(fs.readFileSync(trackPath, 'utf8')) : { date: prevDate, rows: [] };
+      const merged = [];
+      trackRows.forEach(r => {
+        const hit = old.rows.find(o => o.code === r.code);
+        merged.push(hit ? { ...hit, ...r } : r);
+      });
+      fs.writeFileSync(trackPath, JSON.stringify({ date: prevDate, tracked_at: td.date, note: '候选池次日跟踪（真实行情，留档7天）', rows: merged }, null, 2), 'utf8');
+      // 索引
+      const idxPath = path.join(dir, 'track/index.json');
+      let idx = [];
+      try { idx = JSON.parse(fs.readFileSync(idxPath, 'utf8')); } catch (e) { idx = []; }
+      if (!idx.find(x => x.date === prevDate)) { idx.push({ date: prevDate }); idx.sort((a, b) => a.date < b.date ? 1 : -1); fs.writeFileSync(idxPath, JSON.stringify(idx, null, 2), 'utf8'); }
+      console.log('  ✓ 候选池跟踪已更新: ' + prevDate + '（' + trackRows.length + ' 只，跟踪日 ' + td.date + '）');
+    }
+  }
+  if (!isAm) await trackPrevPools();
 
   // 7. lhb 龙虎榜（席位明细 + 机构 + 拉萨 + LLM 解读）
   let lhbSummary = llmLhbSummary || [];
