@@ -1,157 +1,5 @@
 [
   {
-    "code": "600508",
-    "name": "上海能源",
-    "sector": "煤炭开采",
-    "rec_date": "2026-08-24",
-    "buy_price": 11.76,
-    "stop": 11.17,
-    "target": 12.94,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-24",
-        "close": 11.76,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-25",
-        "close": 11.76,
-        "pct": 2.71
-      },
-      {
-        "date": "2026-08-26",
-        "close": 11.76,
-        "pct": 2.71
-      },
-      {
-        "date": "2026-08-27",
-        "close": 11.76,
-        "pct": 2.71
-      }
-    ],
-    "cur_price": 11.76,
-    "cur_pct": 0
-  },
-  {
-    "code": "600403",
-    "name": "大有能源",
-    "sector": "煤炭开采",
-    "rec_date": "2026-08-24",
-    "buy_price": 7.11,
-    "stop": 6.75,
-    "target": 7.82,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-24",
-        "close": 7.11,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-25",
-        "close": 7.11,
-        "pct": 1.57
-      },
-      {
-        "date": "2026-08-26",
-        "close": 7.11,
-        "pct": 1.57
-      },
-      {
-        "date": "2026-08-27",
-        "close": 7.11,
-        "pct": 1.57
-      }
-    ],
-    "cur_price": 7.11,
-    "cur_pct": 0
-  },
-  {
-    "code": "601212",
-    "name": "白银有色",
-    "sector": "工业金属",
-    "rec_date": "2026-08-24",
-    "buy_price": 7.2,
-    "stop": 6.84,
-    "target": 7.92,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-24",
-        "close": 7.2,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-25",
-        "close": 7.2,
-        "pct": -0.55
-      },
-      {
-        "date": "2026-08-26",
-        "close": 7.2,
-        "pct": -0.55
-      },
-      {
-        "date": "2026-08-27",
-        "close": 7.2,
-        "pct": -0.55
-      }
-    ],
-    "cur_price": 7.2,
-    "cur_pct": 0
-  },
-  {
-    "code": "002580",
-    "name": "圣阳股份",
-    "sector": "电池",
-    "rec_date": "2026-08-24",
-    "buy_price": 21.72,
-    "stop": 20.63,
-    "target": 23.89,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-24",
-        "close": 21.72,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-25",
-        "close": 21.72,
-        "pct": 0.42
-      },
-      {
-        "date": "2026-08-26",
-        "close": 21.72,
-        "pct": 0.42
-      },
-      {
-        "date": "2026-08-27",
-        "close": 21.72,
-        "pct": 0.42
-      }
-    ],
-    "cur_price": 21.72,
-    "cur_pct": 0
-  },
-  {
     "code": "000070",
     "name": "特发信息",
     "sector": "通信设备",
@@ -159,11 +7,11 @@
     "buy_price": 16.5,
     "stop": 15.68,
     "target": 18.15,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-27",
+    "sell_price": 16.5,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-25",
@@ -182,7 +30,8 @@
       }
     ],
     "cur_price": 16.5,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002703",
@@ -192,11 +41,11 @@
     "buy_price": 16.93,
     "stop": 16.08,
     "target": 18.28,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-27",
+    "sell_price": 16.93,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-25",
@@ -215,7 +64,8 @@
       }
     ],
     "cur_price": 16.93,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603083",
@@ -229,7 +79,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-26",
@@ -257,7 +107,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-26",
@@ -285,7 +135,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-26",
@@ -313,7 +163,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-26",
@@ -341,12 +191,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 14.41,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 14.41,
+        "pct": 10
       }
     ],
     "cur_price": 14.41,
@@ -364,12 +219,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 22.63,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 22.63,
+        "pct": 10.01
       }
     ],
     "cur_price": 22.63,
@@ -387,12 +247,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 37.06,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 37.06,
+        "pct": 20.01
       }
     ],
     "cur_price": 37.06,
@@ -410,12 +275,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 10.49,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 10.49,
+        "pct": 9.96
       }
     ],
     "cur_price": 10.49,
@@ -433,12 +303,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 18.73,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 18.73,
+        "pct": 9.98
       }
     ],
     "cur_price": 18.73,
@@ -456,15 +331,94 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-27",
         "close": 426.82,
         "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 426.82,
+        "pct": 10
       }
     ],
     "cur_price": 426.82,
+    "cur_pct": 0
+  },
+  {
+    "code": "002084",
+    "name": "海鸥住工",
+    "sector": "家居用品",
+    "rec_date": "2026-08-26",
+    "buy_price": 5.27,
+    "stop": 5.01,
+    "target": 5.69,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-26",
+        "close": 5.27,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 5.27,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 5.27,
+    "cur_pct": 0
+  },
+  {
+    "code": "600641",
+    "name": "先导基电",
+    "sector": "半导体",
+    "rec_date": "2026-08-27",
+    "buy_price": 34,
+    "stop": 32.3,
+    "target": 39.1,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 34,
+        "pct": 0
+      }
+    ],
+    "cur_price": 34,
+    "cur_pct": 0
+  },
+  {
+    "code": "605258",
+    "name": "协和电子",
+    "sector": "元件",
+    "rec_date": "2026-08-27",
+    "buy_price": 31.9,
+    "stop": 30.31,
+    "target": 36.69,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 31.9,
+        "pct": 0
+      }
+    ],
+    "cur_price": 31.9,
     "cur_pct": 0
   }
 ]
