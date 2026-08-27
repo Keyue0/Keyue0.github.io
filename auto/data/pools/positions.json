@@ -1,12 +1,12 @@
 [
   {
-    "code": "002716",
-    "name": "湖南白银",
-    "sector": "贵金属",
+    "code": "600508",
+    "name": "上海能源",
+    "sector": "煤炭开采",
     "rec_date": "2026-08-24",
-    "buy_price": 11.6,
-    "stop": 11.02,
-    "target": 12.76,
+    "buy_price": 11.76,
+    "stop": 11.17,
+    "target": 12.94,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -15,36 +15,150 @@
     "history": [
       {
         "date": "2026-08-24",
-        "close": 11.6,
+        "close": 11.76,
         "pct": 0
       },
       {
         "date": "2026-08-25",
-        "close": 11.6,
-        "pct": 2.47
+        "close": 11.76,
+        "pct": 2.71
       },
       {
         "date": "2026-08-26",
-        "close": 11.6,
-        "pct": 2.47
+        "close": 11.76,
+        "pct": 2.71
       },
       {
         "date": "2026-08-27",
-        "close": 11.6,
-        "pct": 2.47
+        "close": 11.76,
+        "pct": 2.71
       }
     ],
-    "cur_price": 11.6,
+    "cur_price": 11.76,
     "cur_pct": 0
   },
   {
-    "code": "003040",
-    "name": "楚天龙",
+    "code": "600403",
+    "name": "大有能源",
+    "sector": "煤炭开采",
+    "rec_date": "2026-08-24",
+    "buy_price": 7.11,
+    "stop": 6.75,
+    "target": 7.82,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 4,
+    "history": [
+      {
+        "date": "2026-08-24",
+        "close": 7.11,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-25",
+        "close": 7.11,
+        "pct": 1.57
+      },
+      {
+        "date": "2026-08-26",
+        "close": 7.11,
+        "pct": 1.57
+      },
+      {
+        "date": "2026-08-27",
+        "close": 7.11,
+        "pct": 1.57
+      }
+    ],
+    "cur_price": 7.11,
+    "cur_pct": 0
+  },
+  {
+    "code": "601212",
+    "name": "白银有色",
+    "sector": "工业金属",
+    "rec_date": "2026-08-24",
+    "buy_price": 7.2,
+    "stop": 6.84,
+    "target": 7.92,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 4,
+    "history": [
+      {
+        "date": "2026-08-24",
+        "close": 7.2,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-25",
+        "close": 7.2,
+        "pct": -0.55
+      },
+      {
+        "date": "2026-08-26",
+        "close": 7.2,
+        "pct": -0.55
+      },
+      {
+        "date": "2026-08-27",
+        "close": 7.2,
+        "pct": -0.55
+      }
+    ],
+    "cur_price": 7.2,
+    "cur_pct": 0
+  },
+  {
+    "code": "002580",
+    "name": "圣阳股份",
+    "sector": "电池",
+    "rec_date": "2026-08-24",
+    "buy_price": 21.72,
+    "stop": 20.63,
+    "target": 23.89,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 4,
+    "history": [
+      {
+        "date": "2026-08-24",
+        "close": 21.72,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-25",
+        "close": 21.72,
+        "pct": 0.42
+      },
+      {
+        "date": "2026-08-26",
+        "close": 21.72,
+        "pct": 0.42
+      },
+      {
+        "date": "2026-08-27",
+        "close": 21.72,
+        "pct": 0.42
+      }
+    ],
+    "cur_price": 21.72,
+    "cur_pct": 0
+  },
+  {
+    "code": "000070",
+    "name": "特发信息",
     "sector": "通信设备",
     "rec_date": "2026-08-25",
-    "buy_price": 18.73,
-    "stop": 17.79,
-    "target": 20.6,
+    "buy_price": 16.5,
+    "stop": 15.68,
+    "target": 18.15,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -53,21 +167,304 @@
     "history": [
       {
         "date": "2026-08-25",
-        "close": 18.73,
+        "close": 16.5,
         "pct": 0
       },
       {
         "date": "2026-08-26",
-        "close": 18.73,
-        "pct": 9.98
+        "close": 16.5,
+        "pct": 3.9
       },
       {
         "date": "2026-08-27",
+        "close": 16.5,
+        "pct": 3.9
+      }
+    ],
+    "cur_price": 16.5,
+    "cur_pct": 0
+  },
+  {
+    "code": "002703",
+    "name": "浙江世宝",
+    "sector": "汽车零部",
+    "rec_date": "2026-08-25",
+    "buy_price": 16.93,
+    "stop": 16.08,
+    "target": 18.28,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 3,
+    "history": [
+      {
+        "date": "2026-08-25",
+        "close": 16.93,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 16.93,
+        "pct": -3.04
+      },
+      {
+        "date": "2026-08-27",
+        "close": 16.93,
+        "pct": -3.04
+      }
+    ],
+    "cur_price": 16.93,
+    "cur_pct": 0
+  },
+  {
+    "code": "603083",
+    "name": "剑桥科技",
+    "sector": "通信设备",
+    "rec_date": "2026-08-26",
+    "buy_price": 198.21,
+    "stop": 188.3,
+    "target": 214.07,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-26",
+        "close": 198.21,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 198.21,
+        "pct": 3.86
+      }
+    ],
+    "cur_price": 198.21,
+    "cur_pct": 0
+  },
+  {
+    "code": "603118",
+    "name": "共进股份",
+    "sector": "通信设备",
+    "rec_date": "2026-08-26",
+    "buy_price": 18.22,
+    "stop": 17.31,
+    "target": 19.68,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-26",
+        "close": 18.22,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 18.22,
+        "pct": 1.9
+      }
+    ],
+    "cur_price": 18.22,
+    "cur_pct": 0
+  },
+  {
+    "code": "603618",
+    "name": "杭电股份",
+    "sector": "电网设备",
+    "rec_date": "2026-08-26",
+    "buy_price": 35.11,
+    "stop": 33.35,
+    "target": 37.92,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-26",
+        "close": 35.11,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 35.11,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 35.11,
+    "cur_pct": 0
+  },
+  {
+    "code": "600969",
+    "name": "郴电国际",
+    "sector": "电力",
+    "rec_date": "2026-08-26",
+    "buy_price": 10.45,
+    "stop": 9.93,
+    "target": 11.29,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-26",
+        "close": 10.45,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 10.45,
+        "pct": 10
+      }
+    ],
+    "cur_price": 10.45,
+    "cur_pct": 0
+  },
+  {
+    "code": "000586",
+    "name": "汇源通信",
+    "sector": "通信设备",
+    "rec_date": "2026-08-27",
+    "buy_price": 14.41,
+    "stop": 13.69,
+    "target": 15.56,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 14.41,
+        "pct": 0
+      }
+    ],
+    "cur_price": 14.41,
+    "cur_pct": 0
+  },
+  {
+    "code": "002134",
+    "name": "天津普林",
+    "sector": "元件",
+    "rec_date": "2026-08-27",
+    "buy_price": 22.63,
+    "stop": 21.5,
+    "target": 24.44,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 22.63,
+        "pct": 0
+      }
+    ],
+    "cur_price": 22.63,
+    "cur_pct": 0
+  },
+  {
+    "code": "300456",
+    "name": "赛微电子",
+    "sector": "半导体",
+    "rec_date": "2026-08-27",
+    "buy_price": 37.06,
+    "stop": 35.21,
+    "target": 40.02,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 37.06,
+        "pct": 0
+      }
+    ],
+    "cur_price": 37.06,
+    "cur_pct": 0
+  },
+  {
+    "code": "600371",
+    "name": "万向德农",
+    "sector": "种植业",
+    "rec_date": "2026-08-27",
+    "buy_price": 10.49,
+    "stop": 9.97,
+    "target": 11.33,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 10.49,
+        "pct": 0
+      }
+    ],
+    "cur_price": 10.49,
+    "cur_pct": 0
+  },
+  {
+    "code": "003040",
+    "name": "楚天龙",
+    "sector": "通信设备",
+    "rec_date": "2026-08-27",
+    "buy_price": 18.73,
+    "stop": 17.79,
+    "target": 20.23,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
         "close": 18.73,
-        "pct": 9.98
+        "pct": 0
       }
     ],
     "cur_price": 18.73,
+    "cur_pct": 0
+  },
+  {
+    "code": "601869",
+    "name": "长飞光纤",
+    "sector": "通信设备",
+    "rec_date": "2026-08-27",
+    "buy_price": 426.82,
+    "stop": 405.48,
+    "target": 461,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 426.82,
+        "pct": 0
+      }
+    ],
+    "cur_price": 426.82,
     "cur_pct": 0
   }
 ]
