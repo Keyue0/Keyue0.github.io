@@ -4,10 +4,10 @@
     "limitUp": 79,
     "limitDown": 12,
     "topBoard": 4,
-    "ratio": 0.38,
-    "amount": 20074.56,
-    "upCount": 1421,
-    "downCount": 3736,
+    "ratio": 0.91,
+    "amount": 18792.64,
+    "upCount": 2431,
+    "downCount": 2663,
     "sentiment": "修复"
   },
   {
@@ -26,32 +26,10 @@
     "limitUp": 46,
     "limitDown": 11,
     "topBoard": 4,
-    "ratio": 3.33,
-    "amount": 18318.44,
-    "upCount": 4008,
-    "downCount": 1204,
-    "sentiment": "修复"
-  },
-  {
-    "date": "2026-08-25",
-    "limitUp": 65,
-    "limitDown": 2,
-    "topBoard": 5,
-    "ratio": 1.19,
-    "amount": 18087.23,
-    "upCount": 2788,
-    "downCount": 2343,
-    "sentiment": "亢奋"
-  },
-  {
-    "date": "2026-08-26",
-    "limitUp": 52,
-    "limitDown": 0,
-    "topBoard": 5,
-    "ratio": 1.19,
-    "amount": 18087.23,
-    "upCount": 2788,
-    "downCount": 2343,
+    "ratio": 1.74,
+    "amount": 21259.27,
+    "upCount": 3224,
+    "downCount": 1853,
     "sentiment": "修复"
   }
 ]

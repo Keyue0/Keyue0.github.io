@@ -80,6 +80,22 @@ node scripts/fetch_data.js --date=2026-08-20 --slot=am  # 指定某天盘中快�
 
 > DeepSeek 申请：https://platform.deepseek.com（充 10 元够用很久）。模型 `deepseek-v4-flash` 自动启用 thinking 深度思考。
 
+### ⚠️ 配置后不生效排查（重要）
+
+**症状**：配了 API Key 但复盘里没有 `✨ AI 深度分析`。
+
+**排查步骤**（workflow 已内置诊断步骤，手动 Run 一次看日志）：
+
+1. **必须上传新版 workflow**：`.github/workflows/bing-auto-daily.yml` 含 `env`（LLM_API_KEY/DEEPSEEK_API_KEY）和诊断步骤——如果仓库里的 workflow 没有 `env:` 段，LLM 永远拿不到 key
+2. 手动触发后看 Actions 日志开头：
+   ```
+   LLM_API_KEY: 已配置 / 未配置      ← 确认这里显示"已配置"
+   push2his HTTP 200                 ← 确认历史接口可达
+   ✨ LLM 深度分析已生成（deepseek-v4-flash，思考模式）  ← 出现即成功
+   ```
+3. 若显示"未配置"：检查 secret 名字是否为 `LLM_API_KEY` 或 `DEEPSEEK_API_KEY`（二选一即可）
+4. 若 push2his 不可达：第6段降级，需用 WorkBuddy 增强数据（见下文）
+
 ### 开启后每天自动产出
 
 - **九段全部 AI 分析**（每段数据下方追加 `✨ AI 深度分析`）：局势判断、为什么走成这样、明日推演

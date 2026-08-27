@@ -30,10 +30,10 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 /* ---------- 通用工具 ---------- */
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-async function jget(url, referer = 'https://quote.eastmoney.com/') {
+async function jget(url, referer = 'https://quote.eastmoney.com/', timeoutMs = 20000) {
   const r = await fetch(url, {
     headers: { 'User-Agent': UA, Referer: referer },
-    signal: AbortSignal.timeout(20000)
+    signal: AbortSignal.timeout(timeoutMs)
   });
   if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url.slice(0, 80));
   const t = await r.text();
@@ -284,38 +284,46 @@ async function fetchTxSectorHist(sectorName) {
   } catch (e) { return null; }
 }
 
-async function fetchSectorHist(secid, tries = 4, sectorName) {
-  let lastErr = null;
-  for (let t = 0; t < tries; t++) {
-    for (const host of HIST_HOSTS) {
-      try {
-        const j = await jget(`https://${host}/api/qt/stock/fflow/daykline/get?lmt=130&klt=101&secid=${secid}&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65`);
-        const k = (j.data && j.data.klines) || [];
-        if (k.length >= 25) {
-          const closes = k.map(x => parseFloat(x.split(',')[11]));
-          const mains = k.map(x => parseFloat(x.split(',')[1]));
-          const last = closes[closes.length - 1];
-          const hi120 = Math.max(...closes.slice(-120));
-          const close20ago = closes[closes.length - 21];
-          return {
-            drawdown: last > 0 && hi120 > 0 ? +(last - hi120) / hi120 * 100 : null,   // 120日回撤(%)
-            pct20: close20ago > 0 ? +(last - close20ago) / close20ago * 100 : null,   // 20日涨幅(%)
-            fund5: +(mains.slice(-5).reduce((a, b) => a + b, 0) / 1e8).toFixed(2),     // 5日主力净额(亿)
-            fund20: +(mains.slice(-20).reduce((a, b) => a + b, 0) / 1e8).toFixed(2),   // 20日主力净额(亿)
-            fund5Daily: mains.slice(-5).map(v => +(v / 1e8).toFixed(2))                // 最近5日每日主力净额(亿)
-          };
-        }
-      } catch (e) { lastErr = e; /* 换域名 */ }
-      await sleep(400);
+/* 东财历史接口是否可用（一旦探测失败置 false，后续板块直接走腾讯，避免超时） */
+let PUSH2HIS_DEAD = false;
+
+async function fetchSectorHist(secid, tries = 1, sectorName) {
+  // 若已知东财不可达，直接走腾讯（节省时间）
+  if (!PUSH2HIS_DEAD) {
+    let lastErr = null;
+    for (let t = 0; t < tries; t++) {
+      for (const host of HIST_HOSTS) {
+        try {
+          const j = await jget(`https://${host}/api/qt/stock/fflow/daykline/get?lmt=130&klt=101&secid=${secid}&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65`, undefined, 6000);
+          const k = (j.data && j.data.klines) || [];
+          if (k.length >= 25) {
+            const closes = k.map(x => parseFloat(x.split(',')[11]));
+            const mains = k.map(x => parseFloat(x.split(',')[1]));
+            const last = closes[closes.length - 1];
+            const hi120 = Math.max(...closes.slice(-120));
+            const close20ago = closes[closes.length - 21];
+            return {
+              drawdown: last > 0 && hi120 > 0 ? +(last - hi120) / hi120 * 100 : null,   // 120日回撤(%)
+              pct20: close20ago > 0 ? +(last - close20ago) / close20ago * 100 : null,   // 20日涨幅(%)
+              fund5: +(mains.slice(-5).reduce((a, b) => a + b, 0) / 1e8).toFixed(2),     // 5日主力净额(亿)
+              fund20: +(mains.slice(-20).reduce((a, b) => a + b, 0) / 1e8).toFixed(2),   // 20日主力净额(亿)
+              fund5Daily: mains.slice(-5).map(v => +(v / 1e8).toFixed(2))                // 最近5日每日主力净额(亿)
+            };
+          }
+        } catch (e) { lastErr = e; /* 换域名 */ }
+        await sleep(300);
+      }
+      await sleep(500);
     }
-    await sleep(800);
+    // 东财全部失败 → 标记不可达，后续板块直接走腾讯
+    PUSH2HIS_DEAD = true;
+    console.log('  ⚠️ push2his 不可达（' + (lastErr ? lastErr.message : '无数据') + '），后续板块改用腾讯备用');
   }
-  // 东财失败 → 腾讯备用通道
+  // 腾讯备用通道
   if (sectorName) {
     const tx = await fetchTxSectorHist(sectorName);
-    if (tx) { console.log('  ℹ️ ' + sectorName + ' 用腾讯备用K线'); return tx; }
+    if (tx) return tx;
   }
-  console.log('  ⚠️ fetchSectorHist 失败 ' + secid + ': ' + (lastErr ? lastErr.message : '无数据'));
   return null;
 }
 
