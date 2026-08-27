@@ -557,6 +557,7 @@ ${payload.realCands && payload.realCands.length ? payload.realCands.map(c => `  
 pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须与池内完全一致）。每只给完整买卖闭环：buy=买入价（**直接用推荐日收盘价**，即池内该股收盘价），stop=止损价（买入价 × 0.95~0.97，明确数值），target=目标价（买入价 × 1.08~1.15，明确数值）。note 必须含"为什么选它+什么条件触发买入+风险提示+止损逻辑"。若真实候选池为空，pools 返回空数组。`;
 
   try {
+    // 首次尝试：thinking 深度思考模式（max_tokens 必须足够大，否则思考过程耗尽配额导致 content 为空）
     const body = {
       model: LLM_MODEL,
       messages: [
@@ -564,9 +565,8 @@ pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须
         { role: 'user', content: prompt }
       ],
       temperature: 0.5,
-      max_tokens: 4000
+      max_tokens: 16000
     };
-    // deepseek-v4-flash 深度思考模式（thinking 参数）
     if (/deepseek/.test(LLM_MODEL)) {
       body.reasoning_effort = 'high';
       body.thinking = { type: 'enabled' };
@@ -575,7 +575,7 @@ pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + LLM_API_KEY },
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(180000)
+      signal: AbortSignal.timeout(240000)
     });
     if (!r.ok) {
       let errBody = '';
@@ -586,25 +586,56 @@ pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须
     const msg = j.choices && j.choices[0] && j.choices[0].message;
 
     /* 从响应中提取 JSON（兼容多种返回格式）：
-       1. content 字段（标准）
-       2. content 为空 → reasoning_content（thinking 模式内容可能放这里）
+       1. content 字段（标准/非思考模式）
+       2. content 为空 → reasoning_content（thinking 模式可能只返回思考过程）
        3. 剥离 ```json 代码块后再提取 */
-    let txt = (msg && msg.content) || '';
-    if (!txt.trim() && msg && msg.reasoning_content) {
-      txt = msg.reasoning_content;
-      console.log('  ⚠️ content 为空，已尝试从 reasoning_content 提取');
-    }
-    let parsed = null;
-    if (txt.trim()) {
+    const extractJson = (m) => {
+      let txt = (m && m.content) || '';
+      let src = 'content';
+      if (!txt.trim() && m && m.reasoning_content) {
+        txt = m.reasoning_content;
+        src = 'reasoning_content';
+        console.log('  ⚠️ content 为空，已尝试从 reasoning_content 提取');
+      }
+      if (!txt.trim()) return { parsed: null, src, len: 0 };
       const stripped = txt.replace(/```(?:json)?\s*/g, '').replace(/```/g, '').trim();
-      const m = stripped.match(/\{[\s\S]*\}/);
-      if (m) { try { parsed = JSON.parse(m[0]); } catch (e) { parsed = null; } }
+      const mm = stripped.match(/\{[\s\S]*\}/);
+      let parsed = null;
+      if (mm) { try { parsed = JSON.parse(mm[0]); } catch (e) { parsed = null; } }
+      return { parsed, src, len: txt.length };
+    };
+
+    let res = extractJson(msg);
+    // 若 thinking 模式未提取到 JSON（思考过程耗尽配额）→ 降级重试：非思考模式
+    if (!res.parsed) {
+      console.log('  ⚠️ 思考模式未提取到 JSON（' + res.src + ' ' + res.len + ' 字）→ 降级为非思考模式重试');
+      const body2 = {
+        model: LLM_MODEL,
+        messages: [
+          { role: 'system', content: '你是资深A股短线情绪周期分析师（爱在冰川框架+金融风控红线）。输出必须严格基于给定数据，不编造；所有推荐给条件→操作→风险提示；仓位最多半仓；止损必须低于买点；结尾注明"框架化复盘/推演，不构成投资建议"。' },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.3,
+        max_tokens: 8000
+      };
+      const r2 = await fetch(LLM_BASE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + LLM_API_KEY },
+        body: JSON.stringify(body2),
+        signal: AbortSignal.timeout(180000)
+      });
+      if (!r2.ok) throw new Error('降级重试 HTTP ' + r2.status);
+      const j2 = await r2.json();
+      const msg2 = j2.choices && j2.choices[0] && j2.choices[0].message;
+      res = extractJson(msg2);
+      if (res.parsed) console.log('  ✨ 降级重试成功（非思考模式）');
     }
-    if (!parsed) {
-      throw new Error('LLM 返回非 JSON（content ' + (txt ? txt.length : 0) + '字' + (msg && msg.reasoning_content ? '/reasoning ' + msg.reasoning_content.length + '字' : '') + '）: ' + txt.slice(0, 200));
+
+    if (!res.parsed) {
+      throw new Error('LLM 返回非 JSON（content ' + res.len + '字）: ' + String(res.txt || '').slice(0, 200));
     }
-    console.log('  ✨ LLM 深度分析已生成（' + LLM_MODEL + '，思考模式）');
-    return parsed;
+    console.log('  ✨ LLM 深度分析已生成（' + LLM_MODEL + '）');
+    return res.parsed;
   } catch (e) {
     console.log('  ⚠️ LLM 调用失败，回退规则模板: ' + e.message);
     return null;
