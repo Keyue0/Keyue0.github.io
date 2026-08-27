@@ -554,7 +554,7 @@ ${payload.realCands && payload.realCands.length ? payload.realCands.map(c => `  
 请完成全部九段思考，以 JSON 返回（不要 markdown 代码块）：
 {"sec1":"大盘情绪局势分析：为什么今天走成这样+明日情绪推演（80-150字）","sec2":"次日回头看+今日信号验证（若前日有计划则验证，否则写今日关键信号）（60-120字）","sec3":"板块效应深度分析：主线是什么、为什么是它、持续性、明日预期（100-160字）","sec4":"龙头梯队研判：高度板/连板梯队结构、明日晋级预期（60-120字）","sec5":"主力资金解读：真实意图、异常信号、三分类判断、资金主线（80-140字）","sec6":"低位右侧机会：哪个板块值得低吸、为什么、风险点（80-140字）","sec7":"共振/背离判定及依据（60-100字）","sec8":"明日计划：仓位建议(最多半仓)+目标板块+系统性/结构性放弃条件（100-180字，含具体数字）","sec9":"一句话收尾（20-40字，带冰川标志性表达）","pools":[{"sector":"板块","name":"个股","code":"6位","buy":买点,"stop":止损,"target":目标,"status":"观察中/可低吸/放弃","note":"推荐逻辑(为什么+触发条件+风险)"}],"lhb_summary":["龙虎榜盘面观察1","龙虎榜盘面观察2","龙虎榜盘面观察3"]}
 
-pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须与池内完全一致），每只必须给精准买点/止损/目标价（止损必须<买点，目标>买点，基于当日收盘价推算：止损-3%~-5%，目标+8%~+15%），note 必须含"为什么选它+什么条件触发买入+风险提示"。若真实候选池为空，pools 返回空数组。`;
+pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须与池内完全一致）。每只给完整买卖闭环：buy=买入价（**直接用推荐日收盘价**，即池内该股收盘价），stop=止损价（买入价 × 0.95~0.97，明确数值），target=目标价（买入价 × 1.08~1.15，明确数值）。note 必须含"为什么选它+什么条件触发买入+风险提示+止损逻辑"。若真实候选池为空，pools 返回空数组。`;
 
   try {
     const body = {
@@ -564,7 +564,7 @@ pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须
         { role: 'user', content: prompt }
       ],
       temperature: 0.5,
-      max_tokens: 2500
+      max_tokens: 4000
     };
     // deepseek-v4-flash 深度思考模式（thinking 参数）
     if (/deepseek/.test(LLM_MODEL)) {
@@ -575,14 +575,34 @@ pools 要求：3-6只，**必须从"真实候选股池"中选取**（code 必须
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + LLM_API_KEY },
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(120000)
+      signal: AbortSignal.timeout(180000)
     });
-    if (!r.ok) throw new Error('LLM HTTP ' + r.status);
+    if (!r.ok) {
+      let errBody = '';
+      try { errBody = (await r.text()).slice(0, 300); } catch (e) { /* 忽略 */ }
+      throw new Error('LLM HTTP ' + r.status + ' ' + errBody);
+    }
     const j = await r.json();
-    const txt = j.choices && j.choices[0] && j.choices[0].message ? j.choices[0].message.content : '';
-    const m = txt.match(/\{[\s\S]*\}/);
-    if (!m) throw new Error('LLM 返回非 JSON');
-    const parsed = JSON.parse(m[0]);
+    const msg = j.choices && j.choices[0] && j.choices[0].message;
+
+    /* 从响应中提取 JSON（兼容多种返回格式）：
+       1. content 字段（标准）
+       2. content 为空 → reasoning_content（thinking 模式内容可能放这里）
+       3. 剥离 ```json 代码块后再提取 */
+    let txt = (msg && msg.content) || '';
+    if (!txt.trim() && msg && msg.reasoning_content) {
+      txt = msg.reasoning_content;
+      console.log('  ⚠️ content 为空，已尝试从 reasoning_content 提取');
+    }
+    let parsed = null;
+    if (txt.trim()) {
+      const stripped = txt.replace(/```(?:json)?\s*/g, '').replace(/```/g, '').trim();
+      const m = stripped.match(/\{[\s\S]*\}/);
+      if (m) { try { parsed = JSON.parse(m[0]); } catch (e) { parsed = null; } }
+    }
+    if (!parsed) {
+      throw new Error('LLM 返回非 JSON（content ' + (txt ? txt.length : 0) + '字' + (msg && msg.reasoning_content ? '/reasoning ' + msg.reasoning_content.length + '字' : '') + '）: ' + txt.slice(0, 200));
+    }
     console.log('  ✨ LLM 深度分析已生成（' + LLM_MODEL + '，思考模式）');
     return parsed;
   } catch (e) {
@@ -1100,21 +1120,51 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
   });
   upsertIndex('pools/index.json', { date: td.date });
 
-  /* --- 6.5 候选池次日跟踪（T 日推荐 → T+1 记录真实涨跌幅，留档 7 天） ---
-     读取历史 pools/<过去日期>.json 的候选股，拉取今日（td.date）真实行情，
-     计算相对推荐日收盘价的涨跌幅 + 是否触及买点/止损/目标，写入 pools/track/<推荐日>.json */
-  async function trackPrevPools() {
-    const dir = path.join(DATA, 'pools');
-    if (!fs.existsSync(dir)) return;
-    const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
-    const prevDates = files.map(f => f.slice(0, 10)).filter(d => d < td.date).sort().slice(-7);  // 留档 7 天
-    for (const prevDate of prevDates) {
-      let prev;
-      try { prev = JSON.parse(fs.readFileSync(path.join(dir, prevDate + '.json'), 'utf8')); } catch (e) { continue; }
-      const prevPools = (prev.pools || []).filter(p => p.code && /^\d{6}$/.test(String(p.code)));
-      if (!prevPools.length) continue;
-      // 腾讯批量拉今日行情
-      const qs = prevPools.map(p => /^(6|68|9)/.test(p.code) ? 'sh' + p.code : (/^(0|3)/.test(p.code) ? 'sz' + p.code : p.code)).join(',');
+  /* --- 6.5 持仓账本（模拟实盘：推荐→买入→持有→止损/止盈→卖出显示收益率，留档 7 天） ---
+     买入价 = 推荐日收盘价；每日拉真实行情更新；收盘价≤止损价→止损卖出；≥目标价→止盈卖出；
+     最长持有 5 个交易日未触发→按当日收盘价平仓结算。账本跨日持久化于 data/pools/positions.json */
+  async function updatePositions() {
+    const posPath = path.join(DATA, 'pools', 'positions.json');
+    let book = [];
+    try { book = JSON.parse(fs.readFileSync(posPath, 'utf8')); } catch (e) { book = []; }
+
+    // 1. 今日新推荐 → 入账（买入价=推荐日收盘价）
+    const todayPool = poolRows.filter(p => p.code && /^\d{6}$/.test(String(p.code)));
+    if (todayPool.length) {
+      // 腾讯批量拉今日收盘价（作为买入成本）
+      const qs = todayPool.map(p => /^(6|68|9)/.test(p.code) ? 'sh' + p.code : (/^(0|3)/.test(p.code) ? 'sz' + p.code : p.code)).join(',');
+      let closeMap = {};
+      try {
+        const t = await gbk('https://qt.gtimg.cn/q=' + qs);
+        t.split(';').forEach(line => {
+          const m = line.match(/v_(\w+)="([^"]*)"/);
+          if (!m) return;
+          const f = m[2].split('~');
+          closeMap[f[2]] = parseFloat(f[3]);
+        });
+      } catch (e) { /* 忽略 */ }
+      todayPool.forEach(p => {
+        if (book.find(x => x.code === p.code)) return;   // 已在账本，不重复入账
+        const close = closeMap[p.code];
+        if (!close || close <= 0) return;
+        const stop = p.stop != null ? p.stop : +(close * 0.95).toFixed(2);
+        const target = p.target != null ? p.target : +(close * 1.10).toFixed(2);
+        book.push({
+          code: p.code, name: p.name, sector: p.sector || '',
+          rec_date: td.date,               // 推荐日
+          buy_price: close,                // 买入价 = 推荐日收盘价
+          stop, target,                    // LLM 计算的止损/目标
+          status: '持有中',                 // 持有中 / 已止损 / 已止盈 / 到期平仓
+          sell_date: null, sell_price: null, return_pct: null,
+          days_held: 0, history: [{ date: td.date, close, pct: 0 }]
+        });
+      });
+    }
+
+    // 2. 更新所有"持有中"的持仓（拉今日真实行情，判断卖出）
+    const holding = book.filter(p => p.status === '持有中');
+    if (holding.length) {
+      const qs = holding.map(p => /^(6|68|9)/.test(p.code) ? 'sh' + p.code : (/^(0|3)/.test(p.code) ? 'sz' + p.code : p.code)).join(',');
       let today = {};
       try {
         const t = await gbk('https://qt.gtimg.cn/q=' + qs);
@@ -1124,47 +1174,40 @@ ${inTop.slice(0, 3).map((x, i) => `${i + 1}. **${x.name}**（资金净流入 +${
           const f = m[2].split('~');
           today[f[2]] = { close: parseFloat(f[3]), pct: parseFloat(f[32]) || 0 };
         });
-      } catch (e) { continue; }
-      // 生成跟踪记录
-      const trackRows = prevPools.map(p => {
+      } catch (e) { /* 忽略 */ }
+      holding.forEach(p => {
         const q = today[p.code];
-        const rec = {
-          code: p.code, name: p.name, sector: p.sector || '',
-          buy: p.buy != null ? p.buy : null, stop: p.stop != null ? p.stop : null,
-          target: p.target != null ? p.target : null
-        };
-        if (q && q.close > 0) {
-          rec.close = q.close;
-          rec.pct = q.pct;   // 当日涨跌幅（相对 T 日收盘）
-          // 是否触发买点/止损/目标
-          if (p.buy != null) rec.touched_buy = q.close <= p.buy ? '是' : '否';
-          if (p.stop != null) rec.touched_stop = q.close <= p.stop ? '是' : '否';
-          if (p.target != null) rec.touched_target = q.close >= p.target ? '是' : '否';
-          rec.verdict = rec.touched_stop === '是' ? '破位止损' : (rec.touched_target === '是' ? '达标' : (q.pct > 0 ? '上涨' : (q.pct < 0 ? '下跌' : '平盘')));
+        if (!q || q.close <= 0) return;   // 无行情，跳过
+        p.days_held = (p.days_held || 0) + 1;
+        // 追加历史（避免同日重复）
+        if (!p.history.find(h => h.date === td.date)) p.history.push({ date: td.date, close: q.close, pct: q.pct });
+        const ret = +((q.close - p.buy_price) / p.buy_price * 100).toFixed(2);
+        // 卖出判定：止损 > 止盈 > 到期平仓（先到先触发）
+        if (q.close <= p.stop) {
+          p.status = '已止损'; p.sell_date = td.date; p.sell_price = q.close; p.return_pct = ret;
+          p.verdict = '止损卖出（收盘价≤止损价 ' + p.stop + '）';
+        } else if (q.close >= p.target) {
+          p.status = '已止盈'; p.sell_date = td.date; p.sell_price = q.close; p.return_pct = ret;
+          p.verdict = '止盈卖出（收盘价≥目标价 ' + p.target + '）';
+        } else if (p.days_held >= 5) {
+          p.status = '到期平仓'; p.sell_date = td.date; p.sell_price = q.close; p.return_pct = ret;
+          p.verdict = '到期平仓（持有 ' + p.days_held + ' 日未触发止损/目标）';
         } else {
-          rec.close = null; rec.pct = null; rec.verdict = '无行情';
+          p.cur_price = q.close; p.cur_pct = ret;   // 继续持有
         }
-        return rec;
       });
-      // 写跟踪文件（覆盖式更新：同日多次运行以最新为准）
-      const trackPath = path.join(dir, 'track', prevDate + '.json');
-      fs.mkdirSync(path.dirname(trackPath), { recursive: true });
-      const old = fs.existsSync(trackPath) ? JSON.parse(fs.readFileSync(trackPath, 'utf8')) : { date: prevDate, rows: [] };
-      const merged = [];
-      trackRows.forEach(r => {
-        const hit = old.rows.find(o => o.code === r.code);
-        merged.push(hit ? { ...hit, ...r } : r);
-      });
-      fs.writeFileSync(trackPath, JSON.stringify({ date: prevDate, tracked_at: td.date, note: '候选池次日跟踪（真实行情，留档7天）', rows: merged }, null, 2), 'utf8');
-      // 索引
-      const idxPath = path.join(dir, 'track/index.json');
-      let idx = [];
-      try { idx = JSON.parse(fs.readFileSync(idxPath, 'utf8')); } catch (e) { idx = []; }
-      if (!idx.find(x => x.date === prevDate)) { idx.push({ date: prevDate }); idx.sort((a, b) => a.date < b.date ? 1 : -1); fs.writeFileSync(idxPath, JSON.stringify(idx, null, 2), 'utf8'); }
-      console.log('  ✓ 候选池跟踪已更新: ' + prevDate + '（' + trackRows.length + ' 只，跟踪日 ' + td.date + '）');
     }
+
+    // 3. 清理：只保留最近 7 个交易日的已平仓记录
+    const cutoff = td.date;
+    book = book.filter(p => p.status === '持有中' || (p.sell_date && p.sell_date >= cutoff));
+
+    fs.writeFileSync(posPath, JSON.stringify(book, null, 2), 'utf8');
+    const holdingN = book.filter(p => p.status === '持有中').length;
+    const closedN = book.filter(p => p.status !== '持有中').length;
+    console.log('  ✓ 持仓账本：持有中 ' + holdingN + ' 只 / 已平仓 ' + closedN + ' 只（留档7天）');
   }
-  if (!isAm) await trackPrevPools();
+  if (!isAm) await updatePositions();
 
   // 7. lhb 龙虎榜（席位明细 + 机构 + 拉萨 + LLM 解读）
   let lhbSummary = llmLhbSummary || [];
