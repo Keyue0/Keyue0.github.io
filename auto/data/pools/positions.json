@@ -194,34 +194,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "002886",
-    "name": "沃特股份",
-    "sector": "塑料",
-    "rec_date": "2026-08-27",
-    "buy_price": 26.4,
-    "stop": 25.08,
-    "target": 28.51,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 26.4,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 26.4,
-        "pct": 10
-      }
-    ],
-    "cur_price": 26.4,
-    "cur_pct": 0
-  },
-  {
     "code": "600654",
     "name": "中安科",
     "sector": "软件开发",
@@ -229,11 +201,11 @@
     "buy_price": 3.63,
     "stop": 3.45,
     "target": 3.99,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-28",
+    "sell_price": 3.63,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-28",
@@ -247,7 +219,8 @@
       }
     ],
     "cur_price": 3.63,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002279",
@@ -257,11 +230,11 @@
     "buy_price": 7.05,
     "stop": 6.7,
     "target": 7.76,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-28",
+    "sell_price": 7.05,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-28",
@@ -275,7 +248,8 @@
       }
     ],
     "cur_price": 7.05,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002165",
@@ -285,11 +259,11 @@
     "buy_price": 8.37,
     "stop": 7.95,
     "target": 9.21,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-28",
+    "sell_price": 8.37,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-28",
@@ -303,7 +277,8 @@
       }
     ],
     "cur_price": 8.37,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600378",
@@ -313,11 +288,11 @@
     "buy_price": 53.31,
     "stop": 50.64,
     "target": 58.64,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-28",
+    "sell_price": 53.31,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-28",
@@ -331,7 +306,8 @@
       }
     ],
     "cur_price": 53.31,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600540",
@@ -345,7 +321,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-27",
@@ -373,7 +349,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-27",
@@ -401,7 +377,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-27",
@@ -429,7 +405,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-27",
@@ -457,12 +433,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-28",
         "close": 20.91,
         "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 20.91,
+        "pct": 9.99
       }
     ],
     "cur_price": 20.91,
@@ -480,15 +461,71 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-28",
         "close": 37.45,
         "pct": 0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 37.45,
+        "pct": 19.99
       }
     ],
     "cur_price": 37.45,
+    "cur_pct": 0
+  },
+  {
+    "code": "001232",
+    "name": "嘉立创",
+    "sector": "元件",
+    "rec_date": "2026-08-27",
+    "buy_price": 175.01,
+    "stop": 166.26,
+    "target": 192.51,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-27",
+        "close": 175.01,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-28",
+        "close": 175.01,
+        "pct": 8.01
+      }
+    ],
+    "cur_price": 175.01,
+    "cur_pct": 0
+  },
+  {
+    "code": "603011",
+    "name": "合锻智能",
+    "sector": "专用设备",
+    "rec_date": "2026-08-28",
+    "buy_price": 27.65,
+    "stop": 26.27,
+    "target": 30.42,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 27.65,
+        "pct": 0
+      }
+    ],
+    "cur_price": 27.65,
     "cur_pct": 0
   }
 ]
