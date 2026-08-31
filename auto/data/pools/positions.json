@@ -179,146 +179,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "002165",
-    "name": "红宝丽",
-    "sector": "化学制品",
-    "rec_date": "2026-08-28",
-    "buy_price": 8.59,
-    "stop": 8.16,
-    "target": 9.45,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 8.59,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 8.59,
-        "pct": 2.63
-      }
-    ],
-    "cur_price": 8.59,
-    "cur_pct": 0
-  },
-  {
-    "code": "002942",
-    "name": "新农股份",
-    "sector": "农化制品",
-    "rec_date": "2026-08-28",
-    "buy_price": 22,
-    "stop": 20.9,
-    "target": 24.2,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 22,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 22,
-        "pct": 5.21
-      }
-    ],
-    "cur_price": 22,
-    "cur_pct": 0
-  },
-  {
-    "code": "300378",
-    "name": "鼎捷数智",
-    "sector": "软件开发",
-    "rec_date": "2026-08-28",
-    "buy_price": 38.54,
-    "stop": 36.61,
-    "target": 42.39,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 38.54,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 38.54,
-        "pct": 2.91
-      }
-    ],
-    "cur_price": 38.54,
-    "cur_pct": 0
-  },
-  {
-    "code": "001288",
-    "name": "运机集团",
-    "sector": "专用设备",
-    "rec_date": "2026-08-28",
-    "buy_price": 29.42,
-    "stop": 27.95,
-    "target": 32.36,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 29.42,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 29.42,
-        "pct": 3.37
-      }
-    ],
-    "cur_price": 29.42,
-    "cur_pct": 0
-  },
-  {
-    "code": "002631",
-    "name": "德尔未来",
-    "sector": "家居用品",
-    "rec_date": "2026-08-28",
-    "buy_price": 10.76,
-    "stop": 10.22,
-    "target": 11.84,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 10.76,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 10.76,
-        "pct": 6.53
-      }
-    ],
-    "cur_price": 10.76,
-    "cur_pct": 0
-  },
-  {
     "code": "002375",
     "name": "亚厦股份",
     "sector": "装修装饰",
@@ -326,11 +186,11 @@
     "buy_price": 4.07,
     "stop": 3.87,
     "target": 4.48,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-31",
+    "sell_price": 4.07,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-31",
@@ -344,7 +204,8 @@
       }
     ],
     "cur_price": 4.07,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002328",
@@ -354,11 +215,11 @@
     "buy_price": 8.5,
     "stop": 8.08,
     "target": 9.35,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-31",
+    "sell_price": 8.5,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-31",
@@ -372,7 +233,8 @@
       }
     ],
     "cur_price": 8.5,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "001221",
@@ -382,11 +244,11 @@
     "buy_price": 41.27,
     "stop": 39.21,
     "target": 45.4,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-31",
+    "sell_price": 41.27,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-31",
@@ -400,7 +262,8 @@
       }
     ],
     "cur_price": 41.27,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603270",
@@ -414,12 +277,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
         "close": 30.25,
         "pct": 0
+      },
+      {
+        "date": "2026-08-28",
+        "close": 30.25,
+        "pct": 10
       }
     ],
     "cur_price": 30.25,
@@ -437,15 +305,104 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
         "close": 49.72,
         "pct": 0
+      },
+      {
+        "date": "2026-08-28",
+        "close": 49.72,
+        "pct": 10
       }
     ],
     "cur_price": 49.72,
+    "cur_pct": 0
+  },
+  {
+    "code": "600378",
+    "name": "昊华科技",
+    "sector": "化学制品",
+    "rec_date": "2026-08-28",
+    "buy_price": 53.01,
+    "stop": 50.36,
+    "target": 58.31,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 53.01,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 53.01,
+        "pct": -0.56
+      }
+    ],
+    "cur_price": 53.01,
+    "cur_pct": 0
+  },
+  {
+    "code": "002084",
+    "name": "海鸥住工",
+    "sector": "家居用品",
+    "rec_date": "2026-08-28",
+    "buy_price": 6.38,
+    "stop": 6.06,
+    "target": 7.02,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 6.38,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 6.38,
+        "pct": 10
+      }
+    ],
+    "cur_price": 6.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "600654",
+    "name": "中安科",
+    "sector": "软件开发",
+    "rec_date": "2026-08-28",
+    "buy_price": 3.36,
+    "stop": 3.19,
+    "target": 3.63,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 3.36,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 3.36,
+        "pct": -7.44
+      }
+    ],
+    "cur_price": 3.36,
     "cur_pct": 0
   }
 ]
