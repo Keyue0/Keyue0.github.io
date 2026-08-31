@@ -1813,724 +1813,724 @@
     {
       "sector": "传媒",
       "code": "BK0486",
-      "main": 27.4,
-      "pct": 2.67
+      "main": 58.67,
+      "pct": 4.52
     },
     {
-      "sector": "银行",
-      "code": "BK1283",
-      "main": 15.17,
-      "pct": 1.34
+      "sector": "计算机",
+      "code": "BK1207",
+      "main": 34.02,
+      "pct": 1.82
     },
     {
-      "sector": "银行Ⅱ",
-      "code": "BK0475",
-      "main": 15.17,
-      "pct": 1.34
+      "sector": "数字芯片设计",
+      "code": "BK1331",
+      "main": 31.37,
+      "pct": 3.78
+    },
+    {
+      "sector": "电子",
+      "code": "BK1201",
+      "main": 29.53,
+      "pct": 2.33
+    },
+    {
+      "sector": "机械设备",
+      "code": "BK1205",
+      "main": 25.84,
+      "pct": 1.67
     },
     {
       "sector": "数字媒体",
       "code": "BK1221",
-      "main": 14.84,
-      "pct": 5.16
+      "main": 25.54,
+      "pct": 6.78
     },
     {
-      "sector": "影视院线",
-      "code": "BK1222",
-      "main": 8.43,
-      "pct": 4.9
-    },
-    {
-      "sector": "影视动漫制作",
-      "code": "BK1299",
-      "main": 8.29,
-      "pct": 5.66
-    },
-    {
-      "sector": "文字媒体",
-      "code": "BK1298",
-      "main": 7.34,
-      "pct": 11.9
-    },
-    {
-      "sector": "国有大型银行Ⅲ",
-      "code": "BK1611",
-      "main": 6.9,
+      "sector": "消费电子零部件及组装",
+      "code": "BK1338",
+      "main": 22.82,
       "pct": 2.87
-    },
-    {
-      "sector": "石油石化",
-      "code": "BK0464",
-      "main": 6.12,
-      "pct": -0.22
-    },
-    {
-      "sector": "轻工制造",
-      "code": "BK1212",
-      "main": 5.69,
-      "pct": 0.64
-    },
-    {
-      "sector": "动力煤",
-      "code": "BK1493",
-      "main": 5.62,
-      "pct": 1.89
-    },
-    {
-      "sector": "煤炭开采",
-      "code": "BK1250",
-      "main": 5.44,
-      "pct": 1.97
-    },
-    {
-      "sector": "煤炭",
-      "code": "BK0437",
-      "main": 5.16,
-      "pct": 1.58
-    },
-    {
-      "sector": "装修装饰Ⅲ",
-      "code": "BK1478",
-      "main": 5,
-      "pct": 2.95
-    },
-    {
-      "sector": "装修装饰Ⅱ",
-      "code": "BK0725",
-      "main": 5,
-      "pct": 2.95
-    },
-    {
-      "sector": "股份制银行Ⅲ",
-      "code": "BK1610",
-      "main": 4.66,
-      "pct": 0.46
-    },
-    {
-      "sector": "家用电器",
-      "code": "BK0456",
-      "main": 4.63,
-      "pct": 0.54
-    },
-    {
-      "sector": "IT服务Ⅲ",
-      "code": "BK1444",
-      "main": 4.33,
-      "pct": 0.41
-    },
-    {
-      "sector": "IT服务Ⅱ",
-      "code": "BK1238",
-      "main": 4.33,
-      "pct": 0.41
-    },
-    {
-      "sector": "计算机设备",
-      "code": "BK0735",
-      "main": 3.82,
-      "pct": 0.71
-    },
-    {
-      "sector": "其他自动化设备",
-      "code": "BK1410",
-      "main": 3.8,
-      "pct": 0.63
-    },
-    {
-      "sector": "门户网站",
-      "code": "BK1294",
-      "main": 3.77,
-      "pct": 2.24
-    },
-    {
-      "sector": "包装印刷",
-      "code": "BK1265",
-      "main": 3.55,
-      "pct": 0.8
-    },
-    {
-      "sector": "炼化及贸易",
-      "code": "BK1274",
-      "main": 3.42,
-      "pct": -0.25
-    },
-    {
-      "sector": "光学光电子",
-      "code": "BK1038",
-      "main": 3.39,
-      "pct": 0.47
-    },
-    {
-      "sector": "光学元件",
-      "code": "BK1334",
-      "main": 3.26,
-      "pct": 1.05
-    },
-    {
-      "sector": "其他计算机设备",
-      "code": "BK1446",
-      "main": 3.2,
-      "pct": 0.2
-    },
-    {
-      "sector": "炼油化工",
-      "code": "BK1569",
-      "main": 3.1,
-      "pct": 0.28
-    },
-    {
-      "sector": "城商行Ⅲ",
-      "code": "BK1609",
-      "main": 3.08,
-      "pct": 1.47
-    },
-    {
-      "sector": "塑料包装",
-      "code": "BK1533",
-      "main": 2.92,
-      "pct": 1.1
-    },
-    {
-      "sector": "视频媒体",
-      "code": "BK1296",
-      "main": 2.78,
-      "pct": 20
-    },
-    {
-      "sector": "白色家电",
-      "code": "BK1239",
-      "main": 2.58,
-      "pct": -0.18
-    },
-    {
-      "sector": "制冷空调设备",
-      "code": "BK1400",
-      "main": 2.42,
-      "pct": 1.09
-    },
-    {
-      "sector": "家居用品",
-      "code": "BK0440",
-      "main": 2.33,
-      "pct": 1.31
-    },
-    {
-      "sector": "通用设备",
-      "code": "BK0545",
-      "main": 2.25,
-      "pct": 1.18
-    },
-    {
-      "sector": "房地产服务",
-      "code": "BK1045",
-      "main": 2.14,
-      "pct": 1.82
-    },
-    {
-      "sector": "机床工具",
-      "code": "BK1395",
-      "main": 2.1,
-      "pct": 2.82
-    },
-    {
-      "sector": "非金属材料Ⅲ",
-      "code": "BK1411",
-      "main": 2.06,
-      "pct": -0.15
-    },
-    {
-      "sector": "非金属材料Ⅱ",
-      "code": "BK1020",
-      "main": 2.06,
-      "pct": -0.15
-    },
-    {
-      "sector": "空调",
-      "code": "BK1450",
-      "main": 2,
-      "pct": 0.48
-    },
-    {
-      "sector": "生猪养殖",
-      "code": "BK1512",
-      "main": 1.79,
-      "pct": 1.28
-    },
-    {
-      "sector": "面板",
-      "code": "BK1335",
-      "main": 1.77,
-      "pct": -0.27
-    },
-    {
-      "sector": "油服工程",
-      "code": "BK1275",
-      "main": 1.76,
-      "pct": -0.16
-    },
-    {
-      "sector": "养殖业",
-      "code": "BK1259",
-      "main": 1.68,
-      "pct": 0.63
-    },
-    {
-      "sector": "出版",
-      "code": "BK1218",
-      "main": 1.6,
-      "pct": 2.12
-    },
-    {
-      "sector": "电视广播Ⅲ",
-      "code": "BK1291",
-      "main": 1.59,
-      "pct": 2.39
-    },
-    {
-      "sector": "电视广播Ⅱ",
-      "code": "BK1219",
-      "main": 1.59,
-      "pct": 2.39
-    },
-    {
-      "sector": "氮肥",
-      "code": "BK1432",
-      "main": 1.51,
-      "pct": 4.02
-    },
-    {
-      "sector": "锂",
-      "code": "BK1621",
-      "main": 1.46,
-      "pct": -1.59
-    },
-    {
-      "sector": "油气及炼化工程",
-      "code": "BK1572",
-      "main": 1.42,
-      "pct": -0.67
-    },
-    {
-      "sector": "服装家纺",
-      "code": "BK1225",
-      "main": 1.41,
-      "pct": 0.97
-    },
-    {
-      "sector": "定制家居",
-      "code": "BK1539",
-      "main": 1.33,
-      "pct": 1.97
-    },
-    {
-      "sector": "家电零部件Ⅲ",
-      "code": "BK1455",
-      "main": 1.25,
-      "pct": 0.82
-    },
-    {
-      "sector": "家电零部件Ⅱ",
-      "code": "BK1242",
-      "main": 1.25,
-      "pct": 0.82
     },
     {
       "sector": "消费电子",
       "code": "BK1037",
-      "main": 1.25,
-      "pct": 1.52
+      "main": 22.57,
+      "pct": 2.8
     },
     {
-      "sector": "房产租赁经纪",
-      "code": "BK1341",
-      "main": 1.24,
-      "pct": 4.57
+      "sector": "IT服务Ⅲ",
+      "code": "BK1444",
+      "main": 20.35,
+      "pct": 2.02
     },
     {
-      "sector": "其他汽车零部件",
-      "code": "BK1528",
-      "main": 1.22,
-      "pct": 1.32
+      "sector": "IT服务Ⅱ",
+      "code": "BK1238",
+      "main": 20.35,
+      "pct": 2.02
     },
     {
-      "sector": "文娱用品",
-      "code": "BK1266",
-      "main": 1.12,
-      "pct": 0.91
+      "sector": "银行",
+      "code": "BK1283",
+      "main": 18.81,
+      "pct": 1.38
     },
     {
-      "sector": "大众出版",
-      "code": "BK1289",
-      "main": 1.1,
+      "sector": "银行Ⅱ",
+      "code": "BK0475",
+      "main": 18.81,
+      "pct": 1.38
+    },
+    {
+      "sector": "计算机设备",
+      "code": "BK0735",
+      "main": 18.29,
+      "pct": 2.07
+    },
+    {
+      "sector": "其他计算机设备",
+      "code": "BK1446",
+      "main": 18.22,
+      "pct": 1.48
+    },
+    {
+      "sector": "印制电路板",
+      "code": "BK1340",
+      "main": 16.53,
+      "pct": 3.55
+    },
+    {
+      "sector": "光学光电子",
+      "code": "BK1038",
+      "main": 15.56,
+      "pct": 1.87
+    },
+    {
+      "sector": "文字媒体",
+      "code": "BK1298",
+      "main": 13.06,
+      "pct": 15
+    },
+    {
+      "sector": "影视院线",
+      "code": "BK1222",
+      "main": 12.72,
+      "pct": 6.69
+    },
+    {
+      "sector": "影视动漫制作",
+      "code": "BK1299",
+      "main": 12.52,
+      "pct": 7.75
+    },
+    {
+      "sector": "通用设备",
+      "code": "BK0545",
+      "main": 12.4,
+      "pct": 2.33
+    },
+    {
+      "sector": "自动化设备",
+      "code": "BK1237",
+      "main": 11.63,
+      "pct": 2
+    },
+    {
+      "sector": "国有大型银行Ⅲ",
+      "code": "BK1611",
+      "main": 10.56,
+      "pct": 3.31
+    },
+    {
+      "sector": "激光设备",
+      "code": "BK1409",
+      "main": 10.41,
       "pct": 2.46
     },
     {
-      "sector": "环保设备Ⅲ",
-      "code": "BK1387",
-      "main": 1.09,
-      "pct": 0.8
+      "sector": "面板",
+      "code": "BK1335",
+      "main": 10.38,
+      "pct": 1.1
+    },
+    {
+      "sector": "元件",
+      "code": "BK0459",
+      "main": 9.92,
+      "pct": 2.99
+    },
+    {
+      "sector": "煤炭开采",
+      "code": "BK1250",
+      "main": 9.68,
+      "pct": 2.46
+    },
+    {
+      "sector": "动力煤",
+      "code": "BK1493",
+      "main": 9.56,
+      "pct": 2.59
+    },
+    {
+      "sector": "家用电器",
+      "code": "BK0456",
+      "main": 9.5,
+      "pct": 1.35
+    },
+    {
+      "sector": "煤炭",
+      "code": "BK0437",
+      "main": 9.33,
+      "pct": 2.03
+    },
+    {
+      "sector": "石油石化",
+      "code": "BK0464",
+      "main": 8.95,
+      "pct": 0.51
+    },
+    {
+      "sector": "轻工制造",
+      "code": "BK1212",
+      "main": 8.51,
+      "pct": 1.2
+    },
+    {
+      "sector": "门户网站",
+      "code": "BK1294",
+      "main": 8.15,
+      "pct": 3.85
+    },
+    {
+      "sector": "营销代理",
+      "code": "BK1293",
+      "main": 7.63,
+      "pct": 4.22
+    },
+    {
+      "sector": "广告营销",
+      "code": "BK1220",
+      "main": 7.55,
+      "pct": 4.01
+    },
+    {
+      "sector": "电视广播Ⅲ",
+      "code": "BK1291",
+      "main": 6.86,
+      "pct": 6.03
+    },
+    {
+      "sector": "电视广播Ⅱ",
+      "code": "BK1219",
+      "main": 6.86,
+      "pct": 6.03
+    },
+    {
+      "sector": "光学元件",
+      "code": "BK1334",
+      "main": 5.94,
+      "pct": 2.72
+    },
+    {
+      "sector": "玻纤制造",
+      "code": "BK1462",
+      "main": 5.88,
+      "pct": 1.52
+    },
+    {
+      "sector": "炼化及贸易",
+      "code": "BK1274",
+      "main": 5.56,
+      "pct": 0.5
+    },
+    {
+      "sector": "装修装饰Ⅲ",
+      "code": "BK1478",
+      "main": 5.53,
+      "pct": 3.06
+    },
+    {
+      "sector": "装修装饰Ⅱ",
+      "code": "BK0725",
+      "main": 5.53,
+      "pct": 3.06
+    },
+    {
+      "sector": "包装印刷",
+      "code": "BK1265",
+      "main": 5.51,
+      "pct": 1.59
+    },
+    {
+      "sector": "其他自动化设备",
+      "code": "BK1410",
+      "main": 5.45,
+      "pct": 2.26
+    },
+    {
+      "sector": "玻璃玻纤",
+      "code": "BK0546",
+      "main": 5.14,
+      "pct": 0.22
+    },
+    {
+      "sector": "白色家电",
+      "code": "BK1239",
+      "main": 5.08,
+      "pct": 0.3
+    },
+    {
+      "sector": "炼油化工",
+      "code": "BK1569",
+      "main": 5.08,
+      "pct": 1.12
+    },
+    {
+      "sector": "股份制银行Ⅲ",
+      "code": "BK1610",
+      "main": 5.05,
+      "pct": 0.35
+    },
+    {
+      "sector": "航空装备Ⅲ",
+      "code": "BK1384",
+      "main": 4.59,
+      "pct": 1.31
+    },
+    {
+      "sector": "航空装备Ⅱ",
+      "code": "BK1231",
+      "main": 4.59,
+      "pct": 1.31
+    },
+    {
+      "sector": "空调",
+      "code": "BK1450",
+      "main": 4.07,
+      "pct": 0.41
+    },
+    {
+      "sector": "金属制品",
+      "code": "BK1396",
+      "main": 3.89,
+      "pct": 2.43
+    },
+    {
+      "sector": "制冷空调设备",
+      "code": "BK1400",
+      "main": 3.77,
+      "pct": 2.17
+    },
+    {
+      "sector": "建筑材料",
+      "code": "BK1208",
+      "main": 3.42,
+      "pct": 0.01
+    },
+    {
+      "sector": "塑料包装",
+      "code": "BK1533",
+      "main": 3.4,
+      "pct": 1.63
+    },
+    {
+      "sector": "家居用品",
+      "code": "BK0440",
+      "main": 3.35,
+      "pct": 1.55
+    },
+    {
+      "sector": "通信服务",
+      "code": "BK0736",
+      "main": 3.25,
+      "pct": 2.44
+    },
+    {
+      "sector": "城商行Ⅲ",
+      "code": "BK1609",
+      "main": 3.21,
+      "pct": 1.59
+    },
+    {
+      "sector": "游戏Ⅲ",
+      "code": "BK1301",
+      "main": 3.21,
+      "pct": 2.37
+    },
+    {
+      "sector": "游戏Ⅱ",
+      "code": "BK1046",
+      "main": 3.21,
+      "pct": 2.37
+    },
+    {
+      "sector": "视频媒体",
+      "code": "BK1296",
+      "main": 3.02,
+      "pct": 20
     }
   ],
   "2026-08-31": [
     {
       "sector": "传媒",
       "code": "BK0486",
-      "main": 27.4,
-      "pct": 2.67
+      "main": 58.67,
+      "pct": 4.52
     },
     {
-      "sector": "银行",
-      "code": "BK1283",
-      "main": 15.17,
-      "pct": 1.34
+      "sector": "计算机",
+      "code": "BK1207",
+      "main": 34.02,
+      "pct": 1.82
     },
     {
-      "sector": "银行Ⅱ",
-      "code": "BK0475",
-      "main": 15.17,
-      "pct": 1.34
+      "sector": "数字芯片设计",
+      "code": "BK1331",
+      "main": 31.37,
+      "pct": 3.78
+    },
+    {
+      "sector": "电子",
+      "code": "BK1201",
+      "main": 29.53,
+      "pct": 2.33
+    },
+    {
+      "sector": "机械设备",
+      "code": "BK1205",
+      "main": 25.84,
+      "pct": 1.67
     },
     {
       "sector": "数字媒体",
       "code": "BK1221",
-      "main": 14.84,
-      "pct": 5.16
+      "main": 25.54,
+      "pct": 6.78
     },
     {
-      "sector": "影视院线",
-      "code": "BK1222",
-      "main": 8.43,
-      "pct": 4.9
-    },
-    {
-      "sector": "影视动漫制作",
-      "code": "BK1299",
-      "main": 8.29,
-      "pct": 5.66
-    },
-    {
-      "sector": "文字媒体",
-      "code": "BK1298",
-      "main": 7.34,
-      "pct": 11.9
-    },
-    {
-      "sector": "国有大型银行Ⅲ",
-      "code": "BK1611",
-      "main": 6.9,
+      "sector": "消费电子零部件及组装",
+      "code": "BK1338",
+      "main": 22.82,
       "pct": 2.87
-    },
-    {
-      "sector": "石油石化",
-      "code": "BK0464",
-      "main": 6.12,
-      "pct": -0.22
-    },
-    {
-      "sector": "轻工制造",
-      "code": "BK1212",
-      "main": 5.69,
-      "pct": 0.64
-    },
-    {
-      "sector": "动力煤",
-      "code": "BK1493",
-      "main": 5.62,
-      "pct": 1.89
-    },
-    {
-      "sector": "煤炭开采",
-      "code": "BK1250",
-      "main": 5.44,
-      "pct": 1.97
-    },
-    {
-      "sector": "煤炭",
-      "code": "BK0437",
-      "main": 5.16,
-      "pct": 1.58
-    },
-    {
-      "sector": "装修装饰Ⅲ",
-      "code": "BK1478",
-      "main": 5,
-      "pct": 2.95
-    },
-    {
-      "sector": "装修装饰Ⅱ",
-      "code": "BK0725",
-      "main": 5,
-      "pct": 2.95
-    },
-    {
-      "sector": "股份制银行Ⅲ",
-      "code": "BK1610",
-      "main": 4.66,
-      "pct": 0.46
-    },
-    {
-      "sector": "家用电器",
-      "code": "BK0456",
-      "main": 4.63,
-      "pct": 0.54
-    },
-    {
-      "sector": "IT服务Ⅲ",
-      "code": "BK1444",
-      "main": 4.33,
-      "pct": 0.41
-    },
-    {
-      "sector": "IT服务Ⅱ",
-      "code": "BK1238",
-      "main": 4.33,
-      "pct": 0.41
-    },
-    {
-      "sector": "计算机设备",
-      "code": "BK0735",
-      "main": 3.82,
-      "pct": 0.71
-    },
-    {
-      "sector": "其他自动化设备",
-      "code": "BK1410",
-      "main": 3.8,
-      "pct": 0.63
-    },
-    {
-      "sector": "门户网站",
-      "code": "BK1294",
-      "main": 3.77,
-      "pct": 2.24
-    },
-    {
-      "sector": "包装印刷",
-      "code": "BK1265",
-      "main": 3.55,
-      "pct": 0.8
-    },
-    {
-      "sector": "炼化及贸易",
-      "code": "BK1274",
-      "main": 3.42,
-      "pct": -0.25
-    },
-    {
-      "sector": "光学光电子",
-      "code": "BK1038",
-      "main": 3.39,
-      "pct": 0.47
-    },
-    {
-      "sector": "光学元件",
-      "code": "BK1334",
-      "main": 3.26,
-      "pct": 1.05
-    },
-    {
-      "sector": "其他计算机设备",
-      "code": "BK1446",
-      "main": 3.2,
-      "pct": 0.2
-    },
-    {
-      "sector": "炼油化工",
-      "code": "BK1569",
-      "main": 3.1,
-      "pct": 0.28
-    },
-    {
-      "sector": "城商行Ⅲ",
-      "code": "BK1609",
-      "main": 3.08,
-      "pct": 1.47
-    },
-    {
-      "sector": "塑料包装",
-      "code": "BK1533",
-      "main": 2.92,
-      "pct": 1.1
-    },
-    {
-      "sector": "视频媒体",
-      "code": "BK1296",
-      "main": 2.78,
-      "pct": 20
-    },
-    {
-      "sector": "白色家电",
-      "code": "BK1239",
-      "main": 2.58,
-      "pct": -0.18
-    },
-    {
-      "sector": "制冷空调设备",
-      "code": "BK1400",
-      "main": 2.42,
-      "pct": 1.09
-    },
-    {
-      "sector": "家居用品",
-      "code": "BK0440",
-      "main": 2.33,
-      "pct": 1.31
-    },
-    {
-      "sector": "通用设备",
-      "code": "BK0545",
-      "main": 2.25,
-      "pct": 1.18
-    },
-    {
-      "sector": "房地产服务",
-      "code": "BK1045",
-      "main": 2.14,
-      "pct": 1.82
-    },
-    {
-      "sector": "机床工具",
-      "code": "BK1395",
-      "main": 2.1,
-      "pct": 2.82
-    },
-    {
-      "sector": "非金属材料Ⅲ",
-      "code": "BK1411",
-      "main": 2.06,
-      "pct": -0.15
-    },
-    {
-      "sector": "非金属材料Ⅱ",
-      "code": "BK1020",
-      "main": 2.06,
-      "pct": -0.15
-    },
-    {
-      "sector": "空调",
-      "code": "BK1450",
-      "main": 2,
-      "pct": 0.48
-    },
-    {
-      "sector": "生猪养殖",
-      "code": "BK1512",
-      "main": 1.79,
-      "pct": 1.28
-    },
-    {
-      "sector": "面板",
-      "code": "BK1335",
-      "main": 1.77,
-      "pct": -0.27
-    },
-    {
-      "sector": "油服工程",
-      "code": "BK1275",
-      "main": 1.76,
-      "pct": -0.16
-    },
-    {
-      "sector": "养殖业",
-      "code": "BK1259",
-      "main": 1.68,
-      "pct": 0.63
-    },
-    {
-      "sector": "出版",
-      "code": "BK1218",
-      "main": 1.6,
-      "pct": 2.12
-    },
-    {
-      "sector": "电视广播Ⅲ",
-      "code": "BK1291",
-      "main": 1.59,
-      "pct": 2.39
-    },
-    {
-      "sector": "电视广播Ⅱ",
-      "code": "BK1219",
-      "main": 1.59,
-      "pct": 2.39
-    },
-    {
-      "sector": "氮肥",
-      "code": "BK1432",
-      "main": 1.51,
-      "pct": 4.02
-    },
-    {
-      "sector": "锂",
-      "code": "BK1621",
-      "main": 1.46,
-      "pct": -1.59
-    },
-    {
-      "sector": "油气及炼化工程",
-      "code": "BK1572",
-      "main": 1.42,
-      "pct": -0.67
-    },
-    {
-      "sector": "服装家纺",
-      "code": "BK1225",
-      "main": 1.41,
-      "pct": 0.97
-    },
-    {
-      "sector": "定制家居",
-      "code": "BK1539",
-      "main": 1.33,
-      "pct": 1.97
-    },
-    {
-      "sector": "家电零部件Ⅲ",
-      "code": "BK1455",
-      "main": 1.25,
-      "pct": 0.82
-    },
-    {
-      "sector": "家电零部件Ⅱ",
-      "code": "BK1242",
-      "main": 1.25,
-      "pct": 0.82
     },
     {
       "sector": "消费电子",
       "code": "BK1037",
-      "main": 1.25,
-      "pct": 1.52
+      "main": 22.57,
+      "pct": 2.8
     },
     {
-      "sector": "房产租赁经纪",
-      "code": "BK1341",
-      "main": 1.24,
-      "pct": 4.57
+      "sector": "IT服务Ⅲ",
+      "code": "BK1444",
+      "main": 20.35,
+      "pct": 2.02
     },
     {
-      "sector": "其他汽车零部件",
-      "code": "BK1528",
-      "main": 1.22,
-      "pct": 1.32
+      "sector": "IT服务Ⅱ",
+      "code": "BK1238",
+      "main": 20.35,
+      "pct": 2.02
     },
     {
-      "sector": "文娱用品",
-      "code": "BK1266",
-      "main": 1.12,
-      "pct": 0.91
+      "sector": "银行",
+      "code": "BK1283",
+      "main": 18.81,
+      "pct": 1.38
     },
     {
-      "sector": "大众出版",
-      "code": "BK1289",
-      "main": 1.1,
+      "sector": "银行Ⅱ",
+      "code": "BK0475",
+      "main": 18.81,
+      "pct": 1.38
+    },
+    {
+      "sector": "计算机设备",
+      "code": "BK0735",
+      "main": 18.29,
+      "pct": 2.07
+    },
+    {
+      "sector": "其他计算机设备",
+      "code": "BK1446",
+      "main": 18.22,
+      "pct": 1.48
+    },
+    {
+      "sector": "印制电路板",
+      "code": "BK1340",
+      "main": 16.53,
+      "pct": 3.55
+    },
+    {
+      "sector": "光学光电子",
+      "code": "BK1038",
+      "main": 15.56,
+      "pct": 1.87
+    },
+    {
+      "sector": "文字媒体",
+      "code": "BK1298",
+      "main": 13.06,
+      "pct": 15
+    },
+    {
+      "sector": "影视院线",
+      "code": "BK1222",
+      "main": 12.72,
+      "pct": 6.69
+    },
+    {
+      "sector": "影视动漫制作",
+      "code": "BK1299",
+      "main": 12.52,
+      "pct": 7.75
+    },
+    {
+      "sector": "通用设备",
+      "code": "BK0545",
+      "main": 12.4,
+      "pct": 2.33
+    },
+    {
+      "sector": "自动化设备",
+      "code": "BK1237",
+      "main": 11.63,
+      "pct": 2
+    },
+    {
+      "sector": "国有大型银行Ⅲ",
+      "code": "BK1611",
+      "main": 10.56,
+      "pct": 3.31
+    },
+    {
+      "sector": "激光设备",
+      "code": "BK1409",
+      "main": 10.41,
       "pct": 2.46
     },
     {
-      "sector": "环保设备Ⅲ",
-      "code": "BK1387",
-      "main": 1.09,
-      "pct": 0.8
+      "sector": "面板",
+      "code": "BK1335",
+      "main": 10.38,
+      "pct": 1.1
+    },
+    {
+      "sector": "元件",
+      "code": "BK0459",
+      "main": 9.92,
+      "pct": 2.99
+    },
+    {
+      "sector": "煤炭开采",
+      "code": "BK1250",
+      "main": 9.68,
+      "pct": 2.46
+    },
+    {
+      "sector": "动力煤",
+      "code": "BK1493",
+      "main": 9.56,
+      "pct": 2.59
+    },
+    {
+      "sector": "家用电器",
+      "code": "BK0456",
+      "main": 9.5,
+      "pct": 1.35
+    },
+    {
+      "sector": "煤炭",
+      "code": "BK0437",
+      "main": 9.33,
+      "pct": 2.03
+    },
+    {
+      "sector": "石油石化",
+      "code": "BK0464",
+      "main": 8.95,
+      "pct": 0.51
+    },
+    {
+      "sector": "轻工制造",
+      "code": "BK1212",
+      "main": 8.51,
+      "pct": 1.2
+    },
+    {
+      "sector": "门户网站",
+      "code": "BK1294",
+      "main": 8.15,
+      "pct": 3.85
+    },
+    {
+      "sector": "营销代理",
+      "code": "BK1293",
+      "main": 7.63,
+      "pct": 4.22
+    },
+    {
+      "sector": "广告营销",
+      "code": "BK1220",
+      "main": 7.55,
+      "pct": 4.01
+    },
+    {
+      "sector": "电视广播Ⅲ",
+      "code": "BK1291",
+      "main": 6.86,
+      "pct": 6.03
+    },
+    {
+      "sector": "电视广播Ⅱ",
+      "code": "BK1219",
+      "main": 6.86,
+      "pct": 6.03
+    },
+    {
+      "sector": "光学元件",
+      "code": "BK1334",
+      "main": 5.94,
+      "pct": 2.72
+    },
+    {
+      "sector": "玻纤制造",
+      "code": "BK1462",
+      "main": 5.88,
+      "pct": 1.52
+    },
+    {
+      "sector": "炼化及贸易",
+      "code": "BK1274",
+      "main": 5.56,
+      "pct": 0.5
+    },
+    {
+      "sector": "装修装饰Ⅲ",
+      "code": "BK1478",
+      "main": 5.53,
+      "pct": 3.06
+    },
+    {
+      "sector": "装修装饰Ⅱ",
+      "code": "BK0725",
+      "main": 5.53,
+      "pct": 3.06
+    },
+    {
+      "sector": "包装印刷",
+      "code": "BK1265",
+      "main": 5.51,
+      "pct": 1.59
+    },
+    {
+      "sector": "其他自动化设备",
+      "code": "BK1410",
+      "main": 5.45,
+      "pct": 2.26
+    },
+    {
+      "sector": "玻璃玻纤",
+      "code": "BK0546",
+      "main": 5.14,
+      "pct": 0.22
+    },
+    {
+      "sector": "白色家电",
+      "code": "BK1239",
+      "main": 5.08,
+      "pct": 0.3
+    },
+    {
+      "sector": "炼油化工",
+      "code": "BK1569",
+      "main": 5.08,
+      "pct": 1.12
+    },
+    {
+      "sector": "股份制银行Ⅲ",
+      "code": "BK1610",
+      "main": 5.05,
+      "pct": 0.35
+    },
+    {
+      "sector": "航空装备Ⅲ",
+      "code": "BK1384",
+      "main": 4.59,
+      "pct": 1.31
+    },
+    {
+      "sector": "航空装备Ⅱ",
+      "code": "BK1231",
+      "main": 4.59,
+      "pct": 1.31
+    },
+    {
+      "sector": "空调",
+      "code": "BK1450",
+      "main": 4.07,
+      "pct": 0.41
+    },
+    {
+      "sector": "金属制品",
+      "code": "BK1396",
+      "main": 3.89,
+      "pct": 2.43
+    },
+    {
+      "sector": "制冷空调设备",
+      "code": "BK1400",
+      "main": 3.77,
+      "pct": 2.17
+    },
+    {
+      "sector": "建筑材料",
+      "code": "BK1208",
+      "main": 3.42,
+      "pct": 0.01
+    },
+    {
+      "sector": "塑料包装",
+      "code": "BK1533",
+      "main": 3.4,
+      "pct": 1.63
+    },
+    {
+      "sector": "家居用品",
+      "code": "BK0440",
+      "main": 3.35,
+      "pct": 1.55
+    },
+    {
+      "sector": "通信服务",
+      "code": "BK0736",
+      "main": 3.25,
+      "pct": 2.44
+    },
+    {
+      "sector": "城商行Ⅲ",
+      "code": "BK1609",
+      "main": 3.21,
+      "pct": 1.59
+    },
+    {
+      "sector": "游戏Ⅲ",
+      "code": "BK1301",
+      "main": 3.21,
+      "pct": 2.37
+    },
+    {
+      "sector": "游戏Ⅱ",
+      "code": "BK1046",
+      "main": 3.21,
+      "pct": 2.37
+    },
+    {
+      "sector": "视频媒体",
+      "code": "BK1296",
+      "main": 3.02,
+      "pct": 20
     }
   ]
 }
