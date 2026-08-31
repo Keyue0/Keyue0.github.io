@@ -1,401 +1,5 @@
 [
   {
-    "code": "000586",
-    "name": "汇源通信",
-    "sector": "通信设备",
-    "rec_date": "2026-08-27",
-    "buy_price": 14.41,
-    "stop": 13.69,
-    "target": 15.56,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 13.79,
-    "return_pct": -4.3,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 14.41,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-26",
-        "close": 14.41,
-        "pct": 10
-      },
-      {
-        "date": "2026-08-28",
-        "close": 13.79,
-        "pct": -4.3
-      }
-    ],
-    "cur_price": 13.79,
-    "cur_pct": -4.3,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002134",
-    "name": "天津普林",
-    "sector": "元件",
-    "rec_date": "2026-08-27",
-    "buy_price": 22.63,
-    "stop": 21.5,
-    "target": 24.44,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 22.32,
-    "return_pct": -1.37,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 22.63,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-26",
-        "close": 22.63,
-        "pct": 10.01
-      },
-      {
-        "date": "2026-08-28",
-        "close": 22.32,
-        "pct": -1.37
-      }
-    ],
-    "cur_price": 22.32,
-    "cur_pct": -1.37,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "003040",
-    "name": "楚天龙",
-    "sector": "通信设备",
-    "rec_date": "2026-08-27",
-    "buy_price": 18.73,
-    "stop": 17.79,
-    "target": 20.23,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 18.27,
-    "return_pct": -2.46,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 18.73,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-26",
-        "close": 18.73,
-        "pct": 9.98
-      },
-      {
-        "date": "2026-08-28",
-        "close": 18.27,
-        "pct": -2.46
-      }
-    ],
-    "cur_price": 18.32,
-    "cur_pct": -2.19,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "601869",
-    "name": "长飞光纤",
-    "sector": "通信设备",
-    "rec_date": "2026-08-27",
-    "buy_price": 426.82,
-    "stop": 405.48,
-    "target": 461,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 425.22,
-    "return_pct": -0.37,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 426.82,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-26",
-        "close": 426.82,
-        "pct": 10
-      },
-      {
-        "date": "2026-08-28",
-        "close": 425.22,
-        "pct": -0.37
-      }
-    ],
-    "cur_price": 424.47,
-    "cur_pct": -0.55,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "600641",
-    "name": "先导基电",
-    "sector": "半导体",
-    "rec_date": "2026-08-27",
-    "buy_price": 34,
-    "stop": 32.3,
-    "target": 39.1,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 34.8,
-    "return_pct": 2.35,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 34,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 35.25,
-        "pct": 3.68
-      }
-    ],
-    "cur_price": 34.8,
-    "cur_pct": 2.35,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "605258",
-    "name": "协和电子",
-    "sector": "元件",
-    "rec_date": "2026-08-27",
-    "buy_price": 31.9,
-    "stop": 30.31,
-    "target": 36.69,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 30.42,
-    "return_pct": -4.64,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 31.9,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 30.78,
-        "pct": -3.51
-      }
-    ],
-    "cur_price": 30.42,
-    "cur_pct": -4.64,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "600654",
-    "name": "中安科",
-    "sector": "软件开发",
-    "rec_date": "2026-08-28",
-    "buy_price": 3.63,
-    "stop": 3.45,
-    "target": 3.99,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 3.63,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 3.63,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 3.63,
-        "pct": 10
-      }
-    ],
-    "cur_price": 3.63,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002279",
-    "name": "久其软件",
-    "sector": "软件开发",
-    "rec_date": "2026-08-28",
-    "buy_price": 7.05,
-    "stop": 6.7,
-    "target": 7.76,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 7.05,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 7.05,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 7.05,
-        "pct": 9.98
-      }
-    ],
-    "cur_price": 7.05,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002165",
-    "name": "红宝丽",
-    "sector": "化学制品",
-    "rec_date": "2026-08-28",
-    "buy_price": 8.37,
-    "stop": 7.95,
-    "target": 9.21,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 8.37,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 8.37,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 8.37,
-        "pct": 9.99
-      }
-    ],
-    "cur_price": 8.37,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "600378",
-    "name": "昊华科技",
-    "sector": "化学制品",
-    "rec_date": "2026-08-28",
-    "buy_price": 53.31,
-    "stop": 50.64,
-    "target": 58.64,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 53.31,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 53.31,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 53.31,
-        "pct": 10.01
-      }
-    ],
-    "cur_price": 53.31,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002942",
-    "name": "新农股份",
-    "sector": "农化制品",
-    "rec_date": "2026-08-28",
-    "buy_price": 20.91,
-    "stop": 20.07,
-    "target": 23,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 20.91,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 20.91,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 20.91,
-        "pct": 9.99
-      }
-    ],
-    "cur_price": 20.91,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "300378",
-    "name": "鼎捷数智",
-    "sector": "软件开发",
-    "rec_date": "2026-08-28",
-    "buy_price": 37.45,
-    "stop": 35.58,
-    "target": 41.94,
-    "status": "到期平仓",
-    "sell_date": "2026-08-28",
-    "sell_price": 37.45,
-    "return_pct": 0,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 37.45,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-27",
-        "close": 37.45,
-        "pct": 19.99
-      }
-    ],
-    "cur_price": 37.45,
-    "cur_pct": 0,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "001232",
-    "name": "嘉立创",
-    "sector": "元件",
-    "rec_date": "2026-08-27",
-    "buy_price": 175.01,
-    "stop": 166.26,
-    "target": 192.51,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-27",
-        "close": 175.01,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 175.01,
-        "pct": 8.01
-      }
-    ],
-    "cur_price": 175.01,
-    "cur_pct": 0
-  },
-  {
     "code": "603011",
     "name": "合锻智能",
     "sector": "专用设备",
@@ -403,11 +7,11 @@
     "buy_price": 27.65,
     "stop": 26.27,
     "target": 30.42,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-08-31",
+    "sell_price": 26.53,
+    "return_pct": -4.05,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-28",
@@ -418,10 +22,16 @@
         "date": "2026-08-27",
         "close": 27.65,
         "pct": 9.98
+      },
+      {
+        "date": "2026-08-31",
+        "close": 26.53,
+        "pct": -4.05
       }
     ],
-    "cur_price": 27.65,
-    "cur_pct": 0
+    "cur_price": 26.53,
+    "cur_pct": -4.05,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002886",
@@ -435,7 +45,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-27",
@@ -446,9 +56,213 @@
         "date": "2026-08-28",
         "close": 26.4,
         "pct": 10
+      },
+      {
+        "date": "2026-08-31",
+        "close": 29.04,
+        "pct": 10
       }
     ],
-    "cur_price": 26.4,
+    "cur_price": 29.04,
+    "cur_pct": 10
+  },
+  {
+    "code": "600691",
+    "name": "潞化科技",
+    "sector": "农化制品",
+    "rec_date": "2026-08-28",
+    "buy_price": 3.23,
+    "stop": 3.13,
+    "target": 3.55,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 3.23,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 3.23,
+        "pct": 9.86
+      }
+    ],
+    "cur_price": 3.23,
+    "cur_pct": 0
+  },
+  {
+    "code": "002918",
+    "name": "蒙娜丽莎",
+    "sector": "家居用品",
+    "rec_date": "2026-08-28",
+    "buy_price": 11.75,
+    "stop": 11.28,
+    "target": 12.93,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 11.75,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 11.75,
+        "pct": 3.71
+      }
+    ],
+    "cur_price": 11.75,
+    "cur_pct": 0
+  },
+  {
+    "code": "002084",
+    "name": "海鸥住工",
+    "sector": "家居用品",
+    "rec_date": "2026-08-28",
+    "buy_price": 6.38,
+    "stop": 6.06,
+    "target": 7.34,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-28",
+        "close": 6.38,
+        "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 6.38,
+        "pct": 10
+      }
+    ],
+    "cur_price": 6.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "603269",
+    "name": "海鸥股份",
+    "sector": "通用设备",
+    "rec_date": "2026-08-31",
+    "buy_price": 24.4,
+    "stop": 23.18,
+    "target": 27,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 24.4,
+        "pct": 0
+      }
+    ],
+    "cur_price": 24.4,
+    "cur_pct": 0
+  },
+  {
+    "code": "000011",
+    "name": "深物业A",
+    "sector": "房地产开",
+    "rec_date": "2026-08-31",
+    "buy_price": 10.07,
+    "stop": 9.57,
+    "target": 11,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 10.07,
+        "pct": 0
+      }
+    ],
+    "cur_price": 10.07,
+    "cur_pct": 0
+  },
+  {
+    "code": "603721",
+    "name": "中广天择",
+    "sector": "影视院线",
+    "rec_date": "2026-08-31",
+    "buy_price": 19.1,
+    "stop": 18.15,
+    "target": 21,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 19.1,
+        "pct": 0
+      }
+    ],
+    "cur_price": 19.1,
+    "cur_pct": 0
+  },
+  {
+    "code": "601882",
+    "name": "海天精工",
+    "sector": "通用设备",
+    "rec_date": "2026-08-31",
+    "buy_price": 21.91,
+    "stop": 20.81,
+    "target": 24,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 21.91,
+        "pct": 0
+      }
+    ],
+    "cur_price": 21.91,
+    "cur_pct": 0
+  },
+  {
+    "code": "000892",
+    "name": "欢瑞世纪",
+    "sector": "影视院线",
+    "rec_date": "2026-08-31",
+    "buy_price": 4.3,
+    "stop": 4.09,
+    "target": 4.75,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 4.3,
+        "pct": 0
+      }
+    ],
+    "cur_price": 4.3,
     "cur_pct": 0
   }
 ]
