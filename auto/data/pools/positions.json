@@ -75,11 +75,11 @@
     "buy_price": 41.75,
     "stop": 39.66,
     "target": 45.09,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-09-01",
+    "sell_price": 40.1,
+    "return_pct": -3.95,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-08-31",
@@ -93,7 +93,8 @@
       }
     ],
     "cur_price": 40.1,
-    "cur_pct": -3.95
+    "cur_pct": -3.95,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600540",
@@ -107,7 +108,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-01",
@@ -135,7 +136,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-01",
@@ -163,7 +164,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-01",
@@ -191,7 +192,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-01",
@@ -219,7 +220,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-01",
@@ -247,7 +248,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
@@ -275,7 +276,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
@@ -303,7 +304,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
@@ -331,7 +332,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-08-31",
@@ -359,7 +360,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-01",
@@ -368,6 +369,29 @@
       }
     ],
     "cur_price": 4.73,
+    "cur_pct": 0
+  },
+  {
+    "code": "600693",
+    "name": "东百集团",
+    "sector": "一般零售",
+    "rec_date": "2026-09-01",
+    "buy_price": 10.24,
+    "stop": 9.73,
+    "target": 11.26,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-01",
+        "close": 10.24,
+        "pct": 0
+      }
+    ],
+    "cur_price": 10.24,
     "cur_pct": 0
   }
 ]
