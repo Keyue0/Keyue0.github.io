@@ -68,39 +68,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "600654",
-    "name": "中安科",
-    "sector": "软件开发",
-    "rec_date": "2026-08-28",
-    "buy_price": 3.36,
-    "stop": 3.19,
-    "target": 3.63,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-28",
-        "close": 3.36,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 3.36,
-        "pct": -7.44
-      },
-      {
-        "date": "2026-09-01",
-        "close": 3.44,
-        "pct": 2.38
-      }
-    ],
-    "cur_price": 3.44,
-    "cur_pct": 2.38
-  },
-  {
     "code": "605287",
     "name": "德才股份",
     "sector": "装修装饰",
@@ -112,7 +79,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-31",
@@ -125,8 +92,8 @@
         "pct": 0.41
       }
     ],
-    "cur_price": 41.75,
-    "cur_pct": 0
+    "cur_price": 40.1,
+    "cur_pct": -3.95
   },
   {
     "code": "600540",
@@ -140,12 +107,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 6.12,
         "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 6.12,
+        "pct": 10.07
       }
     ],
     "cur_price": 6.12,
@@ -163,12 +135,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 7.9,
         "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 7.9,
+        "pct": 10.03
       }
     ],
     "cur_price": 7.9,
@@ -186,12 +163,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 10.09,
         "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 10.09,
+        "pct": 10.03
       }
     ],
     "cur_price": 10.09,
@@ -209,12 +191,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 9.08,
         "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 9.08,
+        "pct": 10.06
       }
     ],
     "cur_price": 9.08,
@@ -232,15 +219,155 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 18.24,
         "pct": 0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 18.24,
+        "pct": 10.01
       }
     ],
     "cur_price": 18.24,
+    "cur_pct": 0
+  },
+  {
+    "code": "601882",
+    "name": "海天精工",
+    "sector": "通用设备",
+    "rec_date": "2026-08-31",
+    "buy_price": 22.46,
+    "stop": 21.34,
+    "target": 24.5,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 22.46,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-01",
+        "close": 22.46,
+        "pct": 2.51
+      }
+    ],
+    "cur_price": 22.46,
+    "cur_pct": 0
+  },
+  {
+    "code": "603269",
+    "name": "海鸥股份",
+    "sector": "通用设备",
+    "rec_date": "2026-08-31",
+    "buy_price": 25.34,
+    "stop": 24.1,
+    "target": 27.7,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 25.34,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-01",
+        "close": 25.34,
+        "pct": 3.85
+      }
+    ],
+    "cur_price": 25.34,
+    "cur_pct": 0
+  },
+  {
+    "code": "002328",
+    "name": "新朋股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-08-31",
+    "buy_price": 8.86,
+    "stop": 8.42,
+    "target": 9.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 8.86,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-01",
+        "close": 8.86,
+        "pct": 4.24
+      }
+    ],
+    "cur_price": 8.86,
+    "cur_pct": 0
+  },
+  {
+    "code": "002921",
+    "name": "联诚精密",
+    "sector": "汽车零部",
+    "rec_date": "2026-08-31",
+    "buy_price": 22.82,
+    "stop": 21.7,
+    "target": 24.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-08-31",
+        "close": 22.82,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-01",
+        "close": 22.82,
+        "pct": -1.72
+      }
+    ],
+    "cur_price": 22.82,
+    "cur_pct": 0
+  },
+  {
+    "code": "000892",
+    "name": "欢瑞世纪",
+    "sector": "影视院线",
+    "rec_date": "2026-09-01",
+    "buy_price": 4.73,
+    "stop": 4.49,
+    "target": 5.2,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-01",
+        "close": 4.73,
+        "pct": 0
+      }
+    ],
+    "cur_price": 4.73,
     "cur_pct": 0
   }
 ]
