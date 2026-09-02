@@ -1,34 +1,7 @@
 {
   "date": "2026-09-01",
   "source": "eastmoney-fflow-daykline",
-  "hs300pct20": 0.22843207786250405,
+  "hs300pct20": -2.3657460579843894,
   "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
-  "rows": [
-    {
-      "sector": "医药生物",
-      "code": "BK1216",
-      "drawdown": -7.643883871524205,
-      "pct20": -0.7030524580602828,
-      "excess20": -0.93,
-      "zt5": 0,
-      "fund5": null,
-      "fund20": null,
-      "fundTrend": "—",
-      "pass": [],
-      "level": 0
-    },
-    {
-      "sector": "公用事业",
-      "code": "BK0427",
-      "drawdown": -4.598075895243184,
-      "pct20": 5.17021953547566,
-      "excess20": 4.94,
-      "zt5": 0,
-      "fund5": null,
-      "fund20": null,
-      "fundTrend": "—",
-      "pass": [],
-      "level": 0
-    }
-  ]
+  "rows": []
 }
