@@ -1,218 +1,5 @@
 [
   {
-    "code": "603270",
-    "name": "金帝股份",
-    "sector": "通用设备",
-    "rec_date": "2026-08-31",
-    "buy_price": 30.25,
-    "stop": 29.04,
-    "target": 33.28,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 29.13,
-    "return_pct": -3.7,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 30.25,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 30.25,
-        "pct": 10
-      },
-      {
-        "date": "2026-09-01",
-        "close": 29.13,
-        "pct": -3.7
-      }
-    ],
-    "cur_price": 29.13,
-    "cur_pct": -3.7,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603358",
-    "name": "华达科技",
-    "sector": "汽车零部",
-    "rec_date": "2026-08-31",
-    "buy_price": 49.72,
-    "stop": 47.73,
-    "target": 54.69,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 47.97,
-    "return_pct": -3.52,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 49.72,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-28",
-        "close": 49.72,
-        "pct": 10
-      },
-      {
-        "date": "2026-09-01",
-        "close": 47.97,
-        "pct": -3.52
-      }
-    ],
-    "cur_price": 47.97,
-    "cur_pct": -3.52,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "605287",
-    "name": "德才股份",
-    "sector": "装修装饰",
-    "rec_date": "2026-08-31",
-    "buy_price": 41.75,
-    "stop": 39.66,
-    "target": 45.09,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 40.1,
-    "return_pct": -3.95,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 41.75,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 41.75,
-        "pct": 0.41
-      }
-    ],
-    "cur_price": 40.1,
-    "cur_pct": -3.95,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "601882",
-    "name": "海天精工",
-    "sector": "通用设备",
-    "rec_date": "2026-08-31",
-    "buy_price": 22.46,
-    "stop": 21.34,
-    "target": 24.5,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 22.6,
-    "return_pct": 0.62,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 22.46,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 22.46,
-        "pct": 2.51
-      }
-    ],
-    "cur_price": 22.6,
-    "cur_pct": 0.62,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603269",
-    "name": "海鸥股份",
-    "sector": "通用设备",
-    "rec_date": "2026-08-31",
-    "buy_price": 25.34,
-    "stop": 24.1,
-    "target": 27.7,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 27.41,
-    "return_pct": 8.17,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 25.34,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 25.34,
-        "pct": 3.85
-      }
-    ],
-    "cur_price": 27.41,
-    "cur_pct": 8.17,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002328",
-    "name": "新朋股份",
-    "sector": "汽车零部",
-    "rec_date": "2026-08-31",
-    "buy_price": 8.86,
-    "stop": 8.42,
-    "target": 9.6,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 9.18,
-    "return_pct": 3.61,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 8.86,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 8.86,
-        "pct": 4.24
-      }
-    ],
-    "cur_price": 9.18,
-    "cur_pct": 3.61,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002921",
-    "name": "联诚精密",
-    "sector": "汽车零部",
-    "rec_date": "2026-08-31",
-    "buy_price": 22.82,
-    "stop": 21.7,
-    "target": 24.6,
-    "status": "到期平仓",
-    "sell_date": "2026-09-01",
-    "sell_price": 22.35,
-    "return_pct": -2.06,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 22.82,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 22.82,
-        "pct": -1.72
-      }
-    ],
-    "cur_price": 22.35,
-    "cur_pct": -2.06,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
     "code": "600693",
     "name": "东百集团",
     "sector": "一般零售",
@@ -220,11 +7,11 @@
     "buy_price": 10.24,
     "stop": 9.73,
     "target": 11.26,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-02",
+    "sell_price": 10.04,
+    "return_pct": -1.95,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-01",
@@ -235,10 +22,16 @@
         "date": "2026-08-31",
         "close": 10.04,
         "pct": -1.95
+      },
+      {
+        "date": "2026-09-02",
+        "close": 10.04,
+        "pct": -1.95
       }
     ],
     "cur_price": 10.04,
-    "cur_pct": -1.95
+    "cur_pct": -1.95,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002169",
@@ -252,7 +45,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-08-31",
@@ -261,6 +54,11 @@
       },
       {
         "date": "2026-09-01",
+        "close": 12.63,
+        "pct": -3.29
+      },
+      {
+        "date": "2026-09-02",
         "close": 12.63,
         "pct": -3.29
       }
@@ -280,15 +78,112 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-01",
         "close": 23.92,
         "pct": 0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 23.92,
+        "pct": 0.63
       }
     ],
     "cur_price": 23.92,
+    "cur_pct": 0
+  },
+  {
+    "code": "002536",
+    "name": "飞龙股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-09-02",
+    "buy_price": 58.07,
+    "stop": 55.17,
+    "target": 63.88,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-02",
+        "close": 58.07,
+        "pct": 0
+      }
+    ],
+    "cur_price": 58.07,
+    "cur_pct": 0
+  },
+  {
+    "code": "600869",
+    "name": "远东股份",
+    "sector": "电网设备",
+    "rec_date": "2026-09-02",
+    "buy_price": 19.5,
+    "stop": 18.53,
+    "target": 21.45,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-02",
+        "close": 19.5,
+        "pct": 0
+      }
+    ],
+    "cur_price": 19.5,
+    "cur_pct": 0
+  },
+  {
+    "code": "002300",
+    "name": "太阳电缆",
+    "sector": "电网设备",
+    "rec_date": "2026-09-02",
+    "buy_price": 7.63,
+    "stop": 7.25,
+    "target": 8.39,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-02",
+        "close": 7.63,
+        "pct": 0
+      }
+    ],
+    "cur_price": 7.63,
+    "cur_pct": 0
+  },
+  {
+    "code": "601566",
+    "name": "九牧王",
+    "sector": "服装家纺",
+    "rec_date": "2026-09-02",
+    "buy_price": 10.36,
+    "stop": 9.85,
+    "target": 11.4,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-02",
+        "close": 10.36,
+        "pct": 0
+      }
+    ],
+    "cur_price": 10.36,
     "cur_pct": 0
   }
 ]
