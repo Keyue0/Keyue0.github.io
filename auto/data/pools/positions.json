@@ -45,7 +45,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-02",
@@ -73,7 +73,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-02",
@@ -101,7 +101,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-02",
@@ -129,12 +129,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-03",
         "close": 15.58,
         "pct": 0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 15.58,
+        "pct": 10.03
       }
     ],
     "cur_price": 15.58,
@@ -152,12 +157,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-03",
         "close": 21.84,
         "pct": 0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 21.84,
+        "pct": 10.03
       }
     ],
     "cur_price": 21.84,
@@ -175,12 +185,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-03",
         "close": 34.95,
         "pct": 0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 34.95,
+        "pct": 10.01
       }
     ],
     "cur_price": 34.95,
@@ -198,12 +213,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-03",
         "close": 56.43,
         "pct": 0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 56.43,
+        "pct": 10
       }
     ],
     "cur_price": 56.43,
