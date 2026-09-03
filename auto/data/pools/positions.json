@@ -1,72 +1,5 @@
 [
   {
-    "code": "600693",
-    "name": "东百集团",
-    "sector": "一般零售",
-    "rec_date": "2026-09-01",
-    "buy_price": 10.24,
-    "stop": 9.73,
-    "target": 11.26,
-    "status": "到期平仓",
-    "sell_date": "2026-09-02",
-    "sell_price": 10.04,
-    "return_pct": -1.95,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-01",
-        "close": 10.24,
-        "pct": 0
-      },
-      {
-        "date": "2026-08-31",
-        "close": 10.04,
-        "pct": -1.95
-      },
-      {
-        "date": "2026-09-02",
-        "close": 10.04,
-        "pct": -1.95
-      }
-    ],
-    "cur_price": 10.04,
-    "cur_pct": -1.95,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002169",
-    "name": "智光电气",
-    "sector": "电网设备",
-    "rec_date": "2026-08-31",
-    "buy_price": 12.63,
-    "stop": 12,
-    "target": 13.89,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-08-31",
-        "close": 12.63,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-01",
-        "close": 12.63,
-        "pct": -3.29
-      },
-      {
-        "date": "2026-09-02",
-        "close": 12.63,
-        "pct": -3.29
-      }
-    ],
-    "cur_price": 12.63,
-    "cur_pct": 0
-  },
-  {
     "code": "002882",
     "name": "金龙羽",
     "sector": "电网设备",
@@ -74,11 +7,11 @@
     "buy_price": 23.92,
     "stop": 22.72,
     "target": 26.31,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-03",
+    "sell_price": 23.93,
+    "return_pct": 0.04,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-01",
@@ -89,10 +22,16 @@
         "date": "2026-09-02",
         "close": 23.92,
         "pct": 0.63
+      },
+      {
+        "date": "2026-09-03",
+        "close": 23.93,
+        "pct": 0.04
       }
     ],
-    "cur_price": 23.92,
-    "cur_pct": 0
+    "cur_price": 23.93,
+    "cur_pct": 0.04,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002536",
@@ -106,16 +45,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-02",
         "close": 58.07,
         "pct": 0
+      },
+      {
+        "date": "2026-09-03",
+        "close": 63.03,
+        "pct": 8.54
       }
     ],
-    "cur_price": 58.07,
-    "cur_pct": 0
+    "cur_price": 63.03,
+    "cur_pct": 8.54
   },
   {
     "code": "600869",
@@ -129,39 +73,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-02",
         "close": 19.5,
         "pct": 0
-      }
-    ],
-    "cur_price": 19.5,
-    "cur_pct": 0
-  },
-  {
-    "code": "002300",
-    "name": "太阳电缆",
-    "sector": "电网设备",
-    "rec_date": "2026-09-02",
-    "buy_price": 7.63,
-    "stop": 7.25,
-    "target": 8.39,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-09-02",
-        "close": 7.63,
-        "pct": 0
+        "date": "2026-09-03",
+        "close": 21.05,
+        "pct": 7.95
       }
     ],
-    "cur_price": 7.63,
-    "cur_pct": 0
+    "cur_price": 21.05,
+    "cur_pct": 7.95
   },
   {
     "code": "601566",
@@ -175,15 +101,112 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-02",
         "close": 10.36,
         "pct": 0
+      },
+      {
+        "date": "2026-09-03",
+        "close": 10.68,
+        "pct": 3.09
       }
     ],
-    "cur_price": 10.36,
+    "cur_price": 10.68,
+    "cur_pct": 3.09
+  },
+  {
+    "code": "002708",
+    "name": "光洋股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-09-03",
+    "buy_price": 15.58,
+    "stop": 14.96,
+    "target": 17.14,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-03",
+        "close": 15.58,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.58,
+    "cur_pct": 0
+  },
+  {
+    "code": "605088",
+    "name": "冠盛股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-09-03",
+    "buy_price": 21.84,
+    "stop": 20.75,
+    "target": 24.02,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-03",
+        "close": 21.84,
+        "pct": 0
+      }
+    ],
+    "cur_price": 21.84,
+    "cur_pct": 0
+  },
+  {
+    "code": "603270",
+    "name": "金帝股份",
+    "sector": "通用设备",
+    "rec_date": "2026-09-03",
+    "buy_price": 34.95,
+    "stop": 33.2,
+    "target": 38.45,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-03",
+        "close": 34.95,
+        "pct": 0
+      }
+    ],
+    "cur_price": 34.95,
+    "cur_pct": 0
+  },
+  {
+    "code": "003018",
+    "name": "金富科技",
+    "sector": "包装印刷",
+    "rec_date": "2026-09-03",
+    "buy_price": 56.43,
+    "stop": 53.61,
+    "target": 62.07,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-03",
+        "close": 56.43,
+        "pct": 0
+      }
+    ],
+    "cur_price": 56.43,
     "cur_pct": 0
   }
 ]
