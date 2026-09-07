@@ -11,7 +11,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-03",
@@ -22,10 +22,15 @@
         "date": "2026-09-04",
         "close": 11.35,
         "pct": 9.98
+      },
+      {
+        "date": "2026-09-07",
+        "close": 12.49,
+        "pct": 10.04
       }
     ],
-    "cur_price": 11.35,
-    "cur_pct": 0
+    "cur_price": 12.49,
+    "cur_pct": 10.04
   },
   {
     "code": "601086",
@@ -39,7 +44,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-03",
@@ -50,33 +55,15 @@
         "date": "2026-09-04",
         "close": 12.65,
         "pct": 3.6
-      }
-    ],
-    "cur_price": 12.65,
-    "cur_pct": 0
-  },
-  {
-    "code": "001366",
-    "name": "播恩集团",
-    "sector": "饲料",
-    "rec_date": "2026-09-04",
-    "buy_price": 14.36,
-    "stop": 13.64,
-    "target": 15.8,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-09-04",
-        "close": 14.36,
-        "pct": 0
+        "date": "2026-09-07",
+        "close": 13.92,
+        "pct": 10.04
       }
     ],
-    "cur_price": 14.36,
-    "cur_pct": 0
+    "cur_price": 13.92,
+    "cur_pct": 10.04
   },
   {
     "code": "000702",
@@ -90,16 +77,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-04",
         "close": 6.26,
         "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 6.42,
+        "pct": 2.56
       }
     ],
-    "cur_price": 6.26,
-    "cur_pct": 0
+    "cur_price": 6.42,
+    "cur_pct": 2.56
   },
   {
     "code": "603151",
@@ -113,16 +105,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-04",
         "close": 18.13,
         "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 18.39,
+        "pct": 1.43
       }
     ],
-    "cur_price": 18.13,
-    "cur_pct": 0
+    "cur_price": 18.39,
+    "cur_pct": 1.43
   },
   {
     "code": "002124",
@@ -136,39 +133,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-04",
         "close": 2.42,
         "pct": 0
-      }
-    ],
-    "cur_price": 2.42,
-    "cur_pct": 0
-  },
-  {
-    "code": "000735",
-    "name": "罗牛山",
-    "sector": "养殖业",
-    "rec_date": "2026-09-04",
-    "buy_price": 6.13,
-    "stop": 5.82,
-    "target": 6.74,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-09-04",
-        "close": 6.13,
-        "pct": 0
+        "date": "2026-09-07",
+        "close": 2.54,
+        "pct": 4.96
       }
     ],
-    "cur_price": 6.13,
-    "cur_pct": 0
+    "cur_price": 2.54,
+    "cur_pct": 4.96
   },
   {
     "code": "600975",
@@ -182,15 +161,140 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-04",
         "close": 5.59,
         "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 5.9,
+        "pct": 5.55
       }
     ],
-    "cur_price": 5.59,
+    "cur_price": 5.9,
+    "cur_pct": 5.55
+  },
+  {
+    "code": "003040",
+    "name": "楚天龙",
+    "sector": "通信设备",
+    "rec_date": "2026-09-04",
+    "buy_price": 22.95,
+    "stop": 21.8,
+    "target": 25.25,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-04",
+        "close": 22.95,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 22.95,
+        "pct": 8.66
+      }
+    ],
+    "cur_price": 22.95,
+    "cur_pct": 0
+  },
+  {
+    "code": "002881",
+    "name": "美格智能",
+    "sector": "通信设备",
+    "rec_date": "2026-09-07",
+    "buy_price": 46.12,
+    "stop": 44.28,
+    "target": 50.73,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-07",
+        "close": 46.12,
+        "pct": 0
+      }
+    ],
+    "cur_price": 46.12,
+    "cur_pct": 0
+  },
+  {
+    "code": "603118",
+    "name": "共进股份",
+    "sector": "通信设备",
+    "rec_date": "2026-09-07",
+    "buy_price": 17.89,
+    "stop": 17.17,
+    "target": 19.68,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-07",
+        "close": 17.89,
+        "pct": 0
+      }
+    ],
+    "cur_price": 17.89,
+    "cur_pct": 0
+  },
+  {
+    "code": "000823",
+    "name": "超声电子",
+    "sector": "元件",
+    "rec_date": "2026-09-07",
+    "buy_price": 15.94,
+    "stop": 15.3,
+    "target": 17.53,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-07",
+        "close": 15.94,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.94,
+    "cur_pct": 0
+  },
+  {
+    "code": "002579",
+    "name": "中京电子",
+    "sector": "元件",
+    "rec_date": "2026-09-07",
+    "buy_price": 15.51,
+    "stop": 14.89,
+    "target": 17.06,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-07",
+        "close": 15.51,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.51,
     "cur_pct": 0
   }
 ]
