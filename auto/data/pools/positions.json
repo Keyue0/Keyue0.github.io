@@ -1,71 +1,5 @@
 [
   {
-    "code": "600865",
-    "name": "百大集团",
-    "sector": "一般零售",
-    "rec_date": "2026-09-03",
-    "buy_price": 11.35,
-    "stop": 10.95,
-    "target": 12.8,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-03",
-        "close": 11.35,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-04",
-        "close": 11.35,
-        "pct": 9.98
-      },
-      {
-        "date": "2026-09-07",
-        "close": 12.49,
-        "pct": 10.04
-      }
-    ],
-    "cur_price": 12.49,
-    "cur_pct": 10.04
-  },
-  {
-    "code": "601086",
-    "name": "国芳集团",
-    "sector": "一般零售",
-    "rec_date": "2026-09-03",
-    "buy_price": 12.65,
-    "stop": 12.15,
-    "target": 14,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-03",
-        "close": 12.65,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-04",
-        "close": 12.65,
-        "pct": 3.6
-      },
-      {
-        "date": "2026-09-07",
-        "close": 13.92,
-        "pct": 10.04
-      }
-    ],
-    "cur_price": 13.92,
-    "cur_pct": 10.04
-  },
-  {
     "code": "000702",
     "name": "正虹科技",
     "sector": "饲料",
@@ -73,11 +7,11 @@
     "buy_price": 6.26,
     "stop": 5.95,
     "target": 6.89,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-07",
+    "sell_price": 6.42,
+    "return_pct": 2.56,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-04",
@@ -91,7 +25,8 @@
       }
     ],
     "cur_price": 6.42,
-    "cur_pct": 2.56
+    "cur_pct": 2.56,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603151",
@@ -101,11 +36,11 @@
     "buy_price": 18.13,
     "stop": 17.22,
     "target": 19.94,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-07",
+    "sell_price": 18.39,
+    "return_pct": 1.43,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-04",
@@ -119,7 +54,8 @@
       }
     ],
     "cur_price": 18.39,
-    "cur_pct": 1.43
+    "cur_pct": 1.43,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002124",
@@ -129,11 +65,11 @@
     "buy_price": 2.42,
     "stop": 2.3,
     "target": 2.66,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-07",
+    "sell_price": 2.54,
+    "return_pct": 4.96,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-04",
@@ -147,7 +83,8 @@
       }
     ],
     "cur_price": 2.54,
-    "cur_pct": 4.96
+    "cur_pct": 4.96,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600975",
@@ -157,11 +94,11 @@
     "buy_price": 5.59,
     "stop": 5.31,
     "target": 6.15,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-07",
+    "sell_price": 5.9,
+    "return_pct": 5.55,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-04",
@@ -175,7 +112,8 @@
       }
     ],
     "cur_price": 5.9,
-    "cur_pct": 5.55
+    "cur_pct": 5.55,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "003040",
@@ -189,7 +127,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-04",
@@ -217,12 +155,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-07",
         "close": 46.12,
         "pct": 0
+      },
+      {
+        "date": "2026-09-04",
+        "close": 46.12,
+        "pct": 9.99
       }
     ],
     "cur_price": 46.12,
@@ -240,12 +183,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-07",
         "close": 17.89,
         "pct": 0
+      },
+      {
+        "date": "2026-09-04",
+        "close": 17.89,
+        "pct": 10.02
       }
     ],
     "cur_price": 17.89,
@@ -263,12 +211,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-07",
         "close": 15.94,
         "pct": 0
+      },
+      {
+        "date": "2026-09-04",
+        "close": 15.94,
+        "pct": 10.01
       }
     ],
     "cur_price": 15.94,
@@ -286,15 +239,76 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-07",
         "close": 15.51,
         "pct": 0
+      },
+      {
+        "date": "2026-09-04",
+        "close": 15.51,
+        "pct": 10
       }
     ],
     "cur_price": 15.51,
+    "cur_pct": 0
+  },
+  {
+    "code": "001366",
+    "name": "播恩集团",
+    "sector": "饲料",
+    "rec_date": "2026-09-04",
+    "buy_price": 15.8,
+    "stop": 15.01,
+    "target": 17.38,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-04",
+        "close": 15.8,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 15.8,
+        "pct": 10.03
+      }
+    ],
+    "cur_price": 15.8,
+    "cur_pct": 0
+  },
+  {
+    "code": "000735",
+    "name": "罗牛山",
+    "sector": "养殖业",
+    "rec_date": "2026-09-04",
+    "buy_price": 6.74,
+    "stop": 6.4,
+    "target": 7.42,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-04",
+        "close": 6.74,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 6.74,
+        "pct": 9.95
+      }
+    ],
+    "cur_price": 6.74,
     "cur_pct": 0
   }
 ]
