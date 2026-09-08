@@ -1,149 +1,5 @@
 [
   {
-    "code": "000702",
-    "name": "正虹科技",
-    "sector": "饲料",
-    "rec_date": "2026-09-04",
-    "buy_price": 6.26,
-    "stop": 5.95,
-    "target": 6.89,
-    "status": "到期平仓",
-    "sell_date": "2026-09-07",
-    "sell_price": 6.42,
-    "return_pct": 2.56,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-04",
-        "close": 6.26,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-07",
-        "close": 6.42,
-        "pct": 2.56
-      }
-    ],
-    "cur_price": 6.42,
-    "cur_pct": 2.56,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603151",
-    "name": "邦基科技",
-    "sector": "饲料",
-    "rec_date": "2026-09-04",
-    "buy_price": 18.13,
-    "stop": 17.22,
-    "target": 19.94,
-    "status": "到期平仓",
-    "sell_date": "2026-09-07",
-    "sell_price": 18.39,
-    "return_pct": 1.43,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-04",
-        "close": 18.13,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-07",
-        "close": 18.39,
-        "pct": 1.43
-      }
-    ],
-    "cur_price": 18.39,
-    "cur_pct": 1.43,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002124",
-    "name": "天邦食品",
-    "sector": "养殖业",
-    "rec_date": "2026-09-04",
-    "buy_price": 2.42,
-    "stop": 2.3,
-    "target": 2.66,
-    "status": "到期平仓",
-    "sell_date": "2026-09-07",
-    "sell_price": 2.54,
-    "return_pct": 4.96,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-04",
-        "close": 2.42,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-07",
-        "close": 2.54,
-        "pct": 4.96
-      }
-    ],
-    "cur_price": 2.54,
-    "cur_pct": 4.96,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "600975",
-    "name": "新五丰",
-    "sector": "养殖业",
-    "rec_date": "2026-09-04",
-    "buy_price": 5.59,
-    "stop": 5.31,
-    "target": 6.15,
-    "status": "到期平仓",
-    "sell_date": "2026-09-07",
-    "sell_price": 5.9,
-    "return_pct": 5.55,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-04",
-        "close": 5.59,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-07",
-        "close": 5.9,
-        "pct": 5.55
-      }
-    ],
-    "cur_price": 5.9,
-    "cur_pct": 5.55,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "003040",
-    "name": "楚天龙",
-    "sector": "通信设备",
-    "rec_date": "2026-09-04",
-    "buy_price": 22.95,
-    "stop": 21.8,
-    "target": 25.25,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-04",
-        "close": 22.95,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-07",
-        "close": 22.95,
-        "pct": 8.66
-      }
-    ],
-    "cur_price": 22.95,
-    "cur_pct": 0
-  },
-  {
     "code": "002881",
     "name": "美格智能",
     "sector": "通信设备",
@@ -151,11 +7,11 @@
     "buy_price": 46.12,
     "stop": 44.28,
     "target": 50.73,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-08",
+    "sell_price": 47.51,
+    "return_pct": 3.01,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-07",
@@ -166,10 +22,16 @@
         "date": "2026-09-04",
         "close": 46.12,
         "pct": 9.99
+      },
+      {
+        "date": "2026-09-08",
+        "close": 47.51,
+        "pct": 3.01
       }
     ],
-    "cur_price": 46.12,
-    "cur_pct": 0
+    "cur_price": 47.51,
+    "cur_pct": 3.01,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603118",
@@ -179,11 +41,11 @@
     "buy_price": 17.89,
     "stop": 17.17,
     "target": 19.68,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-08",
+    "sell_price": 18.04,
+    "return_pct": 0.84,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-07",
@@ -194,10 +56,16 @@
         "date": "2026-09-04",
         "close": 17.89,
         "pct": 10.02
+      },
+      {
+        "date": "2026-09-08",
+        "close": 18.04,
+        "pct": 0.84
       }
     ],
-    "cur_price": 17.89,
-    "cur_pct": 0
+    "cur_price": 18.04,
+    "cur_pct": 0.84,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000823",
@@ -207,11 +75,11 @@
     "buy_price": 15.94,
     "stop": 15.3,
     "target": 17.53,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-08",
+    "sell_price": 16.53,
+    "return_pct": 3.7,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-07",
@@ -222,38 +90,16 @@
         "date": "2026-09-04",
         "close": 15.94,
         "pct": 10.01
-      }
-    ],
-    "cur_price": 15.94,
-    "cur_pct": 0
-  },
-  {
-    "code": "002579",
-    "name": "中京电子",
-    "sector": "元件",
-    "rec_date": "2026-09-07",
-    "buy_price": 15.51,
-    "stop": 14.89,
-    "target": 17.06,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-09-07",
-        "close": 15.51,
-        "pct": 0
       },
       {
-        "date": "2026-09-04",
-        "close": 15.51,
-        "pct": 10
+        "date": "2026-09-08",
+        "close": 16.53,
+        "pct": 3.7
       }
     ],
-    "cur_price": 15.51,
-    "cur_pct": 0
+    "cur_price": 16.53,
+    "cur_pct": 3.7,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "001366",
@@ -267,7 +113,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-04",
@@ -278,10 +124,15 @@
         "date": "2026-09-07",
         "close": 15.8,
         "pct": 10.03
+      },
+      {
+        "date": "2026-09-08",
+        "close": 16.38,
+        "pct": 3.67
       }
     ],
-    "cur_price": 15.8,
-    "cur_pct": 0
+    "cur_price": 16.38,
+    "cur_pct": 3.67
   },
   {
     "code": "000735",
@@ -295,7 +146,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-04",
@@ -306,9 +157,65 @@
         "date": "2026-09-07",
         "close": 6.74,
         "pct": 9.95
+      },
+      {
+        "date": "2026-09-08",
+        "close": 6.81,
+        "pct": 1.04
       }
     ],
-    "cur_price": 6.74,
+    "cur_price": 6.81,
+    "cur_pct": 1.04
+  },
+  {
+    "code": "002988",
+    "name": "豪美新材",
+    "sector": "工业金属",
+    "rec_date": "2026-09-07",
+    "buy_price": 30.17,
+    "stop": 28.66,
+    "target": 33.19,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-07",
+        "close": 30.17,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-08",
+        "close": 30.17,
+        "pct": 4.87
+      }
+    ],
+    "cur_price": 30.17,
+    "cur_pct": 0
+  },
+  {
+    "code": "002295",
+    "name": "精艺股份",
+    "sector": "工业金属",
+    "rec_date": "2026-09-08",
+    "buy_price": 10.53,
+    "stop": 10,
+    "target": 11.58,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-08",
+        "close": 10.53,
+        "pct": 0
+      }
+    ],
+    "cur_price": 10.53,
     "cur_pct": 0
   }
 ]
