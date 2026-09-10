@@ -158,10 +158,21 @@
     "limitUp": 48,
     "limitDown": 7,
     "topBoard": 5,
-    "ratio": 0.52,
-    "amount": 18556.07,
-    "upCount": 1762,
-    "downCount": 3396,
+    "ratio": 0.22,
+    "amount": 16471.48,
+    "upCount": 949,
+    "downCount": 4243,
     "sentiment": "修复"
+  },
+  {
+    "date": "2026-09-10",
+    "limitUp": 35,
+    "limitDown": 11,
+    "topBoard": 4,
+    "ratio": 0.22,
+    "amount": 16471.48,
+    "upCount": 949,
+    "downCount": 4243,
+    "sentiment": "中枢"
   }
 ]

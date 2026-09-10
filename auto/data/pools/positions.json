@@ -1,126 +1,234 @@
 [
   {
-    "code": "603083",
-    "name": "剑桥科技",
-    "sector": "通信设备",
-    "rec_date": "2026-09-07",
-    "buy_price": 222.3,
-    "stop": 211.19,
-    "target": "240.08-255.65",
-    "status": "到期平仓",
-    "sell_date": "2026-09-08",
-    "sell_price": 218.99,
-    "return_pct": -1.49,
-    "days_held": 5,
+    "code": "000930",
+    "name": "中粮科技",
+    "sector": "农产品加",
+    "rec_date": "2026-09-09",
+    "buy_price": 6.5,
+    "stop": 6.24,
+    "target": 7.28,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
     "history": [
       {
-        "date": "2026-09-07",
-        "close": 222.3,
+        "date": "2026-09-09",
+        "close": 6.5,
         "pct": 0
       },
       {
-        "date": "2026-09-08",
-        "close": 222.3,
-        "pct": 7.33
-      },
-      {
-        "date": "2026-09-09",
-        "close": 218.99,
-        "pct": -1.49
+        "date": "2026-09-10",
+        "close": 6.5,
+        "pct": 1.4
       }
     ],
-    "cur_price": 218.99,
-    "cur_pct": -1.49,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
+    "cur_price": 6.5,
+    "cur_pct": 0
   },
   {
-    "code": "688655",
-    "name": "迅捷兴",
+    "code": "000759",
+    "name": "中百集团",
+    "sector": "一般零售",
+    "rec_date": "2026-09-09",
+    "buy_price": 8.69,
+    "stop": 8.34,
+    "target": 9.73,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-09",
+        "close": 8.69,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 8.69,
+        "pct": 2.6
+      }
+    ],
+    "cur_price": 8.69,
+    "cur_pct": 0
+  },
+  {
+    "code": "600192",
+    "name": "长城电工",
+    "sector": "电网设备",
+    "rec_date": "2026-09-09",
+    "buy_price": 8.68,
+    "stop": 8.33,
+    "target": 9.72,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-09",
+        "close": 8.68,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 8.68,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 8.68,
+    "cur_pct": 0
+  },
+  {
+    "code": "002040",
+    "name": "南京港",
+    "sector": "航运港口",
+    "rec_date": "2026-09-09",
+    "buy_price": 10.26,
+    "stop": 9.85,
+    "target": 11.49,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-09",
+        "close": 10.26,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 10.26,
+        "pct": 2.81
+      }
+    ],
+    "cur_price": 10.26,
+    "cur_pct": 0
+  },
+  {
+    "code": "603186",
+    "name": "华正新材",
     "sector": "元件",
-    "rec_date": "2026-09-07",
-    "buy_price": 54.86,
-    "stop": 52.12,
-    "target": "59.25-63.09",
-    "status": "到期平仓",
-    "sell_date": "2026-09-08",
-    "sell_price": 56.52,
-    "return_pct": 3.03,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-07",
-        "close": 54.86,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-08",
-        "close": 54.86,
-        "pct": 8.59
-      },
-      {
-        "date": "2026-09-09",
-        "close": 56.52,
-        "pct": 3.03
-      }
-    ],
-    "cur_price": 56.52,
-    "cur_pct": 3.03,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002312",
-    "name": "川发龙蟒",
-    "sector": "农化制品",
-    "rec_date": "2026-09-08",
-    "buy_price": 9.34,
-    "stop": 8.87,
-    "target": 10.27,
+    "rec_date": "2026-09-09",
+    "buy_price": 217.99,
+    "stop": 209.27,
+    "target": 244.15,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 4,
+    "days_held": 2,
     "history": [
       {
-        "date": "2026-09-08",
-        "close": 9.34,
+        "date": "2026-09-09",
+        "close": 217.99,
         "pct": 0
       },
       {
-        "date": "2026-09-09",
-        "close": 9.55,
-        "pct": 2.25
+        "date": "2026-09-10",
+        "close": 217.99,
+        "pct": 2.8
       }
     ],
-    "cur_price": 9.55,
-    "cur_pct": 2.25
+    "cur_price": 217.99,
+    "cur_pct": 0
   },
   {
-    "code": "603042",
-    "name": "华脉科技",
-    "sector": "通信设备",
-    "rec_date": "2026-09-08",
-    "buy_price": 18.67,
-    "stop": 17.74,
-    "target": 20.54,
+    "code": "000993",
+    "name": "闽东电力",
+    "sector": "电力",
+    "rec_date": "2026-09-10",
+    "buy_price": 12.62,
+    "stop": 11.99,
+    "target": 14.13,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 1,
     "history": [
       {
-        "date": "2026-09-08",
-        "close": 18.67,
+        "date": "2026-09-10",
+        "close": 12.62,
         "pct": 0
-      },
-      {
-        "date": "2026-09-09",
-        "close": 18.67,
-        "pct": 10.02
       }
     ],
-    "cur_price": 18.67,
+    "cur_price": 12.62,
+    "cur_pct": 0
+  },
+  {
+    "code": "603105",
+    "name": "芯能科技",
+    "sector": "电力",
+    "rec_date": "2026-09-10",
+    "buy_price": 8.38,
+    "stop": 7.96,
+    "target": 9.39,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-10",
+        "close": 8.38,
+        "pct": 0
+      }
+    ],
+    "cur_price": 8.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "000722",
+    "name": "湖南发展",
+    "sector": "电力",
+    "rec_date": "2026-09-10",
+    "buy_price": 14.74,
+    "stop": 14,
+    "target": 16.51,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-10",
+        "close": 14.74,
+        "pct": 0
+      }
+    ],
+    "cur_price": 14.74,
+    "cur_pct": 0
+  },
+  {
+    "code": "002636",
+    "name": "金安国纪",
+    "sector": "元件",
+    "rec_date": "2026-09-10",
+    "buy_price": 76.45,
+    "stop": 72.63,
+    "target": 85.62,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-10",
+        "close": 76.45,
+        "pct": 0
+      }
+    ],
+    "cur_price": 76.45,
     "cur_pct": 0
   }
 ]
