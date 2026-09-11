@@ -169,10 +169,21 @@
     "limitUp": 35,
     "limitDown": 11,
     "topBoard": 4,
-    "ratio": 0.22,
-    "amount": 16471.48,
-    "upCount": 949,
-    "downCount": 4243,
+    "ratio": 0.13,
+    "amount": 19718.98,
+    "upCount": 619,
+    "downCount": 4619,
+    "sentiment": "中枢"
+  },
+  {
+    "date": "2026-09-11",
+    "limitUp": 40,
+    "limitDown": 21,
+    "topBoard": 4,
+    "ratio": 0.13,
+    "amount": 19718.98,
+    "upCount": 619,
+    "downCount": 4619,
     "sentiment": "中枢"
   }
 ]
