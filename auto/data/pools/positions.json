@@ -147,7 +147,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-10",
@@ -175,12 +175,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-11",
         "close": 30.86,
         "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 30.86,
+        "pct": 10.02
       }
     ],
     "cur_price": 30.86,
@@ -198,12 +203,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-11",
         "close": 20.57,
         "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 20.57,
+        "pct": 10
       }
     ],
     "cur_price": 20.57,
@@ -221,12 +231,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-11",
         "close": 27.92,
         "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 27.92,
+        "pct": 19.98
       }
     ],
     "cur_price": 27.92,
@@ -244,12 +259,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-11",
         "close": 34.77,
         "pct": 0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 34.77,
+        "pct": 10
       }
     ],
     "cur_price": 34.77,
