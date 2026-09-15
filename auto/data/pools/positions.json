@@ -109,11 +109,11 @@
     "buy_price": 58.37,
     "stop": 55.45,
     "target": 64.21,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-15",
+    "sell_price": 61.9,
+    "return_pct": 6.05,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-14",
@@ -127,7 +127,8 @@
       }
     ],
     "cur_price": 61.9,
-    "cur_pct": 6.05
+    "cur_pct": 6.05,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002487",
@@ -141,12 +142,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-15",
         "close": 39.44,
         "pct": 0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 39.44,
+        "pct": 10.01
       }
     ],
     "cur_price": 39.44,
@@ -164,12 +170,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-15",
         "close": 7.81,
         "pct": 0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 7.81,
+        "pct": 10
       }
     ],
     "cur_price": 7.81,
@@ -187,12 +198,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-15",
         "close": 29.49,
         "pct": 0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 29.49,
+        "pct": 10
       }
     ],
     "cur_price": 29.49,
@@ -210,15 +226,99 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-15",
         "close": 30.58,
         "pct": 0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 30.58,
+        "pct": 10
       }
     ],
     "cur_price": 30.58,
+    "cur_pct": 0
+  },
+  {
+    "code": "000823",
+    "name": "超声电子",
+    "sector": "元件",
+    "rec_date": "2026-09-14",
+    "buy_price": 23.9,
+    "stop": 22.94,
+    "target": 26.29,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-14",
+        "close": 23.9,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 23.9,
+        "pct": 5.61
+      }
+    ],
+    "cur_price": 23.9,
+    "cur_pct": 0
+  },
+  {
+    "code": "603090",
+    "name": "宏盛股份",
+    "sector": "通用设备",
+    "rec_date": "2026-09-14",
+    "buy_price": 40.21,
+    "stop": 38.2,
+    "target": 44.23,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-14",
+        "close": 40.21,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 40.21,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 40.21,
+    "cur_pct": 0
+  },
+  {
+    "code": "000993",
+    "name": "闽东电力",
+    "sector": "电力",
+    "rec_date": "2026-09-15",
+    "buy_price": 16.8,
+    "stop": 15.96,
+    "target": 18.14,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-15",
+        "close": 16.8,
+        "pct": 0
+      }
+    ],
+    "cur_price": 16.8,
     "cur_pct": 0
   }
 ]
