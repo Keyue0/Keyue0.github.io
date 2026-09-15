@@ -191,10 +191,21 @@
     "limitUp": 55,
     "limitDown": 16,
     "topBoard": 4,
-    "ratio": 1.41,
-    "amount": 16291.76,
-    "upCount": 2974,
-    "downCount": 2107,
+    "ratio": 0.26,
+    "amount": 16127.17,
+    "upCount": 1063,
+    "downCount": 4156,
     "sentiment": "修复"
+  },
+  {
+    "date": "2026-09-15",
+    "limitUp": 32,
+    "limitDown": 27,
+    "topBoard": 5,
+    "ratio": 0.26,
+    "amount": 16127.17,
+    "upCount": 1063,
+    "downCount": 4156,
+    "sentiment": "冰点"
   }
 ]
