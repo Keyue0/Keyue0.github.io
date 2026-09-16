@@ -136,72 +136,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "000823",
-    "name": "超声电子",
-    "sector": "元件",
-    "rec_date": "2026-09-14",
-    "buy_price": 23.9,
-    "stop": 22.94,
-    "target": 26.29,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 23.9,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-15",
-        "close": 23.9,
-        "pct": 5.61
-      },
-      {
-        "date": "2026-09-16",
-        "close": 25.12,
-        "pct": 5.1
-      }
-    ],
-    "cur_price": 25.12,
-    "cur_pct": 5.1
-  },
-  {
-    "code": "603090",
-    "name": "宏盛股份",
-    "sector": "通用设备",
-    "rec_date": "2026-09-14",
-    "buy_price": 40.21,
-    "stop": 38.2,
-    "target": 44.23,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 40.21,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-15",
-        "close": 40.21,
-        "pct": 10.01
-      },
-      {
-        "date": "2026-09-16",
-        "close": 39.7,
-        "pct": -1.27
-      }
-    ],
-    "cur_price": 39.7,
-    "cur_pct": -1.27
-  },
-  {
     "code": "002491",
     "name": "通鼎互联",
     "sector": "通信设备",
@@ -213,7 +147,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-15",
@@ -241,12 +175,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-16",
         "close": 17.16,
         "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 17.16,
+        "pct": 10
       }
     ],
     "cur_price": 17.16,
@@ -264,12 +203,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-16",
         "close": 137.72,
         "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 137.72,
+        "pct": 10
       }
     ],
     "cur_price": 137.72,
@@ -287,12 +231,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-16",
         "close": 54.06,
         "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 54.06,
+        "pct": 20
       }
     ],
     "cur_price": 54.06,
@@ -310,15 +259,89 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-16",
         "close": 81.78,
         "pct": 0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 81.78,
+        "pct": 20
       }
     ],
     "cur_price": 81.78,
+    "cur_pct": 0
+  },
+  {
+    "code": "600206",
+    "name": "有研新材",
+    "sector": "半导体",
+    "rec_date": "2026-09-16",
+    "buy_price": 51.63,
+    "stop": 49.56,
+    "target": 56.79,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 51.63,
+        "pct": 0
+      }
+    ],
+    "cur_price": 51.63,
+    "cur_pct": 0
+  },
+  {
+    "code": "002846",
+    "name": "英联股份",
+    "sector": "包装印刷",
+    "rec_date": "2026-09-16",
+    "buy_price": 12.75,
+    "stop": 12.24,
+    "target": 14.03,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 12.75,
+        "pct": 0
+      }
+    ],
+    "cur_price": 12.75,
+    "cur_pct": 0
+  },
+  {
+    "code": "605058",
+    "name": "澳弘电子",
+    "sector": "元件",
+    "rec_date": "2026-09-16",
+    "buy_price": 44.33,
+    "stop": 42.11,
+    "target": 48.76,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 44.33,
+        "pct": 0
+      }
+    ],
+    "cur_price": 44.33,
     "cur_pct": 0
   }
 ]
