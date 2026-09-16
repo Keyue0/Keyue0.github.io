@@ -1,136 +1,5 @@
 [
   {
-    "code": "001896",
-    "name": "豫能控股",
-    "sector": "电力",
-    "rec_date": "2026-09-14",
-    "buy_price": 12.99,
-    "stop": 12.47,
-    "target": 14.55,
-    "status": "到期平仓",
-    "sell_date": "2026-09-15",
-    "sell_price": 12.5,
-    "return_pct": -3.77,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 12.99,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-11",
-        "close": 12.99,
-        "pct": 9.99
-      },
-      {
-        "date": "2026-09-15",
-        "close": 12.5,
-        "pct": -3.77
-      }
-    ],
-    "cur_price": 12.5,
-    "cur_pct": -3.77,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002560",
-    "name": "通达股份",
-    "sector": "电网设备",
-    "rec_date": "2026-09-14",
-    "buy_price": 7.57,
-    "stop": 7.19,
-    "target": 8.48,
-    "status": "到期平仓",
-    "sell_date": "2026-09-15",
-    "sell_price": 7.72,
-    "return_pct": 1.98,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 7.57,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-11",
-        "close": 7.57,
-        "pct": 10.03
-      },
-      {
-        "date": "2026-09-15",
-        "close": 7.72,
-        "pct": 1.98
-      }
-    ],
-    "cur_price": 7.72,
-    "cur_pct": 1.98,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "000980",
-    "name": "众泰汽车",
-    "sector": "汽车零部",
-    "rec_date": "2026-09-14",
-    "buy_price": 2.33,
-    "stop": 2.21,
-    "target": 2.68,
-    "status": "到期平仓",
-    "sell_date": "2026-09-15",
-    "sell_price": 2.26,
-    "return_pct": -3,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 2.33,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-11",
-        "close": 2.33,
-        "pct": 9.91
-      },
-      {
-        "date": "2026-09-15",
-        "close": 2.26,
-        "pct": -3
-      }
-    ],
-    "cur_price": 2.26,
-    "cur_pct": -3,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "301132",
-    "name": "满坤科技",
-    "sector": "元件",
-    "rec_date": "2026-09-14",
-    "buy_price": 58.37,
-    "stop": 55.45,
-    "target": 64.21,
-    "status": "到期平仓",
-    "sell_date": "2026-09-15",
-    "sell_price": 61.9,
-    "return_pct": 6.05,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-14",
-        "close": 58.37,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-15",
-        "close": 61.9,
-        "pct": 6.05
-      }
-    ],
-    "cur_price": 61.9,
-    "cur_pct": 6.05,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
     "code": "002487",
     "name": "大金重工",
     "sector": "风电设备",
@@ -138,11 +7,11 @@
     "buy_price": 39.44,
     "stop": 37.47,
     "target": 44.17,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-16",
+    "sell_price": 39.16,
+    "return_pct": -0.71,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-15",
@@ -153,10 +22,16 @@
         "date": "2026-09-14",
         "close": 39.44,
         "pct": 10.01
+      },
+      {
+        "date": "2026-09-16",
+        "close": 39.16,
+        "pct": -0.71
       }
     ],
-    "cur_price": 39.44,
-    "cur_pct": 0
+    "cur_price": 39.16,
+    "cur_pct": -0.71,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002531",
@@ -166,11 +41,11 @@
     "buy_price": 7.81,
     "stop": 7.5,
     "target": 8.75,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-16",
+    "sell_price": 7.82,
+    "return_pct": 0.13,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-15",
@@ -181,10 +56,16 @@
         "date": "2026-09-14",
         "close": 7.81,
         "pct": 10
+      },
+      {
+        "date": "2026-09-16",
+        "close": 7.82,
+        "pct": 0.13
       }
     ],
-    "cur_price": 7.81,
-    "cur_pct": 0
+    "cur_price": 7.82,
+    "cur_pct": 0.13,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002213",
@@ -194,11 +75,11 @@
     "buy_price": 29.49,
     "stop": 28.31,
     "target": 33.03,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-16",
+    "sell_price": 29.58,
+    "return_pct": 0.31,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-15",
@@ -209,10 +90,16 @@
         "date": "2026-09-14",
         "close": 29.49,
         "pct": 10
+      },
+      {
+        "date": "2026-09-16",
+        "close": 29.58,
+        "pct": 0.31
       }
     ],
-    "cur_price": 29.49,
-    "cur_pct": 0
+    "cur_price": 29.58,
+    "cur_pct": 0.31,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "003026",
@@ -222,11 +109,11 @@
     "buy_price": 30.58,
     "stop": 29.36,
     "target": 34.25,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-16",
+    "sell_price": 33.64,
+    "return_pct": 10.01,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-15",
@@ -237,10 +124,16 @@
         "date": "2026-09-14",
         "close": 30.58,
         "pct": 10
+      },
+      {
+        "date": "2026-09-16",
+        "close": 33.64,
+        "pct": 10.01
       }
     ],
-    "cur_price": 30.58,
-    "cur_pct": 0
+    "cur_price": 33.64,
+    "cur_pct": 10.01,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000823",
@@ -254,7 +147,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-14",
@@ -265,10 +158,15 @@
         "date": "2026-09-15",
         "close": 23.9,
         "pct": 5.61
+      },
+      {
+        "date": "2026-09-16",
+        "close": 25.12,
+        "pct": 5.1
       }
     ],
-    "cur_price": 23.9,
-    "cur_pct": 0
+    "cur_price": 25.12,
+    "cur_pct": 5.1
   },
   {
     "code": "603090",
@@ -282,7 +180,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-14",
@@ -293,19 +191,52 @@
         "date": "2026-09-15",
         "close": 40.21,
         "pct": 10.01
+      },
+      {
+        "date": "2026-09-16",
+        "close": 39.7,
+        "pct": -1.27
       }
     ],
-    "cur_price": 40.21,
+    "cur_price": 39.7,
+    "cur_pct": -1.27
+  },
+  {
+    "code": "002491",
+    "name": "通鼎互联",
+    "sector": "通信设备",
+    "rec_date": "2026-09-15",
+    "buy_price": 24.45,
+    "stop": 23.23,
+    "target": 26.9,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-15",
+        "close": 24.45,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 24.45,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 24.45,
     "cur_pct": 0
   },
   {
-    "code": "000993",
-    "name": "闽东电力",
-    "sector": "电力",
-    "rec_date": "2026-09-15",
-    "buy_price": 16.8,
-    "stop": 15.96,
-    "target": 18.14,
+    "code": "603042",
+    "name": "华脉科技",
+    "sector": "通信设备",
+    "rec_date": "2026-09-16",
+    "buy_price": 17.16,
+    "stop": 16.47,
+    "target": 19.22,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -313,12 +244,81 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-09-15",
-        "close": 16.8,
+        "date": "2026-09-16",
+        "close": 17.16,
         "pct": 0
       }
     ],
-    "cur_price": 16.8,
+    "cur_price": 17.16,
+    "cur_pct": 0
+  },
+  {
+    "code": "003031",
+    "name": "中瓷电子",
+    "sector": "通信设备",
+    "rec_date": "2026-09-16",
+    "buy_price": 137.72,
+    "stop": 132.21,
+    "target": 151.49,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 137.72,
+        "pct": 0
+      }
+    ],
+    "cur_price": 137.72,
+    "cur_pct": 0
+  },
+  {
+    "code": "688432",
+    "name": "有研硅",
+    "sector": "半导体",
+    "rec_date": "2026-09-16",
+    "buy_price": 54.06,
+    "stop": 51.36,
+    "target": 60.55,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 54.06,
+        "pct": 0
+      }
+    ],
+    "cur_price": 54.06,
+    "cur_pct": 0
+  },
+  {
+    "code": "301251",
+    "name": "威尔高",
+    "sector": "元件",
+    "rec_date": "2026-09-16",
+    "buy_price": 81.78,
+    "stop": 77.69,
+    "target": 91.59,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 81.78,
+        "pct": 0
+      }
+    ],
+    "cur_price": 81.78,
     "cur_pct": 0
   }
 ]
