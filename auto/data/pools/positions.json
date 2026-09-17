@@ -109,11 +109,11 @@
     "buy_price": 51.63,
     "stop": 49.56,
     "target": 56.79,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-09-17",
+    "sell_price": 50.55,
+    "return_pct": -2.09,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-16",
@@ -127,7 +127,8 @@
       }
     ],
     "cur_price": 50.55,
-    "cur_pct": -2.09
+    "cur_pct": -2.09,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000981",
@@ -141,12 +142,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-17",
         "close": 3.01,
         "pct": 0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 3.01,
+        "pct": 9.85
       }
     ],
     "cur_price": 3.01,
@@ -164,12 +170,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-17",
         "close": 47.37,
         "pct": 0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 47.37,
+        "pct": 10.01
       }
     ],
     "cur_price": 47.37,
@@ -187,15 +198,104 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-17",
         "close": 37.51,
         "pct": 0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 37.51,
+        "pct": 10
       }
     ],
     "cur_price": 37.51,
+    "cur_pct": 0
+  },
+  {
+    "code": "003026",
+    "name": "中晶科技",
+    "sector": "半导体",
+    "rec_date": "2026-09-16",
+    "buy_price": 37,
+    "stop": 35.15,
+    "target": 40.7,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 37,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 37,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 37,
+    "cur_pct": 0
+  },
+  {
+    "code": "605058",
+    "name": "澳弘电子",
+    "sector": "元件",
+    "rec_date": "2026-09-16",
+    "buy_price": 48.76,
+    "stop": 46.32,
+    "target": 53.64,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 48.76,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 48.76,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 48.76,
+    "cur_pct": 0
+  },
+  {
+    "code": "603607",
+    "name": "京华激光",
+    "sector": "包装印刷",
+    "rec_date": "2026-09-16",
+    "buy_price": 25,
+    "stop": 24,
+    "target": 27,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-09-16",
+        "close": 25,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 25,
+        "pct": 2.42
+      }
+    ],
+    "cur_price": 25,
     "cur_pct": 0
   }
 ]
