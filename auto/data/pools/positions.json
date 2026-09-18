@@ -102,105 +102,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "003026",
-    "name": "中晶科技",
-    "sector": "半导体",
-    "rec_date": "2026-09-16",
-    "buy_price": 37,
-    "stop": 35.15,
-    "target": 40.7,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-16",
-        "close": 37,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-17",
-        "close": 37,
-        "pct": 9.99
-      },
-      {
-        "date": "2026-09-18",
-        "close": 37.2,
-        "pct": 0.54
-      }
-    ],
-    "cur_price": 37.2,
-    "cur_pct": 0.54
-  },
-  {
-    "code": "605058",
-    "name": "澳弘电子",
-    "sector": "元件",
-    "rec_date": "2026-09-16",
-    "buy_price": 48.76,
-    "stop": 46.32,
-    "target": 53.64,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-16",
-        "close": 48.76,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-17",
-        "close": 48.76,
-        "pct": 9.99
-      },
-      {
-        "date": "2026-09-18",
-        "close": 47.4,
-        "pct": -2.79
-      }
-    ],
-    "cur_price": 47.4,
-    "cur_pct": -2.79
-  },
-  {
-    "code": "603607",
-    "name": "京华激光",
-    "sector": "包装印刷",
-    "rec_date": "2026-09-16",
-    "buy_price": 25,
-    "stop": 24,
-    "target": 27,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-16",
-        "close": 25,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-17",
-        "close": 25,
-        "pct": 2.42
-      },
-      {
-        "date": "2026-09-18",
-        "close": 24.3,
-        "pct": -2.8
-      }
-    ],
-    "cur_price": 24.3,
-    "cur_pct": -2.8
-  },
-  {
     "code": "600641",
     "name": "先导基电",
     "sector": "半导体",
@@ -212,7 +113,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-17",
@@ -240,7 +141,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-17",
@@ -268,12 +169,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-18",
         "close": 18.03,
         "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 18.03,
+        "pct": 10.01
       }
     ],
     "cur_price": 18.03,
@@ -291,12 +197,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-18",
         "close": 18.43,
         "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 18.43,
+        "pct": 10.03
       }
     ],
     "cur_price": 18.43,
@@ -314,12 +225,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-18",
         "close": 39.81,
         "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 39.81,
+        "pct": 10
       }
     ],
     "cur_price": 39.81,
@@ -337,12 +253,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-18",
         "close": 9,
         "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 9,
+        "pct": 10.02
       }
     ],
     "cur_price": 9,
@@ -360,12 +281,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-18",
         "close": 16.69,
         "pct": 0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 16.69,
+        "pct": 10.02
       }
     ],
     "cur_price": 16.69,
