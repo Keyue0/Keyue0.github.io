@@ -235,10 +235,21 @@
     "limitUp": 78,
     "limitDown": 0,
     "topBoard": 4,
-    "ratio": 3.52,
-    "amount": 20771,
-    "upCount": 3980,
-    "downCount": 1130,
+    "ratio": 4.59,
+    "amount": 20315.13,
+    "upCount": 4263,
+    "downCount": 929,
+    "sentiment": "亢奋"
+  },
+  {
+    "date": "2026-09-21",
+    "limitUp": 103,
+    "limitDown": 2,
+    "topBoard": 5,
+    "ratio": 4.59,
+    "amount": 20315.13,
+    "upCount": 4263,
+    "downCount": 929,
     "sentiment": "亢奋"
   }
 ]
