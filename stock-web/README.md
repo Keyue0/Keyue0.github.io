@@ -192,23 +192,33 @@ python tools/push_pages.py                # 同步 + 提交 + 推送
 python tools/push_pages.py -m "自定义提交信息"
 ```
 
-脚本做的事：全新克隆仓库（保证工作区干净且已是最新 main）→
+脚本做的事：准备克隆（**首次全量克隆，之后增量重置**）→
 **检查目标前缀有没有「远程独有文件」（有就中止，避免误删）** →
-镜像本地到 `stock-web/` → 只 `git add stock-web` → 提交推送。
-`--dry-run` 留下的是干净状态，下次运行不受影响（因为每次都是全新克隆）。
+逐文件镜像本地到 `stock-web/` → 只 `git add stock-web` → 提交推送。
+
+> ★ **为什么不「每次全新克隆」**：那需要在每次运行时 `rmtree` 掉克隆目录（809 个文件）。
+> 一次删 800+ 个文件会被**沙箱/EDR 的批量删除保护**拦下，而且拦得极隐蔽 ——
+> 子进程返回非 0，日志里只有一行 `[safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED]`，
+> 看起来像「推送脚本自己失败了」。
+> 现在改成：`git fetch origin main` + `git reset --hard FETCH_HEAD`
+> + `git clean -fdq -- stock-web`（**只清 stock-web 前缀，不动 `auto/`**），
+> `sync()` 也从整目录重建改为**逐文件镜像**（只删「目标有、本地没有」的少数文件，
+> 正常 0 个）。删除量从 809 → 0。
+> `reset --hard FETCH_HEAD` 是无条件的、确定性的，所以不存在
+> 「上次留下的脏暂存区挡住 `git pull --rebase`」那类问题。
+> `--dry-run` 也不会留下脏状态。
 
 **手动步骤**（脚本不可用时）
 
 ```bash
-# 1) 克隆仓库
+# 1) 克隆仓库（已有克隆就 fetch + reset --hard origin/main，不必重建）
 git clone git@github.com:Keyue0/Keyue0.github.io.git /path/to/pages-repo
 
 # 2) ★ 先确认目标前缀没有「远程独有文件」，为 0 才可安全镜像
 diff -rq /path/to/pages-repo/stock-web . | grep '^Only in.*pages-repo'
 
-# 3) 同步（已确认无独有文件才执行 rm -rf）
-rm -rf /path/to/pages-repo/stock-web
-cp -r . /path/to/pages-repo/stock-web
+# 3) 逐文件同步（只删目标里多出来的文件，不要 rm -rf 整个前缀）
+#    实际就用脚本：python tools/push_pages.py
 
 # 4) 提交推送（只加 stock-web 这一个前缀）
 cd /path/to/pages-repo
@@ -220,10 +230,11 @@ git push
 推送后 GitHub Pages 约 20 秒生效。用 SSH 推送（本机 `~/.ssh/id_ed25519` 已配好，
 `ssh -T git@github.com` 应返回 `Hi Keyue0!`）。
 
-> ⚠️ 线上数据会「静默变旧」：每日流程会更新本地的
-> `data/industry_crowding.json`，但仓库里的 Actions **只提交 `auto/data/`**，
-> 不碰 `stock-web/`。所以线上 `#/industry` 面板的数据会停在上次推送的状态，
-> 需要手动跑 `push_pages.py` 才更新。想每天自动推的话，在 `daily.py` 末尾加一步调用即可。
+> ✅ **线上数据已不再「静默变旧」**：`0914WB/tools/daily.py` 已接成 **6 步**，
+> 末尾【6/6】调用本脚本推送。周一至周五 16:30 由 Windows 计划任务
+> `0914WB-DailyStockScan` 自动跑完整条链路。
+> 想跳过推送：`daily.py --skip-push`。
+> 推送失败只警告不中断（本地数据已更新，线上是旧版，可手动重跑本脚本）。
 
 ### 推送前自检
 
