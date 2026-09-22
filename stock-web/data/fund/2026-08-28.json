@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-28",
+  "unit": "yuan",
+  "note": "板块主力净流入（单位换算为元，前端显示亿）。来源：通达信 zjlx 24只代表股当日净额聚合（个股口径近似，复盘生成）。半导体=兆易+澜起+北方华创+凯瑞德；通信设备/CPO=新易盛+中际旭创+天孚+青山纸业；全量返回无缺失。",
+  "rows": [
+    {
+      "name": "PCB",
+      "main": 323000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "农业/种业",
+      "main": 12000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "机器人",
+      "main": -11000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "贵金属/黄金",
+      "main": -29000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "券商",
+      "main": -86000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "有色金属/铜",
+      "main": -166000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -203000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "液冷/储能",
+      "main": -352000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "医药",
+      "main": -394000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备/CPO",
+      "main": -953000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -3831000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

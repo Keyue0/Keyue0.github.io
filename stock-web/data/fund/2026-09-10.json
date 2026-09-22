@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-10",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元，前端显示亿）。来源：westock sector ranking（mainNetInflow），万元÷1e4得亿后×1e8存元。",
+  "rows": [
+    {
+      "name": "元件",
+      "main": 3240000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "玻璃玻纤",
+      "main": 2242000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "工程咨询服务Ⅱ",
+      "main": 1839000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电力",
+      "main": 1539000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "证券Ⅱ",
+      "main": 1218000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "燃气Ⅱ",
+      "main": 511000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备",
+      "main": -4523000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电网设备",
+      "main": -2455000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -2145000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "汽车零部件",
+      "main": -2044000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通用设备",
+      "main": -1996000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

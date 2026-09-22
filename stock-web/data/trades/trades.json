@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "说明": "每日交易记录表（用户手动维护）。每笔交易一个对象，字段含义见 README。analysis 由 scripts/analyze_trades.js 调用 LLM 生成，勿手写。",
+    "updated_at": "2026-08-27T21:00:00+08:00",
+    "update": "请在此文件追加你的真实交易记录"
+  },
+  "trades": [
+    {
+      "id": "T20260821-01",
+      "stock": "示例·有色金属代表",
+      "code": "601899",
+      "sector": "有色金属",
+      "market_bg": "修复",
+      "market_note": "涨停54/跌停13，昨日涨停-0.73%亏钱，情绪修复初期",
+      "buy_time": "2026-08-21 10:15",
+      "buy_price": 8.52,
+      "buy_type": "回踩",
+      "buy_logic": "低位右侧：120日回撤-22.9%+资金连续流入，板块效应3家涨停",
+      "is_mainline": true,
+      "mainline_note": "有色金属是本轮主线方向（资金Top1）",
+      "sell_price": 9.10,
+      "sell_time": "2026-08-25 14:30",
+      "sell_reason": "止盈",
+      "sell_type": "右侧逆转止盈",
+      "sell_note": "放量滞涨后回落破分时均线，右侧确认逆转离场",
+      "return_pct": 6.81,
+      "hold_days": 2,
+      "result": "成功",
+      "result_reason": "按章作业正反馈",
+      "note": "买点选在板块回踩5日线，止损设买点-4%（8.18），未触及；板块延续走强兑现"
+    },
+    {
+      "id": "T20260824-01",
+      "stock": "示例·弱势追突破（反面）",
+      "code": "002412",
+      "sector": "创新药",
+      "market_bg": "弱势",
+      "market_note": "指数弱、跌多涨少，涨停46家但连板仅11家",
+      "buy_time": "2026-08-24 09:55",
+      "buy_price": 11.20,
+      "buy_type": "突破",
+      "buy_logic": "事件驱动：当日冲高突破前高",
+      "is_mainline": false,
+      "mainline_note": "非主线，创新药当日仅零星涨停",
+      "sell_price": 10.50,
+      "sell_time": "2026-08-26 10:00",
+      "sell_reason": "止损",
+      "sell_type": "破位止损",
+      "sell_note": "跌破买点-6%止损线",
+      "return_pct": -6.25,
+      "hold_days": 2,
+      "result": "失败",
+      "result_reason": "违反体系",
+      "note": "弱势市场买突破是本体系明确禁忌，属违反体系失败，非正常亏损"
+    }
+  ],
+  "analysis": null
+}

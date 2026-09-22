@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-21",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元，前端显示亿）。来源：westock sector ranking（mainNetInflow），万元÷1e4得亿后×1e8存元。",
+  "rows": [
+    {
+      "name": "通信设备",
+      "main": 3292000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "化学制药",
+      "main": 2598000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "元件",
+      "main": 1785000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "医疗服务",
+      "main": 1281000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "玻璃玻纤",
+      "main": 1191000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -4309000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电池",
+      "main": -1675000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "工业金属",
+      "main": -1405000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "贵金属",
+      "main": -1098000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电子化学品Ⅱ",
+      "main": -703000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

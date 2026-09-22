@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-07",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元，前端显示亿）。来源：westock sector ranking（mainNetInflow），万元÷1e4得亿后×1e8存元。",
+  "rows": [
+    {
+      "name": "通信设备/CPO",
+      "main": 20450000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "元件/PCB",
+      "main": 15737000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": 10574000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": 2832000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "自动化设备",
+      "main": 2066000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "汽车零部件",
+      "main": 1133000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "一般零售",
+      "main": 933000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "广告营销",
+      "main": -1229000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电力",
+      "main": -1299000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "保险Ⅱ",
+      "main": -1340000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "软件开发",
+      "main": -1566000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "证券Ⅱ",
+      "main": -2156000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

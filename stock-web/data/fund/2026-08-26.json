@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-26",
+  "unit": "yuan",
+  "note": "板块主力净流入（单位换算为元，前端显示亿）。来源：通达信 zjlx 代表个股口径近似（复盘生成）。有色金属=工业金属/铜（洛阳钼业+江西铜业+紫金+铜陵有色）。",
+  "rows": [
+    {
+      "name": "有色金属",
+      "main": 4643000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "券商",
+      "main": 1879000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": 1460000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "医药",
+      "main": 227000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "白酒",
+      "main": 160000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "传媒",
+      "main": -42000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电力",
+      "main": -97000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -123000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "贵金属/黄金",
+      "main": -368000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备/CPO",
+      "main": -1097000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

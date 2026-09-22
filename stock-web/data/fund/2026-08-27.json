@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-27",
+  "unit": "yuan",
+  "note": "板块主力净流入（单位换算为元，前端显示亿）。来源：通达信 zjlx 代表个股口径近似（复盘生成）。通信设备/CPO=天孚通信+新易盛+杭电股份+青山纸业+中际旭创；紫金矿业/东方财富当日数据缺失。",
+  "rows": [
+    {
+      "name": "通信设备/CPO",
+      "main": 2345000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "液冷/储能",
+      "main": 89000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "医药",
+      "main": -63000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -65000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "券商",
+      "main": -66000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "贵金属/黄金",
+      "main": -230000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "有色金属/铜",
+      "main": -1016000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

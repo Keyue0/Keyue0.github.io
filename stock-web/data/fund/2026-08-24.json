@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-24",
+  "unit": "yuan",
+  "note": "板块主力净流入（单位换算为元，前端显示亿）。来源：通达信 zjlx 代表个股口径近似 + westock 当日快照（复盘生成）。有色金属口径含黄金/贵金属（单独口径+1.86亿）。",
+  "rows": [
+    {
+      "name": "新能源/锂电",
+      "main": 211000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "有色金属",
+      "main": 185000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "银行",
+      "main": 135000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "房地产",
+      "main": 7000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "传媒",
+      "main": 7000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "军工",
+      "main": 4000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "券商",
+      "main": -350000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -1201000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -1225000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "医药",
+      "main": -1471000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "AI算力/CPO",
+      "main": -8982000000,
+      "pct": null,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

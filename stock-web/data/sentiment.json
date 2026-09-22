@@ -1,3 +1,178 @@
 [
-  {"date": "2026-08-21", "limitUp": 57, "limitDown": 14, "topBoard": 3, "ratio": 0.88, "amount": 18792.64, "upCount": 2505, "downCount": 2862, "sentiment": "修复"}
+  {
+    "date": "2026-08-21",
+    "limitUp": 57,
+    "limitDown": 14,
+    "topBoard": 3,
+    "ratio": 0.88,
+    "amount": 18792.64,
+    "upCount": 2505,
+    "downCount": 2862,
+    "sentiment": "修复"
+  },
+  {
+    "date": "2026-08-24",
+    "limitUp": 48,
+    "limitDown": 11,
+    "topBoard": 4,
+    "ratio": 0.37,
+    "amount": 20074.56,
+    "upCount": 1460,
+    "downCount": 3965,
+    "sentiment": "分歧修复"
+  },
+  {
+    "date": "2026-08-26",
+    "limitUp": 56,
+    "limitDown": 2,
+    "topBoard": 5,
+    "ratio": 1.2,
+    "amount": 18087.23,
+    "upCount": 2946,
+    "downCount": 2448,
+    "sentiment": "中枢"
+  },
+  {
+    "date": "2026-08-27",
+    "limitUp": 78,
+    "limitDown": 4,
+    "topBoard": 6,
+    "ratio": 1.75,
+    "amount": 21259.27,
+    "upCount": 3394,
+    "downCount": 1944,
+    "sentiment": "中枢偏强"
+  },
+  {
+    "date": "2026-08-28",
+    "limitUp": 82,
+    "limitDown": 2,
+    "topBoard": 7,
+    "ratio": 1.26,
+    "amount": 21017.15,
+    "upCount": 3013,
+    "downCount": 2390,
+    "sentiment": "中枢偏强"
+  },
+  {
+    "date": "2026-08-31",
+    "limitUp": 89,
+    "limitDown": 13,
+    "topBoard": 6,
+    "ratio": 1.43,
+    "amount": 21310.3,
+    "upCount": 3181,
+    "downCount": 2218,
+    "sentiment": "情绪亢奋"
+  },
+  {
+    "date": "2026-09-07",
+    "limitUp": 93,
+    "limitDown": 2,
+    "topBoard": 6,
+    "ratio": 1.44,
+    "amount": 19460.19,
+    "upCount": 3167,
+    "downCount": 2196,
+    "sentiment": "亢奋(超跌反攻)"
+  },
+  {
+    "date": "2026-09-08",
+    "limitUp": 73,
+    "limitDown": 0,
+    "topBoard": 4,
+    "ratio": 1.69,
+    "amount": 19603.35,
+    "upCount": 3417,
+    "downCount": 2026,
+    "sentiment": "中枢偏强(高位分歧)"
+  },
+  {
+    "date": "2026-09-09",
+    "limitUp": 48,
+    "limitDown": 7,
+    "topBoard": 5,
+    "ratio": 0.49,
+    "amount": 18556.07,
+    "upCount": 1794,
+    "downCount": 3642,
+    "sentiment": "中枢偏下(退潮中段)"
+  },
+  {
+    "date": "2026-09-10",
+    "limitUp": 35,
+    "limitDown": 11,
+    "topBoard": 4,
+    "ratio": 0.21,
+    "amount": 16471.48,
+    "upCount": 955,
+    "downCount": 4512,
+    "sentiment": "退潮加速(双红线触发)"
+  },
+  {
+    "date": "2026-09-11",
+    "limitUp": 40,
+    "limitDown": 21,
+    "topBoard": 4,
+    "ratio": 0.13,
+    "amount": 19718.98,
+    "upCount": 604,
+    "downCount": 4567,
+    "sentiment": "退潮末段(冰点特征初现)"
+  },
+  {
+    "date": "2026-09-14",
+    "limitUp": 55,
+    "limitDown": 16,
+    "topBoard": 4,
+    "ratio": 1.41,
+    "amount": 16291.75,
+    "upCount": 3126,
+    "downCount": 2224,
+    "sentiment": "冰点反转确认(修复初期)"
+  },
+  {
+    "date": "2026-09-15",
+    "limitUp": 32,
+    "limitDown": 27,
+    "topBoard": 5,
+    "ratio": 0.26,
+    "amount": 16127.17,
+    "upCount": 1120,
+    "downCount": 4376,
+    "sentiment": "二次退潮(反转证伪)"
+  },
+  {
+    "date": "2026-09-16",
+    "limitUp": 89,
+    "limitDown": 4,
+    "topBoard": 6,
+    "ratio": 3.5,
+    "amount": 18391.22,
+    "upCount": 4170,
+    "downCount": 1189,
+    "sentiment": "V型反转(强修复日)"
+  },
+  {
+    "date": "2026-09-17",
+    "limitUp": 47,
+    "limitDown": 1,
+    "topBoard": 5,
+    "ratio": 0.91,
+    "amount": 18231.34,
+    "upCount": 2576,
+    "downCount": 2820,
+    "sentiment": "高位整理(主线切换日)"
+  },
+  {
+    "date": "2026-09-21",
+    "limitUp": 103,
+    "limitDown": 2,
+    "topBoard": 5,
+    "ratio": 4.85,
+    "amount": 20315.13,
+    "upCount": 4536,
+    "downCount": 936,
+    "sentiment": "修复转强(亢奋初段)"
+  }
 ]

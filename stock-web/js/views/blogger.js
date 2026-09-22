@@ -12,6 +12,10 @@ const BloggerView = {
     let items = [];
     try { items = await App.fetchJSON('data/views/index.json'); } catch (e) { items = []; }
 
+    // 按日期+时间倒序（盘前/盘后同一天也能正确排序）
+    items = (items || []).slice().sort((a, b) =>
+      String((b.date || '') + ' ' + (b.time || '')).localeCompare(String((a.date || '') + ' ' + (a.time || ''))));
+
     const platforms = [...new Set(items.map(i => i.platform).filter(Boolean))];
 
     const cards = items.length ? `
@@ -74,11 +78,40 @@ const BloggerView = {
           <span class="chip"><b>${App.esc(i.platform || '其他')}</b></span>
           <span style="font-size:15px;font-weight:700">${App.esc(i.blogger)}</span>
           ${i.sentiment ? `<span class="chip ${sentCls}"><b>${App.esc(i.sentiment)}</b></span>` : ''}
-          <span style="font-size:12px;color:var(--muted);margin-left:auto">${App.esc(i.date || '')}</span>
+          <span style="font-size:12px;color:var(--muted);margin-left:auto">${App.esc(i.date || '')}${i.time ? ' ' + App.esc(i.time) : ''}${i.time ? `<span style="margin-left:6px;opacity:.8">${Number(String(i.time).split(':')[0]) < 12 ? '盘前' : (Number(String(i.time).split(':')[0]) >= 15 ? '盘后' : '盘中')}</span>` : ''}</span>
         </div>
         ${i.topic ? `<div style="margin-bottom:6px"><span class="chip">话题：${App.esc(i.topic)}</span></div>` : ''}
         <p style="font-size:14px">${App.esc(i.view || '')}</p>
+        ${(i.picks && i.picks.length) ? this.picksBlock(i.picks) : ''}
         ${i.link ? `<p style="margin-top:6px;font-size:12px"><a href="${App.esc(i.link)}" target="_blank" rel="noopener">来源链接 ↗</a></p>` : ''}
+      </div>`;
+  },
+
+  /* 明确标的 + 止损位（原文多不给止损，此处按“涨停起点=前收”技术位推算） */
+  picksBlock(picks) {
+    const rows = picks.map(p => {
+      const bad = /证伪|骗炮|反面|跌停/.test((p.action || '') + (p.verified || ''));
+      return `
+        <div style="border:1px solid var(--hairline);border-radius:8px;padding:10px 12px;margin-top:8px;background:var(--canvas)">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <b style="font-size:14.5px">${App.esc(p.name || '')}</b>
+            ${p.code ? `<span style="font-size:12px;color:var(--muted)">${App.esc(p.code)}</span>` : ''}
+            ${p.action ? `<span class="chip ${bad ? 'down' : 'flat'}"><b>${App.esc(p.action)}</b></span>` : ''}
+            ${p.entry ? `<span style="font-size:12.5px">现/买价 <b style="color:#c62828">${App.esc(p.entry)}</b></span>` : ''}
+            ${p.stoploss ? `<span style="font-size:12.5px">止损 <b style="color:#2e7d32">${App.esc(p.stoploss)}</b> <span style="color:#2e7d32">${App.esc(p.stopPct || '')}</span></span>` : ''}
+          </div>
+          ${p.basis ? `<div style="font-size:12.5px;margin-top:5px">依据：${App.esc(p.basis)}</div>` : ''}
+          ${p.stopBasis ? `<div style="font-size:12.5px;margin-top:3px;color:var(--muted)">止损依据：${App.esc(p.stopBasis)}</div>` : ''}
+          ${p.verified ? `<div style="font-size:12.5px;margin-top:3px;color:var(--muted)">盘面核对：${App.esc(p.verified)}</div>` : ''}
+        </div>`;
+    }).join('');
+    return `
+      <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--hairline)">
+        <div style="font-size:13px;font-weight:700;margin-bottom:2px">🎯 明确标的 / 止损位</div>
+        <div style="font-size:11.5px;color:var(--muted);margin-bottom:4px">
+          博主原文<b>几乎不给止损</b>，下表止损为按「涨停起点＝前收盘」推算的技术位（稳健者可用 MA5 放宽），非博主原话，抄作业前请自行确认。
+        </div>
+        ${rows}
       </div>`;
   }
 };
