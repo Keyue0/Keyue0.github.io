@@ -246,10 +246,10 @@
     "limitUp": 103,
     "limitDown": 2,
     "topBoard": 5,
-    "ratio": 4.59,
-    "amount": 20315.13,
-    "upCount": 4263,
-    "downCount": 929,
-    "sentiment": "亢奋"
+    "ratio": 0.81,
+    "amount": 21355.5,
+    "upCount": 2301,
+    "downCount": 2830,
+    "sentiment": "修复"
   }
 ]
