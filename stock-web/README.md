@@ -43,7 +43,8 @@ Bing/
 ├── scripts/
 │   └── analyze_trades.js  LLM 严谨复盘分析生成（DeepSeek）
 ├── tools/
-│   └── smoke_view.js  视图渲染冒烟测试（无浏览器，改完视图必跑）
+│   ├── smoke_view.js  视图渲染冒烟测试（无浏览器，改完视图必跑）
+│   └── push_pages.py  同步本目录到 GitHub Pages 仓库并推送
 └── data/
     ├── reviews/        复盘数据 JSON
     ├── fund/           资金快照 JSON
@@ -183,24 +184,46 @@ Keyue0.github.io/            ← 仓库根 = Pages 根 = https://keyue0.github.i
 
 ### 推送步骤
 
+**推荐：直接用脚本**（推荐，已封装安全检查和身份配置）
+
 ```bash
-# 1) 克隆仓库（首次；之后用 git pull）
+python tools/push_pages.py --dry-run      # 只看会改什么，不提交
+python tools/push_pages.py                # 同步 + 提交 + 推送
+python tools/push_pages.py -m "自定义提交信息"
+```
+
+脚本做的事：全新克隆仓库（保证工作区干净且已是最新 main）→
+**检查目标前缀有没有「远程独有文件」（有就中止，避免误删）** →
+镜像本地到 `stock-web/` → 只 `git add stock-web` → 提交推送。
+`--dry-run` 留下的是干净状态，下次运行不受影响（因为每次都是全新克隆）。
+
+**手动步骤**（脚本不可用时）
+
+```bash
+# 1) 克隆仓库
 git clone git@github.com:Keyue0/Keyue0.github.io.git /path/to/pages-repo
 
-# 2) 同步本目录 → 仓库的 stock-web/ 子目录
-#    已确认远程 stock-web/ 无「独有文件」，本地是严格超集，可直接镜像
+# 2) ★ 先确认目标前缀没有「远程独有文件」，为 0 才可安全镜像
+diff -rq /path/to/pages-repo/stock-web . | grep '^Only in.*pages-repo'
+
+# 3) 同步（已确认无独有文件才执行 rm -rf）
 rm -rf /path/to/pages-repo/stock-web
 cp -r . /path/to/pages-repo/stock-web
 
-# 3) 提交推送
+# 4) 提交推送（只加 stock-web 这一个前缀）
 cd /path/to/pages-repo
 git add stock-web
 git commit -m "stock-web: <改动摘要>"
 git push
 ```
 
-推送后 GitHub Pages 约 1–2 分钟生效。用 SSH 推送（本机 `~/.ssh/id_ed25519` 已配好，
+推送后 GitHub Pages 约 20 秒生效。用 SSH 推送（本机 `~/.ssh/id_ed25519` 已配好，
 `ssh -T git@github.com` 应返回 `Hi Keyue0!`）。
+
+> ⚠️ 线上数据会「静默变旧」：每日流程会更新本地的
+> `data/industry_crowding.json`，但仓库里的 Actions **只提交 `auto/data/`**，
+> 不碰 `stock-web/`。所以线上 `#/industry` 面板的数据会停在上次推送的状态，
+> 需要手动跑 `push_pages.py` 才更新。想每天自动推的话，在 `daily.py` 末尾加一步调用即可。
 
 ### 推送前自检
 
