@@ -147,7 +147,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-18",
@@ -204,7 +204,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-21",
@@ -251,7 +251,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-21",
@@ -274,7 +274,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-21",
@@ -321,7 +321,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-21",
@@ -344,7 +344,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-21",
@@ -367,7 +367,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-21",
@@ -376,6 +376,52 @@
       }
     ],
     "cur_price": 13.83,
+    "cur_pct": 0
+  },
+  {
+    "code": "601086",
+    "name": "国芳集团",
+    "sector": "一般零售",
+    "rec_date": "2026-09-21",
+    "buy_price": 18.16,
+    "stop": 17.25,
+    "target": 19.61,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-21",
+        "close": 18.16,
+        "pct": 0
+      }
+    ],
+    "cur_price": 18.16,
+    "cur_pct": 0
+  },
+  {
+    "code": "600613",
+    "name": "神奇制药",
+    "sector": "化学制药",
+    "rec_date": "2026-09-21",
+    "buy_price": 9.43,
+    "stop": 8.96,
+    "target": 10.18,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-21",
+        "close": 9.43,
+        "pct": 0
+      }
+    ],
+    "cur_price": 9.43,
     "cur_pct": 0
   }
 ]
