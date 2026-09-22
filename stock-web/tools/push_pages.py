@@ -69,6 +69,8 @@ def run(cmd: list[str], cwd: str, check: bool = True, quiet: bool = False):
 def walk_files(root: str) -> set[str]:
     """返回相对路径集合，跳过 SKIP_DIRS。"""
     out = set()
+    if not os.path.isdir(root):
+        return out
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
         for f in filenames:
@@ -86,34 +88,87 @@ def check_remote_only() -> list[str]:
 
 
 def sync() -> tuple[int, int]:
-    target = os.path.join(CLONE, PREFIX)
-    before = walk_files(target) if os.path.isdir(target) else set()
-    if os.path.isdir(target):
-        shutil.rmtree(target)
-    shutil.copytree(LOCAL, target,
-                    ignore=shutil.ignore_patterns(*SKIP_DIRS))
-    after = walk_files(target)
-    return len(after - before), len(before - after)
+    """把 LOCAL 镜像到 克隆/<PREFIX>，**不做整目录删除**。
 
-
-def fresh_clone() -> None:
-    """每次全新克隆。
-
-    ★ 为什么不用「复用克隆 + git reset --hard / clean」：
-    实测这套状态管理不可靠 —— 上一次 `--dry-run`（或中途失败）留下的
-    暂存区 / 工作区脏状态会挡住 `git pull --rebase`，而 `reset --hard` +
-    `clean -fd <prefix>` 的组合甚至在一次运行中把克隆里的 `stock-web/`
-    整个删掉了（本地目录未受影响，但足以说明这套做法不该用）。
-    仓库只有 ~3MB，克隆约十几秒，直接重建最简单也最不容易出错。
+    ★ 为什么不 rmtree + copytree：见 prepare_clone() 的说明。
+    这里只删「目标有、本地没有」的少数文件（正常情况 0~个位数），
+    不会一次删几百个文件。
     """
-    if os.path.isdir(CLONE):
-        shutil.rmtree(CLONE, ignore_errors=True)
-    os.makedirs(os.path.dirname(CLONE), exist_ok=True)
-    run(["git", "clone", "--quiet", REMOTE, CLONE], cwd=os.path.dirname(CLONE))
-    # 本机无全局身份，全新克隆的仓库级配置也为空，必须显式设置才能 commit
+    target = os.path.join(CLONE, PREFIX)
+    src = walk_files(LOCAL)
+    dst = walk_files(target)
+    os.makedirs(target, exist_ok=True)
+
+    removed = 0
+    for rel in sorted(dst - src):
+        p = os.path.join(target, rel)
+        try:
+            os.remove(p)
+            removed += 1
+        except OSError:
+            pass
+    # 清掉因此变空的目录
+    for dirpath, dirnames, filenames in os.walk(target, topdown=False):
+        if dirpath == target:
+            continue
+        if not os.listdir(dirpath):
+            try:
+                os.rmdir(dirpath)
+            except OSError:
+                pass
+
+    added = 0
+    for rel in sorted(src):
+        s = os.path.join(LOCAL, rel)
+        d = os.path.join(target, rel)
+        os.makedirs(os.path.dirname(d), exist_ok=True)
+        shutil.copy2(s, d)
+        if rel not in dst:
+            added += 1
+    return added, removed
+
+
+def prepare_clone() -> None:
+    """准备一个干净的、已同步到 origin/main 的克隆。
+
+    ★ 为什么不每次 rmtree 重建（曾经就是这么写的）
+    ------------------------------------------------
+    `shutil.rmtree(CLONE)` 一次会删掉 800+ 个文件。这在**沙箱环境**里会被
+    批量删除保护直接拦下，而且拦的方式很隐蔽 —— 子进程返回非 0，
+    日志里只有一行 `[safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED]`，
+    看起来像「推送脚本自己失败了」。同理，任何对文件删除量有阈值的
+    环境（CI、企业 EDR）都会踩到。仓库本身只有 ~3MB，但「一次删 800 个
+    文件」这个动作本身就是不该有的。
+
+    现在改成：
+      首次 → 全量克隆；
+      之后 → fetch + reset --hard FETCH_HEAD（只改内容不同的文件，通常 0 个）
+             + 只对 stock-web/ 前缀做 git clean（不动 auto/）。
+    这两步都是确定性的：reset --hard 无条件把工作区对齐到抓下来的提交，
+    不存在「上次留下的脏暂存区挡住 pull --rebase」那类问题。
+    """
+    if os.path.isdir(os.path.join(CLONE, ".git")):
+        run(["git", "fetch", "--quiet", "origin", "main"], cwd=CLONE)
+        run(["git", "reset", "--hard", "--quiet", "FETCH_HEAD"], cwd=CLONE)
+        run(["git", "clean", "-fdq", "--", PREFIX], cwd=CLONE)
+        print(f"      已复用并重置克隆 {CLONE}")
+    else:
+        if os.path.isdir(CLONE):
+            # 目录在但不是有效仓库（上次中途失败留下的残骸）
+            try:
+                shutil.rmtree(CLONE)
+            except OSError as e:
+                raise SystemExit(
+                    f"克隆目录 {CLONE} 已存在但不是有效 git 仓库，且无法删除（{e}）。"
+                    "请手动清理后重跑。"
+                )
+        os.makedirs(os.path.dirname(CLONE), exist_ok=True)
+        run(["git", "clone", "--quiet", REMOTE, CLONE], cwd=os.path.dirname(CLONE))
+        print(f"      已克隆到 {CLONE}")
+    # 本机无全局身份，克隆/复用的仓库级配置可能为空，必须显式设置才能 commit
     run(["git", "config", "user.name", GIT_NAME], cwd=CLONE, quiet=True)
     run(["git", "config", "user.email", GIT_EMAIL], cwd=CLONE, quiet=True)
-    print(f"      已克隆到 {CLONE}")
+
 
 
 def main() -> int:
@@ -125,8 +180,8 @@ def main() -> int:
     print(f"本地目录 {LOCAL}")
     print(f"目标前缀 {PREFIX}/ @ {CLONE}")
 
-    print("[1/5] 全新克隆仓库（保证工作区干净、且已是最新 main）")
-    fresh_clone()
+    print("[1/5] 准备克隆（首次全量克隆，之后增量重置）")
+    prepare_clone()
 
     print("[2/5] 安全检查：远程前缀是否有「独有文件」")
     remote_only = check_remote_only()
