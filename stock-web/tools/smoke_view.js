@@ -146,6 +146,19 @@ async function smokeRegistered(label, routeName, view) {
   const nTr = (html.match(/<tr>/g) || []).length;
   const nTd = (html.match(/<td/g) || []).length;
   const nCard = (html.match(/class="card"/g) || []).length;
+
+  // ★ 断言：产物里的 Markdown 强调必须被渲染成 <b>，不能把 ** 原样吐到页面上。
+  //   后端（industry_crowding.py 的 EVIDENCE_CONCLUSIONS 等）用 **粗体** 写结论，
+  //   前端若只做 App.esc() 就会显示成「档的**是有条件的**」。这类问题不会报错、
+  //   页面也不白屏，只能靠断言抓。修法：用 App.mdInline() 而不是 App.esc()。
+  const rawMd = html.match(/\*\*[^*\n]{1,60}\*\*/g);
+  if (rawMd) {
+    console.log(`  ✗ ${label}: 页面里出现了未渲染的 Markdown 强调 ${rawMd.length} 处，`
+      + `例如 ${rawMd[0]}`);
+    console.log('     修法：该处应使用 App.mdInline()（先 esc 再转 <b>），而不是 App.esc()');
+    return false;
+  }
+
   console.log(`  ✓ ${label}${routeName === label ? '' : ` (${routeName})`}: `
     + `${html.length} 字符 / ${nCard} 卡片 / ${nTr} 行 / ${nTd} 单元格`);
   return true;

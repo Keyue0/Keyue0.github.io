@@ -60,6 +60,14 @@ const App = {
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   },
 
+  /* 行内 Markdown（目前只处理 **加粗**）→ 安全 HTML。
+   * ★ 必须先 esc 再替换：先转义保证不引入注入，再在已转义的串上把 **x** 变 <b>x</b>。
+   * 用途：后端产物里的结论文本带 Markdown 强调，直接 esc 会把 ** 原样显示出来
+   * （如「乘积 >10 档的**是有条件的**」）。 */
+  mdInline(s) {
+    return App.esc(s).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+  },
+
   /* 数字 → 亿/万 字符串 */
   fmtNum(v, digits = 2) {
     if (v == null || isNaN(v)) return '--';

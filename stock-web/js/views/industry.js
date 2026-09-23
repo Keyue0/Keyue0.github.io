@@ -41,7 +41,7 @@ const IndustryView = {
       <div class="card note-card">
         <h2>⚠️ 读表前必看（口径与局限）</h2>
         <ul style="margin:6px 0 0 18px;font-size:13.5px;color:var(--body)">
-          ${d.caveats.map(c => `<li style="margin-bottom:4px">${App.esc(c)}</li>`).join('')}
+          ${d.caveats.map(c => `<li style="margin-bottom:4px">${App.mdInline(c)}</li>`).join('')}
         </ul>
         <p style="font-size:12.5px;color:var(--muted);margin-top:8px">
           判定规则：回避 = ${App.esc((d.rules || {}).avoid || '--')}；减配 = ${App.esc((d.rules || {}).reduce || '--')}；
@@ -80,7 +80,7 @@ const IndustryView = {
             </table>
           </div>
           <ul style="margin:10px 0 0 18px;font-size:13px;color:var(--body);line-height:1.65">
-            ${(ev.conclusions || []).map(c => `<li style="margin-bottom:5px">${App.esc(c)}</li>`).join('')}
+            ${(ev.conclusions || []).map(c => `<li style="margin-bottom:5px">${App.mdInline(c)}</li>`).join('')}
           </ul>
           <p style="font-size:12px;color:var(--muted);margin-top:8px">
             ★ = 分块 bootstrap 95% 区间不含 0。<b>没有 ★ 的档位不要当结论用。</b>
@@ -116,7 +116,7 @@ const IndustryView = {
       { k: 'N', t: 'N', int: 1, tip: '成分股清单行数（不去重）' },
       { k: 'prod', t: '乘积', f: 2, tip: 'n²/N —— 原口径，保留不变' },
       { k: 'band', t: '档位', align: 'left' },
-      { k: 'share', t: '份额', pct: 1, tip: 'n/N' },
+      { k: 'share', t: '份额', pct: 1, tip: 'n/N —— 行业里有多大比例进了强势股池。只描述热度，不是越高越好：历史条件收益峰值在 5~10%，>20% 之后无显著超额。真正有方向的是右边的「Δ10」' },
       { k: 'd5', t: 'Δ5', pct: 1, tip: '份额 5 日变化' },
       { k: 'd10', t: 'Δ10', pct: 1, tip: '份额 10 日变化' },
       { k: 'crowd_pct', t: '拥挤分位', f: 0, tip: '乘积的历史分位（0~100，越高越拥挤）' },

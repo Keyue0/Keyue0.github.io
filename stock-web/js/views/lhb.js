@@ -47,7 +47,7 @@ const LhbView = {
                   <td style="text-align:left">${App.esc(r.sector || '')}</td>
                   <td class="up">${r.buy != null ? r.buy.toFixed(2) : '--'}</td>
                   <td class="up" style="font-weight:800">${r.net != null ? '+' + r.net.toFixed(2) : '--'}</td>
-                  <td style="text-align:left;font-size:12px;color:#6c6a64">${App.esc(r.note || '')}</td>
+                  <td style="text-align:left;font-size:12px;color:#6c6a64">${App.mdInline(r.note || '')}</td>
                 </tr>`).join('')}
             </tbody>
           </table>
@@ -81,8 +81,8 @@ const LhbView = {
         <h2>游资 / 通道方向</h2>
         ${spots.map(s => `
           <div class="review-section" style="background:transparent;border:none;box-shadow:none;padding:0;margin-bottom:0">
-            <h3 style="font-family:var(--font-body);font-size:14.5px;font-weight:600;margin:12px 0 6px;padding-left:12px;border-left:3px solid var(--accent-teal)">${App.esc(s.direction)}</h3>
-            <p style="font-size:13.5px;color:#3d3d3a;line-height:1.7">${App.esc(s.desc)}</p>
+            <h3 style="font-family:var(--font-body);font-size:14.5px;font-weight:600;margin:12px 0 6px;padding-left:12px;border-left:3px solid var(--accent-teal)">${App.mdInline(s.direction)}</h3>
+            <p style="font-size:13.5px;color:#3d3d3a;line-height:1.7">${App.mdInline(s.desc)}</p>
           </div>`).join('')}
       </div>` : '';
 
@@ -92,7 +92,7 @@ const LhbView = {
       <div class="card">
         <h2>拉萨天团上榜个股 <span class="tag">${lasa.length} 只</span></h2>
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
-          ${lasa.map(s => `<span class="chip" style="background:#fef3ed;color:#a9583e;font-weight:500">${App.esc(s)}</span>`).join('')}
+          ${lasa.map(s => `<span class="chip" style="background:#fef3ed;color:#a9583e;font-weight:500">${App.mdInline(s)}</span>`).join('')}
         </div>
         <p style="font-size:12px;color:#6c6a64;margin-top:10px">拉萨东环路 / 拉萨团结路 系散户聚集席位，频繁上榜小盘高换手股。</p>
       </div>` : '';
@@ -105,7 +105,7 @@ const LhbView = {
       ${summaryHtml}
       ${spotsHtml}
       ${lasaHtml}
-      ${data && data.note ? `<div class="card" style="font-size:12.5px;color:#6c6a64;line-height:1.7">${App.esc(data.note)}</div>` : ''}`;
+      ${data && data.note ? `<div class="card" style="font-size:12.5px;color:#6c6a64;line-height:1.7">${App.mdInline(data.note)}</div>` : ''}`;
 
     el.querySelectorAll('[data-date]').forEach(b => b.addEventListener('click', () => {
       location.hash = '#/lhb/' + b.dataset.date;
@@ -140,7 +140,7 @@ const LhbView = {
           <span>卖 <b class="down">${sellTotal.toFixed(2)}</b> 亿</span>
           <span style="color:${buyTotal > sellTotal ? '#e02020' : (sellTotal > buyTotal ? '#00a854' : '#6c6a64')};font-weight:700;margin-left:auto">净 ${(buyTotal - sellTotal > 0 ? '+' : '')}${(buyTotal - sellTotal).toFixed(2)}</span>
         </div>
-        ${b.focus ? `<div style="font-size:12px;color:#3d3d3a;margin-top:8px;padding-top:8px;border-top:1px solid #f5f0e8">${App.esc(b.focus)}</div>` : ''}
+        ${b.focus ? `<div style="font-size:12px;color:#3d3d3a;margin-top:8px;padding-top:8px;border-top:1px solid #f5f0e8">${App.mdInline(b.focus)}</div>` : ''}
       </div>`;
   }
 };

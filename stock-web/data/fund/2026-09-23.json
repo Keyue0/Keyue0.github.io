@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-23",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元，前端显示亿）。来源：westock sector ranking（mainNetInflow），万元÷1e4得亿后×1e8存元。全市场当日合计 -369.18 亿、5日 -407.04 亿、20日 -2245.79 亿，124 个板块中 89 个净流出。",
+  "rows": [
+    {
+      "name": "房地产开发",
+      "main": 882000000,
+      "pct": -0.21,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电池",
+      "main": 862000000,
+      "pct": -0.44,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "光学光电子",
+      "main": 860000000,
+      "pct": 0.27,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "商用车",
+      "main": 844000000,
+      "pct": 1.48,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通用设备",
+      "main": 437000000,
+      "pct": 0.66,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -2065000000,
+      "pct": -0.76,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "IT服务Ⅱ",
+      "main": -2115000000,
+      "pct": -1.65,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "软件开发",
+      "main": -2243000000,
+      "pct": -1.62,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -3948000000,
+      "pct": 0.19,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备",
+      "main": -6422000000,
+      "pct": -0.9,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}
