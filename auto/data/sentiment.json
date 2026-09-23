@@ -251,5 +251,16 @@
     "upCount": 2301,
     "downCount": 2830,
     "sentiment": "修复"
+  },
+  {
+    "date": "2026-09-22",
+    "limitUp": 63,
+    "limitDown": 3,
+    "topBoard": 6,
+    "ratio": 0.52,
+    "amount": 17649.76,
+    "upCount": 1776,
+    "downCount": 3407,
+    "sentiment": "修复"
   }
 ]

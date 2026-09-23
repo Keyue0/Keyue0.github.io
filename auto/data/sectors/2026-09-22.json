@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-22",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -1.6012494581542656,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "房地产",
+      "code": "BK1202",
+      "drawdown": -0.43280182232345726,
+      "pct20": 0.48737873005655535,
+      "excess20": 2.09,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "电池",
+      "code": "BK1033",
+      "drawdown": -7.005609593843823,
+      "pct20": -0.5341315338565285,
+      "excess20": 1.07,
+      "zt5": 2,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
