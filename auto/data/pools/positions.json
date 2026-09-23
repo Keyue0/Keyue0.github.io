@@ -70,11 +70,11 @@
     "buy_price": 14.67,
     "stop": 14.23,
     "target": 16.43,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-09-22",
+    "sell_price": 14.53,
+    "return_pct": -0.95,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-21",
@@ -88,7 +88,8 @@
       }
     ],
     "cur_price": 14.53,
-    "cur_pct": -0.95
+    "cur_pct": -0.95,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000504",
@@ -131,7 +132,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-21",
@@ -188,7 +189,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-21",
@@ -274,7 +275,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -297,7 +298,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -320,7 +321,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -343,7 +344,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -366,7 +367,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -389,7 +390,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-22",
@@ -398,6 +399,29 @@
       }
     ],
     "cur_price": 23.53,
+    "cur_pct": 0
+  },
+  {
+    "code": "001216",
+    "name": "华瓷股份",
+    "sector": "家居用品",
+    "rec_date": "2026-09-22",
+    "buy_price": 28.31,
+    "stop": 26.89,
+    "target": 31.14,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-22",
+        "close": 28.31,
+        "pct": 0
+      }
+    ],
+    "cur_price": 28.31,
     "cur_pct": 0
   }
 ]
