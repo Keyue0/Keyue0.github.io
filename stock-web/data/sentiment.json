@@ -185,5 +185,16 @@
     "upCount": 1891,
     "downCount": 3564,
     "sentiment": "退潮初段"
+  },
+  {
+    "date": "2026-09-24",
+    "limitUp": 52,
+    "limitDown": 13,
+    "topBoard": 5,
+    "ratio": 0.26,
+    "amount": 16533.57,
+    "upCount": 1120,
+    "downCount": 4306,
+    "sentiment": "退潮主跌段"
   }
 ]

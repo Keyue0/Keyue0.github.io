@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-24",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元，前端显示亿）。来源：westock sector ranking（mainNetInflow），万元×1e4存元。全市场124个板块当日合计 -642.17 亿（9-23 为 -369.18 亿，流出规模扩大 74%）。5日榜首通用设备 +24.27 亿；5日流出前二为通信设备 -144.40 亿、元件 -112.97 亿。",
+  "rows": [
+    {
+      "name": "汽车零部件",
+      "main": 975361200.0,
+      "pct": -1.12,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "军工电子Ⅱ",
+      "main": 946923400.0,
+      "pct": -1.09,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "风电设备",
+      "main": 854736700.0,
+      "pct": 1.25,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "焦炭Ⅱ",
+      "main": 469967900.0,
+      "pct": 1.48,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通用设备",
+      "main": 424610400.0,
+      "pct": -1.72,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "化学制药",
+      "main": -2592377700.0,
+      "pct": -3.11,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "工业金属",
+      "main": -4280631100.0,
+      "pct": -3.76,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "元件",
+      "main": -8953280800.0,
+      "pct": -4.48,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -9484137900.0,
+      "pct": -2.59,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备",
+      "main": -9653068000.0,
+      "pct": -3.11,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}
