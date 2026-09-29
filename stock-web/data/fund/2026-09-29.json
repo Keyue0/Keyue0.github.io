@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-29",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元）。来源：westock sector ranking。全市场124个板块当日合计 **+57.60亿**，由 9-28 的 -884.97亿 转为微幅净流入（9-23 -369.18 → 9-24 -642.17 → 9-28 -884.97 → 9-29 +57.60）。流入榜首元件+29.46亿(+2.51%)，但5日-161.81亿、20日-89.24亿仍巨额流出 → 超跌反弹非反转，四要素仅2分不入选。★真正主线是房地产开发：+3.80%、79/83上涨、6家涨停、当日+13.76亿/5日+2.45亿/20日+12.01亿三重为正、站上MA60达81% → 全市场唯一六重共振，四要素3分。",
+  "rows": [
+    {
+      "name": "元件",
+      "main": 2945825000.0,
+      "pct": 2.51,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电池",
+      "main": 2102178299.9999998,
+      "pct": 0.44,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "房地产开发",
+      "main": 1376433100.0,
+      "pct": 4.16,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "工业金属",
+      "main": 1198612000.0,
+      "pct": 1.46,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "软件开发",
+      "main": 1025829700.0,
+      "pct": 0.94,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通用设备",
+      "main": -594635200.0,
+      "pct": -0.13,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "化学制品",
+      "main": -623711200.0,
+      "pct": -0.5,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "军工电子Ⅱ",
+      "main": -631468500.0,
+      "pct": -0.52,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电子化学品Ⅱ",
+      "main": -810231300.0,
+      "pct": -0.27,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "光学光电子",
+      "main": -1009345700.0000001,
+      "pct": -0.55,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

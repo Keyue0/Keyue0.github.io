@@ -196,5 +196,27 @@
     "upCount": 1120,
     "downCount": 4306,
     "sentiment": "退潮主跌段"
+  },
+  {
+    "date": "2026-09-28",
+    "limitUp": 33,
+    "limitDown": 56,
+    "topBoard": 5,
+    "ratio": 0.2,
+    "amount": 17027.99,
+    "upCount": 898,
+    "downCount": 4554,
+    "sentiment": "退潮主跌段(加速下行)"
+  },
+  {
+    "date": "2026-09-29",
+    "limitUp": 57,
+    "limitDown": 10,
+    "topBoard": 6,
+    "ratio": 1.8,
+    "amount": 14091.98,
+    "upCount": 3471,
+    "downCount": 1933,
+    "sentiment": "退潮期·缩量修复(未确认反转)"
   }
 ]

@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-28",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元）。来源：westock sector ranking（mainNetInflow）。全市场124个板块当日合计 **-884.97亿**（9-23 -369.18亿 → 9-24 -642.17亿 → 9-28 -884.97亿，三日加速流出）。流入榜首商用车+6.44亿（5日+21.71亿/20日+18.06亿，全市场唯一资金三重为正且涨幅第1 +3.34%）；流出前三：通信设备-165.99亿(-8.21%)、半导体-152.85亿(-4.58%)、元件-93.23亿(-6.80%)——★9-27展望明确回避的三板块全部大跌，R8层②负面清单首次硬实证。",
+  "rows": [
+    {
+      "name": "商用车",
+      "main": 644260900.0,
+      "pct": 3.34,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电力",
+      "main": 614195700.0,
+      "pct": 0.18,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "非白酒",
+      "main": 443232000.0,
+      "pct": 1.73,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "互联网电商",
+      "main": 373153200.0,
+      "pct": -0.53,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "个护用品",
+      "main": 350400500.0,
+      "pct": -0.44,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "自动化设备",
+      "main": -2647553200.0,
+      "pct": -4.98,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -3367518700.0,
+      "pct": -4.65,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "元件",
+      "main": -9322522300.0,
+      "pct": -6.8,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -15284703700.000002,
+      "pct": -4.58,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备",
+      "main": -16598674600.0,
+      "pct": -8.21,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}
