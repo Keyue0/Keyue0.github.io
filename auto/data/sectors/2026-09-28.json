@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-28",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -6.0513417036209045,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "电力设备",
+      "code": "BK1200",
+      "drawdown": -31.543882257651013,
+      "pct20": -9.932522488772412,
+      "excess20": -3.88,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "计算机",
+      "code": "BK1207",
+      "drawdown": -28.438951144231574,
+      "pct20": -7.177508070188086,
+      "excess20": -1.13,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "电池",
+      "code": "BK1033",
+      "drawdown": -9.206655998849307,
+      "pct20": -1.2368291096844812,
+      "excess20": 4.81,
+      "zt5": 2,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "房地产",
+      "code": "BK1202",
+      "drawdown": -0.43280182232345726,
+      "pct20": 0.48737873005655535,
+      "excess20": 6.54,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "电子",
+      "code": "BK1201",
+      "drawdown": -12.730353942924763,
+      "pct20": -5.787884124607647,
+      "excess20": 0.26,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
