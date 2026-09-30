@@ -1,131 +1,5 @@
 [
   {
-    "code": "600664",
-    "name": "哈药股份",
-    "sector": "化学制药",
-    "rec_date": "2026-09-21",
-    "buy_price": 9.08,
-    "stop": 8.72,
-    "target": 9.99,
-    "status": "已止损",
-    "sell_date": "2026-09-28",
-    "sell_price": 7.14,
-    "return_pct": -21.37,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-21",
-        "close": 9.08,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-22",
-        "close": 9.04,
-        "pct": -0.44
-      },
-      {
-        "date": "2026-09-28",
-        "close": 7.14,
-        "pct": -2.59
-      }
-    ],
-    "cur_price": 9.04,
-    "cur_pct": -0.44,
-    "verdict": "止损卖出（收盘价≤止损价 8.72）"
-  },
-  {
-    "code": "603020",
-    "name": "爱普股份",
-    "sector": "化学制品",
-    "rec_date": "2026-09-21",
-    "buy_price": 13.83,
-    "stop": 13.28,
-    "target": 15.21,
-    "status": "已止损",
-    "sell_date": "2026-09-28",
-    "sell_price": 12.11,
-    "return_pct": -12.44,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-21",
-        "close": 13.83,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-22",
-        "close": 13.34,
-        "pct": -3.54
-      },
-      {
-        "date": "2026-09-28",
-        "close": 12.11,
-        "pct": -1.94
-      }
-    ],
-    "cur_price": 13.34,
-    "cur_pct": -3.54,
-    "verdict": "止损卖出（收盘价≤止损价 13.28）"
-  },
-  {
-    "code": "601811",
-    "name": "新华文轩",
-    "sector": "出版",
-    "rec_date": "2026-09-22",
-    "buy_price": 18.5,
-    "stop": 17.95,
-    "target": 20.35,
-    "status": "已止盈",
-    "sell_date": "2026-09-28",
-    "sell_price": 20.37,
-    "return_pct": 10.11,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-09-22",
-        "close": 18.5,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-28",
-        "close": 20.37,
-        "pct": 9.99
-      }
-    ],
-    "cur_price": 18.5,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 20.35）"
-  },
-  {
-    "code": "600825",
-    "name": "新华传媒",
-    "sector": "出版",
-    "rec_date": "2026-09-22",
-    "buy_price": 7.06,
-    "stop": 6.85,
-    "target": 7.77,
-    "status": "已止盈",
-    "sell_date": "2026-09-28",
-    "sell_price": 9.41,
-    "return_pct": 33.29,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-09-22",
-        "close": 7.06,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-28",
-        "close": 9.41,
-        "pct": 10.06
-      }
-    ],
-    "cur_price": 7.06,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 7.77）"
-  },
-  {
     "code": "605258",
     "name": "协和电子",
     "sector": "元件",
@@ -133,11 +7,11 @@
     "buy_price": 43.65,
     "stop": 42.34,
     "target": 48.02,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-09-29",
+    "sell_price": 39.61,
+    "return_pct": -9.26,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-22",
@@ -148,10 +22,16 @@
         "date": "2026-09-28",
         "close": 44.01,
         "pct": 10
+      },
+      {
+        "date": "2026-09-29",
+        "close": 39.61,
+        "pct": -10
       }
     ],
     "cur_price": 44.01,
-    "cur_pct": 0.82
+    "cur_pct": 0.82,
+    "verdict": "止损卖出（收盘价≤止损价 42.34）"
   },
   {
     "code": "605058",
@@ -161,11 +41,11 @@
     "buy_price": 58.6,
     "stop": 56.84,
     "target": 64.46,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-09-29",
+    "sell_price": 53.64,
+    "return_pct": -8.46,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-09-22",
@@ -176,68 +56,16 @@
         "date": "2026-09-28",
         "close": 59.6,
         "pct": 10
+      },
+      {
+        "date": "2026-09-29",
+        "close": 53.64,
+        "pct": -10
       }
     ],
     "cur_price": 59.6,
-    "cur_pct": 1.71
-  },
-  {
-    "code": "002141",
-    "name": "贤丰控股",
-    "sector": "元件",
-    "rec_date": "2026-09-22",
-    "buy_price": 7.1,
-    "stop": 6.89,
-    "target": 7.81,
-    "status": "已止损",
-    "sell_date": "2026-09-28",
-    "sell_price": 6.58,
-    "return_pct": -7.32,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-09-22",
-        "close": 7.1,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-28",
-        "close": 6.58,
-        "pct": 4.61
-      }
-    ],
-    "cur_price": 7.1,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 6.89）"
-  },
-  {
-    "code": "603216",
-    "name": "梦天家居",
-    "sector": "家居用品",
-    "rec_date": "2026-09-22",
-    "buy_price": 23.53,
-    "stop": 22.82,
-    "target": 25.88,
-    "status": "已止损",
-    "sell_date": "2026-09-28",
-    "sell_price": 21.7,
-    "return_pct": -7.78,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-09-22",
-        "close": 23.53,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-28",
-        "close": 21.7,
-        "pct": -0.82
-      }
-    ],
-    "cur_price": 23.53,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 22.82）"
+    "cur_pct": 1.71,
+    "verdict": "止损卖出（收盘价≤止损价 56.84）"
   },
   {
     "code": "001216",
@@ -247,11 +75,11 @@
     "buy_price": 28.31,
     "stop": 26.89,
     "target": 31.14,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "已止损",
+    "sell_date": "2026-09-29",
+    "sell_price": 26.18,
+    "return_pct": -7.52,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-09-22",
@@ -262,10 +90,16 @@
         "date": "2026-09-28",
         "close": 29.09,
         "pct": 3.74
+      },
+      {
+        "date": "2026-09-29",
+        "close": 26.18,
+        "pct": -10
       }
     ],
     "cur_price": 29.09,
-    "cur_pct": 2.76
+    "cur_pct": 2.76,
+    "verdict": "止损卖出（收盘价≤止损价 26.89）"
   },
   {
     "code": "600241",
@@ -275,20 +109,26 @@
     "buy_price": 8.84,
     "stop": 8.4,
     "target": 9.72,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止盈",
+    "sell_date": "2026-09-29",
+    "sell_price": 9.72,
+    "return_pct": 9.95,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 8.84,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 9.72,
+        "pct": 9.95
       }
     ],
     "cur_price": 8.84,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 9.72）"
   },
   {
     "code": "000678",
@@ -298,20 +138,26 @@
     "buy_price": 11.72,
     "stop": 11.13,
     "target": 12.89,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止盈",
+    "sell_date": "2026-09-29",
+    "sell_price": 12.89,
+    "return_pct": 9.98,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 11.72,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 12.89,
+        "pct": 9.98
       }
     ],
     "cur_price": 11.72,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 12.89）"
   },
   {
     "code": "603949",
@@ -321,20 +167,26 @@
     "buy_price": 20.45,
     "stop": 19.43,
     "target": 22.5,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-09-29",
+    "sell_price": 18.41,
+    "return_pct": -9.98,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 20.45,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 18.41,
+        "pct": -9.98
       }
     ],
     "cur_price": 20.45,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 19.43）"
   },
   {
     "code": "002342",
@@ -348,16 +200,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 8.45,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 8.25,
+        "pct": -2.37
       }
     ],
-    "cur_price": 8.45,
-    "cur_pct": 0
+    "cur_price": 8.25,
+    "cur_pct": -2.37
   },
   {
     "code": "002347",
@@ -371,16 +228,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 6.6,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 6.39,
+        "pct": -3.18
       }
     ],
-    "cur_price": 6.6,
-    "cur_pct": 0
+    "cur_price": 6.39,
+    "cur_pct": -3.18
   },
   {
     "code": "603278",
@@ -394,15 +256,112 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-09-28",
         "close": 10.56,
         "pct": 0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 10.27,
+        "pct": -2.75
       }
     ],
-    "cur_price": 10.56,
+    "cur_price": 10.27,
+    "cur_pct": -2.75
+  },
+  {
+    "code": "002074",
+    "name": "国轩高科",
+    "sector": "电池",
+    "rec_date": "2026-09-29",
+    "buy_price": 29.5,
+    "stop": 28.03,
+    "target": 32.45,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-29",
+        "close": 29.5,
+        "pct": 0
+      }
+    ],
+    "cur_price": 29.5,
+    "cur_pct": 0
+  },
+  {
+    "code": "600488",
+    "name": "津药药业",
+    "sector": "化学制药",
+    "rec_date": "2026-09-29",
+    "buy_price": 6.69,
+    "stop": 6.36,
+    "target": 7.36,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-29",
+        "close": 6.69,
+        "pct": 0
+      }
+    ],
+    "cur_price": 6.69,
+    "cur_pct": 0
+  },
+  {
+    "code": "000823",
+    "name": "超声电子",
+    "sector": "元件",
+    "rec_date": "2026-09-29",
+    "buy_price": 23.28,
+    "stop": 22.12,
+    "target": 25.61,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-29",
+        "close": 23.28,
+        "pct": 0
+      }
+    ],
+    "cur_price": 23.28,
+    "cur_pct": 0
+  },
+  {
+    "code": "000011",
+    "name": "深物业A",
+    "sector": "房地产开",
+    "rec_date": "2026-09-29",
+    "buy_price": 12.24,
+    "stop": 11.63,
+    "target": 13.46,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-29",
+        "close": 12.24,
+        "pct": 0
+      }
+    ],
+    "cur_price": 12.24,
     "cur_pct": 0
   }
 ]
