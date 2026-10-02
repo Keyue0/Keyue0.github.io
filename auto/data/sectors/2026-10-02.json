@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-02",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -5.504137536214278,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "化学制药",
+      "code": "BK0465",
+      "drawdown": -6.226210390370908,
+      "pct20": 1.5350076860975645,
+      "excess20": 7.04,
+      "zt5": 9,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "情绪"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "电池",
+      "code": "BK1033",
+      "drawdown": -6.743109369100489,
+      "pct20": 1.3372316793691734,
+      "excess20": 6.84,
+      "zt5": 16,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "情绪"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "医药生物",
+      "code": "BK1216",
+      "drawdown": -6.226210390370908,
+      "pct20": 1.5350076860975645,
+      "excess20": 7.04,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "食品饮料",
+      "code": "BK0438",
+      "drawdown": -14.98074423613088,
+      "pct20": -2.3329748383818067,
+      "excess20": 3.17,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "汽车",
+      "code": "BK1211",
+      "drawdown": -8.261699061476753,
+      "pct20": -2.638973467279972,
+      "excess20": 2.87,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
