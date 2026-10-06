@@ -1,7 +1,7 @@
 [
   {
-    "date": "2026-10-02",
-    "weekday": "周五",
+    "date": "2026-10-06",
+    "weekday": "周二",
     "sentiment": "修复",
     "limitUp": "52",
     "limitDown": "9",
@@ -11,6 +11,15 @@
   {
     "date": "2026-10-05",
     "weekday": "周一",
+    "sentiment": "修复",
+    "limitUp": "52",
+    "limitDown": "9",
+    "amount": "14380.18",
+    "summary": "指数稳、涨停52家/跌停9家、最高7板——情绪修复档，化学制品领涨，跌多涨少。云端自动版，精修以本地复盘为准。"
+  },
+  {
+    "date": "2026-10-02",
+    "weekday": "周五",
     "sentiment": "修复",
     "limitUp": "52",
     "limitDown": "9",
