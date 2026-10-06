@@ -75,11 +75,11 @@
     "buy_price": 28.59,
     "stop": 27.45,
     "target": 31.45,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-06",
+    "sell_price": 28.59,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-02",
@@ -98,7 +98,8 @@
       }
     ],
     "cur_price": 28.59,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603127",
@@ -108,11 +109,11 @@
     "buy_price": 49.3,
     "stop": 47.33,
     "target": 54.23,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-06",
+    "sell_price": 49.3,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-02",
@@ -131,7 +132,8 @@
       }
     ],
     "cur_price": 49.3,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002755",
@@ -141,11 +143,11 @@
     "buy_price": 13.55,
     "stop": 13.01,
     "target": 14.91,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-06",
+    "sell_price": 13.55,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-02",
@@ -164,7 +166,8 @@
       }
     ],
     "cur_price": 13.55,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603739",
@@ -174,11 +177,11 @@
     "buy_price": 14.04,
     "stop": 13.48,
     "target": 15.44,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-06",
+    "sell_price": 14.04,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-02",
@@ -197,7 +200,8 @@
       }
     ],
     "cur_price": 14.04,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000678",
@@ -211,7 +215,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-05",
@@ -225,6 +229,90 @@
       }
     ],
     "cur_price": 12.89,
+    "cur_pct": 0
+  },
+  {
+    "code": "603906",
+    "name": "龙蟠科技",
+    "sector": "电池",
+    "rec_date": "2026-10-05",
+    "buy_price": 19.04,
+    "stop": 18.09,
+    "target": 20.94,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-05",
+        "close": 19.04,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 19.04,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 19.04,
+    "cur_pct": 0
+  },
+  {
+    "code": "000710",
+    "name": "贝瑞基因",
+    "sector": "医疗服务",
+    "rec_date": "2026-10-05",
+    "buy_price": 10.87,
+    "stop": 10.33,
+    "target": 11.96,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-05",
+        "close": 10.87,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 10.87,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 10.87,
+    "cur_pct": 0
+  },
+  {
+    "code": "603188",
+    "name": "亚邦股份",
+    "sector": "化学制品",
+    "rec_date": "2026-10-05",
+    "buy_price": 5.4,
+    "stop": 5.13,
+    "target": 5.94,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-05",
+        "close": 5.4,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 5.4,
+        "pct": 9.98
+      }
+    ],
+    "cur_price": 5.4,
     "cur_pct": 0
   }
 ]
