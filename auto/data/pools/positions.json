@@ -11,7 +11,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-06",
@@ -22,10 +22,15 @@
         "date": "2026-10-07",
         "close": 28.59,
         "pct": 10
+      },
+      {
+        "date": "2026-09-30",
+        "close": 29.46,
+        "pct": 3.04
       }
     ],
-    "cur_price": 28.59,
-    "cur_pct": 0
+    "cur_price": 29.46,
+    "cur_pct": 3.04
   },
   {
     "code": "603127",
@@ -39,7 +44,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-06",
@@ -50,10 +55,15 @@
         "date": "2026-10-07",
         "close": 49.3,
         "pct": 10
+      },
+      {
+        "date": "2026-09-30",
+        "close": 52.06,
+        "pct": 5.6
       }
     ],
-    "cur_price": 49.3,
-    "cur_pct": 0
+    "cur_price": 52.06,
+    "cur_pct": 5.6
   },
   {
     "code": "002755",
@@ -67,16 +77,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-07",
         "close": 13.55,
         "pct": 0
+      },
+      {
+        "date": "2026-09-30",
+        "close": 13.22,
+        "pct": -2.44
       }
     ],
-    "cur_price": 13.55,
-    "cur_pct": 0
+    "cur_price": 13.22,
+    "cur_pct": -2.44
   },
   {
     "code": "000678",
@@ -86,6 +101,35 @@
     "buy_price": 12.89,
     "stop": 12.37,
     "target": 14.18,
+    "status": "已止损",
+    "sell_date": "2026-09-30",
+    "sell_price": 12.24,
+    "return_pct": -5.04,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-07",
+        "close": 12.89,
+        "pct": 0
+      },
+      {
+        "date": "2026-09-30",
+        "close": 12.24,
+        "pct": -5.04
+      }
+    ],
+    "cur_price": 12.89,
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 12.37）"
+  },
+  {
+    "code": "600241",
+    "name": "时代万恒",
+    "sector": "电池",
+    "rec_date": "2026-09-30",
+    "buy_price": 10.69,
+    "stop": 10.26,
+    "target": 11.97,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -93,12 +137,58 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-10-07",
-        "close": 12.89,
+        "date": "2026-09-30",
+        "close": 10.69,
         "pct": 0
       }
     ],
-    "cur_price": 12.89,
+    "cur_price": 10.69,
+    "cur_pct": 0
+  },
+  {
+    "code": "002058",
+    "name": "紫竹高科",
+    "sector": "电池",
+    "rec_date": "2026-09-30",
+    "buy_price": 22.22,
+    "stop": 21.33,
+    "target": 24.89,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-30",
+        "close": 22.22,
+        "pct": 0
+      }
+    ],
+    "cur_price": 22.22,
+    "cur_pct": 0
+  },
+  {
+    "code": "603906",
+    "name": "龙蟠科技",
+    "sector": "电池",
+    "rec_date": "2026-09-30",
+    "buy_price": 20.94,
+    "stop": 20.1,
+    "target": 23.45,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-30",
+        "close": 20.94,
+        "pct": 0
+      }
+    ],
+    "cur_price": 20.94,
     "cur_pct": 0
   }
 ]
