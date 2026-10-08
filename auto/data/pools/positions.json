@@ -11,7 +11,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-06",
@@ -44,7 +44,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-06",
@@ -77,7 +77,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-07",
@@ -134,7 +134,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-30",
@@ -157,7 +157,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-30",
@@ -180,7 +180,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-09-30",
@@ -189,6 +189,29 @@
       }
     ],
     "cur_price": 20.94,
+    "cur_pct": 0
+  },
+  {
+    "code": "000504",
+    "name": "南华生物",
+    "sector": "医疗服务",
+    "rec_date": "2026-09-30",
+    "buy_price": 11.45,
+    "stop": 10.88,
+    "target": 12.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-09-30",
+        "close": 11.45,
+        "pct": 0
+      }
+    ],
+    "cur_price": 11.45,
     "cur_pct": 0
   }
 ]
