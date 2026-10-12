@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-09",
+  "unit": "yuan",
+  "note": "当日行业板块主力净流入（单位元）。全市场124个板块当日合计 **-162.94亿** —— ★指数微涨但资金净流出，存量高低切换，非增量入场。流入榜首电池 +50.39亿（5日 +91.64亿全市场第1，四要素唯一4分板块）；贵金属 +14.86亿（金价~4400美元）；软件开发 +14.52亿；种植业 +10.83亿；出版 +9.45亿。流出：元件 -56.41亿（5日-172.90亿、仅2/61上涨）、半导体 -41.89亿（5日-442.97亿/20日-630.09亿）、通信设备 -39.04亿（5日-306.42亿）、消费电子 -20.05亿、电子化学品 -16.02亿。★北向资金无法提供：westock 无日频陆股通接口，且沪深港通自2024年8月起已取消实时披露改为季度披露。",
+  "rows": [
+    {
+      "name": "电池",
+      "main": 5038635000.0,
+      "pct": 2.1,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "工业金属",
+      "main": 1855275500.0,
+      "pct": 2.73,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "贵金属",
+      "main": 1486140799.9999998,
+      "pct": 5.62,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "软件开发",
+      "main": 1452254100.0,
+      "pct": 3.93,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "证券Ⅱ",
+      "main": 1348826800.0,
+      "pct": 2.23,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "电子化学品Ⅱ",
+      "main": -1602406000.0,
+      "pct": -2.69,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "消费电子",
+      "main": -2004863500.0,
+      "pct": -0.87,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "通信设备",
+      "main": -3904488800.0,
+      "pct": -1.0,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "半导体",
+      "main": -4189001300.0,
+      "pct": -0.68,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    },
+    {
+      "name": "元件",
+      "main": -5641165699.999999,
+      "pct": -4.27,
+      "ratio": null,
+      "superBig": null,
+      "big": null
+    }
+  ]
+}

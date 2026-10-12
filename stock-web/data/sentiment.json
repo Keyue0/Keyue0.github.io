@@ -218,5 +218,16 @@
     "upCount": 3471,
     "downCount": 1933,
     "sentiment": "退潮期·缩量修复(未确认反转)"
+  },
+  {
+    "date": "2026-10-09",
+    "limitUp": 69,
+    "limitDown": 8,
+    "topBoard": 9,
+    "ratio": 1.54,
+    "amount": 19005.55,
+    "upCount": 3297,
+    "downCount": 2145,
+    "sentiment": "退潮后修复中段(缩量整理+结构反包)"
   }
 ]
