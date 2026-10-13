@@ -39,105 +39,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "601595",
-    "name": "上海电影",
-    "sector": "影视院线",
-    "rec_date": "2026-10-09",
-    "buy_price": 27.21,
-    "stop": 26.12,
-    "target": 29.93,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-09",
-        "close": 27.21,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 27.56,
-        "pct": 1.29
-      },
-      {
-        "date": "2026-10-13",
-        "close": 27.56,
-        "pct": 1.29
-      }
-    ],
-    "cur_price": 27.56,
-    "cur_pct": 1.29
-  },
-  {
-    "code": "000892",
-    "name": "欢瑞世纪",
-    "sector": "影视院线",
-    "rec_date": "2026-10-09",
-    "buy_price": 5.34,
-    "stop": 5.13,
-    "target": 5.87,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-09",
-        "close": 5.34,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 5.14,
-        "pct": -3.75
-      },
-      {
-        "date": "2026-10-13",
-        "close": 5.14,
-        "pct": -3.75
-      }
-    ],
-    "cur_price": 5.14,
-    "cur_pct": -3.75
-  },
-  {
-    "code": "300369",
-    "name": "绿盟科技",
-    "sector": "软件开发",
-    "rec_date": "2026-10-09",
-    "buy_price": 11.13,
-    "stop": 10.68,
-    "target": 12.24,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-09",
-        "close": 11.13,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 11.05,
-        "pct": -0.72
-      },
-      {
-        "date": "2026-10-13",
-        "close": 11.05,
-        "pct": -0.72
-      }
-    ],
-    "cur_price": 11.05,
-    "cur_pct": -0.72
-  },
-  {
     "code": "603096",
     "name": "新经典",
     "sector": "出版",
@@ -149,7 +50,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-12",
@@ -177,7 +78,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-12",
@@ -205,7 +106,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-12",
@@ -233,7 +134,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-12",
@@ -261,7 +162,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-12",
@@ -289,12 +190,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 22.32,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 22.32,
+        "pct": 10
       }
     ],
     "cur_price": 22.32,
@@ -312,12 +218,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 40.55,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 40.55,
+        "pct": 10.01
       }
     ],
     "cur_price": 40.55,
@@ -335,12 +246,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 14.36,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 14.36,
+        "pct": 10.04
       }
     ],
     "cur_price": 14.36,
@@ -358,12 +274,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 12.3,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 12.3,
+        "pct": 10.02
       }
     ],
     "cur_price": 12.3,
@@ -381,12 +302,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 14.59,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 14.59,
+        "pct": 10.03
       }
     ],
     "cur_price": 14.59,
@@ -404,15 +330,76 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 45.85,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 45.85,
+        "pct": 10
       }
     ],
     "cur_price": 45.85,
+    "cur_pct": 0
+  },
+  {
+    "code": "600192",
+    "name": "长城电工",
+    "sector": "电网设备",
+    "rec_date": "2026-10-12",
+    "buy_price": 8.07,
+    "stop": 7.67,
+    "target": 8.72,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 8.07,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 8.07,
+        "pct": 1.77
+      }
+    ],
+    "cur_price": 8.07,
+    "cur_pct": 0
+  },
+  {
+    "code": "600851",
+    "name": "海欣股份",
+    "sector": "化学制药",
+    "rec_date": "2026-10-12",
+    "buy_price": 9.46,
+    "stop": 8.99,
+    "target": 10.22,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 9.46,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 9.46,
+        "pct": 10
+      }
+    ],
+    "cur_price": 9.46,
     "cur_pct": 0
   }
 ]
