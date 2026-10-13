@@ -1,179 +1,5 @@
 [
   {
-    "code": "002755",
-    "name": "奥赛康",
-    "sector": "化学制药",
-    "rec_date": "2026-10-07",
-    "buy_price": 13.55,
-    "stop": 13.01,
-    "target": 14.91,
-    "status": "已止损",
-    "sell_date": "2026-10-09",
-    "sell_price": 12.87,
-    "return_pct": -5.02,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-07",
-        "close": 13.55,
-        "pct": 0
-      },
-      {
-        "date": "2026-09-30",
-        "close": 13.22,
-        "pct": -2.44
-      },
-      {
-        "date": "2026-10-08",
-        "close": 13.34,
-        "pct": 0.91
-      },
-      {
-        "date": "2026-10-09",
-        "close": 12.87,
-        "pct": -3.52
-      }
-    ],
-    "cur_price": 13.34,
-    "cur_pct": -1.55,
-    "verdict": "止损卖出（收盘价≤止损价 13.01）"
-  },
-  {
-    "code": "600241",
-    "name": "时代万恒",
-    "sector": "电池",
-    "rec_date": "2026-09-30",
-    "buy_price": 10.69,
-    "stop": 10.26,
-    "target": 11.97,
-    "status": "已止盈",
-    "sell_date": "2026-10-09",
-    "sell_price": 12.94,
-    "return_pct": 21.05,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-30",
-        "close": 10.69,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-08",
-        "close": 11.76,
-        "pct": 10.01
-      },
-      {
-        "date": "2026-10-09",
-        "close": 12.94,
-        "pct": 10.03
-      }
-    ],
-    "cur_price": 11.76,
-    "cur_pct": 10.01,
-    "verdict": "止盈卖出（收盘价≥目标价 11.97）"
-  },
-  {
-    "code": "002058",
-    "name": "紫竹高科",
-    "sector": "电池",
-    "rec_date": "2026-09-30",
-    "buy_price": 22.22,
-    "stop": 21.33,
-    "target": 24.89,
-    "status": "已止盈",
-    "sell_date": "2026-10-09",
-    "sell_price": 25.3,
-    "return_pct": 13.86,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-30",
-        "close": 22.22,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-08",
-        "close": 24.44,
-        "pct": 9.99
-      },
-      {
-        "date": "2026-10-09",
-        "close": 25.3,
-        "pct": 3.52
-      }
-    ],
-    "cur_price": 24.44,
-    "cur_pct": 9.99,
-    "verdict": "止盈卖出（收盘价≥目标价 24.89）"
-  },
-  {
-    "code": "603906",
-    "name": "龙蟠科技",
-    "sector": "电池",
-    "rec_date": "2026-09-30",
-    "buy_price": 20.94,
-    "stop": 20.1,
-    "target": 23.45,
-    "status": "到期平仓",
-    "sell_date": "2026-10-09",
-    "sell_price": 20.3,
-    "return_pct": -3.06,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-09-30",
-        "close": 20.94,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-08",
-        "close": 21.37,
-        "pct": 2.05
-      },
-      {
-        "date": "2026-10-09",
-        "close": 20.3,
-        "pct": -5.01
-      }
-    ],
-    "cur_price": 20.3,
-    "cur_pct": -3.06,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "000504",
-    "name": "南华生物",
-    "sector": "医疗服务",
-    "rec_date": "2026-09-30",
-    "buy_price": 11.45,
-    "stop": 10.88,
-    "target": 12.6,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-09-30",
-        "close": 11.45,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-08",
-        "close": 11.79,
-        "pct": 2.97
-      },
-      {
-        "date": "2026-10-09",
-        "close": 11.35,
-        "pct": -3.73
-      }
-    ],
-    "cur_price": 11.35,
-    "cur_pct": -0.87
-  },
-  {
     "code": "002733",
     "name": "雄韬股份",
     "sector": "电池",
@@ -181,11 +7,11 @@
     "buy_price": 20.78,
     "stop": 19.95,
     "target": 23.27,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-13",
+    "sell_price": 19.98,
+    "return_pct": -3.85,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-08",
@@ -196,56 +22,21 @@
         "date": "2026-10-09",
         "close": 21.22,
         "pct": 2.12
-      }
-    ],
-    "cur_price": 21.22,
-    "cur_pct": 2.12
-  },
-  {
-    "code": "601811",
-    "name": "新华文轩",
-    "sector": "出版",
-    "rec_date": "2026-10-09",
-    "buy_price": 23,
-    "stop": 22.08,
-    "target": 25.3,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
-    "history": [
+      },
       {
-        "date": "2026-10-09",
-        "close": 23,
-        "pct": 0
-      }
-    ],
-    "cur_price": 23,
-    "cur_pct": 0
-  },
-  {
-    "code": "605577",
-    "name": "龙版传媒",
-    "sector": "出版",
-    "rec_date": "2026-10-09",
-    "buy_price": 17.82,
-    "stop": 17.11,
-    "target": 19.6,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
-    "history": [
+        "date": "2026-10-12",
+        "close": 19.98,
+        "pct": -5.84
+      },
       {
-        "date": "2026-10-09",
-        "close": 17.82,
-        "pct": 0
+        "date": "2026-10-13",
+        "close": 19.98,
+        "pct": -5.84
       }
     ],
-    "cur_price": 17.82,
-    "cur_pct": 0
+    "cur_price": 19.98,
+    "cur_pct": -3.85,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "601595",
@@ -259,16 +50,26 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-09",
         "close": 27.21,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 27.56,
+        "pct": 1.29
+      },
+      {
+        "date": "2026-10-13",
+        "close": 27.56,
+        "pct": 1.29
       }
     ],
-    "cur_price": 27.21,
-    "cur_pct": 0
+    "cur_price": 27.56,
+    "cur_pct": 1.29
   },
   {
     "code": "000892",
@@ -282,16 +83,26 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-09",
         "close": 5.34,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 5.14,
+        "pct": -3.75
+      },
+      {
+        "date": "2026-10-13",
+        "close": 5.14,
+        "pct": -3.75
       }
     ],
-    "cur_price": 5.34,
-    "cur_pct": 0
+    "cur_price": 5.14,
+    "cur_pct": -3.75
   },
   {
     "code": "300369",
@@ -305,15 +116,303 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-09",
         "close": 11.13,
         "pct": 0
+      },
+      {
+        "date": "2026-10-12",
+        "close": 11.05,
+        "pct": -0.72
+      },
+      {
+        "date": "2026-10-13",
+        "close": 11.05,
+        "pct": -0.72
       }
     ],
-    "cur_price": 11.13,
+    "cur_price": 11.05,
+    "cur_pct": -0.72
+  },
+  {
+    "code": "603096",
+    "name": "新经典",
+    "sector": "出版",
+    "rec_date": "2026-10-12",
+    "buy_price": 20.97,
+    "stop": 20.13,
+    "target": 23.07,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 20.97,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 20.97,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 20.97,
+    "cur_pct": 0
+  },
+  {
+    "code": "002343",
+    "name": "慈文传媒",
+    "sector": "影视院线",
+    "rec_date": "2026-10-12",
+    "buy_price": 7.36,
+    "stop": 7.07,
+    "target": 8.1,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 7.36,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 7.36,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 7.36,
+    "cur_pct": 0
+  },
+  {
+    "code": "300006",
+    "name": "莱美药业",
+    "sector": "化学制药",
+    "rec_date": "2026-10-12",
+    "buy_price": 6.58,
+    "stop": 6.25,
+    "target": 7.24,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 6.58,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 6.58,
+        "pct": 0.3
+      }
+    ],
+    "cur_price": 6.58,
+    "cur_pct": 0
+  },
+  {
+    "code": "300829",
+    "name": "金丹科技",
+    "sector": "化学制品",
+    "rec_date": "2026-10-12",
+    "buy_price": 28.85,
+    "stop": 27.7,
+    "target": 31.74,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 28.85,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 28.85,
+        "pct": 2.96
+      }
+    ],
+    "cur_price": 28.85,
+    "cur_pct": 0
+  },
+  {
+    "code": "688517",
+    "name": "金冠电气",
+    "sector": "电网设备",
+    "rec_date": "2026-10-12",
+    "buy_price": 21.3,
+    "stop": 20.45,
+    "target": 23.43,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-12",
+        "close": 21.3,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 21.3,
+        "pct": 0.57
+      }
+    ],
+    "cur_price": 21.3,
+    "cur_pct": 0
+  },
+  {
+    "code": "000823",
+    "name": "超声电子",
+    "sector": "元件",
+    "rec_date": "2026-10-13",
+    "buy_price": 22.32,
+    "stop": 21.43,
+    "target": 24.55,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 22.32,
+        "pct": 0
+      }
+    ],
+    "cur_price": 22.32,
+    "cur_pct": 0
+  },
+  {
+    "code": "605258",
+    "name": "协和电子",
+    "sector": "元件",
+    "rec_date": "2026-10-13",
+    "buy_price": 40.55,
+    "stop": 38.93,
+    "target": 44.61,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 40.55,
+        "pct": 0
+      }
+    ],
+    "cur_price": 40.55,
+    "cur_pct": 0
+  },
+  {
+    "code": "603968",
+    "name": "醋化股份",
+    "sector": "化学制品",
+    "rec_date": "2026-10-13",
+    "buy_price": 14.36,
+    "stop": 13.79,
+    "target": 15.8,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 14.36,
+        "pct": 0
+      }
+    ],
+    "cur_price": 14.36,
+    "cur_pct": 0
+  },
+  {
+    "code": "600693",
+    "name": "东百集团",
+    "sector": "一般零售",
+    "rec_date": "2026-10-13",
+    "buy_price": 12.3,
+    "stop": 11.81,
+    "target": 13.53,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 12.3,
+        "pct": 0
+      }
+    ],
+    "cur_price": 12.3,
+    "cur_pct": 0
+  },
+  {
+    "code": "002639",
+    "name": "雪人集团",
+    "sector": "通用设备",
+    "rec_date": "2026-10-13",
+    "buy_price": 14.59,
+    "stop": 14.01,
+    "target": 16.05,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 14.59,
+        "pct": 0
+      }
+    ],
+    "cur_price": 14.59,
+    "cur_pct": 0
+  },
+  {
+    "code": "603099",
+    "name": "长白山",
+    "sector": "旅游及景",
+    "rec_date": "2026-10-13",
+    "buy_price": 45.85,
+    "stop": 44.02,
+    "target": 50.44,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 45.85,
+        "pct": 0
+      }
+    ],
+    "cur_price": 45.85,
     "cur_pct": 0
   }
 ]
