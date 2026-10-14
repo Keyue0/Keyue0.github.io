@@ -46,11 +46,11 @@
     "buy_price": 20.97,
     "stop": 20.13,
     "target": 23.07,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止盈",
+    "sell_date": "2026-10-13",
+    "sell_price": 23.07,
+    "return_pct": 10.01,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -64,7 +64,8 @@
       }
     ],
     "cur_price": 20.97,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 23.07）"
   },
   {
     "code": "002343",
@@ -74,11 +75,11 @@
     "buy_price": 7.36,
     "stop": 7.07,
     "target": 8.1,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止盈",
+    "sell_date": "2026-10-13",
+    "sell_price": 8.1,
+    "return_pct": 10.05,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -92,7 +93,8 @@
       }
     ],
     "cur_price": 7.36,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 8.1）"
   },
   {
     "code": "300006",
@@ -102,11 +104,11 @@
     "buy_price": 6.58,
     "stop": 6.25,
     "target": 7.24,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止盈",
+    "sell_date": "2026-10-13",
+    "sell_price": 7.9,
+    "return_pct": 20.06,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -120,7 +122,8 @@
       }
     ],
     "cur_price": 6.58,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 7.24）"
   },
   {
     "code": "300829",
@@ -130,11 +133,11 @@
     "buy_price": 28.85,
     "stop": 27.7,
     "target": 31.74,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-10-13",
+    "sell_price": 26.7,
+    "return_pct": -7.45,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -148,7 +151,8 @@
       }
     ],
     "cur_price": 28.85,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 27.7）"
   },
   {
     "code": "688517",
@@ -158,11 +162,11 @@
     "buy_price": 21.3,
     "stop": 20.45,
     "target": 23.43,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-10-13",
+    "sell_price": 20.11,
+    "return_pct": -5.59,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -176,7 +180,8 @@
       }
     ],
     "cur_price": 21.3,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 20.45）"
   },
   {
     "code": "000823",
@@ -186,11 +191,11 @@
     "buy_price": 22.32,
     "stop": 21.43,
     "target": 24.55,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "已止盈",
+    "sell_date": "2026-10-13",
+    "sell_price": 24.55,
+    "return_pct": 9.99,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -204,7 +209,8 @@
       }
     ],
     "cur_price": 22.32,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 24.55）"
   },
   {
     "code": "605258",
@@ -218,7 +224,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -231,8 +237,8 @@
         "pct": 10.01
       }
     ],
-    "cur_price": 40.55,
-    "cur_pct": 0
+    "cur_price": 41.4,
+    "cur_pct": 2.1
   },
   {
     "code": "603968",
@@ -242,11 +248,11 @@
     "buy_price": 14.36,
     "stop": 13.79,
     "target": 15.8,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "已止盈",
+    "sell_date": "2026-10-13",
+    "sell_price": 15.8,
+    "return_pct": 10.03,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -260,7 +266,8 @@
       }
     ],
     "cur_price": 14.36,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 15.8）"
   },
   {
     "code": "600693",
@@ -274,7 +281,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -287,8 +294,8 @@
         "pct": 10.02
       }
     ],
-    "cur_price": 12.3,
-    "cur_pct": 0
+    "cur_price": 12.19,
+    "cur_pct": -0.89
   },
   {
     "code": "002639",
@@ -302,7 +309,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -315,8 +322,8 @@
         "pct": 10.03
       }
     ],
-    "cur_price": 14.59,
-    "cur_pct": 0
+    "cur_price": 15.2,
+    "cur_pct": 4.18
   },
   {
     "code": "603099",
@@ -330,7 +337,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-13",
@@ -343,8 +350,8 @@
         "pct": 10
       }
     ],
-    "cur_price": 45.85,
-    "cur_pct": 0
+    "cur_price": 45.21,
+    "cur_pct": -1.4
   },
   {
     "code": "600192",
@@ -358,7 +365,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-12",
@@ -371,8 +378,8 @@
         "pct": 1.77
       }
     ],
-    "cur_price": 8.07,
-    "cur_pct": 0
+    "cur_price": 7.81,
+    "cur_pct": -3.22
   },
   {
     "code": "600851",
@@ -386,7 +393,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-12",
@@ -399,7 +406,53 @@
         "pct": 10
       }
     ],
-    "cur_price": 9.46,
+    "cur_price": 9.18,
+    "cur_pct": -2.96
+  },
+  {
+    "code": "002917",
+    "name": "金奥博",
+    "sector": "化学制品",
+    "rec_date": "2026-10-13",
+    "buy_price": 12.1,
+    "stop": 11.5,
+    "target": 13.31,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 12.1,
+        "pct": 0
+      }
+    ],
+    "cur_price": 12.1,
+    "cur_pct": 0
+  },
+  {
+    "code": "600202",
+    "name": "哈空调",
+    "sector": "通用设备",
+    "rec_date": "2026-10-13",
+    "buy_price": 6.15,
+    "stop": 5.84,
+    "target": 6.77,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-13",
+        "close": 6.15,
+        "pct": 0
+      }
+    ],
+    "cur_price": 6.15,
     "cur_pct": 0
   }
 ]
