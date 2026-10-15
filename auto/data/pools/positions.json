@@ -1,363 +1,5 @@
 [
   {
-    "code": "002733",
-    "name": "雄韬股份",
-    "sector": "电池",
-    "rec_date": "2026-10-08",
-    "buy_price": 20.78,
-    "stop": 19.95,
-    "target": 23.27,
-    "status": "到期平仓",
-    "sell_date": "2026-10-13",
-    "sell_price": 19.98,
-    "return_pct": -3.85,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-08",
-        "close": 20.78,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-09",
-        "close": 21.22,
-        "pct": 2.12
-      },
-      {
-        "date": "2026-10-12",
-        "close": 19.98,
-        "pct": -5.84
-      },
-      {
-        "date": "2026-10-13",
-        "close": 19.98,
-        "pct": -5.84
-      }
-    ],
-    "cur_price": 19.98,
-    "cur_pct": -3.85,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603096",
-    "name": "新经典",
-    "sector": "出版",
-    "rec_date": "2026-10-12",
-    "buy_price": 20.97,
-    "stop": 20.13,
-    "target": 23.07,
-    "status": "已止盈",
-    "sell_date": "2026-10-13",
-    "sell_price": 23.07,
-    "return_pct": 10.01,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 20.97,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 20.97,
-        "pct": 10.02
-      }
-    ],
-    "cur_price": 20.97,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 23.07）"
-  },
-  {
-    "code": "002343",
-    "name": "慈文传媒",
-    "sector": "影视院线",
-    "rec_date": "2026-10-12",
-    "buy_price": 7.36,
-    "stop": 7.07,
-    "target": 8.1,
-    "status": "已止盈",
-    "sell_date": "2026-10-13",
-    "sell_price": 8.1,
-    "return_pct": 10.05,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 7.36,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 7.36,
-        "pct": 10.01
-      }
-    ],
-    "cur_price": 7.36,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 8.1）"
-  },
-  {
-    "code": "300006",
-    "name": "莱美药业",
-    "sector": "化学制药",
-    "rec_date": "2026-10-12",
-    "buy_price": 6.58,
-    "stop": 6.25,
-    "target": 7.24,
-    "status": "已止盈",
-    "sell_date": "2026-10-13",
-    "sell_price": 7.9,
-    "return_pct": 20.06,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 6.58,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 6.58,
-        "pct": 0.3
-      }
-    ],
-    "cur_price": 6.58,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 7.24）"
-  },
-  {
-    "code": "300829",
-    "name": "金丹科技",
-    "sector": "化学制品",
-    "rec_date": "2026-10-12",
-    "buy_price": 28.85,
-    "stop": 27.7,
-    "target": 31.74,
-    "status": "已止损",
-    "sell_date": "2026-10-13",
-    "sell_price": 26.7,
-    "return_pct": -7.45,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 28.85,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 28.85,
-        "pct": 2.96
-      }
-    ],
-    "cur_price": 28.85,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 27.7）"
-  },
-  {
-    "code": "688517",
-    "name": "金冠电气",
-    "sector": "电网设备",
-    "rec_date": "2026-10-12",
-    "buy_price": 21.3,
-    "stop": 20.45,
-    "target": 23.43,
-    "status": "已止损",
-    "sell_date": "2026-10-13",
-    "sell_price": 20.11,
-    "return_pct": -5.59,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 21.3,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 21.3,
-        "pct": 0.57
-      }
-    ],
-    "cur_price": 21.3,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 20.45）"
-  },
-  {
-    "code": "000823",
-    "name": "超声电子",
-    "sector": "元件",
-    "rec_date": "2026-10-13",
-    "buy_price": 22.32,
-    "stop": 21.43,
-    "target": 24.55,
-    "status": "已止盈",
-    "sell_date": "2026-10-13",
-    "sell_price": 24.55,
-    "return_pct": 9.99,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 22.32,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 22.32,
-        "pct": 10
-      }
-    ],
-    "cur_price": 22.32,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 24.55）"
-  },
-  {
-    "code": "605258",
-    "name": "协和电子",
-    "sector": "元件",
-    "rec_date": "2026-10-13",
-    "buy_price": 40.55,
-    "stop": 38.93,
-    "target": 44.61,
-    "status": "到期平仓",
-    "sell_date": "2026-10-13",
-    "sell_price": 41.4,
-    "return_pct": 2.1,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 40.55,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 40.55,
-        "pct": 10.01
-      }
-    ],
-    "cur_price": 41.4,
-    "cur_pct": 2.1,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603968",
-    "name": "醋化股份",
-    "sector": "化学制品",
-    "rec_date": "2026-10-13",
-    "buy_price": 14.36,
-    "stop": 13.79,
-    "target": 15.8,
-    "status": "已止盈",
-    "sell_date": "2026-10-13",
-    "sell_price": 15.8,
-    "return_pct": 10.03,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 14.36,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 14.36,
-        "pct": 10.04
-      }
-    ],
-    "cur_price": 14.36,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 15.8）"
-  },
-  {
-    "code": "600693",
-    "name": "东百集团",
-    "sector": "一般零售",
-    "rec_date": "2026-10-13",
-    "buy_price": 12.3,
-    "stop": 11.81,
-    "target": 13.53,
-    "status": "到期平仓",
-    "sell_date": "2026-10-13",
-    "sell_price": 12.19,
-    "return_pct": -0.89,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 12.3,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 12.3,
-        "pct": 10.02
-      }
-    ],
-    "cur_price": 12.19,
-    "cur_pct": -0.89,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002639",
-    "name": "雪人集团",
-    "sector": "通用设备",
-    "rec_date": "2026-10-13",
-    "buy_price": 14.59,
-    "stop": 14.01,
-    "target": 16.05,
-    "status": "到期平仓",
-    "sell_date": "2026-10-13",
-    "sell_price": 15.2,
-    "return_pct": 4.18,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 14.59,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 14.59,
-        "pct": 10.03
-      }
-    ],
-    "cur_price": 15.2,
-    "cur_pct": 4.18,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603099",
-    "name": "长白山",
-    "sector": "旅游及景",
-    "rec_date": "2026-10-13",
-    "buy_price": 45.85,
-    "stop": 44.02,
-    "target": 50.44,
-    "status": "到期平仓",
-    "sell_date": "2026-10-13",
-    "sell_price": 45.21,
-    "return_pct": -1.4,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 45.85,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-12",
-        "close": 45.85,
-        "pct": 10
-      }
-    ],
-    "cur_price": 45.21,
-    "cur_pct": -1.4,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
     "code": "600192",
     "name": "长城电工",
     "sector": "电网设备",
@@ -365,11 +7,11 @@
     "buy_price": 8.07,
     "stop": 7.67,
     "target": 8.72,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-10-14",
+    "sell_price": 7.6,
+    "return_pct": -5.82,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -380,10 +22,16 @@
         "date": "2026-10-13",
         "close": 8.07,
         "pct": 1.77
+      },
+      {
+        "date": "2026-10-14",
+        "close": 7.6,
+        "pct": -2.69
       }
     ],
     "cur_price": 7.81,
-    "cur_pct": -3.22
+    "cur_pct": -3.22,
+    "verdict": "止损卖出（收盘价≤止损价 7.67）"
   },
   {
     "code": "600851",
@@ -393,11 +41,11 @@
     "buy_price": 9.46,
     "stop": 8.99,
     "target": 10.22,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-10-14",
+    "sell_price": 8.8,
+    "return_pct": -6.98,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-12",
@@ -408,10 +56,16 @@
         "date": "2026-10-13",
         "close": 9.46,
         "pct": 10
+      },
+      {
+        "date": "2026-10-14",
+        "close": 8.8,
+        "pct": -4.14
       }
     ],
     "cur_price": 9.18,
-    "cur_pct": -2.96
+    "cur_pct": -2.96,
+    "verdict": "止损卖出（收盘价≤止损价 8.99）"
   },
   {
     "code": "002917",
@@ -421,20 +75,26 @@
     "buy_price": 12.1,
     "stop": 11.5,
     "target": 13.31,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-14",
+    "sell_price": 10.89,
+    "return_pct": -10,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 12.1,
         "pct": 0
+      },
+      {
+        "date": "2026-10-14",
+        "close": 10.89,
+        "pct": -10
       }
     ],
     "cur_price": 12.1,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 11.5）"
   },
   {
     "code": "600202",
@@ -444,20 +104,26 @@
     "buy_price": 6.15,
     "stop": 5.84,
     "target": 6.77,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-14",
+    "sell_price": 5.54,
+    "return_pct": -9.92,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
         "close": 6.15,
         "pct": 0
+      },
+      {
+        "date": "2026-10-14",
+        "close": 5.54,
+        "pct": -9.92
       }
     ],
     "cur_price": 6.15,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 5.84）"
   },
   {
     "code": "605058",
@@ -471,15 +137,66 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-13",
         "close": 64.08,
         "pct": 0
+      },
+      {
+        "date": "2026-10-14",
+        "close": 70.49,
+        "pct": 10
       }
     ],
-    "cur_price": 64.08,
+    "cur_price": 70.49,
+    "cur_pct": 10
+  },
+  {
+    "code": "601858",
+    "name": "中国科传",
+    "sector": "出版",
+    "rec_date": "2026-10-14",
+    "buy_price": 25.8,
+    "stop": 24.51,
+    "target": 27.86,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-14",
+        "close": 25.8,
+        "pct": 0
+      }
+    ],
+    "cur_price": 25.8,
+    "cur_pct": 0
+  },
+  {
+    "code": "601811",
+    "name": "新华文轩",
+    "sector": "出版",
+    "rec_date": "2026-10-14",
+    "buy_price": 25.58,
+    "stop": 24.3,
+    "target": 27.63,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-14",
+        "close": 25.58,
+        "pct": 0
+      }
+    ],
+    "cur_price": 25.58,
     "cur_pct": 0
   }
 ]
