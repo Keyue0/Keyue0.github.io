@@ -137,7 +137,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-13",
@@ -165,7 +165,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-14",
@@ -188,7 +188,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-14",
@@ -197,6 +197,52 @@
       }
     ],
     "cur_price": 25.58,
+    "cur_pct": 0
+  },
+  {
+    "code": "300006",
+    "name": "莱美药业",
+    "sector": "化学制药",
+    "rec_date": "2026-10-14",
+    "buy_price": 8.13,
+    "stop": 7.8,
+    "target": 8.94,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-14",
+        "close": 8.13,
+        "pct": 0
+      }
+    ],
+    "cur_price": 8.13,
+    "cur_pct": 0
+  },
+  {
+    "code": "603096",
+    "name": "新经典",
+    "sector": "出版",
+    "rec_date": "2026-10-14",
+    "buy_price": 23.25,
+    "stop": 22.32,
+    "target": 25.58,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-14",
+        "close": 23.25,
+        "pct": 0
+      }
+    ],
+    "cur_price": 23.25,
     "cur_pct": 0
   }
 ]
