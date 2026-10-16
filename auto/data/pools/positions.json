@@ -39,39 +39,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "601858",
-    "name": "中国科传",
-    "sector": "出版",
-    "rec_date": "2026-10-14",
-    "buy_price": 25.8,
-    "stop": 24.51,
-    "target": 27.86,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-14",
-        "close": 25.8,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-15",
-        "close": 26.24,
-        "pct": 1.71
-      },
-      {
-        "date": "2026-10-16",
-        "close": 26.24,
-        "pct": 1.71
-      }
-    ],
-    "cur_price": 26.24,
-    "cur_pct": 1.71
-  },
-  {
     "code": "603690",
     "name": "至纯科技",
     "sector": "半导体",
@@ -83,7 +50,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-15",
@@ -111,7 +78,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-15",
@@ -139,7 +106,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-15",
@@ -167,7 +134,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-15",
@@ -195,12 +162,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
         "close": 29.39,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 29.39,
+        "pct": 9.99
       }
     ],
     "cur_price": 29.39,
@@ -218,12 +190,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
         "close": 9.91,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 9.91,
+        "pct": 9.99
       }
     ],
     "cur_price": 9.91,
@@ -241,12 +218,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
         "close": 11.81,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 11.81,
+        "pct": 20.02
       }
     ],
     "cur_price": 11.81,
@@ -264,12 +246,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
         "close": 27.75,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 27.75,
+        "pct": 9.99
       }
     ],
     "cur_price": 27.75,
@@ -287,15 +274,122 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
         "close": 9.91,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 9.91,
+        "pct": 9.99
       }
     ],
     "cur_price": 9.91,
+    "cur_pct": 0
+  },
+  {
+    "code": "601811",
+    "name": "新华文轩",
+    "sector": "出版",
+    "rec_date": "2026-10-15",
+    "buy_price": 28.14,
+    "stop": 26.73,
+    "target": 30.95,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-15",
+        "close": 28.14,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 28.14,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 28.14,
+    "cur_pct": 0
+  },
+  {
+    "code": "603999",
+    "name": "读者传媒",
+    "sector": "出版",
+    "rec_date": "2026-10-15",
+    "buy_price": 8.38,
+    "stop": 8.04,
+    "target": 9.22,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-15",
+        "close": 8.38,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 8.38,
+        "pct": 9.97
+      }
+    ],
+    "cur_price": 8.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "000530",
+    "name": "冰山冷热",
+    "sector": "通用设备",
+    "rec_date": "2026-10-16",
+    "buy_price": 7.62,
+    "stop": 7.24,
+    "target": 8.38,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-16",
+        "close": 7.62,
+        "pct": 0
+      }
+    ],
+    "cur_price": 7.62,
+    "cur_pct": 0
+  },
+  {
+    "code": "600825",
+    "name": "新华传媒",
+    "sector": "出版",
+    "rec_date": "2026-10-16",
+    "buy_price": 15.16,
+    "stop": 14.4,
+    "target": 16.37,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-16",
+        "close": 15.16,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.16,
     "cur_pct": 0
   }
 ]
