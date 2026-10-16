@@ -1,131 +1,5 @@
 [
   {
-    "code": "600192",
-    "name": "长城电工",
-    "sector": "电网设备",
-    "rec_date": "2026-10-12",
-    "buy_price": 8.07,
-    "stop": 7.67,
-    "target": 8.72,
-    "status": "已止损",
-    "sell_date": "2026-10-14",
-    "sell_price": 7.6,
-    "return_pct": -5.82,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 8.07,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 8.07,
-        "pct": 1.77
-      },
-      {
-        "date": "2026-10-14",
-        "close": 7.6,
-        "pct": -2.69
-      }
-    ],
-    "cur_price": 7.81,
-    "cur_pct": -3.22,
-    "verdict": "止损卖出（收盘价≤止损价 7.67）"
-  },
-  {
-    "code": "600851",
-    "name": "海欣股份",
-    "sector": "化学制药",
-    "rec_date": "2026-10-12",
-    "buy_price": 9.46,
-    "stop": 8.99,
-    "target": 10.22,
-    "status": "已止损",
-    "sell_date": "2026-10-14",
-    "sell_price": 8.8,
-    "return_pct": -6.98,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-12",
-        "close": 9.46,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-13",
-        "close": 9.46,
-        "pct": 10
-      },
-      {
-        "date": "2026-10-14",
-        "close": 8.8,
-        "pct": -4.14
-      }
-    ],
-    "cur_price": 9.18,
-    "cur_pct": -2.96,
-    "verdict": "止损卖出（收盘价≤止损价 8.99）"
-  },
-  {
-    "code": "002917",
-    "name": "金奥博",
-    "sector": "化学制品",
-    "rec_date": "2026-10-13",
-    "buy_price": 12.1,
-    "stop": 11.5,
-    "target": 13.31,
-    "status": "已止损",
-    "sell_date": "2026-10-14",
-    "sell_price": 10.89,
-    "return_pct": -10,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 12.1,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-14",
-        "close": 10.89,
-        "pct": -10
-      }
-    ],
-    "cur_price": 12.1,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 11.5）"
-  },
-  {
-    "code": "600202",
-    "name": "哈空调",
-    "sector": "通用设备",
-    "rec_date": "2026-10-13",
-    "buy_price": 6.15,
-    "stop": 5.84,
-    "target": 6.77,
-    "status": "已止损",
-    "sell_date": "2026-10-14",
-    "sell_price": 5.54,
-    "return_pct": -9.92,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-10-13",
-        "close": 6.15,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-14",
-        "close": 5.54,
-        "pct": -9.92
-      }
-    ],
-    "cur_price": 6.15,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 5.84）"
-  },
-  {
     "code": "605058",
     "name": "澳弘电子",
     "sector": "元件",
@@ -133,11 +7,11 @@
     "buy_price": 64.08,
     "stop": 61.52,
     "target": 71.77,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-10-16",
+    "sell_price": 65.83,
+    "return_pct": 2.73,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-13",
@@ -148,10 +22,21 @@
         "date": "2026-10-14",
         "close": 70.49,
         "pct": 10
+      },
+      {
+        "date": "2026-10-15",
+        "close": 65.83,
+        "pct": -6.61
+      },
+      {
+        "date": "2026-10-16",
+        "close": 65.83,
+        "pct": -6.61
       }
     ],
-    "cur_price": 70.49,
-    "cur_pct": 10
+    "cur_price": 65.83,
+    "cur_pct": 2.73,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "601858",
@@ -165,25 +50,35 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-14",
         "close": 25.8,
         "pct": 0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 26.24,
+        "pct": 1.71
+      },
+      {
+        "date": "2026-10-16",
+        "close": 26.24,
+        "pct": 1.71
       }
     ],
-    "cur_price": 25.8,
-    "cur_pct": 0
+    "cur_price": 26.24,
+    "cur_pct": 1.71
   },
   {
-    "code": "601811",
-    "name": "新华文轩",
-    "sector": "出版",
-    "rec_date": "2026-10-14",
-    "buy_price": 25.58,
-    "stop": 24.3,
-    "target": 27.63,
+    "code": "603690",
+    "name": "至纯科技",
+    "sector": "半导体",
+    "rec_date": "2026-10-15",
+    "buy_price": 22.99,
+    "stop": 21.84,
+    "target": 25.29,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -191,22 +86,111 @@
     "days_held": 2,
     "history": [
       {
-        "date": "2026-10-14",
-        "close": 25.58,
+        "date": "2026-10-15",
+        "close": 22.99,
         "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 22.99,
+        "pct": -3.28
       }
     ],
-    "cur_price": 25.58,
+    "cur_price": 22.99,
     "cur_pct": 0
   },
   {
-    "code": "300006",
-    "name": "莱美药业",
-    "sector": "化学制药",
-    "rec_date": "2026-10-14",
-    "buy_price": 8.13,
-    "stop": 7.8,
-    "target": 8.94,
+    "code": "002815",
+    "name": "崇达技术",
+    "sector": "元件",
+    "rec_date": "2026-10-15",
+    "buy_price": 23.47,
+    "stop": 22.53,
+    "target": 26.29,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-15",
+        "close": 23.47,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 23.47,
+        "pct": 0.95
+      }
+    ],
+    "cur_price": 23.47,
+    "cur_pct": 0
+  },
+  {
+    "code": "002889",
+    "name": "东方嘉盛",
+    "sector": "物流",
+    "rec_date": "2026-10-15",
+    "buy_price": 14.31,
+    "stop": 13.74,
+    "target": 15.74,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-15",
+        "close": 14.31,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 14.31,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 14.31,
+    "cur_pct": 0
+  },
+  {
+    "code": "301282",
+    "name": "金禄电子",
+    "sector": "元件",
+    "rec_date": "2026-10-15",
+    "buy_price": 45.51,
+    "stop": 43.23,
+    "target": 50.97,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-15",
+        "close": 45.51,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-16",
+        "close": 45.51,
+        "pct": -8.83
+      }
+    ],
+    "cur_price": 45.51,
+    "cur_pct": 0
+  },
+  {
+    "code": "603197",
+    "name": "保隆科技",
+    "sector": "汽车零部",
+    "rec_date": "2026-10-16",
+    "buy_price": 29.39,
+    "stop": 27.92,
+    "target": 32.33,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -214,22 +198,22 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-10-14",
-        "close": 8.13,
+        "date": "2026-10-16",
+        "close": 29.39,
         "pct": 0
       }
     ],
-    "cur_price": 8.13,
+    "cur_price": 29.39,
     "cur_pct": 0
   },
   {
-    "code": "603096",
-    "name": "新经典",
-    "sector": "出版",
-    "rec_date": "2026-10-14",
-    "buy_price": 23.25,
-    "stop": 22.32,
-    "target": 25.58,
+    "code": "002085",
+    "name": "万丰奥威",
+    "sector": "汽车零部",
+    "rec_date": "2026-10-16",
+    "buy_price": 9.91,
+    "stop": 9.41,
+    "target": 10.9,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -237,12 +221,81 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-10-14",
-        "close": 23.25,
+        "date": "2026-10-16",
+        "close": 9.91,
         "pct": 0
       }
     ],
-    "cur_price": 23.25,
+    "cur_price": 9.91,
+    "cur_pct": 0
+  },
+  {
+    "code": "300581",
+    "name": "晨曦航空",
+    "sector": "航空装备",
+    "rec_date": "2026-10-16",
+    "buy_price": 11.81,
+    "stop": 11.22,
+    "target": 12.75,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-16",
+        "close": 11.81,
+        "pct": 0
+      }
+    ],
+    "cur_price": 11.81,
+    "cur_pct": 0
+  },
+  {
+    "code": "002933",
+    "name": "新兴装备",
+    "sector": "航空装备",
+    "rec_date": "2026-10-16",
+    "buy_price": 27.75,
+    "stop": 26.36,
+    "target": 30.53,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-16",
+        "close": 27.75,
+        "pct": 0
+      }
+    ],
+    "cur_price": 27.75,
+    "cur_pct": 0
+  },
+  {
+    "code": "603278",
+    "name": "大业股份",
+    "sector": "通用设备",
+    "rec_date": "2026-10-16",
+    "buy_price": 9.91,
+    "stop": 9.41,
+    "target": 10.9,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-16",
+        "close": 9.91,
+        "pct": 0
+      }
+    ],
+    "cur_price": 9.91,
     "cur_pct": 0
   }
 ]
