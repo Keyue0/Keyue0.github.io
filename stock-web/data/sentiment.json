@@ -176,6 +176,20 @@
     "sentiment": "修复转强(亢奋初段)"
   },
   {
+    "date": "2026-09-22",
+    "limitUp": 57,
+    "limitDown": 0,
+    "upCount": 2374,
+    "downCount": 3029,
+    "flatCount": 164,
+    "total": 5567,
+    "ratio": 43.94,
+    "amount": null,
+    "newHigh5": 3350,
+    "newLow5": 230,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
     "date": "2026-09-23",
     "limitUp": 51,
     "limitDown": 13,
@@ -220,6 +234,34 @@
     "sentiment": "退潮期·缩量修复(未确认反转)"
   },
   {
+    "date": "2026-09-30",
+    "limitUp": 53,
+    "limitDown": 4,
+    "upCount": 2567,
+    "downCount": 2824,
+    "flatCount": 181,
+    "total": 5572,
+    "ratio": 47.62,
+    "amount": null,
+    "newHigh5": 885,
+    "newLow5": 1452,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
+    "date": "2026-10-08",
+    "limitUp": 39,
+    "limitDown": 1,
+    "upCount": 1698,
+    "downCount": 3748,
+    "flatCount": 126,
+    "total": 5572,
+    "ratio": 31.18,
+    "amount": null,
+    "newHigh5": 1403,
+    "newLow5": 2450,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
     "date": "2026-10-09",
     "limitUp": 69,
     "limitDown": 8,
@@ -228,6 +270,78 @@
     "amount": 19005.55,
     "upCount": 3297,
     "downCount": 2145,
-    "sentiment": "退潮后修复中段(缩量整理+结构反包)"
+    "sentiment": "退潮后修复中段(缩量整理+结构反包)",
+    "newHigh5": 1318,
+    "newLow5": 3523
+  },
+  {
+    "date": "2026-10-12",
+    "limitUp": 44,
+    "limitDown": 3,
+    "upCount": 1167,
+    "downCount": 4325,
+    "flatCount": 81,
+    "total": 5573,
+    "ratio": 21.25,
+    "amount": null,
+    "newHigh5": 1561,
+    "newLow5": 714,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
+    "date": "2026-10-13",
+    "limitUp": 64,
+    "limitDown": 1,
+    "upCount": 2909,
+    "downCount": 2486,
+    "flatCount": 179,
+    "total": 5574,
+    "ratio": 53.92,
+    "amount": null,
+    "newHigh5": 710,
+    "newLow5": 3361,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
+    "date": "2026-10-14",
+    "limitUp": 33,
+    "limitDown": 1,
+    "upCount": 979,
+    "downCount": 4496,
+    "flatCount": 99,
+    "total": 5574,
+    "ratio": 17.88,
+    "amount": null,
+    "newHigh5": 787,
+    "newLow5": 992,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
+    "date": "2026-10-15",
+    "limitUp": 36,
+    "limitDown": 1,
+    "upCount": 430,
+    "downCount": 5108,
+    "flatCount": 38,
+    "total": 5576,
+    "ratio": 7.76,
+    "amount": null,
+    "newHigh5": 300,
+    "newLow5": 4082,
+    "source": "westock-mcp market_overview(updown)"
+  },
+  {
+    "date": "2026-10-16",
+    "limitUp": 57,
+    "limitDown": 1,
+    "upCount": 3301,
+    "downCount": 2128,
+    "flatCount": 148,
+    "total": 5577,
+    "ratio": 60.8,
+    "amount": 15554.21,
+    "newHigh5": 424,
+    "newLow5": 1941,
+    "source": "westock-mcp market_overview(updown)"
   }
 ]
