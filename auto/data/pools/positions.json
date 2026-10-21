@@ -143,11 +143,11 @@
     "buy_price": 29.39,
     "stop": 27.92,
     "target": 32.33,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-10-20",
+    "sell_price": 29.9,
+    "return_pct": 1.74,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-16",
@@ -166,7 +166,8 @@
       }
     ],
     "cur_price": 29.9,
-    "cur_pct": 1.74
+    "cur_pct": 1.74,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002085",
@@ -210,11 +211,11 @@
     "buy_price": 11.81,
     "stop": 11.22,
     "target": 12.75,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-10-20",
+    "sell_price": 11.5,
+    "return_pct": -2.62,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-16",
@@ -233,7 +234,8 @@
       }
     ],
     "cur_price": 11.5,
-    "cur_pct": -2.62
+    "cur_pct": -2.62,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002933",
@@ -243,11 +245,11 @@
     "buy_price": 27.75,
     "stop": 26.36,
     "target": 30.53,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-10-20",
+    "sell_price": 27.96,
+    "return_pct": 0.76,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-16",
@@ -266,7 +268,8 @@
       }
     ],
     "cur_price": 27.96,
-    "cur_pct": 0.76
+    "cur_pct": 0.76,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603278",
@@ -411,7 +414,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-16",
@@ -439,7 +442,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-20",
@@ -462,7 +465,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-20",
@@ -485,7 +488,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-20",
@@ -508,7 +511,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-20",
@@ -517,6 +520,29 @@
       }
     ],
     "cur_price": 13.95,
+    "cur_pct": 0
+  },
+  {
+    "code": "002164",
+    "name": "宁波东力",
+    "sector": "通用设备",
+    "rec_date": "2026-10-20",
+    "buy_price": 15.58,
+    "stop": 14.8,
+    "target": 17.14,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-20",
+        "close": 15.58,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.58,
     "cur_pct": 0
   }
 ]
