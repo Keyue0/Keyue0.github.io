@@ -427,5 +427,16 @@
     "upCount": 3111,
     "downCount": 2038,
     "sentiment": "亢奋"
+  },
+  {
+    "date": "2026-10-20",
+    "limitUp": 54,
+    "limitDown": 6,
+    "topBoard": 4,
+    "ratio": 0.64,
+    "amount": 14293.48,
+    "upCount": 1967,
+    "downCount": 3092,
+    "sentiment": "修复"
   }
 ]
