@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-22",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -7.9555441957239195,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "半导体",
+      "code": "BK1036",
+      "drawdown": -25.103844036544203,
+      "pct20": -10.786718983894165,
+      "excess20": -2.83,
+      "zt5": 4,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位",
+        "情绪"
+      ],
+      "level": 2
+    },
+    {
+      "sector": "电子",
+      "code": "BK1201",
+      "drawdown": -21.293148313488114,
+      "pct20": -10.617918478594769,
+      "excess20": -2.66,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "计算机",
+      "code": "BK1207",
+      "drawdown": -33.48626829426541,
+      "pct20": -9.163291139240505,
+      "excess20": -1.21,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    }
+  ]
+}
