@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-23",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -8.95973057578777,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "汽车",
+      "code": "BK1211",
+      "drawdown": -8.247865406962053,
+      "pct20": 0.06651500720250879,
+      "excess20": 9.03,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "医药生物",
+      "code": "BK1216",
+      "drawdown": -9.302375726597385,
+      "pct20": 0.26874064520338187,
+      "excess20": 9.23,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "石油石化",
+      "code": "BK0464",
+      "drawdown": -1.9368810901021964,
+      "pct20": 2.7843179869839707,
+      "excess20": 11.74,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
