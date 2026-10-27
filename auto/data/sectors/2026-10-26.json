@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-26",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -10.794414448945595,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "工业金属",
+      "code": "BK1287",
+      "drawdown": -33.443911836884475,
+      "pct20": -16.37574996109713,
+      "excess20": -5.58,
+      "zt5": 2,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "银行",
+      "code": "BK1283",
+      "drawdown": -12.418931492771543,
+      "pct20": -4.029674719421726,
+      "excess20": 6.76,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
