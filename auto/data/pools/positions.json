@@ -1,44 +1,5 @@
 [
   {
-    "code": "600271",
-    "name": "航天信息",
-    "sector": "IT服务Ⅱ",
-    "rec_date": "2026-10-21",
-    "buy_price": 7.48,
-    "stop": 7.18,
-    "target": 8.23,
-    "status": "已止损",
-    "sell_date": "2026-10-26",
-    "sell_price": 7.03,
-    "return_pct": -6.02,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-21",
-        "close": 7.48,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-22",
-        "close": 7.69,
-        "pct": 2.81
-      },
-      {
-        "date": "2026-10-23",
-        "close": 7.21,
-        "pct": -6.24
-      },
-      {
-        "date": "2026-10-26",
-        "close": 7.03,
-        "pct": -2.5
-      }
-    ],
-    "cur_price": 7.21,
-    "cur_pct": -3.61,
-    "verdict": "止损卖出（收盘价≤止损价 7.18）"
-  },
-  {
     "code": "003021",
     "name": "兆威机电",
     "sector": "电机Ⅱ",
@@ -46,11 +7,11 @@
     "buy_price": 91.73,
     "stop": 87.14,
     "target": 101.82,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-10-27",
+    "sell_price": 97.41,
+    "return_pct": 6.19,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-22",
@@ -66,97 +27,16 @@
         "date": "2026-10-26",
         "close": 92.5,
         "pct": -3.91
+      },
+      {
+        "date": "2026-10-27",
+        "close": 97.41,
+        "pct": 5.31
       }
     ],
     "cur_price": 92.5,
-    "cur_pct": 0.84
-  },
-  {
-    "code": "002535",
-    "name": "林州重机",
-    "sector": "专用设备",
-    "rec_date": "2026-10-23",
-    "buy_price": 3.33,
-    "stop": 3.2,
-    "target": 3.66,
-    "status": "已止损",
-    "sell_date": "2026-10-26",
-    "sell_price": 3,
-    "return_pct": -9.91,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-10-23",
-        "close": 3.33,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-26",
-        "close": 3,
-        "pct": -9.91
-      }
-    ],
-    "cur_price": 3.33,
-    "cur_pct": 0,
-    "verdict": "止损卖出（收盘价≤止损价 3.2）"
-  },
-  {
-    "code": "000678",
-    "name": "襄阳轴承",
-    "sector": "汽车零部件",
-    "rec_date": "2026-10-23",
-    "buy_price": 14.55,
-    "stop": 13.97,
-    "target": 15.86,
-    "status": "已止盈",
-    "sell_date": "2026-10-26",
-    "sell_price": 16.01,
-    "return_pct": 10.03,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-10-23",
-        "close": 14.55,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-26",
-        "close": 16.01,
-        "pct": 10.03
-      }
-    ],
-    "cur_price": 14.55,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 15.86）"
-  },
-  {
-    "code": "603028",
-    "name": "赛福天",
-    "sector": "通用设备",
-    "rec_date": "2026-10-23",
-    "buy_price": 9.39,
-    "stop": 9.01,
-    "target": 10.24,
-    "status": "已止盈",
-    "sell_date": "2026-10-26",
-    "sell_price": 10.33,
-    "return_pct": 10.01,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-10-23",
-        "close": 9.39,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-26",
-        "close": 10.33,
-        "pct": 10.01
-      }
-    ],
-    "cur_price": 9.39,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 10.24）"
+    "cur_pct": 0.84,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603448",
@@ -170,7 +50,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-23",
@@ -181,10 +61,15 @@
         "date": "2026-10-26",
         "close": 52.92,
         "pct": -3.66
+      },
+      {
+        "date": "2026-10-27",
+        "close": 53.92,
+        "pct": 1.89
       }
     ],
-    "cur_price": 52.92,
-    "cur_pct": -3.66
+    "cur_price": 53.92,
+    "cur_pct": -1.84
   },
   {
     "code": "002578",
@@ -198,16 +83,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-26",
         "close": 3.49,
         "pct": 0
+      },
+      {
+        "date": "2026-10-27",
+        "close": 3.37,
+        "pct": -3.44
       }
     ],
-    "cur_price": 3.49,
-    "cur_pct": 0
+    "cur_price": 3.37,
+    "cur_pct": -3.44
   },
   {
     "code": "002708",
@@ -217,20 +107,26 @@
     "buy_price": 17.22,
     "stop": 16.36,
     "target": 18.94,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
+    "status": "已止盈",
+    "sell_date": "2026-10-27",
+    "sell_price": 18.94,
+    "return_pct": 9.99,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-26",
         "close": 17.22,
         "pct": 0
+      },
+      {
+        "date": "2026-10-27",
+        "close": 18.94,
+        "pct": 9.99
       }
     ],
     "cur_price": 17.22,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 18.94）"
   },
   {
     "code": "001219",
@@ -240,6 +136,35 @@
     "buy_price": 14.98,
     "stop": 14.23,
     "target": 16.48,
+    "status": "已止盈",
+    "sell_date": "2026-10-27",
+    "sell_price": 16.48,
+    "return_pct": 10.01,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-10-26",
+        "close": 14.98,
+        "pct": 0
+      },
+      {
+        "date": "2026-10-27",
+        "close": 16.48,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 14.98,
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 16.48）"
+  },
+  {
+    "code": "300504",
+    "name": "天邑股份",
+    "sector": "通信设备",
+    "rec_date": "2026-10-27",
+    "buy_price": 17.46,
+    "stop": 16.59,
+    "target": 19.21,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -247,12 +172,81 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-10-26",
-        "close": 14.98,
+        "date": "2026-10-27",
+        "close": 17.46,
         "pct": 0
       }
     ],
-    "cur_price": 14.98,
+    "cur_price": 17.46,
+    "cur_pct": 0
+  },
+  {
+    "code": "002284",
+    "name": "亚太股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-10-27",
+    "buy_price": 9.97,
+    "stop": 9.57,
+    "target": 10.97,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-27",
+        "close": 9.97,
+        "pct": 0
+      }
+    ],
+    "cur_price": 9.97,
+    "cur_pct": 0
+  },
+  {
+    "code": "301314",
+    "name": "科瑞思",
+    "sector": "通信设备",
+    "rec_date": "2026-10-27",
+    "buy_price": 66.21,
+    "stop": 62.9,
+    "target": 72.83,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-27",
+        "close": 66.21,
+        "pct": 0
+      }
+    ],
+    "cur_price": 66.21,
+    "cur_pct": 0
+  },
+  {
+    "code": "600828",
+    "name": "茂业商业",
+    "sector": "一般零售",
+    "rec_date": "2026-10-27",
+    "buy_price": 4.92,
+    "stop": 4.67,
+    "target": 5.41,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-27",
+        "close": 4.92,
+        "pct": 0
+      }
+    ],
+    "cur_price": 4.92,
     "cur_pct": 0
   }
 ]
