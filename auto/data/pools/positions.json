@@ -50,7 +50,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-23",
@@ -83,7 +83,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-26",
@@ -169,7 +169,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-27",
@@ -192,7 +192,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-27",
@@ -215,7 +215,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-27",
@@ -238,7 +238,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-27",
@@ -247,6 +247,29 @@
       }
     ],
     "cur_price": 4.92,
+    "cur_pct": 0
+  },
+  {
+    "code": "600838",
+    "name": "上海九百",
+    "sector": "一般零售",
+    "rec_date": "2026-10-27",
+    "buy_price": 13.99,
+    "stop": 13.29,
+    "target": 15.11,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-27",
+        "close": 13.99,
+        "pct": 0
+      }
+    ],
+    "cur_price": 13.99,
     "cur_pct": 0
   }
 ]
