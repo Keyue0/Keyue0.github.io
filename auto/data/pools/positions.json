@@ -1,44 +1,5 @@
 [
   {
-    "code": "003021",
-    "name": "兆威机电",
-    "sector": "电机Ⅱ",
-    "rec_date": "2026-10-22",
-    "buy_price": 91.73,
-    "stop": 87.14,
-    "target": 101.82,
-    "status": "到期平仓",
-    "sell_date": "2026-10-27",
-    "sell_price": 97.41,
-    "return_pct": 6.19,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-10-22",
-        "close": 91.73,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-23",
-        "close": 96.26,
-        "pct": 4.94
-      },
-      {
-        "date": "2026-10-26",
-        "close": 92.5,
-        "pct": -3.91
-      },
-      {
-        "date": "2026-10-27",
-        "close": 97.41,
-        "pct": 5.31
-      }
-    ],
-    "cur_price": 92.5,
-    "cur_pct": 0.84,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
     "code": "603448",
     "name": "天博智能",
     "sector": "汽车零部",
@@ -46,11 +7,11 @@
     "buy_price": 54.93,
     "stop": 52.18,
     "target": 60.42,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 51.7,
+    "return_pct": -5.88,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-10-23",
@@ -66,10 +27,16 @@
         "date": "2026-10-27",
         "close": 53.92,
         "pct": 1.89
+      },
+      {
+        "date": "2026-10-28",
+        "close": 51.7,
+        "pct": -4.12
       }
     ],
     "cur_price": 53.92,
-    "cur_pct": -1.84
+    "cur_pct": -1.84,
+    "verdict": "止损卖出（收盘价≤止损价 52.18）"
   },
   {
     "code": "002578",
@@ -79,11 +46,11 @@
     "buy_price": 3.49,
     "stop": 3.35,
     "target": 3.84,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 3.24,
+    "return_pct": -7.16,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-10-26",
@@ -94,68 +61,16 @@
         "date": "2026-10-27",
         "close": 3.37,
         "pct": -3.44
+      },
+      {
+        "date": "2026-10-28",
+        "close": 3.24,
+        "pct": -3.86
       }
     ],
     "cur_price": 3.37,
-    "cur_pct": -3.44
-  },
-  {
-    "code": "002708",
-    "name": "光洋股份",
-    "sector": "汽车零部",
-    "rec_date": "2026-10-26",
-    "buy_price": 17.22,
-    "stop": 16.36,
-    "target": 18.94,
-    "status": "已止盈",
-    "sell_date": "2026-10-27",
-    "sell_price": 18.94,
-    "return_pct": 9.99,
-    "days_held": 2,
-    "history": [
-      {
-        "date": "2026-10-26",
-        "close": 17.22,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-27",
-        "close": 18.94,
-        "pct": 9.99
-      }
-    ],
-    "cur_price": 17.22,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 18.94）"
-  },
-  {
-    "code": "001219",
-    "name": "青岛食品",
-    "sector": "休闲食品",
-    "rec_date": "2026-10-26",
-    "buy_price": 14.98,
-    "stop": 14.23,
-    "target": 16.48,
-    "status": "已止盈",
-    "sell_date": "2026-10-27",
-    "sell_price": 16.48,
-    "return_pct": 10.01,
-    "days_held": 2,
-    "history": [
-      {
-        "date": "2026-10-26",
-        "close": 14.98,
-        "pct": 0
-      },
-      {
-        "date": "2026-10-27",
-        "close": 16.48,
-        "pct": 10.01
-      }
-    ],
-    "cur_price": 14.98,
-    "cur_pct": 0,
-    "verdict": "止盈卖出（收盘价≥目标价 16.48）"
+    "cur_pct": -3.44,
+    "verdict": "止损卖出（收盘价≤止损价 3.35）"
   },
   {
     "code": "300504",
@@ -165,20 +80,26 @@
     "buy_price": 17.46,
     "stop": 16.59,
     "target": 19.21,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 16.01,
+    "return_pct": -8.3,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-27",
         "close": 17.46,
         "pct": 0
+      },
+      {
+        "date": "2026-10-28",
+        "close": 16.01,
+        "pct": -8.3
       }
     ],
     "cur_price": 17.46,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 16.59）"
   },
   {
     "code": "002284",
@@ -188,20 +109,26 @@
     "buy_price": 9.97,
     "stop": 9.57,
     "target": 10.97,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 9.3,
+    "return_pct": -6.72,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-27",
         "close": 9.97,
         "pct": 0
+      },
+      {
+        "date": "2026-10-28",
+        "close": 9.3,
+        "pct": -6.72
       }
     ],
     "cur_price": 9.97,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 9.57）"
   },
   {
     "code": "301314",
@@ -211,20 +138,26 @@
     "buy_price": 66.21,
     "stop": 62.9,
     "target": 72.83,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 58.15,
+    "return_pct": -12.17,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-27",
         "close": 66.21,
         "pct": 0
+      },
+      {
+        "date": "2026-10-28",
+        "close": 58.15,
+        "pct": -12.17
       }
     ],
     "cur_price": 66.21,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 62.9）"
   },
   {
     "code": "600828",
@@ -234,20 +167,26 @@
     "buy_price": 4.92,
     "stop": 4.67,
     "target": 5.41,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-10-28",
+    "sell_price": 4.57,
+    "return_pct": -7.11,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-27",
         "close": 4.92,
         "pct": 0
+      },
+      {
+        "date": "2026-10-28",
+        "close": 4.57,
+        "pct": -7.11
       }
     ],
     "cur_price": 4.92,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 4.67）"
   },
   {
     "code": "600838",
@@ -261,15 +200,112 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-27",
         "close": 13.99,
         "pct": 0
+      },
+      {
+        "date": "2026-10-28",
+        "close": 13.63,
+        "pct": -2.57
       }
     ],
-    "cur_price": 13.99,
+    "cur_price": 13.63,
+    "cur_pct": -2.57
+  },
+  {
+    "code": "603006",
+    "name": "联明股份",
+    "sector": "汽车零部件",
+    "rec_date": "2026-10-28",
+    "buy_price": 11.81,
+    "stop": 11.22,
+    "target": 12.99,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 11.81,
+        "pct": 0
+      }
+    ],
+    "cur_price": 11.81,
+    "cur_pct": 0
+  },
+  {
+    "code": "002636",
+    "name": "金安国纪",
+    "sector": "元件",
+    "rec_date": "2026-10-28",
+    "buy_price": 57.89,
+    "stop": 55,
+    "target": 63.68,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 57.89,
+        "pct": 0
+      }
+    ],
+    "cur_price": 57.89,
+    "cur_pct": 0
+  },
+  {
+    "code": "002164",
+    "name": "宁波东力",
+    "sector": "通用设备",
+    "rec_date": "2026-10-28",
+    "buy_price": 17.99,
+    "stop": 17.09,
+    "target": 20.15,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 17.99,
+        "pct": 0
+      }
+    ],
+    "cur_price": 17.99,
+    "cur_pct": 0
+  },
+  {
+    "code": "002526",
+    "name": "山东矿机",
+    "sector": "专用设备",
+    "rec_date": "2026-10-28",
+    "buy_price": 3.28,
+    "stop": 3.12,
+    "target": 3.61,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 3.28,
+        "pct": 0
+      }
+    ],
+    "cur_price": 3.28,
     "cur_pct": 0
   }
 ]
