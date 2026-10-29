@@ -200,7 +200,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-10-27",
@@ -228,7 +228,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-28",
@@ -251,7 +251,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-28",
@@ -274,7 +274,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-28",
@@ -297,7 +297,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-10-28",
@@ -306,6 +306,52 @@
       }
     ],
     "cur_price": 3.28,
+    "cur_pct": 0
+  },
+  {
+    "code": "002708",
+    "name": "光洋股份",
+    "sector": "汽车零部",
+    "rec_date": "2026-10-28",
+    "buy_price": 20.83,
+    "stop": 20,
+    "target": 23.33,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 20.83,
+        "pct": 0
+      }
+    ],
+    "cur_price": 20.83,
+    "cur_pct": 0
+  },
+  {
+    "code": "603667",
+    "name": "五洲新春",
+    "sector": "通用设备",
+    "rec_date": "2026-10-28",
+    "buy_price": 53.11,
+    "stop": 50.99,
+    "target": 58.42,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-10-28",
+        "close": 53.11,
+        "pct": 0
+      }
+    ],
+    "cur_price": 53.11,
     "cur_pct": 0
   }
 ]
