@@ -504,5 +504,16 @@
     "upCount": 764,
     "downCount": 4467,
     "sentiment": "修复"
+  },
+  {
+    "date": "2026-10-29",
+    "limitUp": 39,
+    "limitDown": 41,
+    "topBoard": 4,
+    "ratio": 0.2,
+    "amount": 16744.68,
+    "upCount": 880,
+    "downCount": 4330,
+    "sentiment": "冰点"
   }
 ]
