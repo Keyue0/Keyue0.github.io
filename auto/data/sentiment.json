@@ -543,10 +543,21 @@
     "limitUp": 48,
     "limitDown": 17,
     "topBoard": 4,
-    "ratio": 0.67,
-    "amount": 17034.37,
-    "upCount": 2067,
-    "downCount": 3065,
+    "ratio": 5.7,
+    "amount": 20376.94,
+    "upCount": 4396,
+    "downCount": 771,
+    "sentiment": "修复"
+  },
+  {
+    "date": "2026-11-04",
+    "limitUp": 118,
+    "limitDown": 10,
+    "topBoard": 3,
+    "ratio": 5.7,
+    "amount": 20376.94,
+    "upCount": 4396,
+    "downCount": 771,
     "sentiment": "修复"
   }
 ]

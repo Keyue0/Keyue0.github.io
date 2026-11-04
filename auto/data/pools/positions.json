@@ -1,71 +1,5 @@
 [
   {
-    "code": "605058",
-    "name": "澳弘电子",
-    "sector": "元件",
-    "rec_date": "2026-10-30",
-    "buy_price": 53.05,
-    "stop": 50.9,
-    "target": 58.4,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-30",
-        "close": 53.05,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-02",
-        "close": 53.05,
-        "pct": 5.55
-      },
-      {
-        "date": "2026-11-03",
-        "close": 56.42,
-        "pct": 6.35
-      }
-    ],
-    "cur_price": 56.42,
-    "cur_pct": 6.35
-  },
-  {
-    "code": "000596",
-    "name": "古井贡酒",
-    "sector": "白酒Ⅱ",
-    "rec_date": "2026-10-30",
-    "buy_price": 103.8,
-    "stop": 99.6,
-    "target": 114.2,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-10-30",
-        "close": 103.8,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-02",
-        "close": 103.8,
-        "pct": 8.46
-      },
-      {
-        "date": "2026-11-03",
-        "close": 105.27,
-        "pct": 1.42
-      }
-    ],
-    "cur_price": 105.27,
-    "cur_pct": 1.42
-  },
-  {
     "code": "600570",
     "name": "恒生电子",
     "sector": "软件开发",
@@ -73,11 +7,11 @@
     "buy_price": 20.76,
     "stop": 19.93,
     "target": 22.84,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 21.56,
+    "return_pct": 3.85,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-02",
@@ -88,10 +22,16 @@
         "date": "2026-11-03",
         "close": 21.17,
         "pct": 1.97
+      },
+      {
+        "date": "2026-11-04",
+        "close": 21.56,
+        "pct": 1.84
       }
     ],
-    "cur_price": 21.17,
-    "cur_pct": 1.97
+    "cur_price": 21.56,
+    "cur_pct": 3.85,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002995",
@@ -101,11 +41,11 @@
     "buy_price": 18.27,
     "stop": 17.54,
     "target": 20.1,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 18.38,
+    "return_pct": 0.6,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-02",
@@ -116,10 +56,16 @@
         "date": "2026-11-03",
         "close": 18.14,
         "pct": -0.71
+      },
+      {
+        "date": "2026-11-04",
+        "close": 18.38,
+        "pct": 1.32
       }
     ],
-    "cur_price": 18.14,
-    "cur_pct": -0.71
+    "cur_price": 18.38,
+    "cur_pct": 0.6,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600109",
@@ -129,11 +75,11 @@
     "buy_price": 8.45,
     "stop": 8.11,
     "target": 9.3,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 8.45,
+    "return_pct": 0,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-02",
@@ -144,10 +90,16 @@
         "date": "2026-11-03",
         "close": 8.42,
         "pct": -0.36
+      },
+      {
+        "date": "2026-11-04",
+        "close": 8.45,
+        "pct": 0.36
       }
     ],
-    "cur_price": 8.42,
-    "cur_pct": -0.36
+    "cur_price": 8.45,
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603628",
@@ -161,7 +113,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-02",
@@ -172,10 +124,15 @@
         "date": "2026-11-03",
         "close": 10.27,
         "pct": 3.74
+      },
+      {
+        "date": "2026-11-04",
+        "close": 10.23,
+        "pct": -0.39
       }
     ],
-    "cur_price": 10.27,
-    "cur_pct": 0
+    "cur_price": 10.23,
+    "cur_pct": -0.39
   },
   {
     "code": "301262",
@@ -189,7 +146,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-02",
@@ -200,10 +157,15 @@
         "date": "2026-11-03",
         "close": 23.76,
         "pct": 2.59
+      },
+      {
+        "date": "2026-11-04",
+        "close": 23.77,
+        "pct": 0.04
       }
     ],
-    "cur_price": 23.76,
-    "cur_pct": 0
+    "cur_price": 23.77,
+    "cur_pct": 0.04
   },
   {
     "code": "002623",
@@ -217,7 +179,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-02",
@@ -226,6 +188,11 @@
       },
       {
         "date": "2026-11-03",
+        "close": 19.28,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-04",
         "close": 19.28,
         "pct": 0
       }
@@ -245,16 +212,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-03",
         "close": 18.67,
         "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 19.05,
+        "pct": 2.04
       }
     ],
-    "cur_price": 18.67,
-    "cur_pct": 0
+    "cur_price": 19.05,
+    "cur_pct": 2.04
   },
   {
     "code": "603906",
@@ -268,39 +240,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-03",
         "close": 15.64,
         "pct": 0
-      }
-    ],
-    "cur_price": 15.64,
-    "cur_pct": 0
-  },
-  {
-    "code": "002058",
-    "name": "紫竹高科",
-    "sector": "电池",
-    "rec_date": "2026-11-03",
-    "buy_price": 21.13,
-    "stop": 20.07,
-    "target": 23.24,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-11-03",
-        "close": 21.13,
-        "pct": 0
+        "date": "2026-11-04",
+        "close": 15.53,
+        "pct": -0.7
       }
     ],
-    "cur_price": 21.13,
-    "cur_pct": 0
+    "cur_price": 15.53,
+    "cur_pct": -0.7
   },
   {
     "code": "603381",
@@ -314,16 +268,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-03",
         "close": 15.58,
         "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 17.14,
+        "pct": 10.01
       }
     ],
-    "cur_price": 15.58,
-    "cur_pct": 0
+    "cur_price": 17.14,
+    "cur_pct": 10.01
   },
   {
     "code": "002692",
@@ -337,15 +296,191 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-03",
         "close": 4.18,
         "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 3.98,
+        "pct": -4.78
       }
     ],
-    "cur_price": 4.18,
+    "cur_price": 3.98,
+    "cur_pct": -4.78
+  },
+  {
+    "code": "000679",
+    "name": "大连友谊",
+    "sector": "一般零售",
+    "rec_date": "2026-11-03",
+    "buy_price": 7.28,
+    "stop": 6.92,
+    "target": 7.86,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-03",
+        "close": 7.28,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 7.28,
+        "pct": 9.97
+      }
+    ],
+    "cur_price": 7.28,
+    "cur_pct": 0
+  },
+  {
+    "code": "600892",
+    "name": "大晟文化",
+    "sector": "游戏Ⅱ",
+    "rec_date": "2026-11-03",
+    "buy_price": 5.29,
+    "stop": 5.03,
+    "target": 5.71,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-03",
+        "close": 5.29,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 5.29,
+        "pct": 9.98
+      }
+    ],
+    "cur_price": 5.29,
+    "cur_pct": 0
+  },
+  {
+    "code": "605111",
+    "name": "新洁能",
+    "sector": "半导体",
+    "rec_date": "2026-11-04",
+    "buy_price": 38.64,
+    "stop": 37.09,
+    "target": 42.5,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 38.64,
+        "pct": 0
+      }
+    ],
+    "cur_price": 38.64,
+    "cur_pct": 0
+  },
+  {
+    "code": "002636",
+    "name": "金安国纪",
+    "sector": "元件",
+    "rec_date": "2026-11-04",
+    "buy_price": 64.41,
+    "stop": 61.19,
+    "target": 70.85,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 64.41,
+        "pct": 0
+      }
+    ],
+    "cur_price": 64.41,
+    "cur_pct": 0
+  },
+  {
+    "code": "600988",
+    "name": "赤峰黄金",
+    "sector": "贵金属",
+    "rec_date": "2026-11-04",
+    "buy_price": 34.54,
+    "stop": 33.16,
+    "target": 37.99,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 34.54,
+        "pct": 0
+      }
+    ],
+    "cur_price": 34.54,
+    "cur_pct": 0
+  },
+  {
+    "code": "002529",
+    "name": "海源复材",
+    "sector": "专用设备",
+    "rec_date": "2026-11-04",
+    "buy_price": 6.11,
+    "stop": 5.8,
+    "target": 6.66,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 6.11,
+        "pct": 0
+      }
+    ],
+    "cur_price": 6.11,
+    "cur_pct": 0
+  },
+  {
+    "code": "603767",
+    "name": "中马传动",
+    "sector": "汽车零部",
+    "rec_date": "2026-11-04",
+    "buy_price": 15.61,
+    "stop": 14.99,
+    "target": 16.86,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 15.61,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.61,
     "cur_pct": 0
   }
 ]
