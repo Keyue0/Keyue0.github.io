@@ -102,105 +102,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "603628",
-    "name": "清源股份",
-    "sector": "光伏设备",
-    "rec_date": "2026-11-02",
-    "buy_price": 10.27,
-    "stop": 9.76,
-    "target": 11.3,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-02",
-        "close": 10.27,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-03",
-        "close": 10.27,
-        "pct": 3.74
-      },
-      {
-        "date": "2026-11-04",
-        "close": 10.23,
-        "pct": -0.39
-      }
-    ],
-    "cur_price": 10.23,
-    "cur_pct": -0.39
-  },
-  {
-    "code": "301262",
-    "name": "海看股份",
-    "sector": "广告营销",
-    "rec_date": "2026-11-02",
-    "buy_price": 23.76,
-    "stop": 22.57,
-    "target": 26.14,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-02",
-        "close": 23.76,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-03",
-        "close": 23.76,
-        "pct": 2.59
-      },
-      {
-        "date": "2026-11-04",
-        "close": 23.77,
-        "pct": 0.04
-      }
-    ],
-    "cur_price": 23.77,
-    "cur_pct": 0.04
-  },
-  {
-    "code": "002623",
-    "name": "亚玛顿",
-    "sector": "光伏设备",
-    "rec_date": "2026-11-02",
-    "buy_price": 19.28,
-    "stop": 18.32,
-    "target": 21.21,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-02",
-        "close": 19.28,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-03",
-        "close": 19.28,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-04",
-        "close": 19.28,
-        "pct": 0
-      }
-    ],
-    "cur_price": 19.28,
-    "cur_pct": 0
-  },
-  {
     "code": "002580",
     "name": "圣阳股份",
     "sector": "电池",
@@ -208,11 +109,11 @@
     "buy_price": 18.67,
     "stop": 17.92,
     "target": 20.91,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 19.05,
+    "return_pct": 2.04,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -226,7 +127,8 @@
       }
     ],
     "cur_price": 19.05,
-    "cur_pct": 2.04
+    "cur_pct": 2.04,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603906",
@@ -236,11 +138,11 @@
     "buy_price": 15.64,
     "stop": 15.01,
     "target": 17.52,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 15.53,
+    "return_pct": -0.7,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -254,7 +156,8 @@
       }
     ],
     "cur_price": 15.53,
-    "cur_pct": -0.7
+    "cur_pct": -0.7,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603381",
@@ -264,11 +167,11 @@
     "buy_price": 15.58,
     "stop": 14.96,
     "target": 17.45,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 17.14,
+    "return_pct": 10.01,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -282,7 +185,8 @@
       }
     ],
     "cur_price": 17.14,
-    "cur_pct": 10.01
+    "cur_pct": 10.01,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002692",
@@ -292,11 +196,11 @@
     "buy_price": 4.18,
     "stop": 3.97,
     "target": 4.6,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 3.98,
+    "return_pct": -4.78,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -310,7 +214,8 @@
       }
     ],
     "cur_price": 3.98,
-    "cur_pct": -4.78
+    "cur_pct": -4.78,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000679",
@@ -324,7 +229,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-03",
@@ -352,7 +257,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-03",
@@ -380,12 +285,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-04",
         "close": 38.64,
         "pct": 0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 38.64,
+        "pct": 9.99
       }
     ],
     "cur_price": 38.64,
@@ -403,12 +313,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-04",
         "close": 64.41,
         "pct": 0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 64.41,
+        "pct": 10.01
       }
     ],
     "cur_price": 64.41,
@@ -426,12 +341,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-04",
         "close": 34.54,
         "pct": 0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 34.54,
+        "pct": 10
       }
     ],
     "cur_price": 34.54,
@@ -449,12 +369,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-04",
         "close": 6.11,
         "pct": 0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 6.11,
+        "pct": 10.09
       }
     ],
     "cur_price": 6.11,
@@ -472,15 +397,94 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-04",
         "close": 15.61,
         "pct": 0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 15.61,
+        "pct": 10.01
       }
     ],
     "cur_price": 15.61,
+    "cur_pct": 0
+  },
+  {
+    "code": "002058",
+    "name": "紫竹高科",
+    "sector": "电池",
+    "rec_date": "2026-11-03",
+    "buy_price": 23.24,
+    "stop": 22.08,
+    "target": 25.56,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-03",
+        "close": 23.24,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-04",
+        "close": 23.24,
+        "pct": 9.99
+      }
+    ],
+    "cur_price": 23.24,
+    "cur_pct": 0
+  },
+  {
+    "code": "605288",
+    "name": "凯迪股份",
+    "sector": "自动化设备",
+    "rec_date": "2026-11-04",
+    "buy_price": 72.7,
+    "stop": 70.52,
+    "target": 79.97,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 72.7,
+        "pct": 0
+      }
+    ],
+    "cur_price": 72.7,
+    "cur_pct": 0
+  },
+  {
+    "code": "600641",
+    "name": "先导基电",
+    "sector": "半导体",
+    "rec_date": "2026-11-04",
+    "buy_price": 28.2,
+    "stop": 27.35,
+    "target": 31.02,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 28.2,
+        "pct": 0
+      }
+    ],
+    "cur_price": 28.2,
     "cur_pct": 0
   }
 ]
