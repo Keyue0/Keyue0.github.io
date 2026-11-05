@@ -225,11 +225,11 @@
     "buy_price": 7.28,
     "stop": 6.92,
     "target": 7.86,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "已止损",
+    "sell_date": "2026-11-04",
+    "sell_price": 6.57,
+    "return_pct": -9.75,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -243,7 +243,8 @@
       }
     ],
     "cur_price": 7.28,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 6.92）"
   },
   {
     "code": "600892",
@@ -253,11 +254,11 @@
     "buy_price": 5.29,
     "stop": 5.03,
     "target": 5.71,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-04",
+    "sell_price": 5.14,
+    "return_pct": -2.84,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-03",
@@ -271,7 +272,8 @@
       }
     ],
     "cur_price": 5.29,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "605111",
@@ -285,7 +287,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-04",
@@ -298,8 +300,8 @@
         "pct": 9.99
       }
     ],
-    "cur_price": 38.64,
-    "cur_pct": 0
+    "cur_price": 40.96,
+    "cur_pct": 6
   },
   {
     "code": "002636",
@@ -313,7 +315,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-04",
@@ -326,8 +328,8 @@
         "pct": 10.01
       }
     ],
-    "cur_price": 64.41,
-    "cur_pct": 0
+    "cur_price": 65.88,
+    "cur_pct": 2.28
   },
   {
     "code": "600988",
@@ -341,7 +343,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-04",
@@ -354,8 +356,8 @@
         "pct": 10
       }
     ],
-    "cur_price": 34.54,
-    "cur_pct": 0
+    "cur_price": 37.58,
+    "cur_pct": 8.8
   },
   {
     "code": "002529",
@@ -365,11 +367,11 @@
     "buy_price": 6.11,
     "stop": 5.8,
     "target": 6.66,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "已止盈",
+    "sell_date": "2026-11-04",
+    "sell_price": 6.72,
+    "return_pct": 9.98,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-04",
@@ -383,7 +385,8 @@
       }
     ],
     "cur_price": 6.11,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 6.66）"
   },
   {
     "code": "603767",
@@ -397,7 +400,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-04",
@@ -410,8 +413,8 @@
         "pct": 10.01
       }
     ],
-    "cur_price": 15.61,
-    "cur_pct": 0
+    "cur_price": 16.28,
+    "cur_pct": 4.29
   },
   {
     "code": "002058",
@@ -421,11 +424,11 @@
     "buy_price": 23.24,
     "stop": 22.08,
     "target": 25.56,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
+    "status": "已止损",
+    "sell_date": "2026-11-04",
+    "sell_price": 21.88,
+    "return_pct": -5.85,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-03",
@@ -439,7 +442,8 @@
       }
     ],
     "cur_price": 23.24,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "止损卖出（收盘价≤止损价 22.08）"
   },
   {
     "code": "605288",
@@ -453,7 +457,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-11-04",
@@ -461,8 +465,8 @@
         "pct": 0
       }
     ],
-    "cur_price": 72.7,
-    "cur_pct": 0
+    "cur_price": 71.78,
+    "cur_pct": -1.27
   },
   {
     "code": "600641",
@@ -472,11 +476,11 @@
     "buy_price": 28.2,
     "stop": 27.35,
     "target": 31.02,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
+    "status": "已止盈",
+    "sell_date": "2026-11-04",
+    "sell_price": 31.02,
+    "return_pct": 10,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-11-04",
@@ -485,6 +489,30 @@
       }
     ],
     "cur_price": 28.2,
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 31.02）"
+  },
+  {
+    "code": "000603",
+    "name": "盛达资源",
+    "sector": "贵金属",
+    "rec_date": "2026-11-04",
+    "buy_price": 26.05,
+    "stop": 25.27,
+    "target": 28.66,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-04",
+        "close": 26.05,
+        "pct": 0
+      }
+    ],
+    "cur_price": 26.05,
     "cur_pct": 0
   }
 ]
