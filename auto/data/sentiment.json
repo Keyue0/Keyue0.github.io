@@ -565,10 +565,21 @@
     "limitUp": 84,
     "limitDown": 0,
     "topBoard": 4,
-    "ratio": 7.4,
-    "amount": 21179.53,
-    "upCount": 4591,
-    "downCount": 620,
-    "sentiment": "亢奋"
+    "ratio": 0.16,
+    "amount": 16577.94,
+    "upCount": 725,
+    "downCount": 4483,
+    "sentiment": "修复"
+  },
+  {
+    "date": "2026-11-06",
+    "limitUp": 32,
+    "limitDown": 15,
+    "topBoard": 5,
+    "ratio": 0.16,
+    "amount": 16577.94,
+    "upCount": 725,
+    "downCount": 4483,
+    "sentiment": "中枢"
   }
 ]

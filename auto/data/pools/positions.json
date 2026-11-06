@@ -1,33 +1,5 @@
 [
   {
-    "code": "605288",
-    "name": "凯迪股份",
-    "sector": "自动化设备",
-    "rec_date": "2026-11-04",
-    "buy_price": 72.7,
-    "stop": 70.52,
-    "target": 79.97,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-04",
-        "close": 72.7,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-05",
-        "close": 71.78,
-        "pct": -1.27
-      }
-    ],
-    "cur_price": 71.78,
-    "cur_pct": -1.27
-  },
-  {
     "code": "000603",
     "name": "盛达资源",
     "sector": "贵金属",
@@ -35,11 +7,11 @@
     "buy_price": 26.05,
     "stop": 25.27,
     "target": 28.66,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 26.53,
+    "return_pct": 1.84,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-04",
@@ -50,33 +22,16 @@
         "date": "2026-11-05",
         "close": 26.05,
         "pct": 10.01
-      }
-    ],
-    "cur_price": 26.05,
-    "cur_pct": 0
-  },
-  {
-    "code": "301697",
-    "name": "贝特利",
-    "sector": "光伏设备",
-    "rec_date": "2026-11-05",
-    "buy_price": 30.5,
-    "stop": 28.98,
-    "target": 34.16,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-11-05",
-        "close": 30.5,
-        "pct": 0
+        "date": "2026-11-06",
+        "close": 26.53,
+        "pct": 1.84
       }
     ],
-    "cur_price": 30.5,
-    "cur_pct": 0
+    "cur_price": 26.53,
+    "cur_pct": 1.84,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603212",
@@ -90,16 +45,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-05",
         "close": 10.67,
         "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 11.05,
+        "pct": 3.56
       }
     ],
-    "cur_price": 10.67,
-    "cur_pct": 0
+    "cur_price": 11.05,
+    "cur_pct": 3.56
   },
   {
     "code": "603598",
@@ -113,15 +73,229 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-05",
         "close": 21.66,
         "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 21.56,
+        "pct": -0.46
       }
     ],
-    "cur_price": 21.66,
+    "cur_price": 21.56,
+    "cur_pct": -0.46
+  },
+  {
+    "code": "605488",
+    "name": "福莱新材",
+    "sector": "塑料",
+    "rec_date": "2026-11-05",
+    "buy_price": 48.91,
+    "stop": 46.46,
+    "target": 53.8,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 48.91,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 48.91,
+        "pct": -0.73
+      }
+    ],
+    "cur_price": 48.91,
+    "cur_pct": 0
+  },
+  {
+    "code": "600641",
+    "name": "先导基电",
+    "sector": "半导体",
+    "rec_date": "2026-11-05",
+    "buy_price": 31.4,
+    "stop": 29.83,
+    "target": 34.54,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 31.4,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 31.4,
+        "pct": 1.23
+      }
+    ],
+    "cur_price": 31.4,
+    "cur_pct": 0
+  },
+  {
+    "code": "600206",
+    "name": "有研新材",
+    "sector": "半导体",
+    "rec_date": "2026-11-05",
+    "buy_price": 38.29,
+    "stop": 36.38,
+    "target": 41.35,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 38.29,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 38.29,
+        "pct": -0.26
+      }
+    ],
+    "cur_price": 38.29,
+    "cur_pct": 0
+  },
+  {
+    "code": "002088",
+    "name": "鲁阳节能",
+    "sector": "装修建材",
+    "rec_date": "2026-11-05",
+    "buy_price": 11.09,
+    "stop": 10.54,
+    "target": 12.2,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 11.09,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 11.09,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 11.09,
+    "cur_pct": 0
+  },
+  {
+    "code": "603381",
+    "name": "永臻股份",
+    "sector": "光伏设备",
+    "rec_date": "2026-11-05",
+    "buy_price": 20.74,
+    "stop": 19.7,
+    "target": 22.81,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 20.74,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 20.74,
+        "pct": 10.03
+      }
+    ],
+    "cur_price": 20.74,
+    "cur_pct": 0
+  },
+  {
+    "code": "000595",
+    "name": "新能股份",
+    "sector": "电力",
+    "rec_date": "2026-11-06",
+    "buy_price": 5.38,
+    "stop": 5.16,
+    "target": 6.03,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-06",
+        "close": 5.38,
+        "pct": 0
+      }
+    ],
+    "cur_price": 5.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "001258",
+    "name": "立新能源",
+    "sector": "电力",
+    "rec_date": "2026-11-06",
+    "buy_price": 9.57,
+    "stop": 9.19,
+    "target": 10.72,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-06",
+        "close": 9.57,
+        "pct": 0
+      }
+    ],
+    "cur_price": 9.57,
+    "cur_pct": 0
+  },
+  {
+    "code": "601188",
+    "name": "龙江交通",
+    "sector": "铁路公路",
+    "rec_date": "2026-11-06",
+    "buy_price": 3.81,
+    "stop": 3.66,
+    "target": 4.23,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-06",
+        "close": 3.81,
+        "pct": 0
+      }
+    ],
+    "cur_price": 3.81,
     "cur_pct": 0
   }
 ]
