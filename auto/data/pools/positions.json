@@ -41,11 +41,11 @@
     "buy_price": 10.67,
     "stop": 10.24,
     "target": 11.95,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 11.05,
+    "return_pct": 3.56,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -59,7 +59,8 @@
       }
     ],
     "cur_price": 11.05,
-    "cur_pct": 3.56
+    "cur_pct": 3.56,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603598",
@@ -69,11 +70,11 @@
     "buy_price": 21.66,
     "stop": 20.79,
     "target": 23.83,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 21.56,
+    "return_pct": -0.46,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -87,7 +88,8 @@
       }
     ],
     "cur_price": 21.56,
-    "cur_pct": -0.46
+    "cur_pct": -0.46,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "605488",
@@ -101,7 +103,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-05",
@@ -129,7 +131,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-05",
@@ -157,7 +159,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-05",
@@ -185,7 +187,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-05",
@@ -213,7 +215,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-05",
@@ -241,12 +243,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-06",
         "close": 5.38,
         "pct": 0
+      },
+      {
+        "date": "2026-11-05",
+        "close": 5.38,
+        "pct": 10.02
       }
     ],
     "cur_price": 5.38,
@@ -264,12 +271,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-06",
         "close": 9.57,
         "pct": 0
+      },
+      {
+        "date": "2026-11-05",
+        "close": 9.57,
+        "pct": 10
       }
     ],
     "cur_price": 9.57,
@@ -287,15 +299,99 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-06",
         "close": 3.81,
         "pct": 0
+      },
+      {
+        "date": "2026-11-05",
+        "close": 3.81,
+        "pct": 10.12
       }
     ],
     "cur_price": 3.81,
+    "cur_pct": 0
+  },
+  {
+    "code": "600396",
+    "name": "华电辽能",
+    "sector": "电力",
+    "rec_date": "2026-11-05",
+    "buy_price": 10.08,
+    "stop": 9.68,
+    "target": 11.09,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 10.08,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 10.08,
+        "pct": -0.98
+      }
+    ],
+    "cur_price": 10.08,
+    "cur_pct": 0
+  },
+  {
+    "code": "600986",
+    "name": "浙文互联",
+    "sector": "广告营销",
+    "rec_date": "2026-11-05",
+    "buy_price": 7.76,
+    "stop": 7.45,
+    "target": 8.54,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-05",
+        "close": 7.76,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 7.76,
+        "pct": 1.44
+      }
+    ],
+    "cur_price": 7.76,
+    "cur_pct": 0
+  },
+  {
+    "code": "002310",
+    "name": "东方新能",
+    "sector": "电力",
+    "rec_date": "2026-11-06",
+    "buy_price": 2.32,
+    "stop": 2.22,
+    "target": 2.55,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-06",
+        "close": 2.32,
+        "pct": 0
+      }
+    ],
+    "cur_price": 2.32,
     "cur_pct": 0
   }
 ]
