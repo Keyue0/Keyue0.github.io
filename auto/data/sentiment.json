@@ -576,10 +576,10 @@
     "limitUp": 32,
     "limitDown": 15,
     "topBoard": 5,
-    "ratio": 0.16,
-    "amount": 16577.94,
-    "upCount": 725,
-    "downCount": 4483,
+    "ratio": 0.69,
+    "amount": 14826.13,
+    "upCount": 2077,
+    "downCount": 3028,
     "sentiment": "中枢"
   }
 ]

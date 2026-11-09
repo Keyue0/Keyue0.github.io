@@ -99,11 +99,11 @@
     "buy_price": 48.91,
     "stop": 46.46,
     "target": 53.8,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 52.09,
+    "return_pct": 6.5,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -117,7 +117,8 @@
       }
     ],
     "cur_price": 48.91,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600641",
@@ -127,11 +128,11 @@
     "buy_price": 31.4,
     "stop": 29.83,
     "target": 34.54,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 32.72,
+    "return_pct": 4.2,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -145,7 +146,8 @@
       }
     ],
     "cur_price": 31.4,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600206",
@@ -155,11 +157,11 @@
     "buy_price": 38.29,
     "stop": 36.38,
     "target": 41.35,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 38.3,
+    "return_pct": 0.03,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -173,7 +175,8 @@
       }
     ],
     "cur_price": 38.29,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002088",
@@ -183,11 +186,11 @@
     "buy_price": 11.09,
     "stop": 10.54,
     "target": 12.2,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 11.08,
+    "return_pct": -0.09,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -201,7 +204,8 @@
       }
     ],
     "cur_price": 11.09,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603381",
@@ -211,11 +215,11 @@
     "buy_price": 20.74,
     "stop": 19.7,
     "target": 22.81,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
+    "status": "到期平仓",
+    "sell_date": "2026-11-06",
+    "sell_price": 19.9,
+    "return_pct": -4.05,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-05",
@@ -229,7 +233,8 @@
       }
     ],
     "cur_price": 20.74,
-    "cur_pct": 0
+    "cur_pct": 0,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000595",
@@ -243,7 +248,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-06",
@@ -256,8 +261,8 @@
         "pct": 10.02
       }
     ],
-    "cur_price": 5.38,
-    "cur_pct": 0
+    "cur_price": 5.51,
+    "cur_pct": 2.42
   },
   {
     "code": "001258",
@@ -271,7 +276,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-06",
@@ -284,8 +289,8 @@
         "pct": 10
       }
     ],
-    "cur_price": 9.57,
-    "cur_pct": 0
+    "cur_price": 9.55,
+    "cur_pct": -0.21
   },
   {
     "code": "601188",
@@ -299,7 +304,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 3,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-06",
@@ -312,8 +317,8 @@
         "pct": 10.12
       }
     ],
-    "cur_price": 3.81,
-    "cur_pct": 0
+    "cur_price": 4.19,
+    "cur_pct": 9.97
   },
   {
     "code": "600396",
@@ -327,7 +332,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-05",
@@ -340,8 +345,8 @@
         "pct": -0.98
       }
     ],
-    "cur_price": 10.08,
-    "cur_pct": 0
+    "cur_price": 9.94,
+    "cur_pct": -1.39
   },
   {
     "code": "600986",
@@ -355,7 +360,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-05",
@@ -368,8 +373,8 @@
         "pct": 1.44
       }
     ],
-    "cur_price": 7.76,
-    "cur_pct": 0
+    "cur_price": 7.52,
+    "cur_pct": -3.09
   },
   {
     "code": "002310",
@@ -379,11 +384,11 @@
     "buy_price": 2.32,
     "stop": 2.22,
     "target": 2.55,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
+    "status": "已止盈",
+    "sell_date": "2026-11-06",
+    "sell_price": 2.55,
+    "return_pct": 9.91,
+    "days_held": 2,
     "history": [
       {
         "date": "2026-11-06",
@@ -392,6 +397,30 @@
       }
     ],
     "cur_price": 2.32,
+    "cur_pct": 0,
+    "verdict": "止盈卖出（收盘价≥目标价 2.55）"
+  },
+  {
+    "code": "600207",
+    "name": "安彩高科",
+    "sector": "光伏设备",
+    "rec_date": "2026-11-06",
+    "buy_price": 5.14,
+    "stop": 4.93,
+    "target": 5.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-06",
+        "close": 5.14,
+        "pct": 0
+      }
+    ],
+    "cur_price": 5.14,
     "cur_pct": 0
   }
 ]
