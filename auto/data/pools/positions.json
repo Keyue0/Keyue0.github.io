@@ -34,72 +34,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "300686",
-    "name": "智动力",
-    "sector": "消费电子",
-    "rec_date": "2026-11-06",
-    "buy_price": 13.63,
-    "stop": 13.08,
-    "target": 15.27,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-06",
-        "close": 13.63,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-09",
-        "close": 13.63,
-        "pct": -0.37
-      },
-      {
-        "date": "2026-11-10",
-        "close": 13.7,
-        "pct": 0.51
-      }
-    ],
-    "cur_price": 13.7,
-    "cur_pct": 0.51
-  },
-  {
-    "code": "301697",
-    "name": "贝特利",
-    "sector": "光伏设备",
-    "rec_date": "2026-11-06",
-    "buy_price": 35.04,
-    "stop": 33.29,
-    "target": 37.84,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-06",
-        "close": 35.04,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-09",
-        "close": 35.04,
-        "pct": -4.26
-      },
-      {
-        "date": "2026-11-10",
-        "close": 37.5,
-        "pct": 7.02
-      }
-    ],
-    "cur_price": 37.5,
-    "cur_pct": 7.02
-  },
-  {
     "code": "000823",
     "name": "超声电子",
     "sector": "元件",
@@ -107,11 +41,11 @@
     "buy_price": 17.86,
     "stop": 16.97,
     "target": 20,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-10",
+    "sell_price": 18.44,
+    "return_pct": 3.25,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-09",
@@ -125,7 +59,8 @@
       }
     ],
     "cur_price": 18.44,
-    "cur_pct": 3.25
+    "cur_pct": 3.25,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603920",
@@ -135,11 +70,11 @@
     "buy_price": 33.58,
     "stop": 31.9,
     "target": 36.94,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-10",
+    "sell_price": 36.37,
+    "return_pct": 8.31,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-09",
@@ -153,7 +88,8 @@
       }
     ],
     "cur_price": 36.37,
-    "cur_pct": 8.31
+    "cur_pct": 8.31,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600776",
@@ -163,11 +99,11 @@
     "buy_price": 12.22,
     "stop": 11.61,
     "target": 13.44,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-10",
+    "sell_price": 12.41,
+    "return_pct": 1.55,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-09",
@@ -181,7 +117,8 @@
       }
     ],
     "cur_price": 12.41,
-    "cur_pct": 1.55
+    "cur_pct": 1.55,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000530",
@@ -195,7 +132,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-09",
@@ -223,7 +160,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-09",
@@ -251,7 +188,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-09",
@@ -279,12 +216,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-10",
         "close": 80.02,
         "pct": 0
+      },
+      {
+        "date": "2026-11-09",
+        "close": 80.02,
+        "pct": 20.01
       }
     ],
     "cur_price": 80.02,
@@ -302,12 +244,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-10",
         "close": 233.2,
         "pct": 0
+      },
+      {
+        "date": "2026-11-09",
+        "close": 233.2,
+        "pct": 10
       }
     ],
     "cur_price": 233.2,
@@ -325,12 +272,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-10",
         "close": 11.41,
         "pct": 0
+      },
+      {
+        "date": "2026-11-09",
+        "close": 11.41,
+        "pct": 10.03
       }
     ],
     "cur_price": 11.41,
@@ -348,15 +300,71 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-10",
         "close": 7.7,
         "pct": 0
+      },
+      {
+        "date": "2026-11-09",
+        "close": 7.7,
+        "pct": 10
       }
     ],
     "cur_price": 7.7,
+    "cur_pct": 0
+  },
+  {
+    "code": "001379",
+    "name": "腾达科技",
+    "sector": "通用设备",
+    "rec_date": "2026-11-09",
+    "buy_price": 17.44,
+    "stop": 16.57,
+    "target": 19.18,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-09",
+        "close": 17.44,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-10",
+        "close": 17.44,
+        "pct": 10.03
+      }
+    ],
+    "cur_price": 17.44,
+    "cur_pct": 0
+  },
+  {
+    "code": "601595",
+    "name": "上海电影",
+    "sector": "影视院线",
+    "rec_date": "2026-11-10",
+    "buy_price": 42.57,
+    "stop": 40.87,
+    "target": 46.83,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-10",
+        "close": 42.57,
+        "pct": 0
+      }
+    ],
+    "cur_price": 42.57,
     "cur_pct": 0
   }
 ]
