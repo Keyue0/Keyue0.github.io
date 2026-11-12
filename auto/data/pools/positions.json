@@ -1,38 +1,5 @@
 [
   {
-    "code": "301314",
-    "name": "科瑞思",
-    "sector": "通信设备",
-    "rec_date": "2026-11-10",
-    "buy_price": 55.8,
-    "stop": 53.01,
-    "target": 61.38,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-10",
-        "close": 55.8,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 55.8,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 55.8,
-        "pct": 0
-      }
-    ],
-    "cur_price": 55.8,
-    "cur_pct": 0
-  },
-  {
     "code": "002384",
     "name": "东山精密",
     "sector": "元件",
@@ -44,7 +11,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-11",
@@ -72,7 +39,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-11",
@@ -100,7 +67,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-11",
@@ -128,7 +95,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-11",
@@ -156,12 +123,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-12",
         "close": 6.34,
         "pct": 0
+      },
+      {
+        "date": "2026-11-11",
+        "close": 6.34,
+        "pct": 10.07
       }
     ],
     "cur_price": 6.34,
@@ -179,12 +151,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-12",
         "close": 2.63,
         "pct": 0
+      },
+      {
+        "date": "2026-11-11",
+        "close": 2.63,
+        "pct": 10.04
       }
     ],
     "cur_price": 2.63,
@@ -202,12 +179,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-12",
         "close": 6.66,
         "pct": 0
+      },
+      {
+        "date": "2026-11-11",
+        "close": 6.66,
+        "pct": 10.08
       }
     ],
     "cur_price": 6.66,
@@ -225,12 +207,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-12",
         "close": 10.18,
         "pct": 0
+      },
+      {
+        "date": "2026-11-11",
+        "close": 10.18,
+        "pct": 10.05
       }
     ],
     "cur_price": 10.18,
@@ -248,15 +235,76 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-12",
         "close": 7.18,
         "pct": 0
+      },
+      {
+        "date": "2026-11-11",
+        "close": 7.18,
+        "pct": 9.95
       }
     ],
     "cur_price": 7.18,
+    "cur_pct": 0
+  },
+  {
+    "code": "688498",
+    "name": "源杰科技",
+    "sector": "半导体",
+    "rec_date": "2026-11-11",
+    "buy_price": 762.81,
+    "stop": 732.3,
+    "target": 839.09,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-11",
+        "close": 762.81,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-12",
+        "close": 762.81,
+        "pct": -1.55
+      }
+    ],
+    "cur_price": 762.81,
+    "cur_pct": 0
+  },
+  {
+    "code": "002931",
+    "name": "锋龙股份",
+    "sector": "通用设备",
+    "rec_date": "2026-11-11",
+    "buy_price": 56.6,
+    "stop": 53.77,
+    "target": 61.13,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-11",
+        "close": 56.6,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-12",
+        "close": 56.6,
+        "pct": 6.63
+      }
+    ],
+    "cur_price": 56.6,
     "cur_pct": 0
   }
 ]
