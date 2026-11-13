@@ -1,285 +1,5 @@
 [
   {
-    "code": "002384",
-    "name": "东山精密",
-    "sector": "元件",
-    "rec_date": "2026-11-11",
-    "buy_price": 93.69,
-    "stop": 88.99,
-    "target": 103.06,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-11",
-        "close": 93.69,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 93.69,
-        "pct": 1.77
-      }
-    ],
-    "cur_price": 93.69,
-    "cur_pct": 0
-  },
-  {
-    "code": "688135",
-    "name": "利扬芯片",
-    "sector": "半导体",
-    "rec_date": "2026-11-11",
-    "buy_price": 33.76,
-    "stop": 32.07,
-    "target": 37.14,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-11",
-        "close": 33.76,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 33.76,
-        "pct": -3.6
-      }
-    ],
-    "cur_price": 33.76,
-    "cur_pct": 0
-  },
-  {
-    "code": "603083",
-    "name": "剑桥科技",
-    "sector": "通信设备",
-    "rec_date": "2026-11-11",
-    "buy_price": 122.85,
-    "stop": 116.71,
-    "target": 135.14,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-11",
-        "close": 122.85,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 122.85,
-        "pct": 5.04
-      }
-    ],
-    "cur_price": 122.85,
-    "cur_pct": 0
-  },
-  {
-    "code": "605255",
-    "name": "天普股份",
-    "sector": "汽车零部",
-    "rec_date": "2026-11-11",
-    "buy_price": 67.11,
-    "stop": 63.75,
-    "target": 73.82,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-11",
-        "close": 67.11,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 67.11,
-        "pct": 10
-      }
-    ],
-    "cur_price": 67.11,
-    "cur_pct": 0
-  },
-  {
-    "code": "002187",
-    "name": "广百股份",
-    "sector": "一般零售",
-    "rec_date": "2026-11-12",
-    "buy_price": 6.34,
-    "stop": 6.09,
-    "target": 6.97,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 6.34,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 6.34,
-        "pct": 10.07
-      }
-    ],
-    "cur_price": 6.34,
-    "cur_pct": 0
-  },
-  {
-    "code": "002021",
-    "name": "中捷资源",
-    "sector": "专用设备",
-    "rec_date": "2026-11-12",
-    "buy_price": 2.63,
-    "stop": 2.52,
-    "target": 2.87,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 2.63,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 2.63,
-        "pct": 10.04
-      }
-    ],
-    "cur_price": 2.63,
-    "cur_pct": 0
-  },
-  {
-    "code": "002172",
-    "name": "澳洋健康",
-    "sector": "医疗服务",
-    "rec_date": "2026-11-12",
-    "buy_price": 6.66,
-    "stop": 6.39,
-    "target": 7.26,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 6.66,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 6.66,
-        "pct": 10.08
-      }
-    ],
-    "cur_price": 6.66,
-    "cur_pct": 0
-  },
-  {
-    "code": "603135",
-    "name": "中重科技",
-    "sector": "专用设备",
-    "rec_date": "2026-11-12",
-    "buy_price": 10.18,
-    "stop": 9.77,
-    "target": 11.1,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 10.18,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 10.18,
-        "pct": 10.05
-      }
-    ],
-    "cur_price": 10.18,
-    "cur_pct": 0
-  },
-  {
-    "code": "600327",
-    "name": "大东方",
-    "sector": "一般零售",
-    "rec_date": "2026-11-12",
-    "buy_price": 7.18,
-    "stop": 6.82,
-    "target": 7.75,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 7.18,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-11",
-        "close": 7.18,
-        "pct": 9.95
-      }
-    ],
-    "cur_price": 7.18,
-    "cur_pct": 0
-  },
-  {
-    "code": "688498",
-    "name": "源杰科技",
-    "sector": "半导体",
-    "rec_date": "2026-11-11",
-    "buy_price": 762.81,
-    "stop": 732.3,
-    "target": 839.09,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 2,
-    "history": [
-      {
-        "date": "2026-11-11",
-        "close": 762.81,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-12",
-        "close": 762.81,
-        "pct": -1.55
-      }
-    ],
-    "cur_price": 762.81,
-    "cur_pct": 0
-  },
-  {
     "code": "002931",
     "name": "锋龙股份",
     "sector": "通用设备",
@@ -291,7 +11,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-11",
@@ -302,9 +22,190 @@
         "date": "2026-11-12",
         "close": 56.6,
         "pct": 6.63
+      },
+      {
+        "date": "2026-11-13",
+        "close": 58.1,
+        "pct": 2.65
       }
     ],
-    "cur_price": 56.6,
+    "cur_price": 58.1,
+    "cur_pct": 2.65
+  },
+  {
+    "code": "000995",
+    "name": "皇台酒业",
+    "sector": "白酒Ⅱ",
+    "rec_date": "2026-11-12",
+    "buy_price": 18.37,
+    "stop": 17.45,
+    "target": 20.2,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-12",
+        "close": 18.37,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 18.37,
+        "pct": 0.27
+      }
+    ],
+    "cur_price": 18.37,
+    "cur_pct": 0
+  },
+  {
+    "code": "600857",
+    "name": "宁波中百",
+    "sector": "一般零售",
+    "rec_date": "2026-11-12",
+    "buy_price": 16.3,
+    "stop": 15.49,
+    "target": 17.93,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-12",
+        "close": 16.3,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 16.3,
+        "pct": 8.67
+      }
+    ],
+    "cur_price": 16.3,
+    "cur_pct": 0
+  },
+  {
+    "code": "601091",
+    "name": "沈鼓集团",
+    "sector": "专用设备",
+    "rec_date": "2026-11-12",
+    "buy_price": 22.23,
+    "stop": 21.12,
+    "target": 24.45,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-12",
+        "close": 22.23,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 22.23,
+        "pct": 6.26
+      }
+    ],
+    "cur_price": 22.23,
+    "cur_pct": 0
+  },
+  {
+    "code": "600977",
+    "name": "中国电影",
+    "sector": "影视院线",
+    "rec_date": "2026-11-13",
+    "buy_price": 17.05,
+    "stop": 16.37,
+    "target": 18.76,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-13",
+        "close": 17.05,
+        "pct": 0
+      }
+    ],
+    "cur_price": 17.05,
+    "cur_pct": 0
+  },
+  {
+    "code": "603103",
+    "name": "横店影视",
+    "sector": "影视院线",
+    "rec_date": "2026-11-13",
+    "buy_price": 19.31,
+    "stop": 18.54,
+    "target": 21.24,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-13",
+        "close": 19.31,
+        "pct": 0
+      }
+    ],
+    "cur_price": 19.31,
+    "cur_pct": 0
+  },
+  {
+    "code": "002905",
+    "name": "金逸影视",
+    "sector": "影视院线",
+    "rec_date": "2026-11-13",
+    "buy_price": 9.9,
+    "stop": 9.5,
+    "target": 10.89,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-13",
+        "close": 9.9,
+        "pct": 0
+      }
+    ],
+    "cur_price": 9.9,
+    "cur_pct": 0
+  },
+  {
+    "code": "603767",
+    "name": "中马传动",
+    "sector": "汽车零部",
+    "rec_date": "2026-11-13",
+    "buy_price": 17.74,
+    "stop": 17.03,
+    "target": 19.16,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-13",
+        "close": 17.74,
+        "pct": 0
+      }
+    ],
+    "cur_price": 17.74,
     "cur_pct": 0
   }
 ]
