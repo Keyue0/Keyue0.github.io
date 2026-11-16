@@ -1,38 +1,5 @@
 [
   {
-    "code": "000995",
-    "name": "皇台酒业",
-    "sector": "白酒Ⅱ",
-    "rec_date": "2026-11-12",
-    "buy_price": 18.37,
-    "stop": 17.45,
-    "target": 20.2,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-12",
-        "close": 18.37,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-13",
-        "close": 18.37,
-        "pct": 0.27
-      },
-      {
-        "date": "2026-11-16",
-        "close": 18.79,
-        "pct": 2.29
-      }
-    ],
-    "cur_price": 18.79,
-    "cur_pct": 2.29
-  },
-  {
     "code": "600977",
     "name": "中国电影",
     "sector": "影视院线",
@@ -40,11 +7,11 @@
     "buy_price": 17.05,
     "stop": 16.37,
     "target": 18.76,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-16",
+    "sell_price": 16.72,
+    "return_pct": -1.94,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-13",
@@ -58,7 +25,8 @@
       }
     ],
     "cur_price": 16.72,
-    "cur_pct": -1.94
+    "cur_pct": -1.94,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603103",
@@ -68,11 +36,11 @@
     "buy_price": 19.31,
     "stop": 18.54,
     "target": 21.24,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-16",
+    "sell_price": 21,
+    "return_pct": 8.75,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-13",
@@ -86,7 +54,8 @@
       }
     ],
     "cur_price": 21,
-    "cur_pct": 8.75
+    "cur_pct": 8.75,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603767",
@@ -96,11 +65,11 @@
     "buy_price": 17.74,
     "stop": 17.03,
     "target": 19.16,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-16",
+    "sell_price": 17.2,
+    "return_pct": -3.04,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-13",
@@ -114,7 +83,8 @@
       }
     ],
     "cur_price": 17.2,
-    "cur_pct": -3.04
+    "cur_pct": -3.04,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "605255",
@@ -128,7 +98,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-13",
@@ -156,12 +126,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-16",
         "close": 4.73,
         "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 4.73,
+        "pct": 10
       }
     ],
     "cur_price": 4.73,
@@ -179,12 +154,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-16",
         "close": 27.83,
         "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 27.83,
+        "pct": 20.01
       }
     ],
     "cur_price": 27.83,
@@ -202,12 +182,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-16",
         "close": 7.67,
         "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 7.67,
+        "pct": 10.04
       }
     ],
     "cur_price": 7.67,
@@ -225,15 +210,71 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-16",
         "close": 5.4,
         "pct": 0
+      },
+      {
+        "date": "2026-11-13",
+        "close": 5.4,
+        "pct": 9.98
       }
     ],
     "cur_price": 5.4,
+    "cur_pct": 0
+  },
+  {
+    "code": "002905",
+    "name": "金逸影视",
+    "sector": "影视院线",
+    "rec_date": "2026-11-13",
+    "buy_price": 10.89,
+    "stop": 10.35,
+    "target": 11.98,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-13",
+        "close": 10.89,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-16",
+        "close": 10.89,
+        "pct": 10
+      }
+    ],
+    "cur_price": 10.89,
+    "cur_pct": 0
+  },
+  {
+    "code": "605378",
+    "name": "野马电池",
+    "sector": "电池",
+    "rec_date": "2026-11-16",
+    "buy_price": 15.52,
+    "stop": 14.9,
+    "target": 17.07,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-16",
+        "close": 15.52,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.52,
     "cur_pct": 0
   }
 ]
