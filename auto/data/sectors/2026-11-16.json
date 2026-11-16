@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-16",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -4.664716746555889,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "白酒Ⅱ",
+      "code": "BK1277",
+      "drawdown": -47.70252187226357,
+      "pct20": -11.169273584422717,
+      "excess20": -6.5,
+      "zt5": 1,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "交通运输",
+      "code": "BK1210",
+      "drawdown": -6.404243520367671,
+      "pct20": 0.033314287374471084,
+      "excess20": 4.7,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "食品饮料",
+      "code": "BK0438",
+      "drawdown": -2.8009499949137866,
+      "pct20": 5.750604564670357,
+      "excess20": 10.42,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
