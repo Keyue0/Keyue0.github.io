@@ -1,208 +1,5 @@
 [
   {
-    "code": "600977",
-    "name": "中国电影",
-    "sector": "影视院线",
-    "rec_date": "2026-11-13",
-    "buy_price": 17.05,
-    "stop": 16.37,
-    "target": 18.76,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 16.72,
-    "return_pct": -1.94,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-13",
-        "close": 17.05,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-16",
-        "close": 16.72,
-        "pct": -1.94
-      }
-    ],
-    "cur_price": 16.72,
-    "cur_pct": -1.94,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603103",
-    "name": "横店影视",
-    "sector": "影视院线",
-    "rec_date": "2026-11-13",
-    "buy_price": 19.31,
-    "stop": 18.54,
-    "target": 21.24,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 21,
-    "return_pct": 8.75,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-13",
-        "close": 19.31,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-16",
-        "close": 21,
-        "pct": 8.75
-      }
-    ],
-    "cur_price": 21,
-    "cur_pct": 8.75,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "603767",
-    "name": "中马传动",
-    "sector": "汽车零部",
-    "rec_date": "2026-11-13",
-    "buy_price": 17.74,
-    "stop": 17.03,
-    "target": 19.16,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 17.2,
-    "return_pct": -3.04,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-13",
-        "close": 17.74,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-16",
-        "close": 17.2,
-        "pct": -3.04
-      }
-    ],
-    "cur_price": 17.2,
-    "cur_pct": -3.04,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "601188",
-    "name": "龙江交通",
-    "sector": "铁路公路",
-    "rec_date": "2026-11-16",
-    "buy_price": 4.73,
-    "stop": 4.49,
-    "target": 5.11,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 4.74,
-    "return_pct": 0.21,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-16",
-        "close": 4.73,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-13",
-        "close": 4.73,
-        "pct": 10
-      }
-    ],
-    "cur_price": 4.74,
-    "cur_pct": 0.21,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "300530",
-    "name": "领湃科技",
-    "sector": "电池",
-    "rec_date": "2026-11-16",
-    "buy_price": 27.83,
-    "stop": 26.44,
-    "target": 30.06,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 26.94,
-    "return_pct": -3.2,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-16",
-        "close": 27.83,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-13",
-        "close": 27.83,
-        "pct": 20.01
-      }
-    ],
-    "cur_price": 26.94,
-    "cur_pct": -3.2,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002187",
-    "name": "广百股份",
-    "sector": "一般零售",
-    "rec_date": "2026-11-16",
-    "buy_price": 7.67,
-    "stop": 7.29,
-    "target": 8.28,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 8.1,
-    "return_pct": 5.61,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-16",
-        "close": 7.67,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-13",
-        "close": 7.67,
-        "pct": 10.04
-      }
-    ],
-    "cur_price": 8.1,
-    "cur_pct": 5.61,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
-    "code": "002419",
-    "name": "天虹股份",
-    "sector": "一般零售",
-    "rec_date": "2026-11-16",
-    "buy_price": 5.4,
-    "stop": 5.13,
-    "target": 5.83,
-    "status": "到期平仓",
-    "sell_date": "2026-11-16",
-    "sell_price": 5.34,
-    "return_pct": -1.11,
-    "days_held": 5,
-    "history": [
-      {
-        "date": "2026-11-16",
-        "close": 5.4,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-13",
-        "close": 5.4,
-        "pct": 9.98
-      }
-    ],
-    "cur_price": 5.34,
-    "cur_pct": -1.11,
-    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
-  },
-  {
     "code": "605378",
     "name": "野马电池",
     "sector": "电池",
@@ -210,11 +7,11 @@
     "buy_price": 15.52,
     "stop": 14.9,
     "target": 17.07,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-17",
+    "sell_price": 16.25,
+    "return_pct": 4.7,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-16",
@@ -225,10 +22,16 @@
         "date": "2026-11-13",
         "close": 16.25,
         "pct": 4.7
+      },
+      {
+        "date": "2026-11-17",
+        "close": 16.25,
+        "pct": 4.7
       }
     ],
     "cur_price": 16.25,
-    "cur_pct": 4.7
+    "cur_pct": 4.7,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "300237",
@@ -242,7 +45,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-13",
@@ -251,6 +54,11 @@
       },
       {
         "date": "2026-11-16",
+        "close": 2.89,
+        "pct": -7.67
+      },
+      {
+        "date": "2026-11-17",
         "close": 2.89,
         "pct": -7.67
       }
@@ -270,15 +78,163 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-16",
         "close": 23.35,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 23.35,
+        "pct": 4.24
       }
     ],
     "cur_price": 23.35,
+    "cur_pct": 0
+  },
+  {
+    "code": "002356",
+    "name": "鹏飞绿能",
+    "sector": "一般零售",
+    "rec_date": "2026-11-16",
+    "buy_price": 2.47,
+    "stop": 2.37,
+    "target": 2.67,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-16",
+        "close": 2.47,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 2.47,
+        "pct": -1.98
+      }
+    ],
+    "cur_price": 2.47,
+    "cur_pct": 0
+  },
+  {
+    "code": "600206",
+    "name": "有研新材",
+    "sector": "半导体",
+    "rec_date": "2026-11-17",
+    "buy_price": 39.33,
+    "stop": 37.36,
+    "target": 44.05,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 39.33,
+        "pct": 0
+      }
+    ],
+    "cur_price": 39.33,
+    "cur_pct": 0
+  },
+  {
+    "code": "603078",
+    "name": "江化微",
+    "sector": "电子化学",
+    "rec_date": "2026-11-17",
+    "buy_price": 24.54,
+    "stop": 23.56,
+    "target": 27.48,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 24.54,
+        "pct": 0
+      }
+    ],
+    "cur_price": 24.54,
+    "cur_pct": 0
+  },
+  {
+    "code": "300786",
+    "name": "国林科技",
+    "sector": "环保设备",
+    "rec_date": "2026-11-17",
+    "buy_price": 13.4,
+    "stop": 12.73,
+    "target": 14.74,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 13.4,
+        "pct": 0
+      }
+    ],
+    "cur_price": 13.4,
+    "cur_pct": 0
+  },
+  {
+    "code": "600936",
+    "name": "北投科技",
+    "sector": "IT服务Ⅱ",
+    "rec_date": "2026-11-17",
+    "buy_price": 4.42,
+    "stop": 4.2,
+    "target": 4.86,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 4.42,
+        "pct": 0
+      }
+    ],
+    "cur_price": 4.42,
+    "cur_pct": 0
+  },
+  {
+    "code": "600410",
+    "name": "华胜天成",
+    "sector": "IT服务Ⅱ",
+    "rec_date": "2026-11-17",
+    "buy_price": 15.29,
+    "stop": 14.68,
+    "target": 16.82,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 15.29,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.29,
     "cur_pct": 0
   }
 ]

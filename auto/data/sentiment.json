@@ -647,5 +647,16 @@
     "upCount": 1236,
     "downCount": 3925,
     "sentiment": "冰点"
+  },
+  {
+    "date": "2026-11-17",
+    "limitUp": 37,
+    "limitDown": 67,
+    "topBoard": 3,
+    "ratio": 0.31,
+    "amount": 14576.95,
+    "upCount": 1236,
+    "downCount": 3925,
+    "sentiment": "冰点"
   }
 ]
