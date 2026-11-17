@@ -631,10 +631,10 @@
     "limitUp": 37,
     "limitDown": 33,
     "topBoard": 4,
-    "ratio": 0.28,
-    "amount": 14844.9,
-    "upCount": 1126,
-    "downCount": 4072,
+    "ratio": 0.31,
+    "amount": 14576.95,
+    "upCount": 1236,
+    "downCount": 3925,
     "sentiment": "冰点"
   },
   {
@@ -642,10 +642,10 @@
     "limitUp": 32,
     "limitDown": 60,
     "topBoard": 4,
-    "ratio": 0.28,
-    "amount": 14844.9,
-    "upCount": 1126,
-    "downCount": 4072,
+    "ratio": 0.31,
+    "amount": 14576.95,
+    "upCount": 1236,
+    "downCount": 3925,
     "sentiment": "冰点"
   }
 ]
