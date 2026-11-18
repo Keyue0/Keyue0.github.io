@@ -7,11 +7,11 @@
     "buy_price": 39.33,
     "stop": 37.36,
     "target": 44.05,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-18",
+    "sell_price": 41.62,
+    "return_pct": 5.82,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-17",
@@ -25,7 +25,8 @@
       }
     ],
     "cur_price": 41.62,
-    "cur_pct": 5.82
+    "cur_pct": 5.82,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603078",
@@ -35,11 +36,11 @@
     "buy_price": 24.54,
     "stop": 23.56,
     "target": 27.48,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-18",
+    "sell_price": 24.42,
+    "return_pct": -0.49,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-17",
@@ -53,7 +54,8 @@
       }
     ],
     "cur_price": 24.42,
-    "cur_pct": -0.49
+    "cur_pct": -0.49,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002584",
@@ -67,7 +69,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-17",
@@ -95,12 +97,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-18",
         "close": 201.19,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 201.19,
+        "pct": 10
       }
     ],
     "cur_price": 201.19,
@@ -118,12 +125,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-18",
         "close": 13.07,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 13.07,
+        "pct": 10.02
       }
     ],
     "cur_price": 13.07,
@@ -141,12 +153,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-18",
         "close": 9.31,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 9.31,
+        "pct": 10.05
       }
     ],
     "cur_price": 9.31,
@@ -164,12 +181,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-18",
         "close": 17.34,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 17.34,
+        "pct": 10.03
       }
     ],
     "cur_price": 17.34,
@@ -187,15 +209,99 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-18",
         "close": 46.66,
         "pct": 0
+      },
+      {
+        "date": "2026-11-17",
+        "close": 46.66,
+        "pct": 20.01
       }
     ],
     "cur_price": 46.66,
+    "cur_pct": 0
+  },
+  {
+    "code": "600410",
+    "name": "华胜天成",
+    "sector": "IT服务Ⅱ",
+    "rec_date": "2026-11-17",
+    "buy_price": 16.82,
+    "stop": 15.98,
+    "target": 18.5,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 16.82,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-18",
+        "close": 16.82,
+        "pct": 10.01
+      }
+    ],
+    "cur_price": 16.82,
+    "cur_pct": 0
+  },
+  {
+    "code": "300786",
+    "name": "国林科技",
+    "sector": "环保设备",
+    "rec_date": "2026-11-17",
+    "buy_price": 12.7,
+    "stop": 12.07,
+    "target": 13.85,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-17",
+        "close": 12.7,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-18",
+        "close": 12.7,
+        "pct": -5.22
+      }
+    ],
+    "cur_price": 12.7,
+    "cur_pct": 0
+  },
+  {
+    "code": "603220",
+    "name": "中贝通信",
+    "sector": "通信服务",
+    "rec_date": "2026-11-18",
+    "buy_price": 15.62,
+    "stop": 15,
+    "target": 17.18,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-18",
+        "close": 15.62,
+        "pct": 0
+      }
+    ],
+    "cur_price": 15.62,
     "cur_pct": 0
   }
 ]
