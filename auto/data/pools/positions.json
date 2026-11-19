@@ -34,72 +34,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "600410",
-    "name": "华胜天成",
-    "sector": "IT服务Ⅱ",
-    "rec_date": "2026-11-17",
-    "buy_price": 16.82,
-    "stop": 15.98,
-    "target": 18.5,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-17",
-        "close": 16.82,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-18",
-        "close": 16.82,
-        "pct": 10.01
-      },
-      {
-        "date": "2026-11-19",
-        "close": 16.7,
-        "pct": -0.71
-      }
-    ],
-    "cur_price": 16.7,
-    "cur_pct": -0.71
-  },
-  {
-    "code": "300786",
-    "name": "国林科技",
-    "sector": "环保设备",
-    "rec_date": "2026-11-17",
-    "buy_price": 12.7,
-    "stop": 12.07,
-    "target": 13.85,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-17",
-        "close": 12.7,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-18",
-        "close": 12.7,
-        "pct": -5.22
-      },
-      {
-        "date": "2026-11-19",
-        "close": 13.57,
-        "pct": 6.85
-      }
-    ],
-    "cur_price": 13.57,
-    "cur_pct": 6.85
-  },
-  {
     "code": "603220",
     "name": "中贝通信",
     "sector": "通信服务",
@@ -107,11 +41,11 @@
     "buy_price": 15.62,
     "stop": 15,
     "target": 17.18,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-19",
+    "sell_price": 15.46,
+    "return_pct": -1.02,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-18",
@@ -125,7 +59,8 @@
       }
     ],
     "cur_price": 15.46,
-    "cur_pct": -1.02
+    "cur_pct": -1.02,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "000158",
@@ -139,7 +74,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-18",
@@ -167,7 +102,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-18",
@@ -195,12 +130,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-19",
         "close": 12.11,
         "pct": 0
+      },
+      {
+        "date": "2026-11-18",
+        "close": 12.11,
+        "pct": 9.99
       }
     ],
     "cur_price": 12.11,
@@ -218,12 +158,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-19",
         "close": 22.17,
         "pct": 0
+      },
+      {
+        "date": "2026-11-18",
+        "close": 22.17,
+        "pct": 10.02
       }
     ],
     "cur_price": 22.17,
@@ -241,15 +186,104 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-19",
         "close": 21.66,
         "pct": 0
+      },
+      {
+        "date": "2026-11-18",
+        "close": 21.66,
+        "pct": 20
       }
     ],
     "cur_price": 21.66,
+    "cur_pct": 0
+  },
+  {
+    "code": "002771",
+    "name": "真视通",
+    "sector": "IT服务Ⅱ",
+    "rec_date": "2026-11-18",
+    "buy_price": 14.38,
+    "stop": 13.66,
+    "target": 15.82,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-18",
+        "close": 14.38,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-19",
+        "close": 14.38,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 14.38,
+    "cur_pct": 0
+  },
+  {
+    "code": "002197",
+    "name": "证通电子",
+    "sector": "计算机设",
+    "rec_date": "2026-11-18",
+    "buy_price": 6.15,
+    "stop": 5.84,
+    "target": 6.7,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-18",
+        "close": 6.15,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-19",
+        "close": 6.15,
+        "pct": 0.65
+      }
+    ],
+    "cur_price": 6.15,
+    "cur_pct": 0
+  },
+  {
+    "code": "301391",
+    "name": "卡莱特",
+    "sector": "计算机设",
+    "rec_date": "2026-11-18",
+    "buy_price": 55.98,
+    "stop": 53.18,
+    "target": 61.58,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-18",
+        "close": 55.98,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-19",
+        "close": 55.98,
+        "pct": 19.97
+      }
+    ],
+    "cur_price": 55.98,
     "cur_pct": 0
   }
 ]
