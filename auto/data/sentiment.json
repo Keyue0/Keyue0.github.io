@@ -686,10 +686,21 @@
     "limitUp": 28,
     "limitDown": 58,
     "topBoard": 4,
-    "ratio": 0.06,
-    "amount": 14222,
-    "upCount": 301,
-    "downCount": 4961,
+    "ratio": 5.39,
+    "amount": 15528.8,
+    "upCount": 4344,
+    "downCount": 806,
     "sentiment": "冰点"
+  },
+  {
+    "date": "2026-11-23",
+    "limitUp": 146,
+    "limitDown": 3,
+    "topBoard": 5,
+    "ratio": 5.39,
+    "amount": 15528.8,
+    "upCount": 4344,
+    "downCount": 806,
+    "sentiment": "亢奋"
   }
 ]
