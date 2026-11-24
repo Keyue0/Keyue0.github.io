@@ -41,11 +41,11 @@
     "buy_price": 81.25,
     "stop": 77.19,
     "target": 89.38,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-24",
+    "sell_price": 82.69,
+    "return_pct": 1.77,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-23",
@@ -59,7 +59,8 @@
       }
     ],
     "cur_price": 82.69,
-    "cur_pct": 1.77
+    "cur_pct": 1.77,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002815",
@@ -69,11 +70,11 @@
     "buy_price": 14.96,
     "stop": 14.21,
     "target": 16.16,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-24",
+    "sell_price": 14.38,
+    "return_pct": -3.88,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-23",
@@ -87,7 +88,8 @@
       }
     ],
     "cur_price": 14.38,
-    "cur_pct": -3.88
+    "cur_pct": -3.88,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002579",
@@ -101,7 +103,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-23",
@@ -129,7 +131,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-23",
@@ -157,12 +159,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-24",
         "close": 26.22,
         "pct": 0
+      },
+      {
+        "date": "2026-11-23",
+        "close": 26.22,
+        "pct": 9.98
       }
     ],
     "cur_price": 26.22,
@@ -180,12 +187,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-24",
         "close": 14.77,
         "pct": 0
+      },
+      {
+        "date": "2026-11-23",
+        "close": 14.77,
+        "pct": 9.98
       }
     ],
     "cur_price": 14.77,
@@ -203,15 +215,76 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-24",
         "close": 3.26,
         "pct": 0
+      },
+      {
+        "date": "2026-11-23",
+        "close": 3.26,
+        "pct": 10.14
       }
     ],
     "cur_price": 3.26,
+    "cur_pct": 0
+  },
+  {
+    "code": "688286",
+    "name": "敏芯股份",
+    "sector": "半导体",
+    "rec_date": "2026-11-23",
+    "buy_price": 55.45,
+    "stop": 52.68,
+    "target": 61,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-23",
+        "close": 55.45,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 55.45,
+        "pct": 3.68
+      }
+    ],
+    "cur_price": 55.45,
+    "cur_pct": 0
+  },
+  {
+    "code": "603960",
+    "name": "克来机电",
+    "sector": "汽车零部",
+    "rec_date": "2026-11-23",
+    "buy_price": 16.91,
+    "stop": 16.06,
+    "target": 18.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-23",
+        "close": 16.91,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 16.91,
+        "pct": 10.02
+      }
+    ],
+    "cur_price": 16.91,
     "cur_pct": 0
   }
 ]
