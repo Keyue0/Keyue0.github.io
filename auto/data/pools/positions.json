@@ -7,11 +7,11 @@
     "buy_price": 18.51,
     "stop": 17.58,
     "target": 20.36,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-24",
+    "sell_price": 19.1,
+    "return_pct": 3.19,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-20",
@@ -22,10 +22,16 @@
         "date": "2026-11-23",
         "close": 19.89,
         "pct": 7.46
+      },
+      {
+        "date": "2026-11-24",
+        "close": 19.1,
+        "pct": -3.97
       }
     ],
-    "cur_price": 19.89,
-    "cur_pct": 7.46
+    "cur_price": 19.1,
+    "cur_pct": 3.19,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603236",
@@ -39,16 +45,21 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-23",
         "close": 81.25,
         "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 82.69,
+        "pct": 1.77
       }
     ],
-    "cur_price": 81.25,
-    "cur_pct": 0
+    "cur_price": 82.69,
+    "cur_pct": 1.77
   },
   {
     "code": "002815",
@@ -62,25 +73,86 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-23",
         "close": 14.96,
         "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 14.38,
+        "pct": -3.88
       }
     ],
-    "cur_price": 14.96,
+    "cur_price": 14.38,
+    "cur_pct": -3.88
+  },
+  {
+    "code": "002579",
+    "name": "中京电子",
+    "sector": "元件",
+    "rec_date": "2026-11-23",
+    "buy_price": 16.2,
+    "stop": 15.39,
+    "target": 17.82,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-23",
+        "close": 16.2,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 16.2,
+        "pct": 9.98
+      }
+    ],
+    "cur_price": 16.2,
     "cur_pct": 0
   },
   {
-    "code": "002164",
-    "name": "宁波东力",
-    "sector": "通用设备",
+    "code": "603893",
+    "name": "瑞芯微",
+    "sector": "半导体",
     "rec_date": "2026-11-23",
-    "buy_price": 17.94,
-    "stop": 17.04,
-    "target": 19.38,
+    "buy_price": 207.49,
+    "stop": 197.12,
+    "target": 228.24,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-23",
+        "close": 207.49,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-24",
+        "close": 207.49,
+        "pct": 2.27
+      }
+    ],
+    "cur_price": 207.49,
+    "cur_pct": 0
+  },
+  {
+    "code": "603626",
+    "name": "科森科技",
+    "sector": "消费电子",
+    "rec_date": "2026-11-24",
+    "buy_price": 26.22,
+    "stop": 24.91,
+    "target": 28.84,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -88,22 +160,22 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-11-23",
-        "close": 17.94,
+        "date": "2026-11-24",
+        "close": 26.22,
         "pct": 0
       }
     ],
-    "cur_price": 17.94,
+    "cur_price": 26.22,
     "cur_pct": 0
   },
   {
-    "code": "603960",
-    "name": "克来机电",
+    "code": "001278",
+    "name": "一彬科技",
     "sector": "汽车零部",
-    "rec_date": "2026-11-23",
-    "buy_price": 15.37,
-    "stop": 14.6,
-    "target": 16.6,
+    "rec_date": "2026-11-24",
+    "buy_price": 14.77,
+    "stop": 14.03,
+    "target": 16.25,
     "status": "持有中",
     "sell_date": null,
     "sell_price": null,
@@ -111,12 +183,35 @@
     "days_held": 1,
     "history": [
       {
-        "date": "2026-11-23",
-        "close": 15.37,
+        "date": "2026-11-24",
+        "close": 14.77,
         "pct": 0
       }
     ],
-    "cur_price": 15.37,
+    "cur_price": 14.77,
+    "cur_pct": 0
+  },
+  {
+    "code": "002122",
+    "name": "汇洲智能",
+    "sector": "通用设备",
+    "rec_date": "2026-11-24",
+    "buy_price": 3.26,
+    "stop": 3.1,
+    "target": 3.55,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-24",
+        "close": 3.26,
+        "pct": 0
+      }
+    ],
+    "cur_price": 3.26,
     "cur_pct": 0
   }
 ]
