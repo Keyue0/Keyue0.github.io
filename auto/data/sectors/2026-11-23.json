@@ -1,31 +1,15 @@
 {
   "date": "2026-11-23",
   "source": "eastmoney-fflow-daykline",
-  "hs300pct20": -2.117025348495512,
+  "hs300pct20": -4.545443415191965,
   "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
   "rows": [
     {
-      "sector": "半导体",
-      "code": "BK1036",
-      "drawdown": -35.16450343742698,
-      "pct20": -9.773508402609545,
-      "excess20": -7.66,
-      "zt5": 7,
-      "fund5": null,
-      "fund20": null,
-      "fundTrend": "—",
-      "pass": [
-        "低位",
-        "情绪"
-      ],
-      "level": 2
-    },
-    {
-      "sector": "电子",
-      "code": "BK1201",
-      "drawdown": -30.472410002085432,
-      "pct20": -8.735693197977335,
-      "excess20": -6.62,
+      "sector": "白酒Ⅱ",
+      "code": "BK1277",
+      "drawdown": -51.349597844062785,
+      "pct20": -14.878774630494634,
+      "excess20": -10.33,
       "zt5": 0,
       "fund5": null,
       "fund20": null,
@@ -36,19 +20,43 @@
       "level": 1
     },
     {
-      "sector": "通信设备",
-      "code": "BK0448",
-      "drawdown": -24.68797234063736,
-      "pct20": -1.5192460184392427,
-      "excess20": 0.6,
+      "sector": "食品饮料",
+      "code": "BK0438",
+      "drawdown": -2.5502045079397457,
+      "pct20": 7.238729407987428,
+      "excess20": 11.78,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "化学制药",
+      "code": "BK0465",
+      "drawdown": -13.744578181991516,
+      "pct20": -2.4342340885197054,
+      "excess20": 2.11,
       "zt5": 2,
       "fund5": null,
       "fund20": null,
       "fundTrend": "—",
-      "pass": [
-        "低位"
-      ],
-      "level": 1
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "医药生物",
+      "code": "BK1216",
+      "drawdown": -13.744578181991516,
+      "pct20": -2.4342340885197054,
+      "excess20": 2.11,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
     }
   ]
 }

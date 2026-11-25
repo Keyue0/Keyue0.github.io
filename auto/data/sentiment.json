@@ -697,10 +697,10 @@
     "limitUp": 146,
     "limitDown": 3,
     "topBoard": 5,
-    "ratio": 0.56,
-    "amount": 16550.86,
-    "upCount": 1867,
-    "downCount": 3305,
+    "ratio": 0.12,
+    "amount": 13830.98,
+    "upCount": 578,
+    "downCount": 4645,
     "sentiment": "修复"
   },
   {
