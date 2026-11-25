@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-25",
+  "source": "eastmoney-fflow-daykline",
+  "hs300pct20": -4.545443415191965,
+  "note": "板块低位右侧扫描：120日回撤/20日涨幅/超额/近5日涨停/5日·20日资金。三重条件=低位+资金+情绪。",
+  "rows": [
+    {
+      "sector": "白酒Ⅱ",
+      "code": "BK1277",
+      "drawdown": -51.349597844062785,
+      "pct20": -14.878774630494634,
+      "excess20": -10.33,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "低位"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "化学制药",
+      "code": "BK0465",
+      "drawdown": -13.744578181991516,
+      "pct20": -2.4342340885197054,
+      "excess20": 2.11,
+      "zt5": 11,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [
+        "情绪"
+      ],
+      "level": 1
+    },
+    {
+      "sector": "食品饮料",
+      "code": "BK0438",
+      "drawdown": -2.5502045079397457,
+      "pct20": 7.238729407987428,
+      "excess20": 11.78,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    },
+    {
+      "sector": "医药生物",
+      "code": "BK1216",
+      "drawdown": -13.744578181991516,
+      "pct20": -2.4342340885197054,
+      "excess20": 2.11,
+      "zt5": 0,
+      "fund5": null,
+      "fund20": null,
+      "fundTrend": "—",
+      "pass": [],
+      "level": 0
+    }
+  ]
+}
