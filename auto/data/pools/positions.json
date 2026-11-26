@@ -1,38 +1,5 @@
 [
   {
-    "code": "300006",
-    "name": "莱美药业",
-    "sector": "化学制药",
-    "rec_date": "2026-11-23",
-    "buy_price": 8.69,
-    "stop": 8.26,
-    "target": 9.73,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
-    "history": [
-      {
-        "date": "2026-11-23",
-        "close": 8.69,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-24",
-        "close": 8.69,
-        "pct": -4.51
-      },
-      {
-        "date": "2026-11-25",
-        "close": 8.69,
-        "pct": -4.51
-      }
-    ],
-    "cur_price": 8.69,
-    "cur_pct": 0
-  },
-  {
     "code": "002708",
     "name": "光洋股份",
     "sector": "汽车零部",
@@ -40,11 +7,11 @@
     "buy_price": 22.8,
     "stop": 21.66,
     "target": 24.62,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-26",
+    "sell_price": 23.26,
+    "return_pct": 2.02,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-23",
@@ -60,10 +27,16 @@
         "date": "2026-11-25",
         "close": 22.8,
         "pct": -1.26
+      },
+      {
+        "date": "2026-11-26",
+        "close": 23.26,
+        "pct": 2.02
       }
     ],
-    "cur_price": 22.8,
-    "cur_pct": 0
+    "cur_price": 23.26,
+    "cur_pct": 2.02,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002872",
@@ -77,7 +50,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-24",
@@ -88,10 +61,15 @@
         "date": "2026-11-25",
         "close": 7.1,
         "pct": 10.08
+      },
+      {
+        "date": "2026-11-26",
+        "close": 7.81,
+        "pct": 10
       }
     ],
-    "cur_price": 7.1,
-    "cur_pct": 0
+    "cur_price": 7.81,
+    "cur_pct": 10
   },
   {
     "code": "002164",
@@ -105,7 +83,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-24",
@@ -116,79 +94,15 @@
         "date": "2026-11-25",
         "close": 21.7,
         "pct": 9.98
-      }
-    ],
-    "cur_price": 21.7,
-    "cur_pct": 0
-  },
-  {
-    "code": "000908",
-    "name": "石药景峰",
-    "sector": "化学制药",
-    "rec_date": "2026-11-25",
-    "buy_price": 4.81,
-    "stop": 4.62,
-    "target": 5.39,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
+      },
       {
-        "date": "2026-11-25",
-        "close": 4.81,
-        "pct": 0
+        "date": "2026-11-26",
+        "close": 21.06,
+        "pct": -2.95
       }
     ],
-    "cur_price": 4.81,
-    "cur_pct": 0
-  },
-  {
-    "code": "600814",
-    "name": "杭州解百",
-    "sector": "一般零售",
-    "rec_date": "2026-11-25",
-    "buy_price": 8.35,
-    "stop": 7.95,
-    "target": 9.1,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
-      {
-        "date": "2026-11-25",
-        "close": 8.35,
-        "pct": 0
-      }
-    ],
-    "cur_price": 8.35,
-    "cur_pct": 0
-  },
-  {
-    "code": "600103",
-    "name": "青山纸业",
-    "sector": "造纸",
-    "rec_date": "2026-11-25",
-    "buy_price": 3.78,
-    "stop": 3.63,
-    "target": 4.16,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 1,
-    "history": [
-      {
-        "date": "2026-11-25",
-        "close": 3.78,
-        "pct": 0
-      }
-    ],
-    "cur_price": 3.78,
-    "cur_pct": 0
+    "cur_price": 21.06,
+    "cur_pct": -2.95
   },
   {
     "code": "301211",
@@ -202,15 +116,219 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-25",
         "close": 11.11,
         "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 11.89,
+        "pct": 7.02
       }
     ],
-    "cur_price": 11.11,
+    "cur_price": 11.89,
+    "cur_pct": 7.02
+  },
+  {
+    "code": "002579",
+    "name": "中京电子",
+    "sector": "元件",
+    "rec_date": "2026-11-25",
+    "buy_price": 19.23,
+    "stop": 18.27,
+    "target": 21.15,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-25",
+        "close": 19.23,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 19.23,
+        "pct": 7.91
+      }
+    ],
+    "cur_price": 19.23,
+    "cur_pct": 0
+  },
+  {
+    "code": "600280",
+    "name": "中央商场",
+    "sector": "一般零售",
+    "rec_date": "2026-11-25",
+    "buy_price": 3.1,
+    "stop": 2.98,
+    "target": 3.41,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-25",
+        "close": 3.1,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 3.1,
+        "pct": 9.93
+      }
+    ],
+    "cur_price": 3.1,
+    "cur_pct": 0
+  },
+  {
+    "code": "603360",
+    "name": "百傲化学",
+    "sector": "农化制品",
+    "rec_date": "2026-11-25",
+    "buy_price": 11.25,
+    "stop": 10.8,
+    "target": 12.38,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-25",
+        "close": 11.25,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 11.25,
+        "pct": 6.53
+      }
+    ],
+    "cur_price": 11.25,
+    "cur_pct": 0
+  },
+  {
+    "code": "603118",
+    "name": "共进股份",
+    "sector": "通信设备",
+    "rec_date": "2026-11-26",
+    "buy_price": 13.26,
+    "stop": 12.6,
+    "target": 14.6,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 13.26,
+        "pct": 0
+      }
+    ],
+    "cur_price": 13.26,
+    "cur_pct": 0
+  },
+  {
+    "code": "003040",
+    "name": "楚天龙",
+    "sector": "通信设备",
+    "rec_date": "2026-11-26",
+    "buy_price": 11.07,
+    "stop": 10.52,
+    "target": 12.18,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 11.07,
+        "pct": 0
+      }
+    ],
+    "cur_price": 11.07,
+    "cur_pct": 0
+  },
+  {
+    "code": "603386",
+    "name": "骏亚科技",
+    "sector": "元件/PCB",
+    "rec_date": "2026-11-26",
+    "buy_price": 14.52,
+    "stop": 13.94,
+    "target": 16.12,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 14.52,
+        "pct": 0
+      }
+    ],
+    "cur_price": 14.52,
+    "cur_pct": 0
+  },
+  {
+    "code": "002199",
+    "name": "东晶电子",
+    "sector": "元件",
+    "rec_date": "2026-11-26",
+    "buy_price": 11.29,
+    "stop": 10.84,
+    "target": 12.44,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 11.29,
+        "pct": 0
+      }
+    ],
+    "cur_price": 11.29,
+    "cur_pct": 0
+  },
+  {
+    "code": "000603",
+    "name": "盛达资源",
+    "sector": "贵金属",
+    "rec_date": "2026-11-26",
+    "buy_price": 23.86,
+    "stop": 22.67,
+    "target": 26.25,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 1,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 23.86,
+        "pct": 0
+      }
+    ],
+    "cur_price": 23.86,
     "cur_pct": 0
   }
 ]
