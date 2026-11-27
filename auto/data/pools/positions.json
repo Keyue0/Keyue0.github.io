@@ -34,72 +34,6 @@
     "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
-    "code": "002579",
-    "name": "中京电子",
-    "sector": "元件",
-    "rec_date": "2026-11-25",
-    "buy_price": 19.23,
-    "stop": 18.27,
-    "target": 21.15,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-25",
-        "close": 19.23,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-26",
-        "close": 19.23,
-        "pct": 7.91
-      },
-      {
-        "date": "2026-11-27",
-        "close": 21.1,
-        "pct": 9.72
-      }
-    ],
-    "cur_price": 21.1,
-    "cur_pct": 9.72
-  },
-  {
-    "code": "603360",
-    "name": "百傲化学",
-    "sector": "农化制品",
-    "rec_date": "2026-11-25",
-    "buy_price": 11.25,
-    "stop": 10.8,
-    "target": 12.38,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 4,
-    "history": [
-      {
-        "date": "2026-11-25",
-        "close": 11.25,
-        "pct": 0
-      },
-      {
-        "date": "2026-11-26",
-        "close": 11.25,
-        "pct": 6.53
-      },
-      {
-        "date": "2026-11-27",
-        "close": 11.91,
-        "pct": 5.87
-      }
-    ],
-    "cur_price": 11.91,
-    "cur_pct": 5.87
-  },
-  {
     "code": "603118",
     "name": "共进股份",
     "sector": "通信设备",
@@ -107,11 +41,11 @@
     "buy_price": 13.26,
     "stop": 12.6,
     "target": 14.6,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-27",
+    "sell_price": 14.44,
+    "return_pct": 8.9,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-26",
@@ -125,7 +59,8 @@
       }
     ],
     "cur_price": 14.44,
-    "cur_pct": 8.9
+    "cur_pct": 8.9,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "603386",
@@ -135,11 +70,11 @@
     "buy_price": 14.52,
     "stop": 13.94,
     "target": 16.12,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-27",
+    "sell_price": 15.97,
+    "return_pct": 9.99,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-26",
@@ -153,7 +88,8 @@
       }
     ],
     "cur_price": 15.97,
-    "cur_pct": 9.99
+    "cur_pct": 9.99,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "002199",
@@ -163,11 +99,11 @@
     "buy_price": 11.29,
     "stop": 10.84,
     "target": 12.44,
-    "status": "持有中",
-    "sell_date": null,
-    "sell_price": null,
-    "return_pct": null,
-    "days_held": 3,
+    "status": "到期平仓",
+    "sell_date": "2026-11-27",
+    "sell_price": 12.42,
+    "return_pct": 10.01,
+    "days_held": 5,
     "history": [
       {
         "date": "2026-11-26",
@@ -181,7 +117,8 @@
       }
     ],
     "cur_price": 12.42,
-    "cur_pct": 10.01
+    "cur_pct": 10.01,
+    "verdict": "到期平仓（持有 5 日未触发止损/目标）"
   },
   {
     "code": "600520",
@@ -195,7 +132,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-26",
@@ -223,7 +160,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-26",
@@ -251,7 +188,7 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 2,
+    "days_held": 4,
     "history": [
       {
         "date": "2026-11-26",
@@ -279,12 +216,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-27",
         "close": 26.41,
         "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 26.41,
+        "pct": 10
       }
     ],
     "cur_price": 26.41,
@@ -302,12 +244,17 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-27",
         "close": 78.35,
         "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 78.35,
+        "pct": 20
       }
     ],
     "cur_price": 78.35,
@@ -325,15 +272,48 @@
     "sell_date": null,
     "sell_price": null,
     "return_pct": null,
-    "days_held": 1,
+    "days_held": 3,
     "history": [
       {
         "date": "2026-11-27",
         "close": 15.27,
         "pct": 0
+      },
+      {
+        "date": "2026-11-26",
+        "close": 15.27,
+        "pct": 10.01
       }
     ],
     "cur_price": 15.27,
+    "cur_pct": 0
+  },
+  {
+    "code": "003040",
+    "name": "楚天龙",
+    "sector": "通信设备",
+    "rec_date": "2026-11-26",
+    "buy_price": 12.18,
+    "stop": 11.69,
+    "target": 13.64,
+    "status": "持有中",
+    "sell_date": null,
+    "sell_price": null,
+    "return_pct": null,
+    "days_held": 2,
+    "history": [
+      {
+        "date": "2026-11-26",
+        "close": 12.18,
+        "pct": 0
+      },
+      {
+        "date": "2026-11-27",
+        "close": 12.18,
+        "pct": 10.03
+      }
+    ],
+    "cur_price": 12.18,
     "cur_pct": 0
   }
 ]
